@@ -13,7 +13,7 @@ function App() {
 
     return (
         <Swiper
-            className="container h-[520px] overflow-hidden w-[400px]"
+            className="container h-[520px] overflow-hidden w-[400px] swiper-backface-hidden"
             spaceBetween={10}
             slidesPerView={"auto"}
             centeredSlides
