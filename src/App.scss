@@ -1,0 +1,89 @@
+@import 'swiper/swiper-bundle.min.css';
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.violet-circle {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    left: -350px;
+    top: 200px;
+
+    background: hsla(264, 82%, 62%, 0.8);
+    filter: blur(78px);
+    border-radius: 20px;
+    z-index: 1000;
+}
+
+.orange-circle {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    left: -350px;
+    top: 0;
+
+    background: hsla(25, 100%, 50%, 0.8);
+    filter: blur(78px);
+    border-radius: 20px;
+    z-index: 1000;
+}
+
+.swiper-pagination {
+  display: flex;
+}
+
+.swiper-pagination-bullet{
+  transition: flex 0.3s ease-in, opacity 0.3s ease-out;
+  border-radius: 4px;
+  width: 8px;
+  background-color: #FF6900;
+  opacity: 0.8;
+}
+
+.swiper-pagination-bullet-active {
+  flex: 1;
+  border-radius: 4px;
+  background-color: #FF6900;
+  opacity: 1;
+}
