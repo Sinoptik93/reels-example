@@ -96,3 +96,23 @@
 //  -webkit-transform: translate3d(0px, -50%, 1px);
 //  transform: translate3d(0px, -50%, 1px);
 //}
+
+//.overlay::after {
+//  content: "";
+//  position: absolute;
+//  width: 100%;
+//  height: 100%;
+//  top: 0;
+//  left: -20px;
+//  background: url("./assets/overlay.png") no-repeat;
+//}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -20px;
+  transition: all 2s ease-out;
+  pointer-events: none;
+}
