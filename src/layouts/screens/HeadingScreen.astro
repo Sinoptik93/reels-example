@@ -1,0 +1,24 @@
+---
+import dodoLogo from "../../assets/icons/dodo-logo.svg";
+import bgPizza from "../../assets/images/bg-pizza.png"
+import { Image, Picture } from '@astrojs/image/components';
+
+---
+
+
+<section class="desktop:h-[1018px] bg-black rounded-b-3xl overflow-hidden relative">
+    <Image src={bgPizza} alt="bg pizza" width="auto" height="auto" class="object-cover w-full h-full absolute"/>
+
+    <div class="container relative z-10 pt-[55px]">
+        <div class="w-[254px] pb-[125px]">
+            <Image src={dodoLogo} alt="Dodo logo" width="auto" height="auto"/>
+        </div>
+
+        <div class="flex flex-col items-center">
+            <p class="text-white">We went digital</p>
+            <p>and reinvented pizza franchising</p>
+        </div>
+
+    </div>
+
+</section>

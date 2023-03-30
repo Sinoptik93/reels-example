@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Factor A Medium";
+  src: url("../assets/fonts/factor-a/Factor A-Light-Web.woff2");
+}
+
+@font-face {
+  font-family: "Factor A Regular";
+  src: url("../assets/fonts/factor-a/Factor A-Regular-Web.woff2");
+}
+
+.text-h-1 {
+  @apply font-regular text-5xl tablet:text-7xl desktop:text-7xl dark:text-white;
+
+  strong {
+    @apply text-accent-orange
+  }
+}
+
+.text-h-2 {
+  @apply font-regular text-5xl tablet:text-8xl desktop:text-7xl tracking-tighter;
+
+  strong {
+    @apply text-accent-orange
+  }
+}
+
+.text-subtitle {
+  @apply font-regular text-xs tablet:text-base desktop:text-base tracking-widest;
+}
+
+.text-legend {
+  @apply font-regular text-xs tablet:text-base desktop:text-base tracking-widest;
+}
+
+.text-regular {
+  @apply font-regular text-xl tablet:text-5xl desktop:text-5xl tracking-tighter;
+}
+
+.text-accent{
+  @apply font-regular text-2xl tablet:text-6xl desktop:text-6xl tracking-tighter;
+}
+
+.text-button{
+  @apply font-regular text-3xl tablet:text-4xl desktop:text-4xl;
+}
+
+.text-input-label{
+  @apply font-regular text-base tablet:text-base desktop:text-base tracking-widest;
+}
