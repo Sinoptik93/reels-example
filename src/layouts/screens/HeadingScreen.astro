@@ -1,24 +1,55 @@
 ---
-import dodoLogo from "../../assets/icons/dodo-logo.svg";
-import bgPizza from "../../assets/images/bg-pizza.png"
-import { Image, Picture } from '@astrojs/image/components';
+import {Image, Picture} from '@astrojs/image/components';
+
+import ellipseViolet from "@assets/images/ellipse-violet.svg";
+import ellipseOrange from "@assets/images/ellipse-orange.svg";
+import bgPizza from "@assets/images/bg-pizza.png";
+
+import dodoLogo from "@assets/icons/dodo-logo.svg";
+import playIcon from "@assets/icons/play.svg";
 
 ---
 
 
-<section class="desktop:h-[1018px] bg-black rounded-b-3xl overflow-hidden relative">
-    <Image src={bgPizza} alt="bg pizza" width="auto" height="auto" class="object-cover w-full h-full absolute"/>
-
-    <div class="container relative z-10 pt-[55px]">
-        <div class="w-[254px] pb-[125px]">
-            <Image src={dodoLogo} alt="Dodo logo" width="auto" height="auto"/>
-        </div>
-
-        <div class="flex flex-col items-center">
-            <p class="text-white">We went digital</p>
-            <p>and reinvented pizza franchising</p>
-        </div>
-
+<section class="bg-black rounded-b-3xl overflow-hidden relative mb-[130px] tablet:mb-[140px] destop:mb-[140px]">
+    <div class="absolute desktop:h-[1576px] desktop:w-[2835px] desktop:-right-[458px] desktop:-top-[342px] tablet:w-[1912px] tablet:h-[1062px] tablet:-right-[458px] tablet:-top-[222px] mobile:w-[1366px] mobile:h-[759px] mobile:-right-[458px] mobile:-top-[140px]">
+        <img src={bgPizza} alt="bg pizza" class="object-contain w-full h-full"/>
     </div>
 
+    <img src={ellipseViolet} alt="orange" class="absolute z-10 -top-[260px] -left-[350px] tablet:-top-[600px] tablet:-left-[823px] desktop:top-[600px] desktop:-left-[623px]"/>
+    <img src={ellipseOrange} alt="violet" class="absolute z-10 top-[400px] -right-[350px] tablet:top-[400px] tablet:-right-[823px] desktop:top-[600px] desktop:-right-[623px]"/>
+
+    <div class="container relative z-20 t pt-[20px] tablet:pt-[37px] desktop:pt-[55px] pb-[44px] tablet:pb-[80px] desktop:pb-[200px]">
+
+        <div class="w-[107px] tablet:w-[170px] desktop:w-[254px] pb-[112px] tablet:pb-[92px] desktop:pb-[125px]">
+            <img src={dodoLogo} alt="Dodo logo"/>
+        </div>
+
+        <div class="flex flex-col items-start desktop:items-center">
+            <p class="text-main text-white hidden tablet:hidden desktop:block">We went digital</p>
+            <p class="text-sub-main text-white hidden tablet:hidden desktop:block">and reinvented pizza franchising</p>
+
+            <p class="text-main block tablet:block desktop:hidden">We went <br>digital and reinvented pizza franchising</p>
+
+            <div class="flex mt-[100px] tablet:mt-[47px] destop:mt-[73px] items-start">
+                <button class="p-3 rounded-[120px] flex items-center justify-center bg-accent-orange text-accent-orange transition-all tablet:p-4 desktop:p-4 hover:bg-accent-violet hover:text-accent-violet">
+                    <div class="bg-white rounded-full flex items-center justify-center w-[64px] h-[64px] mr-[15px] desktop:w-[76px] desktop:h-[76px] desktop:ml-[7px]">
+                        {/* <Image src={playIcon} alt="icon play"/> */}
+
+                        <svg width="29" height="34" viewBox="0 0 29 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.6292 0.464046L27.698 14.722C29.434 15.797 29.434 18.2329 27.698 19.2723L4.6292 33.5309C2.66179 34.7485 0 33.459 0 31.2376V2.75666C0 0.570934 2.66179 -0.754207 4.6292 0.464046Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <p class="text-button text-white items-center whitespace-nowrap justify-center mr-[18px]">Look how it works</p>
+                </button>
+
+                <p class="ml-[30px] text-sub-main text-white hidden tablet:block desktop:hidden">Expand your business opportunities in the <strong>Middle East, Africa, Asia, and South America</strong></p>
+            </div>
+        </div>
+    </div>
 </section>
+
+<div class="container relative h-[300px] hidden desktop:block mt-[120px] mb-[120px]">
+    <p class="text-extra absolute right-[20px] m-0">Expand your business<br>opportunities in the <strong>Middle East,<br>Africa, Asia, and South America</strong></p>
+</div>
+

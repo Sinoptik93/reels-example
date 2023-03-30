@@ -8,8 +8,28 @@
   src: url("../assets/fonts/factor-a/Factor A-Regular-Web.woff2");
 }
 
+.text-main {
+  @apply font-regular text-4xl tablet:text-7xl desktop:text-20xl text-white;
+}
+
+.text-sub-main {
+  @apply font-regular text-3xl tablet:text-3xl desktop:text-6xl;
+
+  strong {
+    @apply text-accent-orange
+  }
+}
+
+.text-extra {
+  @apply font-regular text-[60px] tablet:text-[3.75rem] desktop:text-[3.75rem];
+
+  strong {
+    @apply text-accent-orange
+  }
+}
+
 .text-h-1 {
-  @apply font-regular text-5xl tablet:text-7xl desktop:text-7xl dark:text-white;
+  @apply font-regular text-5xl tablet:text-7xl desktop:text-7xl;
 
   strong {
     @apply text-accent-orange
@@ -19,13 +39,25 @@
 .text-h-2 {
   @apply font-regular text-5xl tablet:text-8xl desktop:text-7xl tracking-tighter;
 
-  strong {
+  span {
     @apply text-accent-orange
   }
 }
 
 .text-subtitle {
-  @apply font-regular text-xs tablet:text-base desktop:text-base tracking-widest;
+  @apply font-regular text-accent-orange text-xs tablet:text-base desktop:text-base tracking-widest uppercase;
+}
+
+.text-stories-title {
+  @apply leading-none font-light text-white text-[120px];
+
+  span {
+    @apply leading-none font-light text-white text-[80px];
+  }
+}
+
+.text-stories-subtitle {
+  @apply leading-none font-light text-white text-[46px];
 }
 
 .text-legend {
@@ -33,7 +65,7 @@
 }
 
 .text-regular {
-  @apply font-regular text-xl tablet:text-5xl desktop:text-5xl tracking-tighter;
+  @apply font-regular text-xl tablet:text-4xl desktop:text-4xl tracking-tighter;
 }
 
 .text-accent{
@@ -41,7 +73,7 @@
 }
 
 .text-button{
-  @apply font-regular text-3xl tablet:text-4xl desktop:text-4xl;
+  @apply font-regular text-3xl tablet:text-3xl desktop:text-4xl;
 }
 
 .text-input-label{
