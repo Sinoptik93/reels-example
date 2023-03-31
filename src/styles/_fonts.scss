@@ -16,15 +16,15 @@
   @apply font-regular text-3xl tablet:text-3xl desktop:text-6xl;
 
   strong {
-    @apply text-accent-orange
+    @apply text-accent-orange;
   }
 }
 
 .text-extra {
   @apply font-regular text-[60px] tablet:text-[3.75rem] desktop:text-[3.75rem];
 
-  strong {
-    @apply text-accent-orange
+  span {
+    @apply text-accent-orange;
   }
 }
 
@@ -32,15 +32,15 @@
   @apply font-regular text-5xl tablet:text-7xl desktop:text-7xl;
 
   strong {
-    @apply text-accent-orange
+    @apply text-accent-orange;
   }
 }
 
 .text-h-2 {
-  @apply font-regular text-5xl tablet:text-8xl desktop:text-7xl tracking-tighter;
+  @apply font-regular text-5xl tablet:text-7xl desktop:text-8xl tracking-tighter;
 
   span {
-    @apply text-accent-orange
+    @apply text-accent-orange;
   }
 }
 
@@ -66,6 +66,18 @@
 
 .text-regular {
   @apply font-regular text-xl tablet:text-4xl desktop:text-4xl tracking-tighter;
+
+  span {
+    @apply text-accent-orange;
+  }
+}
+
+.text-regular-2 {
+  @apply font-regular text-3xl tablet:text-3xl desktop:text-[3.75rem];
+
+  span {
+    @apply text-accent-orange;
+  }
 }
 
 .text-accent{

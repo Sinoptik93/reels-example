@@ -1,0 +1,24 @@
+---
+import logoBloomberg from "@assets/icons/logo-bloomberg.svg";
+import logoRestaurantLeadership from "@assets/icons/logo-restaurant-leadership.svg";
+---
+
+<section class="container mb-[120px]">
+    <div class="flex mobile:gap-[12px] tablet:gap-[26px] desktop:gap-[60px] mb-10 tablet:flex-col-reverse mobile:flex-col-reverse mobile:border-l mobile:pl-4">
+        <div class="w-[103px] tablet:w-[130px] desktop:w-[193px]">
+            <img src={logoBloomberg} class="object-contain w-full h-full"/>
+        </div>
+        <div class="mobile:hidden tablet:h-[1px] tablet:max-w-[230px] desktop:w-[1px] bg-black"></div>
+        <p class="text-regular">Dodo Pizza has turned into<br>one of the fastest-growing<br>restaurant chains</p>
+    </div>
+
+    <div class="h-[400px] bg-gray mb-10"></div>
+
+    <div class="flex mobile:gap-[12px] tablet:gap-[26px] desktop:gap-[60px] mb-10 tablet:flex-col-reverse mobile:flex-col-reverse mobile:border-l mobile:pl-4">
+        <div class="w-[103px] tablet:w-[130px] desktop:w-[193px]">
+            <img src={logoRestaurantLeadership} class="object-contain w-full h-full"/>
+        </div>
+        <div class="mobile:hidden tablet:h-[1px] tablet:max-w-[230px] desktop:w-[1px] bg-black"></div>
+        <p class="text-regular">Industry’s first truly digital-first concept,<br>with technology figuring into all aspects<br>of operations</p>
+    </div>
+</section>

@@ -47,8 +47,8 @@ module.exports = {
             },
             screens: {
                 mobile: {'min': '320px', 'max': '767px'},
-                tablet: {'min': '768px', 'max': '1399px'},
-                desktop: {'min': '1400px'},
+                tablet: {'min': '768px', 'max': '1255px'},
+                desktop: {'min': '1256px'},
             },
             colors: {
                 "white": "hsl(0,0%,100%)",
