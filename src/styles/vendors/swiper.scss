@@ -1,0 +1,21 @@
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-pagination-bullet {
+  transition: width 0.3s ease-in, max-width 0.3s ease-in, opacity 0.3s ease-out;
+  border-radius: 4px;
+  background-color: #FF6900;
+  opacity: 0.8;
+  width: 8px;
+  max-width: 8px;
+}
+
+.swiper-pagination-bullet-active {
+  width: 100%;
+  max-width: 80px;
+  border-radius: 4px;
+  background-color: #FF6900;
+  opacity: 1;
+}

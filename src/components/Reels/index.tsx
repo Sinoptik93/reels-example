@@ -16,6 +16,7 @@ import {
     Swiper,
     SwiperSlide
 } from 'swiper/react';
+import { EffectCards } from "swiper";
 
 
 function Reels() {
@@ -25,11 +26,14 @@ function Reels() {
 
     return (
         <Swiper
-            className="container h-[520px] overflow-hidden max-w-[400px] w-full swiper-backface-hidden"
+            className="container h-[520px] overflow-hidden w-full swiper-backface-hidden"
             spaceBetween={10}
             slidesPerView={"auto"}
+            // effect={"cards"}
             centeredSlides
-            modules={[Pagination]}
+            loop
+            loopPreventsSliding
+            modules={[Pagination, EffectCards]}
             pagination={{ clickable: true }}
             onSlideChange={(swiper) => {
                 const currentIndex = swiper.activeIndex;
@@ -42,36 +46,13 @@ function Reels() {
             }}
         >
             <SwiperSlide className="rounded-2xl overflow-hidden w-[320px] h-[480px] relative">
-                {
-                    true
-                        ? null
-                        : (
-                            <>
-                                <div className="orange-circle"/>
-                                <div className="violet-circle"/>
-                            </>
-                        )
-                }
-
                 <video className="top-0 left-0 min-h-full min-w-full" loop autoPlay muted playsInline >
                     <source src={videowebm} type="video/webm"/>
                     <source src={videomp4} type="video/mp4"/>
                 </video>
-                t
             </SwiperSlide>
 
             <SwiperSlide className="rounded-2xl overflow-hidden w-[320px] h-[480px]">
-                {
-                    true
-                        ? null
-                        : (
-                            <>
-                                <div className="orange-circle"/>
-                                <div className="violet-circle"/>
-                            </>
-                        )
-                }
-
                 <video className="top-0 left-0 min-h-full min-w-full" loop muted playsInline>
                     <source src={videowebm2} type="video/webm"/>
                     <source src={videomp42} type="video/mp4"/>
@@ -89,6 +70,14 @@ function Reels() {
                 <video className="top-0 left-0 min-h-full min-w-full" loop muted playsInline>
                     <source src={videowebm5} type="video/webm"/>
                     <source src={videomp45} type="video/mp4"/>
+                </video>
+            </SwiperSlide>
+
+            <SwiperSlide className="rounded-2xl overflow-hidden w-[320px] h-[480px] relative">
+
+                <video className="top-0 left-0 min-h-full min-w-full" loop autoPlay muted playsInline >
+                    <source src={videowebm3} type="video/webm"/>
+                    <source src={videomp43} type="video/mp4"/>
                 </video>
             </SwiperSlide>
         </Swiper>

@@ -5,54 +5,106 @@ import clock from "@assets/icons/clock.svg";
 import employee from "@assets/icons/employee.svg";
 import geo from "@assets/icons/geo.svg";
 import global from "@assets/icons/global.svg";
+import arrowUp from "@assets/icons/arrow-up.svg";
 import map from "@assets/images/map.png";
 ---
 
-<section class="container">
+<section class="container mb-40">
     <div class="tablet:min-h-[600px] desktop:min-h-[400px]">
-        <div class="relative mobile:pt-[12px] mb-[30px] tablet:mb-[80px] desktop:mb-[108px]">
-            <h2 class="text-h-2 mobile:mb-[20px]">Digits make transparent<br> <span>everything</span></h2>
+        <div class="relative mobile:pt-3 mb-7 tablet:mb-[80px] desktop:mb-[108px]">
+            <h2 class="text-h-2 mobile:mb-5">Digits make transparent<br> <span>everything</span></h2>
 
-            <p class="text-regular hidden desktop:block desktop:absolute desktop:top-[178px] desktop:left-[477px]">that
-                happens in your business<br class="mobile:hidden tablet:hidden"> every moment</p>
+            <p class="text-regular hidden desktop:block desktop:absolute desktop:top-[178px] desktop:left-[477px]">
+                that happens in your business<br class="mobile:hidden tablet:hidden"> every moment
+            </p>
             <p class="text-regular mobile:hidden desktop:hidden tablet:absolute tablet:top-[227px] tablet:left-[377px]">
-                that happens in your business every moment</p>
+                that happens in your business every moment
+            </p>
             <p class="text-regular tablet:hidden desktop:hidden tablet:absolute tablet:top-[177px] tablet:left-[467px]">
-                that happens in your business every moment</p>
+                that happens in your business every moment
+            </p>
         </div>
     </div>
 
-    <div class="flex min-h-[758px] tablet:flex-col mb-10">
-        <div class="rounded-3xl bg-gray w-2/3 relative overflow-hidden">
+    <div class="relative flex mobile:min-h-[480px] tablet:min-h-[640px] desktop:min-h-[758px] mobile:flex-col mb-10">
+        <div class="rounded-3xl bg-gray desktop:w-2/3 tablet:w-1/2 mobile:w-full mobile:grow relative overflow-hidden">
             <img src={map} class="absolute object-cover w-full h-full"/>
 
-            <div class="relative flex px-10 pt-10 pb-10 justify-between">
-                <div class="w-[253px]">
+            <div
+                class="relative flex flex-col h-full px-10 pt-10 pb-10 justify-between mobile:gap-4 mobile:px-5 mobile:py-5">
+                <div class="w-[117px] tablet:w-[160px] desktop:w-[253px]">
                     <img src={logoDodo} class="object-contain w-full h-full"/>
                 </div>
 
-
-                <div>
-                    <div class="flex">
-
-                        <div class="w-[24px]">
+                <div class="flex flex-col gap-2">
+                    <div class="flex items-center gap-2">
+                        <div class="w-5 tablet:w-8 desktop:w-10 ">
                             <img src={clock} class="object-contain w-full h-full"/>
                         </div>
 
                         <p class="text-legend">22 Dec 2022, 14:57:42</p>
                     </div>
 
+                    <div class="flex gap-4">
+                        <p class="text-3xl desktop:text-6xl tablet:text-4xl">$350 654 120</p>
+
+                        <div class="flex items-center gap-2 mobile:gap-1">
+                            <div class="w-6 mobile:w-4">
+                                <img src={arrowUp} class="object-contain w-full h-full"/>
+                            </div>
+
+                            <p class="text-legend text-accent-orange tracking-tighter">+17%</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="rounded-3xl bg-gray w-1/3 overflow-hidden">
+        <div
+            class="mobile:absolute mobile:bottom-0 mobile:left-0 mobile:right-0 mobile:flex-row rounded-3xl bg-gray desktop:w-1/3 tablet:w-1/2 mobile:w-full overflow-hidden px-8 py-6 mobile:px-5 py-5">
+            <div class="flex flex-col mobile:flex-row mobile:justify-between gap-6 mobile:gap-2">
+                <div class="flex flex-col">
+                    <div class="flex gap-2">
+                        <p class="text-unit">738</p>
+
+                        <div class="w-5 desktop:w-8">
+                            <img src={geo} class="object-contain w-full h-full"/>
+                        </div>
+                    </div>
+
+                    <p class="text-unit-title">units</p>
+                </div>
+
+                <div class="flex flex-col">
+                    <div class="flex gap-2">
+                        <p class="text-unit">23 525</p>
+
+                        <div class="w-6 desktop:w-11">
+                            <img src={employee} class="object-contain w-full h-full"/>
+                        </div>
+                    </div>
+
+                    <p class="text-unit-title">Dodo people</p>
+                </div>
+
+                <div class="flex flex-col">
+                    <div class="flex gap-2">
+                        <p class="text-unit">15</p>
+
+                        <div class="w-5 desktop:w-11">
+                            <img src={global} class="object-contain w-full h-full"/>
+                        </div>
+                    </div>
+
+                    <p class="text-unit-title">Countries</p>
+                </div>
+            </div>
 
         </div>
     </div>
 
     <div
-        class="flex mobile:gap-[12px] tablet:gap-[26px] desktop:gap-[60px] mb-10 tablet:flex-col-reverse mobile:flex-col-reverse mobile:border-l mobile:pl-4">
+        class="flex mobile:gap-3 tablet:gap-6 desktop:gap-14 mb-10 tablet:flex-col-reverse mobile:flex-col-reverse mobile:border-l mobile:pl-4">
         <div class="w-[62px] tablet:w-[83px] desktop:w-[153px]">
             <img src={logoPmq} class="object-contain w-full h-full"/>
         </div>
