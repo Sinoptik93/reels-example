@@ -1,4 +1,4 @@
-import type { FC } from 'react';
+import type {FC} from 'react';
 import {
     Chart as ChartJS,
     CategoryScale,
@@ -8,7 +8,7 @@ import {
     Tooltip,
     Legend, ChartOptions, ChartData,
 } from 'chart.js';
-import { Bar } from 'react-chartjs-2';
+import {Bar} from 'react-chartjs-2';
 import ChartDataLabels, {Context} from 'chartjs-plugin-datalabels';
 
 ChartJS.register(
@@ -59,17 +59,17 @@ export const data: ChartData = {
             label: 'Year to year',
             data: [100, 200, 400, 800, 1600, 3200, 6400],
             backgroundColor: '#FF6900',
-
         }
     ],
 };
 
 const Chart: FC = () => {
- return (
-  <div>
-      <Bar options={options} data={data} />
-  </div>
- );
+    return (
+        <div>
+            {/* @ts-ignore */}
+            <Bar options={options} data={data}/>
+        </div>
+    );
 };
 
 export default Chart;
