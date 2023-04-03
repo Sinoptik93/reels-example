@@ -1,12 +1,14 @@
 ---
-import logoPmq from "@assets/icons/logo-pmq.svg";
+import { Image } from '@astrojs/image/components';
+
+import logoPmq from "@assets/icons/logopmq.svg";
 import logoDodo from "@assets/icons/logo-dodo-black.svg";
 import clock from "@assets/icons/clock.svg";
 import employee from "@assets/icons/employee.svg";
 import geo from "@assets/icons/geo.svg";
 import global from "@assets/icons/global.svg";
 import arrowUp from "@assets/icons/arrow-up.svg";
-import map from "@assets/images/map.png";
+import map from "@assets/images/map-vector.svg";
 ---
 
 <section class="container mb-40">
@@ -28,18 +30,18 @@ import map from "@assets/images/map.png";
 
     <div class="relative flex mobile:min-h-[480px] tablet:min-h-[640px] desktop:min-h-[758px] mobile:flex-col mb-10">
         <div class="rounded-3xl bg-gray desktop:w-2/3 tablet:w-1/2 mobile:w-full mobile:grow relative overflow-hidden">
-            <img src={map} class="absolute object-cover w-full h-full"/>
+            <Image src={map} alt="map" class="absolute object-cover w-full h-full"/>
 
             <div
                 class="relative flex flex-col h-full px-10 pt-10 pb-10 justify-between mobile:gap-4 mobile:px-5 mobile:py-5">
                 <div class="w-[117px] tablet:w-[160px] desktop:w-[253px]">
-                    <img src={logoDodo} class="object-contain w-full h-full"/>
+                    <Image src={logoDodo} alt="Dodo logo" class="object-contain w-full h-full"/>
                 </div>
 
                 <div class="flex flex-col gap-2">
                     <div class="flex items-center gap-2">
                         <div class="w-5 tablet:w-8 desktop:w-10 ">
-                            <img src={clock} class="object-contain w-full h-full"/>
+                            <Image src={clock} alt="Clock icon" class="object-contain w-full h-full"/>
                         </div>
 
                         <p class="text-legend">22 Dec 2022, 14:57:42</p>
@@ -50,7 +52,7 @@ import map from "@assets/images/map.png";
 
                         <div class="flex items-center gap-2 mobile:gap-1">
                             <div class="w-6 mobile:w-4">
-                                <img src={arrowUp} class="object-contain w-full h-full"/>
+                                <Image src={arrowUp} alt="Arrow up icon" class="object-contain w-full h-full"/>
                             </div>
 
                             <p class="text-legend text-accent-orange tracking-tighter">+17%</p>
@@ -68,7 +70,7 @@ import map from "@assets/images/map.png";
                         <p class="text-unit">738</p>
 
                         <div class="w-5 desktop:w-8">
-                            <img src={geo} class="object-contain w-full h-full"/>
+                            <Image src={geo} alt="Geo icon" class="object-contain w-full h-full"/>
                         </div>
                     </div>
 
@@ -80,7 +82,7 @@ import map from "@assets/images/map.png";
                         <p class="text-unit">23 525</p>
 
                         <div class="w-6 desktop:w-11">
-                            <img src={employee} class="object-contain w-full h-full"/>
+                            <Image alt="Employee icon" src={employee} class="object-contain w-full h-full"/>
                         </div>
                     </div>
 
@@ -92,7 +94,7 @@ import map from "@assets/images/map.png";
                         <p class="text-unit">15</p>
 
                         <div class="w-5 desktop:w-11">
-                            <img src={global} class="object-contain w-full h-full"/>
+                            <Image alt="Earth icon"  src={global} class="object-contain w-full h-full"/>
                         </div>
                     </div>
 
@@ -106,7 +108,7 @@ import map from "@assets/images/map.png";
     <div
         class="flex mobile:gap-3 tablet:gap-6 desktop:gap-14 mb-10 tablet:flex-col-reverse mobile:flex-col-reverse mobile:border-l mobile:pl-4">
         <div class="w-[62px] tablet:w-[83px] desktop:w-[153px]">
-            <img src={logoPmq} class="object-contain w-full h-full"/>
+            <Image src={logoPmq} alt="Logo PMQ" class="object-contain w-full h-full"/>
         </div>
         <div class="mobile:hidden tablet:h-[1px] tablet:max-w-[230px] desktop:w-[1px] bg-black"></div>
         <p class="text-regular">Fedor Ovchinnikov of Russian chain<br class="mobile:hidden tablet:hidden"> Dodo Pizza

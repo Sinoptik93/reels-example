@@ -1,4 +1,5 @@
 ---
+import { Image } from '@astrojs/image/components';
 
 import dodoLogo from "@assets/icons/logo-dodo-black.svg";
 import map from "@assets/images/map.svg";
@@ -19,7 +20,7 @@ import map from "@assets/images/map.svg";
 
     <div class="relative flex bg-gray rounded-xl  pb-5 pt-[110px] desktop:px-8 desktop:pt-[180px] desktop:pb-[86px] tablet:px-4 tablet:pt-[100px] tablet:pb-[86px] mobile:flex-col mobile:px-5  mobile:gap-4">
         <div class="absolute top-5 left-5 w-[117px] tablet:w-[170px] desktop:w-[254px] tablet:top-6 tablet:left-6 desktop:top-10 desktop:left-10">
-            <img src={dodoLogo} alt="Dodo logo"/>
+            <Image src={dodoLogo} alt="Dodo logo"/>
         </div>
 
         <div class="flex w-full gap-10 desktop:items-center tablet:items-center">
@@ -27,7 +28,7 @@ import map from "@assets/images/map.svg";
             <div class="flex flex-col items-center gap-4">
                 <p class="text-regular-3 hidden mobile:block">Franchise terms</p>
                 <div class="shrink-0 w-[130px] tablet:w-[211px] desktop:w-[313px]">
-                    <img src={map} alt="map"/>
+                    <Image src={map} alt="map"/>
                 </div>
             </div>
 

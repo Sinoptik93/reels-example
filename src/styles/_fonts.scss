@@ -9,11 +9,11 @@
 }
 
 .text-main {
-  @apply font-regular text-4xl tablet:text-7xl desktop:text-20xl text-white;
+  @apply font-regular text-4xl tablet:text-7xl desktop:text-[150px] text-white;
 }
 
 .text-sub-main {
-  @apply font-regular text-3xl tablet:text-3xl desktop:text-6xl;
+  @apply font-regular text-3xl tablet:text-3xl desktop:text-5xl;
 
   strong {
     @apply text-accent-orange;
@@ -83,7 +83,7 @@
 .text-regular-3 {
   @apply font-regular text-3xl tablet:text-3xl desktop:text-4xl tracking-tighter;
 
-  span {
+  a, span {
     @apply text-accent-orange;
   }
 }

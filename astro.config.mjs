@@ -10,5 +10,8 @@ export default defineConfig({
         react(),
         tailwind(),
         mdx(),
+        image({
+            serviceEntryPoint: "@astrojs/image/sharp"
+        }),
     ],
 });

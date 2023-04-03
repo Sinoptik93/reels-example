@@ -1,4 +1,6 @@
 ---
+import { Image } from '@astrojs/image/components';
+
 import clientPath from "@assets/images/store-path.png";
 ---
 
@@ -18,10 +20,7 @@ import clientPath from "@assets/images/store-path.png";
 </div>
 
 <div class="mb-[120px]">
+    <Image src={clientPath} alt="client path" class="object-cover w-full h-full" />
 
-    <img src={clientPath} class="object-cover w-full h-full" />
-
-    <div class="container">
-
-    </div>
+    <div class="container"></div>
 </div>

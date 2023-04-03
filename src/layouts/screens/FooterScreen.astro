@@ -1,4 +1,6 @@
 ---
+import { Image } from '@astrojs/image/components';
+
 import pizza from "@assets/images/pizza.png";
 import logoDodo from "@assets/icons/logo-dodo-outlined.svg";
 ---
@@ -37,7 +39,7 @@ import logoDodo from "@assets/icons/logo-dodo-outlined.svg";
 
     <div class="relative flex items-center justify-center mobile:flex-col mobile:h-[920px]">
         <div class="absolute left-0 mobile:left-auto mobile:top-0 w-[320px] h-[320px] tablet:w-[333px] tablet:h-[333px] desktop:w-[480px] desktop:h-[480px] ">
-            <img src={pizza} class="absolute object-cover w-full h-full"/>
+            <Image src={pizza} alt="Pizza" class="absolute object-cover w-full h-full"/>
         </div>
 
         <div class="relative flex flex-col bg-black rounded-[463px] mobile:max-w-[320px] px-5 py-[136px] tablet:px-[100px] tablet:py-[60px] desktop:px-[180px] desktop:py-[90px] desktop:max-w-[825px]">
@@ -62,7 +64,7 @@ import logoDodo from "@assets/icons/logo-dodo-outlined.svg";
 
         <div class="absolute right-0 mobile:right-auto mobile:bottom-0 w-[320px] h-[320px] tablet:w-[333px] tablet:h-[333px] desktop:w-[480px] desktop:h-[480px] rounded-full bg-accent-orange flex items-center justify-center">
             <div class="w-[243px] tablet:w-[253px] desktop:w-[375px]">
-                <img src={logoDodo} class="object-cover w-full h-full"/>
+                <Image src={logoDodo} alt="Dodo logo" class="object-cover w-full h-full"/>
             </div>
         </div>
     </div>

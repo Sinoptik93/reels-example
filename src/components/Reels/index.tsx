@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { Pagination } from 'swiper';
 
-import 'swiper/swiper-bundle.min.css';
 import videomp4 from "@assets/videos/short-1.mp4"
 import videowebm from "@assets/videos/short-1.webm"
 import videomp42 from "@assets/videos/short-2.mp4"
@@ -16,7 +15,6 @@ import {
     Swiper,
     SwiperSlide
 } from 'swiper/react';
-import { EffectCards } from "swiper";
 
 
 function Reels() {
@@ -29,11 +27,10 @@ function Reels() {
             className="container h-[520px] overflow-hidden w-full swiper-backface-hidden"
             spaceBetween={10}
             slidesPerView={"auto"}
-            // effect={"cards"}
             centeredSlides
             loop
             loopPreventsSliding
-            modules={[Pagination, EffectCards]}
+            modules={[Pagination]}
             pagination={{ clickable: true }}
             onSlideChange={(swiper) => {
                 const currentIndex = swiper.activeIndex;
