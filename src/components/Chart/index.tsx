@@ -4,6 +4,9 @@ import {
     CategoryScale,
     LinearScale,
     BarElement,
+    LineElement,
+    LineController,
+    PointElement,
     Title,
     Tooltip,
     Legend, ChartOptions, ChartData,
@@ -15,6 +18,9 @@ ChartJS.register(
     CategoryScale,
     LinearScale,
     BarElement,
+    PointElement,
+    LineElement,
+    LineController,
     ChartDataLabels
 );
 
@@ -56,10 +62,25 @@ export const data: ChartData = {
     labels,
     datasets: [
         {
+            type: 'line' as const,
+            label: 'Year to year line',
+            borderColor: 'rgb(234,0,0)',
+            tension: 0.4,
+            pointStyle: false,
+            borderWidth: 2,
+            fill: 1,
+            backgroundColor: "#ea5959",
+            data: [100, 200, 400, 800, 1600, 3200, 6400],
+            datalabels: {
+                display: false,
+            }
+        },
+        {
             label: 'Year to year',
             data: [100, 200, 400, 800, 1600, 3200, 6400],
             backgroundColor: '#FF6900',
-        }
+            fill: 1,
+        },
     ],
 };
 
