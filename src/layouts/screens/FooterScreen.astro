@@ -6,30 +6,30 @@ import logoDodo from "@assets/icons/logo-dodo-outlined.svg";
 ---
 
 <section class="container mb-40">
-    <div class="tablet:min-h-[600px] desktop:min-h-[400px] mb-80">
-        <div class="relative mobile:pt-[12px] mb-[30px] tablet:mb-[80px] desktop:mb-[108px]">
+    <div class="tablet:min-h-[600px] desktop:min-h-[400px] mb-40 tablet:mb-60 desktop:mb-80">
+        <div class="tablet:relative desktop:relative mobile:pt-[12px] tablet:mb-[80px] desktop:mb-[108px]">
             <h2 class="text-h-2 tablet:mb-6 mobile:mb-5"><span>Learn more</span> about Dodo franchise</h2>
 
             <div
-                class="absolute flex flex-col gap-4 w-full desktop:max-w-[860px] desktop:top-[152px] desktop:left-[450px]">
-                <div class="flex gap-4">
+                class="2xl:absolute flex flex-col gap-4 desktop:gap-9 w-full desktop:max-w-[962px] desktop:top-[156px] desktop:left-[437px]">
+                <div class="flex gap-4 desktop:gap-[56px] mobile:flex-col">
                     <a
-                        class="border-accent-orange px-4 py-4 text-button text-accent-orange border-2 rounded-xl w-1/2 text-center"
+                        class="border-accent-orange px-4 py-4 desktop:py-[26px] text-button text-accent-orange border-2 rounded-xl  tablet:w-1/2 desktop:w-1/2 text-center"
                         href="#"
                     >Investor Relations</a>
                     <a
-                        class="border-accent-orange px-4 py-4 text-button text-accent-orange border-2 rounded-xl w-1/2 text-center"
+                        class="border-accent-orange px-4 py-4 desktop:py-[26px] text-button text-accent-orange border-2 rounded-xl tablet:w-1/2 desktop:w-1/2 text-center"
                         href="#"
                     >Open Sales</a>
 
                 </div>
-                <div class="flex gap-4">
+                <div class="flex gap-4 desktop:gap-[56px] mobile:flex-col">
                     <a
-                        class="border-accent-orange px-4 py-4 text-button text-accent-orange border-2 rounded-xl w-1/2 text-center"
+                        class="border-accent-orange px-4 py-4 desktop:py-[26px] text-button text-accent-orange border-2 rounded-xl tablet:w-1/2 desktop:w-1/2 text-center"
                         href="#"
                     >About our tech</a>
                     <a
-                        class="border-accent-orange px-4 py-4 text-button text-accent-orange border-2 rounded-xl w-1/2 text-center"
+                        class="border-accent-orange px-4 py-4 desktop:py-[26px] text-button text-accent-orange border-2 rounded-xl tablet:w-1/2 desktop:w-1/2 text-center"
                         href="#"
                     >Dodo Brands</a>
                 </div>
@@ -42,14 +42,14 @@ import logoDodo from "@assets/icons/logo-dodo-outlined.svg";
             <Image src={pizza} format="webp" alt="Pizza" class="absolute object-cover w-full h-full"/>
         </div>
 
-        <div class="relative flex flex-col bg-black rounded-[463px] mobile:max-w-[320px] px-5 py-[136px] tablet:px-[100px] tablet:py-[60px] desktop:px-[180px] desktop:py-[90px] desktop:max-w-[825px]">
+        <div class="relative flex flex-col bg-black rounded-[463px] mobile:max-w-[320px] px-5 py-[136px] tablet:px-[100px] tablet:py-[60px] desktop:pl-[180px] desktop:pr-[226px] desktop:pt-[104px] desktop:pb-[100px]">
             <div class="tablet:max-w-[300px] desktop:max-w-[470px]">
-                <p class="text-white text-[16px] tablet:text-[20px] desktop:text-[30px] font-regular tracking-tighter pb-4">Number of orders placed while you’ve
+                <p class="text-white text-[16px] tablet:text-[20px] desktop:text-[30px] desktop:max-w-[443px] font-regular leading-none tracking-tighter pb-4">Number of orders placed while you’ve
                     been scrolling this page</p>
                 <p class="text-white text-[160px] tablet:text-[170px] desktop:text-[227px] font-light leading-none">868</p>
 
                 <div class="flex items-center gap-2 -mt-8">
-                    <div class="w-5 tablet:w-5 desktop:w-6 text-white">
+                    <div class="w-6 tablet:w-6 desktop:w-6 text-white">
                         <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg" class="object-contain w-full h-full">
                             <path
                                 d="M22.9393 0.172564C18.1703 -0.453206 13.334 0.634855 9.29255 3.2428C5.25105 5.85075 2.26697 9.80912 0.872187 14.4123C-0.522593 19.0156 -0.237428 23.9645 1.67685 28.3771C3.59113 32.7896 7.01013 36.379 11.3244 38.5055C15.6387 40.632 20.568 41.1573 25.2335 39.9879C29.8991 38.8185 33.9978 36.0304 36.7991 32.1204C39.6004 28.2104 40.9223 23.4328 40.529 18.639C40.1358 13.8452 38.053 9.34679 34.652 5.94562C31.4902 2.78372 27.3729 0.75431 22.9393 0.172564V0.172564ZM31.5683 29.9243C31.3214 30.2193 30.9678 30.4047 30.5848 30.4401C30.2018 30.4755 29.8203 30.358 29.5235 30.1132L19.3743 21.4139C19.2108 21.2773 19.0793 21.1065 18.9891 20.9135C18.899 20.7205 18.8522 20.5101 18.8523 20.2971V5.79814C18.8523 5.41361 19.0051 5.04482 19.277 4.77291C19.5489 4.50101 19.9177 4.34825 20.3022 4.34825C20.6867 4.34825 21.0555 4.50101 21.3274 4.77291C21.5993 5.04482 21.7521 5.41361 21.7521 5.79814V19.6152L31.3794 27.8796C31.5262 28.0012 31.6477 28.1506 31.7367 28.3192C31.8257 28.4879 31.8806 28.6724 31.8981 28.8623C31.9157 29.0522 31.8956 29.2437 31.839 29.4258C31.7824 29.6079 31.6904 29.777 31.5683 29.9235V29.9243Z"
@@ -57,7 +57,7 @@ import logoDodo from "@assets/icons/logo-dodo-outlined.svg";
                         </svg>
                     </div>
 
-                    <p class="text-legend text-white">22 Dec 2022, 14:57:42</p>
+                    <p class="text-legend text-white uppercase">22 Dec 2022, 14:57:42</p>
                 </div>
             </div>
         </div>

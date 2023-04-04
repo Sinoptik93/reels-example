@@ -5,9 +5,9 @@ import team from "@assets/images/team-example.png";
 import logoRestaurantLeadership from "@assets/icons/logo-restaurant-leadership.svg";
 ---
 
-<div class="container flex desktop:items-center gap-10 mb-[120px] mobile:flex-col">
+<section class="container flex desktop:items-center gap-10 desktop:mb-[300px] mobile:flex-col">
     <div class="flex flex-col flex-1">
-        <p class="text-regular-2 tablet:mb-10 ">
+        <p class="text-regular-2 desktop:leading-custom tablet:mb-10 desktop:-mt-20 ">
             Everything ready<br class="mobile:hidden tablet:hidden"> since day one and free<br class="mobile:hidden tablet:hidden"> for franchisees.<br class="mobile:hidden tablet:hidden"> Improved, developed<br class="mobile:hidden tablet:hidden"> and supported<br class="mobile:hidden tablet:hidden"> <span>by our team 24/7</span>
         </p>
 
@@ -20,7 +20,7 @@ import logoRestaurantLeadership from "@assets/icons/logo-restaurant-leadership.s
         </div>
     </div>
 
-    <div class="relative max-w-[680px] mobile:min-h-[480px] rounded-xl overflow-hidden flex-1 min-h-[600px]">
+    <div class="relative max-w-[680px] mobile:min-h-[480px] rounded-xl overflow-hidden flex-1 min-h-[710px]">
         <Image src={team} format="webp" alt="Dodo team" class="absolute object-cover w-full h-full" />
     </div>
 
@@ -31,4 +31,4 @@ import logoRestaurantLeadership from "@assets/icons/logo-restaurant-leadership.s
         <div class="mobile:hidden tablet:h-[1px] tablet:max-w-[230px] desktop:w-[1px] bg-black"></div>
         <p class="text-regular">Industry’s first truly digital-first concept,<br>with technology figuring into all aspects<br>of operations</p>
     </div>
-</div>
+</section>

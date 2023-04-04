@@ -6,18 +6,16 @@ import davidSweeney from "@assets/images/david-sweeney.png";
 import ContactForm from "@components/ContactForm";
 ---
 
-<section class="container mb-40">
-    <div>
-        <div class="relative mobile:pt-3 mb-8 tablet:mb-20 desktop:mb-20">
-            <h2 class="text-h-2 mb-8 mobile:mb-6">Keep <span>in touch</span></h2>
-        </div>
+<section class="container mb-[96px]">
+    <div class="relative mobile:pt-3 mb-8 tablet:mb-20 desktop:mb-[26px]">
+        <h2 class="text-h-2">Keep <span>in touch</span></h2>
     </div>
 
     <div class="flex mobile:flex-col">
-        <div class="relative grow flex min-h-[480px] tablet:min-h-[520px] desktop:min-h-[620px] rounded-xl overflow-hidden items-end">
+        <div class="relative desktop:basis-[475px] flex min-h-[480px] tablet:min-h-[520px] desktop:min-h-[620px] rounded-xl overflow-hidden items-end">
             <Image src={antonDeryagin} format="webp" alt="Anton Deryagin" class="absolute object-cover w-full h-full"/>
 
-            <div class="flex flex-col relative px-4 py-14 tablet:px-6 tablet:py-15 desktop:px-10 desktop:py-20">
+            <div class="flex flex-col relative px-4 py-14 tablet:px-6 tablet:py-15 desktop:px-10 desktop:pb-[54px]">
                 <p class="text-regular-3 text-white">Anton Deryagin</p>
                 <p class="text-contact-info text-white">Head of International Franchising</p>
                 <a class="text-contact-info text-white underline underline-offset-2" href="#">a.deryagin@dodobrands.io</a>
@@ -25,10 +23,10 @@ import ContactForm from "@components/ContactForm";
             </div>
         </div>
 
-        <div class="relative grow flex min-h-[480px] tablet:min-h-[520px] desktop:min-h-[620px] rounded-xl overflow-hidden items-end">
+        <div class="relative desktop:basis-[475px] flex min-h-[480px] tablet:min-h-[520px] desktop:min-h-[620px] rounded-xl overflow-hidden items-end">
             <Image src={davidSweeney} format="webp" alt="David Sweeney" class="absolute object-cover w-full h-full"/>
 
-            <div class="flex flex-col relative px-4 py-14 tablet:px-6 tablet:py-15 desktop:px-10 desktop:py-20">
+            <div class="flex flex-col relative px-4 py-14 tablet:px-6 tablet:py-15 desktop:px-10 desktop:pb-[54px]">
                 <p class="text-regular-3 text-white">David Sweeney</p>
                 <p class="text-contact-info text-white">Head of Business Development</p>
                 <a class="text-contact-info text-white underline underline-offset-2" href="#">d.sweeney@dodobrands.io</a>

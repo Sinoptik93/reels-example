@@ -12,9 +12,9 @@ module.exports = {
             screens: {
                 sm: '640px',
                 md: '768px',
-                lg: '1024px',
+                lg: '976px',
                 xl: '1280px',
-                '2xl': '1400px',
+                '2xl': '1432px',
             },
             padding: {
                 DEFAULT: '1rem',
@@ -29,8 +29,11 @@ module.exports = {
                 regular: ["Factor A Regular", ...defaultTheme.fontFamily.sans],
                 light: ["Factor A Light", ...defaultTheme.fontFamily.sans],
             },
+            lineHeight: {
+                'custom': '1.1',
+            },
             letterSpacing: {
-                tightest: "-0.05em",
+                tightest: "-0.04em",
                 widest: "0.2em",
             },
             fontSize: {

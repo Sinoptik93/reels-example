@@ -24,7 +24,7 @@ function Reels() {
 
     return (
         <Swiper
-            className="container h-[95vh] tablet:h-[520px] desktop:h-[520px] overflow-hidden w-full swiper-backface-hidden"
+            className="container h-[95vh] tablet:h-[520px] desktop:h-[520px] mb-20 overflow-hidden w-full swiper-backface-hidden"
             spaceBetween={10}
             slidesPerView={"auto"}
             centeredSlides
