@@ -11,8 +11,8 @@ import arrowUp from "@assets/icons/arrow-up.svg";
 import map from "@assets/images/map-vector.svg";
 ---
 
-<section class="container desktop:mb-[278px]">
-    <div class="tablet:min-h-[600px] desktop:min-h-[400px] tablet:mb-[80px]">
+<section class="container tablet:mb-[178px] desktop:mb-[278px]">
+    <div class="tablet:min-h-[176px] desktop:min-h-[400px] tablet:mb-[80px]">
         <div class="relative mobile:pt-3 mb-7 ">
             <h2 class="text-h-2 mobile:mb-5 desktop:leading-custom">Digits make transparent<br> <span>everything</span>
             </h2>
@@ -20,7 +20,7 @@ import map from "@assets/images/map-vector.svg";
             <p class="text-regular hidden desktop:block desktop:absolute desktop:top-[163px] desktop:left-[487px]">
                 that happens in your business<br class="mobile:hidden tablet:hidden"> every moment
             </p>
-            <p class="text-regular mobile:hidden desktop:hidden tablet:absolute tablet:top-[227px] tablet:left-[377px]">
+            <p class="text-regular mobile:hidden desktop:hidden tablet:absolute tablet:top-[136px] tablet:left-[377px]">
                 that happens in your business every moment
             </p>
             <p class="text-regular tablet:hidden desktop:hidden tablet:absolute tablet:top-[177px] tablet:left-[467px]">
@@ -30,30 +30,30 @@ import map from "@assets/images/map-vector.svg";
     </div>
 
     <div
-        class="relative flex mobile:min-h-[480px] tablet:min-h-[640px] desktop:min-h-[758px] mobile:flex-col mb-[100px] desktop:-mt-[18px]">
-        <div class="rounded-3xl bg-gray desktop:w-2/3 tablet:w-1/2 mobile:w-full mobile:grow relative overflow-hidden">
+        class="relative flex mobile:min-h-[480px] tablet:min-h-[510px] desktop:min-h-[758px] mobile:flex-col tablet:mb-[69px] desktop:mb-[100px] desktop:-mt-[18px]">
+        <div class="rounded-3xl bg-gray desktop:w-2/3 tablet:w-2/3 mobile:w-full mobile:grow relative overflow-hidden">
             <Image src={map} alt="map" class="absolute object-cover w-full h-full"/>
 
             <div
-                class="relative flex flex-col h-full px-10 pt-10 pb-[62px] justify-between mobile:gap-4 mobile:px-5 mobile:py-5">
-                <div class="w-[117px] tablet:w-[160px] desktop:w-[253px]">
+                class="relative flex flex-col h-full tablet:px-[26px] tablet:pt-[26px] tablet:pb-10 desktop:px-10 desktop:pt-10 pb-[62px] justify-between mobile:gap-4 mobile:px-5 mobile:py-5">
+                <div class="w-[117px] tablet:w-[171px] desktop:w-[253px]">
                     <Image src={logoDodo} alt="Dodo logo" class="object-contain w-full h-full"/>
                 </div>
 
                 <div class="flex flex-col gap-2">
                     <div class="flex items-center gap-3">
-                        <div class="w-5 tablet:w-8 desktop:w-10 ">
+                        <div class="w-5 tablet:w-[27px] desktop:w-10 ">
                             <Image src={clock} alt="Clock icon" class="object-contain w-full h-full"/>
                         </div>
 
-                        <p class="text-legend uppercase">22 Dec 2022, 14:57:42</p>
+                        <p class="text-xs tablet:tracking-widest desktop:text-legend uppercase">22 Dec 2022, 14:57:42</p>
                     </div>
 
                     <div class="flex gap-4">
                         <p class="text-2xl desktop:text-[60px] tablet:text-4xl tracking-tightest">$350 654 120</p>
 
                         <div class="flex items-center gap-2 mobile:gap-1">
-                            <div class="w-6 mobile:w-4">
+                            <div class="desktop:w-6 tablet:w-4 mobile:w-4">
                                 <Image src={arrowUp} alt="Arrow up icon" class="object-contain w-full h-full"/>
                             </div>
 
@@ -65,13 +65,13 @@ import map from "@assets/images/map-vector.svg";
         </div>
 
         <div
-            class="mobile:absolute mobile:bottom-0 mobile:left-0 mobile:right-0 mobile:flex-row rounded-3xl bg-gray desktop:w-1/3 tablet:w-1/2 mobile:w-full overflow-hidden desktop:px-[27px] desktop:py-[35px] mobile:px-5 py-5">
-            <div class="flex flex-col mobile:flex-row mobile:justify-between gap-[33px] mobile:gap-2">
+            class="mobile:absolute mobile:bottom-0 mobile:left-0 mobile:right-0 mobile:flex-row rounded-3xl bg-gray desktop:w-1/3 tablet:w-1/3 mobile:w-full overflow-hidden tablet:px-[19px] tablet:py-[14px] desktop:px-[27px] desktop:py-[35px] mobile:px-5 py-5">
+            <div class="flex flex-col mobile:flex-row mobile:justify-between tablet:gap-[16px] desktop:gap-[33px] mobile:gap-2">
                 <div class="flex flex-col gap-1">
                     <div class="flex gap-0.5">
                         <p class="text-unit">738</p>
 
-                        <div class="w-5 desktop:w-9">
+                        <div class="w-5 tablet:w-6 desktop:w-9">
                             <Image src={geo} alt="Geo icon" class="object-contain w-full h-full"/>
                         </div>
                     </div>
@@ -83,7 +83,7 @@ import map from "@assets/images/map-vector.svg";
                     <div class="flex gap-0.5">
                         <p class="text-unit">23 525</p>
 
-                        <div class="w-6 desktop:w-11">
+                        <div class="w-6 tablet:w-8 desktop:w-11">
                             <Image alt="Employee icon" src={employee} class="object-contain w-full h-full"/>
                         </div>
                     </div>
@@ -95,7 +95,7 @@ import map from "@assets/images/map-vector.svg";
                     <div class="flex gap-0.5">
                         <p class="text-unit">15</p>
 
-                        <div class="w-5 desktop:w-11">
+                        <div class="w-5 tablet:w-8 desktop:w-11">
                             <Image alt="Earth icon" src={global} class="object-contain w-full h-full"/>
                         </div>
                     </div>
@@ -108,12 +108,12 @@ import map from "@assets/images/map-vector.svg";
     </div>
 
     <div
-        class="flex mobile:gap-3 tablet:gap-6 desktop:gap-6 mb-10 tablet:flex-col-reverse mobile:flex-col-reverse mobile:border-l mobile:pl-4">
-        <div class="w-[62px] tablet:w-[83px] desktop:w-[153px]">
+        class="flex mobile:gap-3 tablet:gap-9 desktop:gap-6 mb-10 mobile:flex-col-reverse mobile:border-l mobile:pl-4">
+        <div class="w-[62px] tablet:w-[83px] desktop:w-[153px] shrink-0">
             <Image src={logoPmq} alt="Logo PMQ" class="object-contain w-full"/>
         </div>
-        <div class="mobile:hidden tablet:h-[1px] tablet:max-w-[230px] desktop:w-[1px] desktop:mt-2.5 bg-black"></div>
-        <p class="text-regular-2 tracking-tightest desktop:ml-[28px] desktop:leading-custom">Fedor Ovchinnikov of Russian chain<br class="mobile:hidden tablet:hidden"> Dodo Pizza
-            may be the Steve Jobs<br class="mobile:hidden tablet:hidden"> of pizza</p>
+        <div class="mobile:hidden tablet:w-[1px] tablet:max-w-[230px] desktop:w-[1px] desktop:mt-2.5 bg-black"></div>
+        <p class="text-regular-2 tablet:text-4xl tracking-tightest desktop:ml-[28px] desktop:leading-custom">Fedor Ovchinnikov of Russian chain<br class="mobile:hidden"> Dodo Pizza
+            may be the Steve Jobs<br class="mobile:hidden"> of pizza</p>
     </div>
 </section>

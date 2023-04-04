@@ -17,8 +17,8 @@ module.exports = {
                 '2xl': '1432px',
             },
             padding: {
-                DEFAULT: '1rem',
-                sm: '2rem',
+                DEFAULT: '1.25rem',
+                sm: '1rem',
                 lg: '1rem',
                 xl: '1rem',
                 '2xl': '1rem',
@@ -37,16 +37,17 @@ module.exports = {
                 widest: "0.2em",
             },
             fontSize: {
-                "xs": ["0.625rem", {lineHeight: "normal"}],
-                "2xl": ["1.625rem", {lineHeight: "normal"}],
-                "3xl": ["1.688rem", {lineHeight: "normal"}],
-                "4xl": ["2.5rem", {lineHeight: "normal"}],
-                "5xl": ["2.875rem", {lineHeight: "normal"}],
-                "6xl": ["4.375rem", {lineHeight: "normal"}],
-                "7xl": ["5rem", {lineHeight: "normal"}],
-                "8xl": ["6.25rem", {lineHeight: "normal"}],
-                "10xl": ["7.5rem", {lineHeight: "normal"}],
-                "20xl": ["10.625rem", {lineHeight: "normal"}],
+                "xs": ["0.625rem", {lineHeight: "normal"}], // 10px
+                "sm": ["0.75rem", {lineHeight: "normal"}], // 12px
+                "2xl": ["1.625rem", {lineHeight: "normal"}], // 26px
+                "3xl": ["1.688rem", {lineHeight: "normal"}], // 27px
+                "4xl": ["2.5rem", {lineHeight: "normal"}], // 40px
+                "5xl": ["2.875rem", {lineHeight: "normal"}], // 46px
+                "6xl": ["4.375rem", {lineHeight: "normal"}], // 70px
+                "7xl": ["5rem", {lineHeight: "normal"}], // 80px
+                "8xl": ["6.25rem", {lineHeight: "normal"}], // 100px
+                "10xl": ["7.5rem", {lineHeight: "normal"}], // 120px
+                "20xl": ["10.625rem", {lineHeight: "normal"}], // 170px
             },
             screens: {
                 mobile: {'min': '320px', 'max': '767px'},

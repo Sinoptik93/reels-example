@@ -37,7 +37,7 @@
 }
 
 .text-h-2 {
-  @apply font-regular text-5xl tablet:text-7xl desktop:text-8xl tracking-tightest dark:text-white;
+  @apply font-regular text-5xl tablet:text-7xl desktop:text-8xl tablet:leading-custom tracking-tightest dark:text-white;
 
   span {
     @apply text-accent-orange;
@@ -45,7 +45,7 @@
 }
 
 .text-subtitle {
-  @apply font-regular text-accent-orange text-xs tablet:text-base desktop:text-base tracking-widest uppercase dark:text-white;
+  @apply font-regular text-accent-orange text-xs tablet:text-[12px] desktop:text-base tracking-widest uppercase dark:text-white;
 }
 
 .text-stories-title {
@@ -65,7 +65,7 @@
 }
 
 .text-regular {
-  @apply font-regular text-xl tablet:text-4xl desktop:text-4xl tracking-tightest dark:text-white;
+  @apply font-regular text-xl tablet:text-[27px] desktop:text-4xl tracking-tightest dark:text-white;
 
   span {
     @apply text-accent-orange;
@@ -73,7 +73,7 @@
 }
 
 .text-regular-2 {
-  @apply font-regular text-3xl tablet:text-3xl desktop:text-[3.75rem] tracking-tightest dark:text-white;
+  @apply font-regular text-3xl tablet:text-3xl tablet:leading-custom desktop:text-[3.75rem] tracking-tightest dark:text-white;
 
   span {
     @apply text-accent-orange;
@@ -97,7 +97,7 @@
 }
 
 .text-unit-title {
-  @apply font-regular leading-none text-[0.8em] tablet:text-xl desktop:text-[1rem] tracking-widest uppercase;
+  @apply font-regular leading-none text-[0.8em] tablet:text-sm desktop:text-[1rem] tracking-widest uppercase;
 }
 
 .text-accent {
@@ -109,7 +109,7 @@
 }
 
 .text-input-label {
-  @apply font-regular text-base tablet:text-base desktop:text-base tracking-widest uppercase;
+  @apply font-regular text-base tablet:text-[14px] desktop:text-base tracking-widest uppercase;
 }
 
 .text-contact-info {
