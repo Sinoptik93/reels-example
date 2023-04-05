@@ -14,14 +14,14 @@ module.exports = {
                 md: '768px',
                 lg: '976px',
                 xl: '1280px',
-                '2xl': '1432px',
+                '2xl': '1464px',
             },
             padding: {
                 DEFAULT: '1.25rem',
                 sm: '1rem',
                 lg: '1rem',
                 xl: '1rem',
-                '2xl': '1rem',
+                '2xl': '2rem',
             },
         },
         extend: {
