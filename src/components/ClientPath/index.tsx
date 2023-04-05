@@ -5,6 +5,10 @@ import pathLeft from "@assets/videos/path-1-left.webm"
 import pathCenter from "@assets/videos/path-2-center.webm"
 import pathRight from "@assets/videos/path-3-right.webm"
 import pathFull from "@assets/videos/path.webm"
+import pathLeftExtra from "@assets/videos/path-1-left.mp4"
+import pathCenterExtra from "@assets/videos/path-2-center.mp4"
+import pathRightExtra from "@assets/videos/path-3-right.mp4"
+import pathFullExtra from "@assets/videos/path.mp4"
 
 import {
     Swiper,
@@ -50,6 +54,7 @@ function ClientPath() {
                     <video className="top-0 left-0 min-h-full min-w-full object-contain" loop autoPlay muted
                            playsInline>
                         <source src={pathLeft} type="video/webm"/>
+                        <source src={pathLeftExtra} type="video/mp4"/>
                     </video>
                 </SwiperSlide>
 
@@ -58,6 +63,7 @@ function ClientPath() {
                     <video className="top-0 left-0 min-h-full min-w-full object-contain" loop autoPlay muted
                            playsInline>
                         <source src={pathCenter} type="video/webm"/>
+                        <source src={pathCenterExtra} type="video/mp4"/>
                     </video>
                 </SwiperSlide>
 
@@ -66,6 +72,7 @@ function ClientPath() {
                     <video className="top-0 left-0 min-h-full min-w-full object-contain" loop autoPlay muted
                            playsInline>
                         <source src={pathRight} type="video/webm"/>
+                        <source src={pathRightExtra} type="video/mp4"/>
                     </video>
                 </SwiperSlide>
             </Swiper>
@@ -73,6 +80,7 @@ function ClientPath() {
             <div className="relative">
                 <video className="top-0 left-0 desktop:h-[877px] tablet:h-[430px] w-[100vw] absolute mobile:hidden" loop autoPlay muted playsInline>
                     <source src={pathFull} type="video/webm"/>
+                    <source src={pathFullExtra} type="video/mp4"/>
                 </video>
 
                 <div className="relative container desktop:h-[877px] tablet:h-[430px]">
