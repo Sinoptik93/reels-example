@@ -53,6 +53,7 @@ module.exports = {
                 mobile: {'min': '320px', 'max': '767px'},
                 tablet: {'min': '768px', 'max': '1255px'},
                 desktop: {'min': '1256px'},
+                tall: {'min': '1256px', 'max': '1440px'}
             },
             colors: {
                 "white": "hsl(0,0%,100%)",

@@ -2,6 +2,7 @@
 import { Image } from '@astrojs/image/components';
 
 import clientPath from "@assets/images/store-path.png";
+import ClientPath from "@components/ClientPath";
 ---
 
 <div class="container">
@@ -19,8 +20,6 @@ import clientPath from "@assets/images/store-path.png";
     </div>
 </div>
 
-<div class="mb-9 tablet:mb-[195px] desktop:mb-[112px] mobile:min-h-[550px]">
-    <Image src={clientPath} format="webp" alt="client path" class="object-cover w-full h-full" />
-
-    <div class="container"></div>
+<div class="mb-9 tablet:mb-[195px] desktop:mb-[112px] mobile:min-h-[550px] bg-[#FFFDFF] rounded-2xl overflow-hidden">
+    <ClientPath client:load/>
 </div>
