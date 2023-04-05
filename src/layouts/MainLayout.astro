@@ -17,6 +17,11 @@ const {title, frontmatter,} = Astro.props as MDXLayoutProps<Props>;
     <title>{title}</title>
 </head>
 <body>
-<slot/>
+<div style="
+    transform: scale(0.8);
+    transform-origin: top center;
+">
+    <slot/>
+</div>
 </body>
 </html>
