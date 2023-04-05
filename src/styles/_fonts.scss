@@ -81,7 +81,7 @@
 }
 
 .text-regular-3 {
-  @apply font-regular text-3xl tablet:text-3xl desktop:text-4xl tracking-tightest dark:text-white;
+  @apply font-regular text-2xl tablet:text-3xl desktop:text-4xl tracking-tightest dark:text-white;
 
   span {
     @apply text-accent-orange;
@@ -93,11 +93,11 @@
 }
 
 .text-unit {
-  @apply font-regular leading-none text-[1.75em] tablet:text-4xl desktop:text-[3.75rem] tracking-tightest;
+  @apply font-regular leading-none text-2xl tablet:text-4xl desktop:text-[3.75rem] tracking-tightest;
 }
 
 .text-unit-title {
-  @apply font-regular leading-none text-[0.8em] tablet:text-sm desktop:text-[1rem] tracking-widest uppercase;
+  @apply font-regular leading-none text-xs tablet:text-sm desktop:text-[1rem] tracking-widest uppercase;
 }
 
 .text-accent {

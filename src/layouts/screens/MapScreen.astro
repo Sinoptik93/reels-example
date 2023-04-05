@@ -11,7 +11,7 @@ import arrowUp from "@assets/icons/arrow-up.svg";
 import map from "@assets/images/map-vector.svg";
 ---
 
-<section class="container tablet:mb-[178px] desktop:mb-[278px]">
+<section class="container mobile:mb-[122px] tablet:mb-[178px] desktop:mb-[278px]">
     <div class="tablet:min-h-[176px] desktop:min-h-[400px] tablet:mb-[80px]">
         <div class="relative mobile:pt-3 mb-7 ">
             <h2 class="text-h-2 mobile:mb-5 desktop:leading-custom">Digits make transparent<br> <span>everything</span>
@@ -30,7 +30,7 @@ import map from "@assets/images/map-vector.svg";
     </div>
 
     <div
-        class="relative flex mobile:min-h-[480px] tablet:min-h-[510px] desktop:min-h-[758px] mobile:flex-col tablet:mb-[69px] desktop:mb-[100px] desktop:-mt-[18px]">
+        class="relative flex mobile:mb-10 mobile:min-h-[480px] tablet:min-h-[510px] desktop:min-h-[758px] mobile:flex-col tablet:mb-[69px] desktop:mb-[100px] desktop:-mt-[18px]">
         <div class="rounded-3xl bg-gray desktop:w-2/3 tablet:w-2/3 mobile:w-full mobile:grow relative overflow-hidden">
             <Image src={map} alt="map" class="absolute object-cover w-full h-full"/>
 
@@ -65,13 +65,13 @@ import map from "@assets/images/map-vector.svg";
         </div>
 
         <div
-            class="mobile:absolute mobile:bottom-0 mobile:left-0 mobile:right-0 mobile:flex-row rounded-3xl bg-gray desktop:w-1/3 tablet:w-1/3 mobile:w-full overflow-hidden tablet:px-[19px] tablet:py-[14px] desktop:px-[27px] desktop:py-[35px] mobile:px-5 py-5">
-            <div class="flex flex-col mobile:flex-row mobile:justify-between tablet:gap-[16px] desktop:gap-[33px] mobile:gap-2">
+            class="mobile:absolute mobile:bg-[#F4F2F2AA] mobile:bottom-0 mobile:left-0 mobile:right-0 mobile:flex-row rounded-3xl bg-gray desktop:w-1/3 tablet:w-1/3 mobile:w-full overflow-hidden tablet:px-[19px] tablet:py-[14px] desktop:px-[27px] desktop:py-[35px] mobile:px-5 py-5">
+            <div class="flex flex-col mobile:flex-row mobile:justify-between tablet:gap-[16px] desktop:gap-[33px] mobile:gap-1">
                 <div class="flex flex-col gap-1">
                     <div class="flex gap-0.5">
                         <p class="text-unit">738</p>
 
-                        <div class="w-5 tablet:w-6 desktop:w-9">
+                        <div class="w-4 tablet:w-6 desktop:w-9">
                             <Image src={geo} alt="Geo icon" class="object-contain w-full h-full"/>
                         </div>
                     </div>
@@ -83,7 +83,7 @@ import map from "@assets/images/map-vector.svg";
                     <div class="flex gap-0.5">
                         <p class="text-unit">23 525</p>
 
-                        <div class="w-6 tablet:w-8 desktop:w-11">
+                        <div class="w-5 tablet:w-8 desktop:w-11">
                             <Image alt="Employee icon" src={employee} class="object-contain w-full h-full"/>
                         </div>
                     </div>
@@ -92,7 +92,7 @@ import map from "@assets/images/map-vector.svg";
                 </div>
 
                 <div class="flex flex-col gap-1">
-                    <div class="flex gap-0.5">
+                    <div class="flex gap-0.5 items-center">
                         <p class="text-unit">15</p>
 
                         <div class="w-5 tablet:w-8 desktop:w-11">
@@ -108,7 +108,7 @@ import map from "@assets/images/map-vector.svg";
     </div>
 
     <div
-        class="flex mobile:gap-3 tablet:gap-9 desktop:gap-6 mb-10 mobile:flex-col-reverse mobile:border-l mobile:pl-4">
+        class="flex mobile:gap-3 tablet:gap-9 desktop:gap-6 mobile:flex-col-reverse mobile:border-l mobile:pl-4">
         <div class="w-[62px] tablet:w-[83px] desktop:w-[153px] shrink-0">
             <Image src={logoPmq} alt="Logo PMQ" class="object-contain w-full"/>
         </div>

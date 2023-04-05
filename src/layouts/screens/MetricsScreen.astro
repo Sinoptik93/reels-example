@@ -12,10 +12,10 @@ import Chart from "@components/Chart";
             <Image src={logoBloomberg} alt="Logog bloomberg" class="object-contain w-full desktop:mt-3"/>
         </div>
         <div class="mobile:hidden tablet:w-[1px] tablet:max-w-[230px] desktop:w-[1px] bg-black desktop:mb-4 desktop:mt-2.5"></div>
-        <p class="text-regular-2 tracking-tightest tablet:-ml-2">Dodo Pizza has turned into<br>one of the fastest-growing<br>restaurant chains</p>
+        <p class="text-regular-2 tracking-tightest tablet:-ml-2 mobile:max-w-[180px] mobile:leading-[1.15]">Dodo Pizza has turned into<br class="mobile:hidden">one of the fastest-growing<br>restaurant chains</p>
     </div>
 
-    <div class="">
+    <div class="mobile:mb-10">
         <Chart client:load/>
     </div>
 
