@@ -14,7 +14,7 @@ module.exports = {
                 md: '640px',
                 lg: '768px',
                 xl: '900px',
-                '2xl': '1000px',
+                '2xl': '1150px',
             },
             padding: {
                 DEFAULT: '1.25rem',
@@ -26,7 +26,7 @@ module.exports = {
         },
         extend: {
             fontFamily: {
-                regular: ["Factor A Regular", ...defaultTheme.fontFamily.sans],
+                regular: ["Factor A Light", ...defaultTheme.fontFamily.sans],
                 light: ["Factor A Light", ...defaultTheme.fontFamily.sans],
             },
             lineHeight: {
