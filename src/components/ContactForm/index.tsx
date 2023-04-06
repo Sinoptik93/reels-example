@@ -22,7 +22,7 @@ const Input: FC<InputProps> = ({
                 type="text"
                 name={name}
                 id={name}
-                className="bg-transparent pb-5 border-b-[1px]"
+                className="bg-transparent pb-5 border-b-[0.0625rem]"
             />
         </div>
     )

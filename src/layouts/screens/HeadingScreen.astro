@@ -3,7 +3,6 @@ import { Image, Picture } from '@astrojs/image/components';
 
 import ellipseViolet from "@assets/images/ellipse-violet.svg";
 import ellipseOrange from "@assets/images/ellipse-orange.svg";
-import bgPizza from "@assets/images/bg-pizza.png";
 
 import dodoLogo from "@assets/icons/dodo-logo.svg";
 import videowebm from "@assets/videos/video-background.webm";
@@ -11,41 +10,46 @@ import videomp4 from "@assets/videos/video-background.mp4";
 ---
 
 
-<section class="relative bg-black h-screen rounded-b-3xl overflow-hidden mb-[130px] tablet:mb-[140px] desktop:mb-[266px]">
-    <video class="absolute object-cover w-full h-full" loop autoPlay muted playsInline >
+<section class="relative bg-black h-screen desktop:min-h-[75rem] rounded-b-3xl overflow-hidden mb-[8.125rem] tablet:mb-[8.75rem] desktop:mb-[16.625rem]">
+    <video class="absolute object-cover w-full h-full" loop autoplay muted playsinline >
         <source src={videowebm} type="video/webm"/>
         <source src={videomp4} type="video/mp4"/>
     </video>
     <div class="absolute inset-0 w-full h-full bg-black opacity-50"></div>
 
-    <Image src={ellipseViolet} alt="orange" class="absolute z-10 -top-[260px] -left-[350px] tablet:-top-[600px] tablet:-left-[823px] desktop:top-[600px] desktop:-left-[623px]"/>
-    <Image src={ellipseOrange} alt="violet" class="absolute z-10 top-[400px] -right-[350px] tablet:top-[400px] tablet:-right-[823px] desktop:top-[600px] desktop:-right-[623px]"/>
+    <div class="absolute z-10 desktop:w-[112.5rem] tablet:w-[62.5rem] w-[50rem] mobile:-top-[13.75rem] -left-[30.625rem] tablet:-top-[18.75rem] tablet:-left-[29.375rem] desktop:-bottom-[56.25rem] desktop:-left-[38.9375rem]">
+        <Image src={ellipseViolet} alt="violet" />
+    </div>
 
-    <div class="container absolute inset-0 z-20 t pt-[20px] tablet:pt-[37px] desktop:pt-[55px] pb-[44px] tablet:pb-[80px] desktop:pb-[200px]">
+    <div class="absolute z-10 desktop:w-[112.5rem] tablet:w-[62.5rem] w-[50rem] mobile:-bottom-[23.125rem] -right-[29.375rem] tablet:-bottom-[35rem] tablet:-right-[40.8125rem] desktop:-bottom-[69.375rem] desktop:-right-[38.9375rem]">
+        <Image src={ellipseOrange} alt="orange"/>
+    </div>
 
-        <div class="w-[107px] tablet:w-[170px] desktop:w-[254px]">
+    <div class="container absolute inset-0 z-20 t pt-[1.25rem] tablet:pt-[2.3125rem] desktop:pt-[3.4375rem] pb-[2.75rem] tablet:pb-[5rem] desktop:pb-[12.5rem]">
+
+        <div class="w-[6.6875rem] tablet:w-[10.625rem] desktop:w-[15.875rem]">
             <Image src={dodoLogo} alt="Dodo logo"/>
         </div>
 
-        <div class="flex flex-col items-start desktop:items-center absolute top-1/2 -translate-y-2/4">
+        <div class="flex flex-col items-start desktop:items-center absolute top-1/2 -translate-y-2/4 left-1/2 -translate-x-2/4 w-full">
             <p class="text-main text-white hidden tablet:hidden desktop:block">We digitalized pizza</p>
             <p class="text-sub-main text-white hidden tablet:hidden desktop:block">Master franchise opportunity in Middle East,</p>
             <p class="text-sub-main text-white hidden tablet:hidden desktop:block">Africa, Asia and South America</p>
 
             <p class="text-main block tablet:block desktop:hidden">We went <br>digital and reinvented pizza franchising</p>
 
-            <div class="flex mt-[100px] tablet:mt-[47px] destop:mt-[73px] items-start">
-                <button class="p-3 rounded-[120px] flex items-center justify-center bg-accent-orange text-accent-orange transition-all tablet:p-4 desktop:p-4 hover:bg-accent-violet hover:text-accent-violet">
-                    <div class="bg-white rounded-full flex items-center justify-center w-[64px] h-[64px] mr-[15px] desktop:w-[76px] desktop:h-[76px] desktop:ml-[7px]">
+            <div class="flex mt-[6.25rem] tablet:mt-[2.9375rem] destop:mt-[4.5625rem] items-start">
+                <button class="p-3 rounded-[7.5rem] flex items-center justify-center bg-accent-orange text-accent-orange transition-all tablet:p-4 desktop:p-4 hover:bg-accent-violet hover:text-accent-violet">
+                    <div class="bg-white rounded-full flex items-center justify-center w-[4rem] h-[4rem] mr-[0.9375rem] desktop:w-[4.75rem] desktop:h-[4.75rem] desktop:ml-[0.4375rem]">
 
                         <svg width="29" height="34" viewBox="0 0 29 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M4.6292 0.464046L27.698 14.722C29.434 15.797 29.434 18.2329 27.698 19.2723L4.6292 33.5309C2.66179 34.7485 0 33.459 0 31.2376V2.75666C0 0.570934 2.66179 -0.754207 4.6292 0.464046Z" fill="currentColor"/>
                         </svg>
                     </div>
-                    <p class="text-button text-white items-center whitespace-nowrap justify-center mr-[18px]">Look how it works</p>
+                    <p class="text-button text-white items-center whitespace-nowrap justify-center mr-[1.125rem]">Look how it works</p>
                 </button>
 
-                <p class="ml-[30px] text-sub-main text-white hidden tablet:block desktop:hidden">Expand your business opportunities in the <strong>Middle East, Africa, Asia, and South America</strong></p>
+                <p class="ml-[1.875rem] text-sub-main text-white hidden tablet:block desktop:hidden">Expand your business opportunities in the <strong>Middle East, Africa, Asia, and South America</strong></p>
             </div>
         </div>
     </div>

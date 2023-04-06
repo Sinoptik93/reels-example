@@ -10,18 +10,18 @@ module.exports = {
         container: {
             center: true,
             screens: {
-                sm: '640px',
-                md: '768px',
-                lg: '976px',
-                xl: '1280px',
-                '2xl': '1464px',
+                sm: '560px',
+                md: '640px',
+                lg: '768px',
+                xl: '900px',
+                '2xl': '1000px',
             },
             padding: {
                 DEFAULT: '1.25rem',
                 sm: '1rem',
                 lg: '1rem',
                 xl: '1rem',
-                '2xl': '2rem',
+                '2xl': '4rem',
             },
         },
         extend: {

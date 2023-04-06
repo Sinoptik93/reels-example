@@ -7,17 +7,17 @@
 
 .swiper-pagination-bullet {
   transition: width 0.3s ease-in, max-width 0.3s ease-in, opacity 0.3s ease-out;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   background-color: #FF6900;
   opacity: 0.8;
-  width: 8px;
-  max-width: 8px;
+  width: 0.5rem;
+  max-width: 0.5rem;
 }
 
 .swiper-pagination-bullet-active {
   width: 100%;
-  max-width: 80px;
-  border-radius: 4px;
+  max-width: 5rem;
+  border-radius: 0.25rem;
   background-color: #FF6900;
   opacity: 1;
 }

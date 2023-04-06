@@ -9,7 +9,7 @@
 }
 
 .text-main {
-  @apply font-regular text-4xl tablet:text-7xl desktop:text-[150px] text-white;
+  @apply font-regular text-4xl tablet:text-7xl desktop:text-[9.375rem] text-white;
 }
 
 .text-sub-main {
@@ -21,7 +21,7 @@
 }
 
 .text-extra {
-  @apply font-regular text-[60px] tablet:text-[3.75rem] desktop:text-[3.75rem] dark:text-white;
+  @apply font-regular text-[3.75rem] tablet:text-[3.75rem] desktop:text-[3.75rem] dark:text-white;
 
   span {
     @apply text-accent-orange;
@@ -45,19 +45,19 @@
 }
 
 .text-subtitle {
-  @apply font-regular text-accent-orange text-xs tablet:text-[12px] desktop:text-base tracking-widest uppercase dark:text-white;
+  @apply font-regular text-accent-orange text-xs tablet:text-[0.75rem] desktop:text-base tracking-widest uppercase dark:text-white;
 }
 
 .text-stories-title {
-  @apply leading-none font-light text-white text-[120px];
+  @apply leading-none font-light text-white text-[7.5rem];
 
   span {
-    @apply leading-none font-light text-white text-[80px];
+    @apply leading-none font-light text-white text-[5rem];
   }
 }
 
 .text-stories-subtitle {
-  @apply leading-none font-light text-white text-[46px];
+  @apply leading-none font-light text-white text-[2.875rem];
 }
 
 .text-legend {
@@ -65,7 +65,7 @@
 }
 
 .text-regular {
-  @apply font-regular text-xl tablet:text-[27px] desktop:text-4xl tracking-tightest dark:text-white;
+  @apply font-regular text-xl tablet:text-[1.6875rem] desktop:text-4xl tracking-tightest dark:text-white;
 
   span {
     @apply text-accent-orange;
@@ -109,7 +109,7 @@
 }
 
 .text-input-label {
-  @apply font-regular text-base tablet:text-[14px] desktop:text-base tracking-widest uppercase;
+  @apply font-regular text-base tablet:text-[0.875rem] desktop:text-base tracking-widest uppercase;
 }
 
 .text-contact-info {
