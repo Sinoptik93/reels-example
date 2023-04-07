@@ -25,7 +25,7 @@
 
 .swiper.custom {
   .swiper-slide {
-    @apply desktop:opacity-60
+    @apply desktop:opacity-60 desktop:transition-all
   }
 
   .swiper-slide-active {
