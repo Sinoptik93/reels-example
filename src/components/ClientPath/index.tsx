@@ -27,7 +27,7 @@ function ClientPath() {
         <>
 
             <Swiper
-                className="h-[60rem] mb-20 overflow-hidden w-full swiper-backface-hidden hidden mobile:block pb-10"
+                className="h-[48rem] mb-20 overflow-hidden w-full swiper-backface-hidden hidden mobile:block pb-10"
                 spaceBetween={0}
                 slidesPerView={"auto"}
                 centeredSlides
@@ -71,7 +71,7 @@ function ClientPath() {
                         <source src={pathLeftExtra} type="video/mp4"/>
                     </video>
 
-                    <div className="absolute left-1/2  -translate-x-2/4 bottom-16 flex gap-6">
+                    <div className="absolute left-1/2  -translate-x-2/4 bottom-8 flex gap-6">
                         <p className="text-regular text-[1rem]">Website, <br/>App, <br/>POS</p>
                         <div className="w-20">
                             <svg viewBox="0 0 63 34" fill="none" xmlns="http://www.w3.org/2000/svg" className="object-cover w-full h-full">
@@ -86,7 +86,7 @@ function ClientPath() {
                 <SwiperSlide
                     className="rounded-2xl overflow-hidden w-[100vw]">
 
-                    <p className="text-slide-heading absolute top-[6.5rem] left-5 z-10 ">Smart pizzeria <br/>and delivery</p>
+                    <p className="text-slide-heading absolute top-[4.5rem] left-5 z-10 ">Smart pizzeria <br/>and delivery</p>
 
                     <video className="top-0 left-0 min-h-full min-w-full object-contain object-video-frame-mobile" loop autoPlay muted
                            playsInline>
@@ -94,7 +94,7 @@ function ClientPath() {
                         <source src={pathCenterExtra} type="video/mp4"/>
                     </video>
 
-                    <div className="absolute left-1/2  -translate-x-2/4 bottom-16 flex gap-6">
+                    <div className="absolute left-1/2  -translate-x-2/4 bottom-8 flex gap-6">
                         <p className="text-regular text-[1rem]">Website, <br/>App, <br/>POS</p>
                         <div className="w-20">
                             <svg viewBox="0 0 63 34" fill="none" xmlns="http://www.w3.org/2000/svg" className="object-cover w-full h-full">
@@ -109,7 +109,7 @@ function ClientPath() {
                 <SwiperSlide
                     className="rounded-2xl overflow-hidden w-[100vw]">
 
-                    <p className="text-slide-heading absolute top-[6.5rem] left-5 z-10">Central multiple-store <br/>management</p>
+                    <p className="text-slide-heading absolute top-[4.5rem] left-5 z-10">Central multiple-store <br/>management</p>
 
                     <video className="top-0 left-0 min-h-full min-w-full object-contain object-video-frame-mobile" loop autoPlay muted
                            playsInline>
@@ -117,7 +117,7 @@ function ClientPath() {
                         <source src={pathRightExtra} type="video/mp4"/>
                     </video>
 
-                    <div className="absolute left-1/2  -translate-x-2/4 bottom-16 flex gap-6">
+                    <div className="absolute left-1/2  -translate-x-2/4 bottom-8 flex gap-6">
                         <p className="text-regular text-[1rem]">Website, <br/>App, <br/>POS</p>
                         <div className="w-20">
                             <svg viewBox="0 0 63 34" fill="none" xmlns="http://www.w3.org/2000/svg" className="object-cover w-full h-full">
