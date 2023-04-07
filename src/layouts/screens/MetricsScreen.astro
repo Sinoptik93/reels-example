@@ -1,29 +1,68 @@
 ---
-import { Image } from '@astrojs/image/components';
+import {Image} from '@astrojs/image/components';
 
 import logoBloomberg from "@assets/icons/logo-bloomberg.svg";
+import logoRestaurantLeadership from "@assets/icons/logo-restaurant-leadership.svg";
+import chartDesktop from "@assets/images/chart-1.png";
+import chartMobile from "@assets/images/chart-2.png";
 import logoRestaurantLeadership from "@assets/icons/logo-restaurant-leadership.svg";
 import Chart from "@components/Chart";
 ---
 
-<section class="container mb-[15.5625rem]">
-    <div class="flex mobile:gap-[0.75rem] tablet:gap-[2.625rem] desktop:gap-[3.5rem] mb-10 mobile:flex-col-reverse mobile:border-l mobile:pl-4">
+<section class="container relative mb-[10rem]">
+    <div
+        class="absolute mobile:top-[0.5rem] flex mobile:gap-[0.75rem] tablet:gap-[2.625rem] desktop:gap-[3.5rem] mb-10 mobile:flex-col-reverse mobile:border-l mobile:pl-4">
         <div class="w-[6.4375rem] tablet:w-[8.125rem] desktop:w-[12.0625rem]">
             <Image src={logoBloomberg} alt="Logog bloomberg" class="object-contain w-full desktop:mt-3"/>
         </div>
-        <div class="mobile:hidden tablet:w-[0.0625rem] tablet:max-w-[14.375rem] desktop:w-[0.0625rem] bg-black desktop:mb-4 desktop:mt-2.5"></div>
-        <p class="text-regular-2 tracking-tightest tablet:-ml-2 mobile:max-w-[11.25rem] mobile:leading-[1.15]">Dodo Pizza has turned into<br class="mobile:hidden">one of the fastest-growing<br>restaurant chains</p>
+        <div
+            class="mobile:hidden tablet:w-[0.0625rem] tablet:max-w-[14.375rem] desktop:w-[0.0625rem] bg-black desktop:mb-4 desktop:mt-2.5"></div>
+        <p class="text-regular-2 mobile:text-[2.2rem] tracking-tightest tablet:-ml-2 mobile:max-w-[18.25rem] mobile:leading-[1.15]">Dodo
+            Pizza has turned into<br class="mobile:hidden">one of the fastest-growing <br class="mobile:hidden">restaurant chains</p>
     </div>
 
-    <div class="mobile:mb-10">
-        <Chart client:load/>
+    <div class="mobile:mb-10 mb-20 relative">
+        {/* <Chart client:load/> */}
+
+        <div class="tablet:hidden desktop:hidden">
+            <div>
+                <Image src={chartMobile} alt="chart mobile" format="webp" class="object-contain w-full desktop:mt-3"/>
+            </div>
+
+            <div class="flex gap-1 mt-10 w-full">
+                <p class="text-accent-orange text-[1.25rem]">2011</p>
+                <div class="flex flex-col grow items-center">
+                    <div class="h-[1px] w-full bg-accent-orange mt-[0.9rem]"></div>
+                    <p class="text-accent-orange text-[0.625rem] uppercase">system sales in mln usd</p>
+                </div>
+                <p class="text-accent-orange text-[1.25rem]">2021</p>
+            </div>
+        </div>
+
+
+        <div class="mobile:hidden">
+            <div>
+                <Image src={chartDesktop} alt="chart desktop" format="webp" class="object-contain w-full desktop:mt-3"/>
+            </div>
+
+            <div class="flex gap-1 w-full mt-10">
+                <div class="flex flex-col grow items-center">
+                    <div class="h-[1px] w-full bg-accent-orange mt-[0.9rem]"></div>
+                    <p class="text-accent-orange text-[1rem] uppercase">system sales in mln usd</p>
+                </div>
+            </div>
+        </div>
+
     </div>
 
-    <div class="flex mobile:gap-[0.75rem] tablet:gap-[1.625rem] desktop:gap-[3.375rem] mb-10 tablet:flex-col-reverse mobile:flex-col-reverse mobile:border-l mobile:pl-4 tablet:hidden">
+    <div
+        class="flex mobile:gap-[0.75rem] tablet:gap-[1.625rem] desktop:gap-[3.375rem] mb-10 tablet:flex-col-reverse mobile:flex-col-reverse mobile:border-l mobile:pl-4 tablet:hidden">
         <div class="w-[6.4375rem] tablet:w-[8.125rem] desktop:w-[12.0625rem] desktop:mt-[0.875rem]">
             <Image src={logoRestaurantLeadership} alt="Logo Restaurant Leadership" class="object-contain w-full"/>
         </div>
-        <div class="mobile:hidden tablet:h-[0.0625rem] tablet:max-w-[14.375rem] desktop:w-[0.0625rem] bg-black desktop:mb-4 desktop:mt-2.5"></div>
-        <p class="text-regular-2 tracking-tightest">Industry’s first truly digital-first concept,<br>with technology figuring into all aspects<br>of operations</p>
+        <div
+            class="mobile:hidden tablet:h-[0.0625rem] tablet:max-w-[14.375rem] desktop:w-[0.0625rem] bg-black desktop:mb-4 desktop:mt-2.5"></div>
+        <p class="text-regular-2 tracking-tightest">Industry’s first truly digital-first concept,<br>with technology
+            figuring into all aspects<br>of operations</p>
     </div>
 </section>

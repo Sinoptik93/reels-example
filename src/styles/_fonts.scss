@@ -121,3 +121,7 @@
     @apply text-accent-orange;
   }
 }
+
+.text-slide-heading {
+  @apply font-regular text-accent-orange text-[2.5rem] desktop:text-[1.875rem] leading-custom;
+}

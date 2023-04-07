@@ -4,6 +4,8 @@ import { Image } from '@astrojs/image/components';
 import dodoLogo from "@assets/icons/logo-dodo-black.svg";
 import map from "@assets/videos/dodo-planet.gif";
 import mapVideo from "@assets/videos/dodo-planet.webm";
+import ellipseViolet from "@assets/images/ellipse-violet.svg";
+import ellipseOrange from "@assets/images/ellipse-orange.svg";
 ---
 
 
@@ -12,19 +14,29 @@ import mapVideo from "@assets/videos/dodo-planet.webm";
         <p class="text-subtitle mobile:mb-4">Franchise</p>
 
         <div class="relative">
-            <h2 class="text-h-2 mb-8 mobile:mb-6 leading-none">We look for strategic partners</h2>
+            <h2 class="text-h-2 mb-8 mobile:mb-6 leading-none">We look for strategic <br class="mobile:hidden tablet:hidden">partners</h2>
 
-            <p class="text-regular block tablet:absolute desktop:absolute tablet:top-[8.5rem] tablet:left-[20.1875rem] tablet:max-w-[29.375rem] desktop:top-[9.4375rem] desktop:left-[24.3125rem]">Master franchise target regions: Middle East, Africa, Asia,<br class="mobile:hidden tablet:hidden"></p>
+            <p class="text-regular block desktop:absolute tablet:top-[8.5rem] tablet:left-[20.1875rem] desktop:top-[11.4375rem] desktop:left-[24.3125rem]">Master franchise target regions: Middle East, Africa, Asia, <br class="mobile:hidden tablet:hidden">and South America.</p>
         </div>
     </div>
 
 
-    <div class="relative flex bg-gray rounded-xl  pb-5 pt-[6.875rem] desktop:px-8 desktop:pt-[9.25rem] desktop:pb-[5.875rem] tablet:pl-4 tablet:pr-8 tablet:pt-[5.9375rem] tablet:pb-[5.375rem] mobile:flex-col mobile:px-5 mobile:gap-4">
-        <div class="absolute top-5 left-5 w-[7.3125rem] tablet:w-[10.625rem] desktop:w-[15.875rem] tablet:top-6 tablet:left-6 desktop:top-10 desktop:left-10">
+    <div class="relative overflow-hidden flex bg-gray rounded-xl  pb-5 pt-[6.875rem] desktop:px-8 desktop:pt-[9.25rem] desktop:pb-[5.875rem] tablet:pl-4 tablet:pr-8 tablet:pt-[5.9375rem] tablet:pb-[5.375rem] mobile:flex-col mobile:px-5 mobile:gap-4">
+        <div
+            class="absolute z-10 w-[60rem] -left-[53rem] -top-[6rem] desktop:w-[120rem] desktop:-left-[97rem] desktop:-top-[20rem]">
+            <img src={ellipseViolet.src} alt="violet"/>
+        </div>
+
+        <div
+            class="absolute z-10 w-[60rem] -left-[52rem] -top-[20rem] desktop:w-[120rem] desktop:-left-[97rem] desktop:-top-[60rem]">
+            <img src={ellipseOrange.src} alt="orange" />
+        </div>
+
+        <div class="absolute z-10 top-5 left-5 w-[7.3125rem] tablet:w-[10.625rem] desktop:w-[15.875rem] tablet:top-6 tablet:left-6 desktop:top-10 desktop:left-10">
             <Image src={dodoLogo} alt="Dodo logo"/>
         </div>
 
-        <div class="flex w-full mobile:mb-6 mobile:gap-[1.625rem] tablet:gap-[5.25rem] desktop:gap-[7.8125rem]">
+        <div class="flex relative z-10 w-full mobile:mb-6 mobile:gap-[1.625rem] tablet:gap-[5.25rem] desktop:gap-[7.8125rem]">
 
             <div class="flex flex-col items-center gap-6 desktop:mt-[2.0625rem] desktop:ml-[0.625rem] tablet:mt-[1.375rem] tablet:ml-[0.8125rem]">
                 <p class="text-regular-3 hidden mobile:block">Franchise<br>terms</p>
@@ -34,7 +46,7 @@ import mapVideo from "@assets/videos/dodo-planet.webm";
                     </div>
                 */}
 
-                <div class="shrink-0 w-[8.125rem] tablet:w-[13.1875rem] desktop:w-[19.5625rem] overflow-hidden rounded-full">
+                <div class="shrink-0 w-[10.125rem] tablet:w-[13.1875rem] desktop:w-[19.5625rem] overflow-hidden rounded-full">
                     <video class="min-h-full min-w-full object-cover scale-[1.15]" loop autoplay muted playsinline >
                         <source src={mapVideo} type="video/mp4"/>
                     </video>

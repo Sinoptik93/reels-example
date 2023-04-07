@@ -29,6 +29,10 @@ module.exports = {
                 regular: ["Factor A Light", ...defaultTheme.fontFamily.sans],
                 light: ["Factor A Light", ...defaultTheme.fontFamily.sans],
             },
+            objectPosition: {
+                'video-frame': '0 30px',
+                'video-frame-mobile': '0 100px',
+            },
             lineHeight: {
                 'custom': '1.1',
             },
@@ -50,8 +54,8 @@ module.exports = {
                 "20xl": ["10.625rem", {lineHeight: "normal"}], // 170px
             },
             screens: {
-                mobile: {'min': '320px', 'max': '767px'},
-                tablet: {'min': '768px', 'max': '1255px'},
+                mobile: {'min': '320px', 'max': '654px'},
+                tablet: {'min': '655px', 'max': '1255px'},
                 desktop: {'min': '1256px'},
                 tall: {'min': '1256px', 'max': '1440px'}
             },

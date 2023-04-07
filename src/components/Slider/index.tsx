@@ -27,11 +27,11 @@ const Slider: FC = () => {
     return (
         <>
             <Swiper
-                className="h-[95vh] tablet:h-[32.5rem] desktop:h-[40rem] mb-20 overflow-hidden w-full swiper-backface-hidden  hidden desktop:block"
+                className="desktop:h-[40rem] mb-20 overflow-hidden w-full swiper-backface-hidden hidden desktop:block"
                 spaceBetween={10}
                 slidesPerView={3}
             >
-                <SwiperSlide className="rounded-2xl overflow-hidden w-[90vw] tablet:w-full desktop:w-1/3 h-[95vh] tablet:h-[32.5rem] desktop:h-[40rem] relative">
+                <SwiperSlide className="rounded-2xl overflow-hidden w-[90vw] tablet:w-full desktop:w-1/3 relative">
                     <div
                         className="absolute z-10 w-[40rem] -left-[25rem] -bottom-[8.125rem]">
                         <img src={ellipseViolet.src} alt="violet"/>
@@ -50,7 +50,7 @@ const Slider: FC = () => {
                     </div>
                 </SwiperSlide>
 
-                <SwiperSlide className="rounded-2xl overflow-hidden w-[90vw] tablet:w-full desktop:w-1/3 h-[95vh] tablet:h-[32.5rem] desktop:h-[40rem] relative">
+                <SwiperSlide className="rounded-2xl overflow-hidden w-[90vw] tablet:w-full desktop:w-1/3 relative">
                     <div
                         className="absolute z-10 w-[40rem] -left-[20rem] -bottom-[8.125rem]">
                         <img src={ellipseViolet.src} alt="violet"/>
@@ -69,7 +69,7 @@ const Slider: FC = () => {
                     </div>
                 </SwiperSlide>
 
-                <SwiperSlide className="rounded-2xl overflow-hidden w-[90vw] tablet:w-full desktop:w-1/3 h-[95vh] tablet:h-[32.5rem] desktop:h-[40rem] relative">
+                <SwiperSlide className="rounded-2xl overflow-hidden w-[90vw] tablet:w-full desktop:w-1/3 relative">
                     <div
                         className="absolute z-10 w-[40rem] -left-[20rem] -bottom-[8.125rem]">
                         <img src={ellipseViolet.src} alt="violet"/>
@@ -90,7 +90,7 @@ const Slider: FC = () => {
             </Swiper>
 
             <Swiper
-                className="tablet:h-[26.125rem] mb-20 overflow-hidden w-full swiper-backface-hidden  hidden tablet:block"
+                className="tablet:h-[26.125rem] mb-20 overflow-hidden w-full swiper-backface-hidden pb-10 hidden tablet:block"
                 spaceBetween={10}
                 slidesPerView={1}
                 modules={[Pagination]}
@@ -155,13 +155,13 @@ const Slider: FC = () => {
             </Swiper>
 
             <Swiper
-                className="h-[50rem] tablet:h-[32.5rem] desktop:h-[40rem] mb-20 overflow-hidden w-full swiper-backface-hidden block desktop:hidden tablet:hidden"
+                className="h-[50rem] tablet:h-[32.5rem] desktop:h-[40rem] mb-20 pb-10 overflow-hidden w-full swiper-backface-hidden block desktop:hidden tablet:hidden"
                 spaceBetween={10}
                 slidesPerView={1}
                 modules={[Pagination]}
                 pagination={{ clickable: true }}
             >
-                <SwiperSlide className="rounded-2xl overflow-hidden w-[90vw] tablet:w-full desktop:w-1/3 h-[50rem] tablet:h-[32.5rem] desktop:h-[40rem] relative">
+                <SwiperSlide className="rounded-2xl overflow-hidden w-[90vw] tablet:w-full desktop:w-1/3 tablet:h-[32.5rem] desktop:h-[40rem] relative">
                     <div
                         className="absolute z-10 w-[40rem] -left-[25rem] -bottom-[8.125rem]">
                         <img src={ellipseViolet.src} alt="violet"/>
@@ -180,7 +180,7 @@ const Slider: FC = () => {
                     </div>
                 </SwiperSlide>
 
-                <SwiperSlide className=" container rounded-2xl overflow-hidden w-[90vw] tablet:w-full desktop:w-1/3 h-[50rem] tablet:h-[32.5rem] desktop:h-[40rem] relative">
+                <SwiperSlide className=" container rounded-2xl overflow-hidden w-[90vw] tablet:w-full desktop:w-1/3 tablet:h-[32.5rem] desktop:h-[40rem] relative">
                     <div
                         className="absolute z-10 w-[40rem] -left-[20rem] -bottom-[8.125rem]">
                         <img src={ellipseViolet.src} alt="violet"/>
@@ -199,7 +199,7 @@ const Slider: FC = () => {
                     </div>
                 </SwiperSlide>
 
-                <SwiperSlide className="rounded-2xl overflow-hidden w-[90vw] tablet:w-full desktop:w-1/3 h-[50rem] tablet:h-[32.5rem] desktop:h-[40rem] relative">
+                <SwiperSlide className="rounded-2xl overflow-hidden w-[90vw] tablet:w-full desktop:w-1/3 tablet:h-[32.5rem] desktop:h-[40rem] relative">
                     <div
                         className="absolute z-10 w-[40rem] -left-[20rem] -bottom-[8.125rem]">
                         <img src={ellipseViolet.src} alt="violet"/>

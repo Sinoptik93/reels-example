@@ -11,6 +11,7 @@
   background-color: #FF6900;
   opacity: 0.8;
   width: 0.5rem;
+  height: 0.5rem;
   max-width: 0.5rem;
 }
 
@@ -21,3 +22,14 @@
   background-color: #FF6900;
   opacity: 1;
 }
+
+.swiper.custom {
+  .swiper-slide {
+    @apply desktop:opacity-60
+  }
+
+  .swiper-slide-active {
+    @apply desktop:scale-110 desktop:opacity-100 desktop:transition-all desktop:z-10
+  }
+}
+

@@ -3,15 +3,17 @@ import { Image } from '@astrojs/image/components';
 
 import pizza from "@assets/images/pizza.png";
 import logoDodo from "@assets/icons/logo-dodo-outlined.svg";
+import ellipseViolet from "@assets/images/ellipse-violet.svg";
+import ellipseOrange from "@assets/images/ellipse-orange.svg";
 ---
 
 <section class="container mb-40">
     <div class="tablet:min-h-[17.5rem] desktop:min-h-[25rem] mb-40 tablet:mb-60 desktop:mb-80">
         <div class="tablet:relative desktop:relative mobile:pt-[0.75rem] tablet:mb-[5rem] desktop:mb-[6.75rem]">
-            <h2 class="text-h-2 tablet:mb-6 mobile:mb-5"><span>Learn more</span> about Dodo franchise</h2>
+            <h2 class="text-h-2 tablet:mb-6 mobile:mb-5"><span>Learn more</span> about Dodo <br class="mobile:hidden tablet:hidden">franchise</h2>
 
             <div
-                class="tall:static desktop:absolute flex flex-col gap-4 tablet:gap-[1.75rem] desktop:gap-9 w-full desktop:max-w-[60.125rem] desktop:top-[9.75rem] desktop:left-[27.3125rem] tablet:max-w-[37.5625rem] tablet:top-[8.625rem] tablet:left-[21.4375rem]">
+                class="desktop:absolute flex flex-col gap-4 tablet:gap-[1.75rem] desktop:gap-9 w-full desktop:max-w-[60.125rem] desktop:top-[9.75rem] desktop:left-[27.3125rem] tablet:max-w-[37.5625rem] tablet:top-[8.625rem] tablet:left-[21.4375rem]">
                 <div class="flex gap-4 tablet:gap-[1.875rem] desktop:gap-[3.5rem] mobile:flex-col">
                     <a
                         class="border-accent-orange px-4 py-4 desktop:py-[1.625rem] text-button text-accent-orange border-[0.125rem] rounded-xl  tablet:w-1/2 desktop:w-1/2 text-center"
@@ -42,11 +44,21 @@ import logoDodo from "@assets/icons/logo-dodo-outlined.svg";
             <Image src={pizza} format="webp" alt="Pizza" class="absolute object-cover w-full h-full"/>
         </div>
 
-        <div class="relative flex flex-col bg-black rounded-[28.9375rem] mobile:max-w-[20rem] px-5 py-[8.5rem] tablet:px-[6.25rem] tablet:py-[3.75rem] desktop:pl-[11.25rem] desktop:pr-[14.125rem] desktop:pt-[6.5rem] desktop:pb-[6.25rem]">
-            <div class="tablet:max-w-[18.75rem] desktop:max-w-[29.375rem]">
-                <p class="text-white text-[1rem] tablet:text-[1.25rem] desktop:text-[1.875rem] desktop:max-w-[27.6875rem] font-regular leading-none tracking-tighter pb-4">Number of orders placed while you’ve
+        <div class="overflow-hidden relative flex flex-col bg-black rounded-[28.9375rem] mobile:w-[20rem] mobile:h-[34rem] px-5 py-[8.5rem] tablet:px-[6.25rem] tablet:py-[3.75rem] desktop:pl-[11.25rem] desktop:pr-[14.125rem] desktop:pt-[6.5rem] desktop:pb-[6.25rem]">
+            <div
+                class="absolute z-10 w-[60rem] -left-[47rem] -bottom-[19rem] desktop:left-auto desktop:bottom-auto desktop:-right-[39rem] desktop:-top-[11rem]">
+                <img src={ellipseViolet.src} alt="violet"/>
+            </div>
+
+            <div
+                class="absolute z-10 w-[60rem] -right-[47rem] -bottom-[24rem] desktop:-right-[39rem] desktop:-bottom-[21rem]">
+                <img src={ellipseOrange.src} alt="orange" />
+            </div>
+
+            <div class="z-10 tablet:max-w-[18.75rem] desktop:max-w-[29.375rem] mobile:absolute mobile:top-1/2 mobile:left-1/2 mobile:-translate-y-2/4 mobile:-translate-x-2/4">
+                <p class="text-white text-[1.4rem] tablet:text-[1.25rem] desktop:text-[1.875rem] desktop:max-w-[27.6875rem] font-regular leading-none tracking-tighter pb-4">Number of orders placed while you’ve
                     been scrolling this page</p>
-                <p class="text-white text-[10rem] tablet:text-[10.625rem] desktop:text-[14.1875rem] font-light leading-none">868</p>
+                <p class="text-white text-[10rem] tablet:text-[10.625rem] desktop:text-[14.1875rem] font-light leading-custom mb-6">868</p>
 
                 <div class="flex items-center gap-2 -mt-8">
                     <div class="w-6 tablet:w-6 desktop:w-6 text-white">
@@ -62,7 +74,7 @@ import logoDodo from "@assets/icons/logo-dodo-outlined.svg";
             </div>
         </div>
 
-        <div class="absolute right-0 mobile:right-auto mobile:bottom-0 w-[20rem] h-[20rem] tablet:w-[20.8125rem] tablet:h-[20.8125rem] desktop:w-[30rem] desktop:h-[30rem] rounded-full bg-accent-orange flex items-center justify-center">
+        <div class="z-10 absolute right-0 mobile:right-auto mobile:bottom-0 w-[20rem] h-[20rem] tablet:w-[20.8125rem] tablet:h-[20.8125rem] desktop:w-[30rem] desktop:h-[30rem] rounded-full bg-accent-orange flex items-center justify-center">
             <div class="w-[15.1875rem] tablet:w-[15.8125rem] desktop:w-[23.4375rem]">
                 <Image src={logoDodo} alt="Dodo logo" class="object-cover w-full h-full"/>
             </div>
