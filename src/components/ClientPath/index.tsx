@@ -71,15 +71,15 @@ function ClientPath() {
                         <source src={pathLeftExtra} type="video/mp4"/>
                     </video>
 
-                    <div className="absolute left-1/2  -translate-x-2/4 bottom-8 flex gap-6">
-                        <p className="text-regular text-[1rem]">Website, <br/>App, <br/>POS</p>
+                    <div className="container absolute left-1/2 -translate-x-2/4 bottom-8 flex gap-6">
+                        {/* <p className="text-regular text-[1rem]">Website, <br/>App, <br/>POS</p>
                         <div className="w-20">
                             <svg viewBox="0 0 63 34" fill="none" xmlns="http://www.w3.org/2000/svg" className="object-cover w-full h-full">
-                                <path d="M41.0977 1L62.1267 17.3327L41.0977 33.6653" stroke="black" stroke-miterlimit="10"/>
+                                <path d="M41.0977 1L62.1267 17.3327L41.0977 33.6653" stroke="black" strokeMiterlimit="10"/>
                                 <path d="M62 17L-1.84774e-06 17" stroke="black"/>
                             </svg>
-                        </div>
-                        <p className="text-regular text-[1rem] w-[11rem]">72% <br/>of all orders via own<br/>sales channels</p>
+                        </div> */}
+                        <p className="text-regular text-[1rem] w-[11rem] grow">Our app, website and POS with automated marketing personalization sends orders directly to kitchen. Full customer experience control.</p>
                     </div>
                 </SwiperSlide>
 
@@ -94,15 +94,15 @@ function ClientPath() {
                         <source src={pathCenterExtra} type="video/mp4"/>
                     </video>
 
-                    <div className="absolute left-1/2  -translate-x-2/4 bottom-8 flex gap-6">
-                        <p className="text-regular text-[1rem]">Website, <br/>App, <br/>POS</p>
+                    <div className="container absolute left-1/2  -translate-x-2/4 bottom-8 flex gap-6">
+                        {/* <p className="text-regular text-[1rem]">Website, <br/>App, <br/>POS</p>
                         <div className="w-20">
                             <svg viewBox="0 0 63 34" fill="none" xmlns="http://www.w3.org/2000/svg" className="object-cover w-full h-full">
-                                <path d="M41.0977 1L62.1267 17.3327L41.0977 33.6653" stroke="black" stroke-miterlimit="10"/>
+                                <path d="M41.0977 1L62.1267 17.3327L41.0977 33.6653" stroke="black" strokeMiterlimit="10"/>
                                 <path d="M62 17L-1.84774e-06 17" stroke="black"/>
                             </svg>
-                        </div>
-                        <p className="text-regular text-[1rem] w-[11rem]">72% <br/>of all orders via own<br/>sales channels</p>
+                        </div> */}
+                        <p className="text-regular text-[1rem] w-[11rem] grow">Digitalizes every process, including order tracking, supply forecasts, delivery, HR and P&L management. Consistent quality and total manageability.</p>
                     </div>
                 </SwiperSlide>
 
@@ -117,15 +117,15 @@ function ClientPath() {
                         <source src={pathRightExtra} type="video/mp4"/>
                     </video>
 
-                    <div className="absolute left-1/2  -translate-x-2/4 bottom-8 flex gap-6">
-                        <p className="text-regular text-[1rem]">Website, <br/>App, <br/>POS</p>
+                    <div className="container absolute left-1/2 -translate-x-2/4 bottom-8 flex gap-6">
+                        {/* <p className="text-regular text-[1rem]">Website, <br/>App, <br/>POS</p>
                         <div className="w-20">
                             <svg viewBox="0 0 63 34" fill="none" xmlns="http://www.w3.org/2000/svg" className="object-cover w-full h-full">
-                                <path d="M41.0977 1L62.1267 17.3327L41.0977 33.6653" stroke="black" stroke-miterlimit="10"/>
+                                <path d="M41.0977 1L62.1267 17.3327L41.0977 33.6653" stroke="black" strokeMiterlimit="10"/>
                                 <path d="M62 17L-1.84774e-06 17" stroke="black"/>
                             </svg>
-                        </div>
-                        <p className="text-regular text-[1rem] w-[11rem]">72% <br/>of all orders via own<br/>sales channels</p>
+                        </div> */}
+                        <p className="text-regular text-[1rem] w-[11rem] grow">Real-time data analytics help managers make fact-based decisions from one center. Full transparenncy and fast scaling.</p>
                     </div>
                 </SwiperSlide>
             </Swiper>
@@ -162,21 +162,21 @@ function ClientPath() {
                         <div className="">
                             <div>
                                 <p className="text-slide-heading  mb-4">Digital sales <br/>channels</p>
-                                <p className="text-[1.25rem]">Our app, website and POS with <br/>automated marketing personalization <br/>sends orders directly to kitchen. <br/>Full customer experience control.</p>
+                                <p className="text-[1.25rem] font-regular">Our app, website and POS with <br/>automated marketing personalization <br/>sends orders directly to kitchen. <br/>Full customer experience control.</p>
                             </div>
                         </div>
 
                         <div className="">
                             <div>
                                 <p className="text-slide-heading  mb-4">Smart pizzeria <br/>and delivery</p>
-                                <p className="text-[1.25rem]">Digitalizes every process, including order <br/>tracking, supply forecasts, delivery, HR <br/>and P&L management. Consistent quality <br/>and total manageability.</p>
+                                <p className="text-[1.25rem] font-regular">Digitalizes every process, including order <br/>tracking, supply forecasts, delivery, HR <br/>and P&L management. Consistent quality <br/>and total manageability.</p>
                             </div>
                         </div>
 
                         <div className="">
                             <div>
                                 <p className="text-slide-heading  mb-4">Central multiple-store <br/>management</p>
-                                <p className="text-[1.25rem]">Real-time data analytics help managers <br/>make fact-based decisions from <br/>one center. Full transparenncy and <br/>fast scaling.</p>
+                                <p className="text-[1.25rem] font-regular">Real-time data analytics help managers <br/>make fact-based decisions from <br/>one center. Full transparenncy and <br/>fast scaling.</p>
                             </div>
                         </div>
                     </div>

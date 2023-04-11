@@ -4,6 +4,7 @@
   font-weight: 300;
   font-size: 0.125rem;
 }
+
 @font-face {
   font-family: "Factor A Regular";
   src: url("../assets/fonts/factor-a/Factor A-Regular-Web.woff2") format('woff2');
@@ -17,7 +18,7 @@
 .text-sub-main {
   @apply font-regular text-3xl tablet:text-3xl desktop:text-5xl;
 
-  strong {
+  span {
     @apply text-accent-orange;
   }
 }

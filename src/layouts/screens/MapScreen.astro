@@ -1,5 +1,6 @@
 ---
 import {Image} from '@astrojs/image/components';
+import LiveVideos from "@components/LiveVideos"
 
 import logoPmq from "@assets/icons/logopmq.svg";
 import logoDodo from "@assets/icons/logo-dodo-black.svg";
@@ -116,6 +117,10 @@ import ellipseOrange from "../../assets/images/ellipse-orange.svg";
                 </div>
             </div>
 
+            <div class="mt-10">
+                <p class="text-subtitle">Real-time pizzeria</p>
+            </div>
+            <LiveVideos client:only/>
         </div>
     </div>
 
