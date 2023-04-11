@@ -130,13 +130,13 @@ function ClientPath() {
                 </SwiperSlide>
             </Swiper>
 
-            <div className="relative mobile:hidden tablet:hidden">
+            <div className="relative mobile:hidden tablet:hidden w-full">
                 <div
                     className="absolute z-10 w-[300rem] -left-[135rem] -top-[66rem] rotate-90">
                     <img src={ellipseViolet.src} alt="violet"/>
                 </div>
 
-                <video className="top-0 left-0 desktop:h-[54.8125rem] tablet:h-[26.875rem] w-[100vw] absolute mobile:hidden object-video-frame" loop autoPlay muted playsInline>
+                <video className="top-0 left-0 desktop:h-[54.8125rem] tablet:h-[26.875rem] w-[100vw] max-w-[130rem] mx-auto absolute mobile:hidden object-video-frame" loop autoPlay muted playsInline>
                     <source src={pathFull} type="video/webm"/>
                     <source src={pathFullExtra} type="video/mp4"/>
                 </video>

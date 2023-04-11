@@ -117,11 +117,21 @@ import ellipseOrange from "../../assets/images/ellipse-orange.svg";
                 </div>
             </div>
 
-            <div class="mt-10">
+            <div class="mt-10 mobile:hidden">
                 <p class="text-subtitle">Real-time pizzeria</p>
             </div>
-            <LiveVideos client:only/>
+            <div class="mobile:hidden">
+                <LiveVideos client:only/>
+            </div>
         </div>
+    </div>
+
+    <div class="block tablet:hidden desktop:hidden">
+        <div class="mb-4">
+            <p class="text-subtitle">Real-time pizzeria</p>
+        </div>
+
+        <LiveVideos client:only/>
     </div>
 
     <div
