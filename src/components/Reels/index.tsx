@@ -27,7 +27,7 @@ function Reels() {
 
     return (
         <Swiper
-            className={`custom ${isMobile ? "" : "container"} h-[95vh] pt-20 pb-8 desktop:pb-[7rem] tablet:h-[32.5rem] desktop:h-[95vh] desktop:min-h-[78rem] mb-20 overflow-hidden w-full swiper-backface-hidden`}
+            className={`custom ${isMobile ? "" : "container"} h-[95vh] pt-20 pb-8 desktop:pb-[7rem] tablet:h-[32.5rem] desktop:h-[90vh] desktop:min-h-[70rem] mb-20 overflow-hidden w-full swiper-backface-hidden`}
             spaceBetween={isMobile ? 30 : 23}
             slidesPerView={isMobile ? 1 : "auto"}
             centeredSlides
