@@ -6,3 +6,17 @@
 @import "fonts";
 @import "global";
 @import "vendors";
+
+@layer utilities {
+  .absolute-center {
+    @apply top-1/2 -translate-y-2/4 left-1/2 -translate-x-2/4;
+  }
+
+  .absolute-y-center {
+    @apply top-1/2 -translate-y-2/4;
+  }
+
+  .absolute-x-center {
+    @apply left-1/2 -translate-x-2/4;
+  }
+}
