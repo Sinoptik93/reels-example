@@ -1,5 +1,5 @@
 import type {FC} from 'react';
-import {Pagination} from "swiper";
+import {Pagination, Autoplay} from "swiper";
 import {
     Swiper,
     SwiperSlide
@@ -27,7 +27,7 @@ const Slider: FC = () => {
     return (
         <>
             <Swiper
-                className="container desktop:h-[57rem] mb-20 overflow-hidden w-full swiper-backface-hidden hidden desktop:block"
+                className="container desktop:h-[50rem] mb-20 overflow-hidden w-full swiper-backface-hidden hidden desktop:block"
                 spaceBetween={10}
                 slidesPerView={3}
             >
@@ -155,10 +155,14 @@ const Slider: FC = () => {
             </Swiper>
 
             <Swiper
-                className="h-[70vh] tablet:h-[32.5rem] desktop:h-[40rem] mb-20 pb-10 overflow-hidden w-full swiper-backface-hidden block desktop:hidden tablet:hidden"
+                className="h-[70vh] tablet:h-[32.5rem] desktop:h-[40rem] pb-10 overflow-hidden w-full swiper-backface-hidden block desktop:hidden tablet:hidden"
                 spaceBetween={10}
                 slidesPerView={1}
-                modules={[Pagination]}
+                autoplay={{
+                    delay: 2000,
+                    disableOnInteraction: false
+                }}
+                modules={[Pagination, Autoplay]}
                 pagination={{ clickable: true }}
             >
                 <SwiperSlide className="rounded-2xl overflow-hidden w-[90vw] tablet:w-full desktop:w-1/3 tablet:h-[32.5rem] desktop:h-[40rem] relative">
@@ -180,7 +184,7 @@ const Slider: FC = () => {
                     </div>
                 </SwiperSlide>
 
-                <SwiperSlide className=" container rounded-2xl overflow-hidden w-[90vw] tablet:w-full desktop:w-1/3 tablet:h-[32.5rem] desktop:h-[40rem] relative">
+                <SwiperSlide className="rounded-2xl overflow-hidden w-[90vw] tablet:w-full desktop:w-1/3 tablet:h-[32.5rem] desktop:h-[40rem] relative">
                     <div
                         className="absolute z-10 w-[40rem] -left-[20rem] -bottom-[8.125rem]">
                         <img src={ellipseViolet.src} alt="violet"/>
@@ -213,7 +217,7 @@ const Slider: FC = () => {
                     <img src={slideThird.src} alt="" className="absolute object-cover w-full h-full"/>
 
                     <div className="absolute bottom-10 left-4 z-20">
-                        <p className="text-stories-title">$831 <span>mln</span></p>
+                        <p className="text-stories-title mobile:text-[6rem] mb-4">$831 <span>mln</span></p>
                         <p className="text-stories-subtitle">2022 sales</p>
                     </div>
                 </SwiperSlide>

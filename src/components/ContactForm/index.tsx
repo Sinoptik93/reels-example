@@ -45,9 +45,9 @@ const ContactForm: FC = () => {
 
                 <button
                     type="submit"
-                    className="w-full p-3 rounded-xl flex items-center justify-center bg-accent-orange text-accent-orange transition-all tablet:p-4 desktop:p-4 hover:bg-accent-violet hover:text-accent-violet"
+                    className="w-full p-2 rounded-xl flex items-center justify-center bg-accent-orange text-accent-orange transition-all tablet:p-2 desktop:p-2 hover:bg-accent-violet hover:text-accent-violet"
                 >
-                    <p className="text-button text-white px-4 py-6 rounded-xl">apply</p>
+                    <p className="text-button text-white px-2 py-3 rounded-xl">apply</p>
                 </button>
             </form>
         </div>

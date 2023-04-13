@@ -20,15 +20,15 @@ function LiveVideos() {
 
     return (
         <Swiper
-            className={`custom overflow-hidden w-full mobile:pt-2  mobile:mb-6 h-[16rem] tablet:h-[19rem] desktop:h-[19rem] swiper-backface-hidden p-7`}
+            className={`custom-card overflow-hidden w-full mobile:pt-2  mobile:mb-6 h-[16rem] tablet:h-[19rem] desktop:h-[19rem] swiper-backface-hidden py-7 px-28 tablet:p-7 desktop:p-7 `}
             spaceBetween={isMobile ? 20 : 10}
             slidesPerView={isMobile ? 1 : "auto"}
             centeredSlides
             loop
+            pagination={{ clickable: true }}
             modules={[EffectCards, Pagination]}
             effect={"cards"}
             grabCursor={true}
-            pagination={{ clickable: true }}
             cardsEffect={{
                 slideShadows: true,
                 rotate: false,

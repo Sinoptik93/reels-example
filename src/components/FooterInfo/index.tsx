@@ -1,5 +1,6 @@
 import {useEffect, useState, useRef} from "react";
 import type {FC} from 'react';
+import dayJs from 'dayjs'
 import ellipseViolet from "@assets/images/ellipse-violet.svg";
 import ellipseOrange from "@assets/images/ellipse-orange.svg";
 
@@ -8,22 +9,30 @@ interface FooterInfoProps {
     timeout: number;
 }
 
+dayJs().format()
+
 const FooterInfo: FC<FooterInfoProps> = ({
-                                             step = 10,
+                                             step = 5,
                                              timeout = 1000,
                                          }) => {
 
+    const PATTERN = 'DD MMM YYYY, HH:mm:ss'
     const [count, setCount] = useState(0);
+    const [time, setTime] = useState<string>(dayJs(new Date).format(PATTERN));
 
     useEffect(() => {
         const timer = setInterval(() => {
-            setCount((prevValue) => prevValue + step);
+            const getRandomValue = (stepCount: number) => Math.floor(Math.random() * stepCount);
+
+            setCount((prevValue) => prevValue + getRandomValue(step));
+            setTime(dayJs(new Date).format(PATTERN));
         }, timeout);
 
         return () => {
             clearInterval(timer);
         }
     }, []);
+
 
     return (
         <div
@@ -58,7 +67,7 @@ const FooterInfo: FC<FooterInfoProps> = ({
                         </svg>
                     </div>
 
-                    <p className="text-legend text-white uppercase">22 Dec 2022, 14:57:42</p>
+                    <p className="text-legend text-white uppercase">{time}</p>
                 </div>
             </div>
         </div>

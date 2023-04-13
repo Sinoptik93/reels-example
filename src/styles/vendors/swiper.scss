@@ -32,3 +32,23 @@
     @apply desktop:scale-125 desktop:brightness-100 desktop:transition-all desktop:z-10
   }
 }
+
+.swiper.custom-card {
+  .swiper-slide {
+    @apply opacity-50 transition-all
+  }
+
+  .swiper-slide-active {
+    @apply opacity-100 transition-all z-10
+  }
+
+  &--darken {
+    .swiper-slide {
+      @apply brightness-50 transition-all
+    }
+
+    .swiper-slide-active {
+      @apply brightness-100 transition-all z-10
+    }
+  }
+}

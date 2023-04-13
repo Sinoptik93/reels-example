@@ -9,8 +9,8 @@ import dodoIsExtra from "@assets/videos/dodo-is.mp4";
 
 ---
 
-<section class="container flex mobile:mb-4 desktop:items-center tablet:mb-[9.8125rem] tablet:gap-[10.5rem] desktop:gap-10 desktop:mb-[18.75rem] mobile:flex-col">
-    <div class="flex flex-col desktop:flex-1 tablet:pt-10">
+<section class="tablet:container desktop:container flex mobile:mb-4 desktop:items-center tablet:mb-[9.8125rem] tablet:gap-[10.5rem] desktop:gap-10 desktop:mb-[18.75rem] mobile:flex-col">
+    <div class="mobile:container flex flex-col desktop:flex-1 tablet:pt-10">
         <p class="text-regular-2 mobile:text-[1.625rem] mobile:mb-8 desktop:leading-custom tablet:mb-20 desktop:-mt-20">
             Everything ready<br class="mobile:hidden tablet:hidden"> since day one and free<br class="mobile:hidden tablet:hidden"> for franchisees.<br class="mobile:hidden tablet:hidden"> Improved, developed<br class="mobile:hidden tablet:hidden"> and supported<br class="mobile:hidden tablet:hidden"> <span>by our team 24/7</span>
         </p>
@@ -24,14 +24,14 @@ import dodoIsExtra from "@assets/videos/dodo-is.mp4";
         </div>
     </div>
 
-    <div class="relative mobile:mb-10 desktop:max-w-[42.5rem] mobile:min-h-[65vh] tablet:min-w-[20.125rem]  rounded-xl overflow-hidden desktop:flex-1 tablet:max-h-[30rem] desktop:max-h-[59.375rem]">
+    <div class="relative mobile:mb-10 desktop:max-w-[42.5rem] mobile:h-[80vh] tablet:min-w-[20.125rem]  rounded-xl overflow-hidden desktop:flex-1 tablet:max-h-[30rem] desktop:max-h-[59.375rem]">
         <video class="min-h-full min-w-full object-cover scale-[1.15]" loop autoplay muted playsinline >
             <source src={dodoIs} type="video/webm"/>
             <source src={dodoIsExtra} type="video/mp4"/>
         </video>
     </div>
 
-    <div class="flex tablet:hidden desktop:hidden mobile:gap-[0.75rem] tablet:gap-[1.625rem] desktop:gap-[3.75rem] mb-10 tablet:flex-col-reverse mobile:flex-col-reverse mobile:border-l mobile:pl-4">
+    <div class="flex mobile:container tablet:hidden desktop:hidden mobile:gap-[0.75rem] tablet:gap-[1.625rem] desktop:gap-[3.75rem] mb-10 tablet:flex-col-reverse mobile:flex-col-reverse mobile:border-l mobile:pl-4">
         <div class="w-[7.5rem] tablet:w-[10.125rem] desktop:w-[12.0625rem]">
             <Image src={logoRestaurantLeadership} alt="Logo Restaurant Leadership" class="object-contain w-full h-full"/>
         </div>

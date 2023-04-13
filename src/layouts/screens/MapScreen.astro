@@ -14,8 +14,8 @@ import ellipseViolet from "../../assets/images/ellipse-violet.svg";
 import ellipseOrange from "../../assets/images/ellipse-orange.svg";
 ---
 
-<section class="container mobile:mb-[6.625rem] tablet:mb-[8.125rem] desktop:mb-[12.375rem]">
-    <div class="tablet:min-h-[11rem] desktop:min-h-[25rem] tablet:mb-[5rem]">
+<section class="mobile:mb-[6.625rem] tablet:mb-[8.125rem] desktop:mb-[12.375rem]">
+    <div class="container tablet:min-h-[11rem] desktop:min-h-[25rem] tablet:mb-[5rem]">
         <div class="relative mobile:pt-3 mb-7 ">
             <h2 class="text-h-2 mobile:mb-5 desktop:leading-custom">Data makes every move transparent
             </h2>
@@ -33,7 +33,7 @@ import ellipseOrange from "../../assets/images/ellipse-orange.svg";
     </div>
 
     <div
-        class="relative flex mobile:mb-10 mobile:min-h-[40rem] tablet:min-h-[31.875rem] desktop:min-h-[47.375rem] mobile:flex-col tablet:mb-[4.3125rem] desktop:mb-[6.25rem] desktop:-mt-[1.125rem]">
+        class="tablet:container desktop:container relative flex mobile:mb-10 mobile:min-h-[40rem] tablet:min-h-[31.875rem] desktop:min-h-[47.375rem] mobile:flex-col tablet:mb-[4.3125rem] desktop:mb-[6.25rem] desktop:-mt-[1.125rem]">
         <div class="relative overflow-hidden rounded-3xl bg-gray desktop:w-2/3 tablet:w-2/3 mobile:w-full mobile:grow">
             <div
                 class="absolute z-10 w-[100rem] -left-[87rem] -top-[10rem] desktop:-left-[86rem] desktop:-top-[23rem]">
@@ -126,16 +126,18 @@ import ellipseOrange from "../../assets/images/ellipse-orange.svg";
         </div>
     </div>
 
-    <div class="block tablet:hidden desktop:hidden">
+    <div class="container block tablet:hidden desktop:hidden">
         <div class="mb-4">
             <p class="text-subtitle">Real-time pizzeria</p>
         </div>
+    </div>
 
+    <div class="tablet:hidden desktop:hidden">
         <LiveVideos client:only/>
     </div>
 
     <div
-        class="flex mobile:gap-3 tablet:gap-9 desktop:gap-6 mobile:flex-col-reverse mobile:border-l mobile:pl-4">
+        class="container flex mobile:gap-3 tablet:gap-9 desktop:gap-6 mobile:flex-col-reverse mobile:border-l mobile:pl-4">
         <div class="w-[3.875rem] tablet:w-[5.1875rem] desktop:w-[9.5625rem] shrink-0">
             <Image src={logoPmq} alt="Logo PMQ" class="object-contain w-full"/>
         </div>
