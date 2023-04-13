@@ -27,7 +27,7 @@ const Slider: FC = () => {
     return (
         <>
             <Swiper
-                className="desktop:h-[40rem] mb-20 overflow-hidden w-full swiper-backface-hidden hidden desktop:block"
+                className="container desktop:h-[57rem] mb-20 overflow-hidden w-full swiper-backface-hidden hidden desktop:block"
                 spaceBetween={10}
                 slidesPerView={3}
             >
