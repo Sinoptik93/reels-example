@@ -26,203 +26,68 @@ function Reels() {
     }, []);
 
     return (
-        <>
-            <Swiper
-                className={`custom h-[82vh] tablet:h-[32.5rem] desktop:h-[70rem] tablet:pt-30 desktop:pt-28 pb-8 desktop:pb-[10rem] desktop:min-h-[63rem] mb-20 overflow-hidden w-full swiper-backface-hidden`}
-                centeredSlides
-                loop
-                breakpoints={{
-                    320: {
-                        spaceBetween: 30,
-                        slidesPerView: 1,
-                    },
-                    560: {
-                        spaceBetween: 0,
-                        slidesPerView: "auto",
-                    },
-                }}
-                modules={[Pagination]}
-                loopedSlides={2}
-                pagination={{ clickable: true }}
-                onSlideChange={(swiper) => {
-                    const currentIndex = swiper.activeIndex;
-                    const prevIndex = swiper.previousIndex;
-                    const currentSlide = swiper.slides[currentIndex].querySelector("video");
-                    const prevSlide = swiper.slides[prevIndex].querySelector("video");
+        <Swiper
+            className={`custom-card--darken px-5 custom h-[82vh] tablet:h-[32.5rem] desktop:h-[70rem] tablet:pt-30 desktop:pt-28 pb-8 desktop:pb-[10rem] desktop:min-h-[63rem] mb-20 overflow-hidden w-full swiper-backface-hidden`}
+            centeredSlides
+            loop
+            breakpoints={{
+                320: {
+                    spaceBetween: 10,
+                    slidesPerView: 1,
+                },
+                560: {
+                    spaceBetween: 0,
+                    slidesPerView: "auto",
+                },
+            }}
+            modules={[Pagination]}
+            loopedSlides={2}
+            pagination={{ clickable: true }}
+            onSlideChange={(swiper) => {
+                const currentIndex = swiper.activeIndex;
+                const prevIndex = swiper.previousIndex;
+                const currentSlide = swiper.slides[currentIndex].querySelector("video");
+                const prevSlide = swiper.slides[prevIndex].querySelector("video");
 
-                    // prevSlide?.pause();
-                    // currentSlide?.play();
-                }}
-            >
-                <SwiperSlide className="rounded-2xl overflow-hidden tablet:w-[95vw] desktop:w-[35rem]">
-                    <video className="top-0 left-0 min-h-full min-w-full object-cover" loop autoPlay muted playsInline >
-                        <source src={videowebm} type="video/webm"/>
-                        <source src={videomp4} type="video/mp4"/>
-                    </video>
-                </SwiperSlide>
+                // prevSlide?.pause();
+                // currentSlide?.play();
+            }}
+        >
+            <SwiperSlide className="rounded-2xl overflow-hidden tablet:w-[95vw] desktop:w-[35rem]">
+                <video className="top-0 left-0 min-h-full min-w-full object-cover" loop autoPlay muted playsInline >
+                    <source src={videowebm} type="video/webm"/>
+                    <source src={videomp4} type="video/mp4"/>
+                </video>
+            </SwiperSlide>
 
-                <SwiperSlide className="rounded-2xl overflow-hidden tablet:w-[95vw] desktop:w-[35rem]">
-                    <video className="top-0 left-0 min-h-full min-w-full object-cover" loop autoPlay muted playsInline>
-                        <source src={videowebm2} type="video/webm"/>
-                        <source src={videomp42} type="video/mp4"/>
-                    </video>
-                </SwiperSlide>
+            <SwiperSlide className="rounded-2xl overflow-hidden tablet:w-[95vw] desktop:w-[35rem]">
+                <video className="top-0 left-0 min-h-full min-w-full object-cover" loop autoPlay muted playsInline>
+                    <source src={videowebm2} type="video/webm"/>
+                    <source src={videomp42} type="video/mp4"/>
+                </video>
+            </SwiperSlide>
 
-                <SwiperSlide className="rounded-2xl overflow-hidden tablet:w-[95vw] desktop:w-[35rem]">
-                    <video className="top-0 left-0 min-h-full min-w-full object-cover" loop autoPlay muted playsInline>
-                        <source src={videowebm3} type="video/webm"/>
-                        <source src={videomp43} type="video/mp4"/>
-                    </video>
-                </SwiperSlide>
+            <SwiperSlide className="rounded-2xl overflow-hidden tablet:w-[95vw] desktop:w-[35rem]">
+                <video className="top-0 left-0 min-h-full min-w-full object-cover" loop autoPlay muted playsInline>
+                    <source src={videowebm3} type="video/webm"/>
+                    <source src={videomp43} type="video/mp4"/>
+                </video>
+            </SwiperSlide>
 
-                <SwiperSlide className="rounded-2xl overflow-hidden tablet:w-[95vw] desktop:w-[35rem]">
-                    <video className="top-0 left-0 min-h-full min-w-full object-cover" loop autoPlay muted playsInline>
-                        <source src={videowebm4} type="video/webm"/>
-                        <source src={videomp44} type="video/mp4"/>
-                    </video>
-                </SwiperSlide>
+            <SwiperSlide className="rounded-2xl overflow-hidden tablet:w-[95vw] desktop:w-[35rem]">
+                <video className="top-0 left-0 min-h-full min-w-full object-cover" loop autoPlay muted playsInline>
+                    <source src={videowebm4} type="video/webm"/>
+                    <source src={videomp44} type="video/mp4"/>
+                </video>
+            </SwiperSlide>
 
-                <SwiperSlide className="rounded-2xl overflow-hidden tablet:w-[95vw] desktop:w-[35rem]">
-                    <video className="top-0 left-0 min-h-full min-w-full object-cover" loop autoPlay muted playsInline >
-                        <source src={videowebm5} type="video/webm"/>
-                        <source src={videomp45} type="video/mp4"/>
-                    </video>
-                </SwiperSlide>
-            </Swiper>
-
-            <Swiper
-                className={`custom-card--darken desktop:hidden tablet:hidden px-10 custom h-[82vh] tablet:h-[32.5rem] desktop:h-[70rem] tablet:pt-30 desktop:pt-28 pb-8 desktop:pb-[10rem] desktop:min-h-[63rem] mb-20 overflow-hidden w-full swiper-backface-hidden`}
-                centeredSlides
-                loop
-                breakpoints={{
-                    320: {
-                        spaceBetween: 30,
-                        slidesPerView: 1,
-                    },
-                    560: {
-                        spaceBetween: 0,
-                        slidesPerView: "auto",
-                    },
-                }}
-                modules={[EffectCards, Pagination]}
-                effect={"cards"}
-                grabCursor={true}
-                cardsEffect={{
-                    slideShadows: true,
-                    rotate: false,
-                    perSlideOffset: 10
-                }}
-                loopedSlides={2}
-                pagination={{ clickable: true }}
-                onSlideChange={(swiper) => {
-                    const currentIndex = swiper.activeIndex;
-                    const prevIndex = swiper.previousIndex;
-                    const currentSlide = swiper.slides[currentIndex].querySelector("video");
-                    const prevSlide = swiper.slides[prevIndex].querySelector("video");
-
-                    // prevSlide?.pause();
-                    // currentSlide?.play();
-                }}
-            >
-                <SwiperSlide className="rounded-2xl overflow-hidden tablet:w-[95vw] desktop:w-[35rem]">
-                    <video className="top-0 left-0 min-h-full min-w-full object-cover" loop autoPlay muted playsInline >
-                        <source src={videowebm} type="video/webm"/>
-                        <source src={videomp4} type="video/mp4"/>
-                    </video>
-                </SwiperSlide>
-
-                <SwiperSlide className="rounded-2xl overflow-hidden tablet:w-[95vw] desktop:w-[35rem]">
-                    <video className="top-0 left-0 min-h-full min-w-full object-cover" loop autoPlay muted playsInline>
-                        <source src={videowebm2} type="video/webm"/>
-                        <source src={videomp42} type="video/mp4"/>
-                    </video>
-                </SwiperSlide>
-
-                <SwiperSlide className="rounded-2xl overflow-hidden tablet:w-[95vw] desktop:w-[35rem]">
-                    <video className="top-0 left-0 min-h-full min-w-full object-cover" loop autoPlay muted playsInline>
-                        <source src={videowebm3} type="video/webm"/>
-                        <source src={videomp43} type="video/mp4"/>
-                    </video>
-                </SwiperSlide>
-
-                <SwiperSlide className="rounded-2xl overflow-hidden tablet:w-[95vw] desktop:w-[35rem]">
-                    <video className="top-0 left-0 min-h-full min-w-full object-cover" loop autoPlay muted playsInline>
-                        <source src={videowebm4} type="video/webm"/>
-                        <source src={videomp44} type="video/mp4"/>
-                    </video>
-                </SwiperSlide>
-
-                <SwiperSlide className="rounded-2xl overflow-hidden tablet:w-[95vw] desktop:w-[35rem]">
-                    <video className="top-0 left-0 min-h-full min-w-full object-cover" loop autoPlay muted playsInline >
-                        <source src={videowebm5} type="video/webm"/>
-                        <source src={videomp45} type="video/mp4"/>
-                    </video>
-                </SwiperSlide>
-            </Swiper>
-
-            <Swiper
-                className={`custom-card--darken desktop:hidden tablet:hidden px-10 custom h-[82vh] tablet:h-[32.5rem] desktop:h-[70rem] tablet:pt-30 desktop:pt-28 pb-8 desktop:pb-[10rem] desktop:min-h-[63rem] mb-20 overflow-hidden w-full swiper-backface-hidden`}
-                centeredSlides
-                loop
-                breakpoints={{
-                    320: {
-                        spaceBetween: 10,
-                        slidesPerView: 1,
-                    },
-                    560: {
-                        spaceBetween: 0,
-                        slidesPerView: "auto",
-                    },
-                }}
-                modules={[Pagination]}
-                loopedSlides={2}
-                pagination={{ clickable: true }}
-                onSlideChange={(swiper) => {
-                    const currentIndex = swiper.activeIndex;
-                    const prevIndex = swiper.previousIndex;
-                    const currentSlide = swiper.slides[currentIndex].querySelector("video");
-                    const prevSlide = swiper.slides[prevIndex].querySelector("video");
-
-                    // prevSlide?.pause();
-                    // currentSlide?.play();
-                }}
-            >
-                <SwiperSlide className="rounded-2xl overflow-hidden tablet:w-[95vw] desktop:w-[35rem]">
-                    <video className="top-0 left-0 min-h-full min-w-full object-cover" loop autoPlay muted playsInline >
-                        <source src={videowebm} type="video/webm"/>
-                        <source src={videomp4} type="video/mp4"/>
-                    </video>
-                </SwiperSlide>
-
-                <SwiperSlide className="rounded-2xl overflow-hidden tablet:w-[95vw] desktop:w-[35rem]">
-                    <video className="top-0 left-0 min-h-full min-w-full object-cover" loop autoPlay muted playsInline>
-                        <source src={videowebm2} type="video/webm"/>
-                        <source src={videomp42} type="video/mp4"/>
-                    </video>
-                </SwiperSlide>
-
-                <SwiperSlide className="rounded-2xl overflow-hidden tablet:w-[95vw] desktop:w-[35rem]">
-                    <video className="top-0 left-0 min-h-full min-w-full object-cover" loop autoPlay muted playsInline>
-                        <source src={videowebm3} type="video/webm"/>
-                        <source src={videomp43} type="video/mp4"/>
-                    </video>
-                </SwiperSlide>
-
-                <SwiperSlide className="rounded-2xl overflow-hidden tablet:w-[95vw] desktop:w-[35rem]">
-                    <video className="top-0 left-0 min-h-full min-w-full object-cover" loop autoPlay muted playsInline>
-                        <source src={videowebm4} type="video/webm"/>
-                        <source src={videomp44} type="video/mp4"/>
-                    </video>
-                </SwiperSlide>
-
-                <SwiperSlide className="rounded-2xl overflow-hidden tablet:w-[95vw] desktop:w-[35rem]">
-                    <video className="top-0 left-0 min-h-full min-w-full object-cover" loop autoPlay muted playsInline >
-                        <source src={videowebm5} type="video/webm"/>
-                        <source src={videomp45} type="video/mp4"/>
-                    </video>
-                </SwiperSlide>
-            </Swiper>
-        </>
+            <SwiperSlide className="rounded-2xl overflow-hidden tablet:w-[95vw] desktop:w-[35rem]">
+                <video className="top-0 left-0 min-h-full min-w-full object-cover" loop autoPlay muted playsInline >
+                    <source src={videowebm5} type="video/webm"/>
+                    <source src={videomp45} type="video/mp4"/>
+                </video>
+            </SwiperSlide>
+        </Swiper>
     )
 }
 
