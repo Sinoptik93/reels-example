@@ -155,7 +155,7 @@ const Slider: FC = () => {
             </Swiper>
 
             <Swiper
-                className="h-[80vh] tablet:h-[32.5rem] desktop:h-[40rem] mb-20 pb-10 overflow-hidden w-full swiper-backface-hidden block desktop:hidden tablet:hidden"
+                className="h-[76vh] tablet:h-[32.5rem] desktop:h-[40rem] mb-20 pb-10 overflow-hidden w-full swiper-backface-hidden block desktop:hidden tablet:hidden"
                 spaceBetween={10}
                 slidesPerView={1}
                 modules={[Pagination]}
