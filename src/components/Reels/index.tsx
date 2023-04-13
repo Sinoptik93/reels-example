@@ -27,7 +27,7 @@ function Reels() {
 
     return (
         <Swiper
-            className={`custom h-[87vh] tablet:h-[32.5rem] desktop:h-[90vh] pt-28 desktop:pt-30 pb-8 desktop:pb-[10rem] desktop:min-h-[63rem] mb-20 overflow-hidden w-full swiper-backface-hidden`}
+            className={`custom h-[82vh] tablet:h-[32.5rem] desktop:h-[90vh] pt-28 desktop:pt-30 pb-8 desktop:pb-[10rem] desktop:min-h-[63rem] mb-20 overflow-hidden w-full swiper-backface-hidden`}
             centeredSlides
             loop
             breakpoints={{
