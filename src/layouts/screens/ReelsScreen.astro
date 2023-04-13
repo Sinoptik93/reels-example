@@ -2,18 +2,22 @@
 import Reels from "@components/Reels"
 ---
 
-<section class="container mobile:mb-[7.25rem] tablet:mb-[12.5625rem] desktop:mb-[13.875rem]">
-    <div class="mb-[1.875rem] tablet:mb-[2.25rem] desktop:mb-[4rem]">
+<section class="mobile:mb-[7.25rem] tablet:mb-[12.5625rem] desktop:mb-[13.875rem]">
+    <div class="relative container mb-[1.875rem] tablet:mb-[2.25rem] desktop:mb-[16rem]">
         <p class="text-subtitle mobile:mb-[0.875rem] desktop:mb-2.5">Lovebrand</p>
 
         <div class="relative">
-            <h2 class="text-h-2 mobile:leading-custom">Building a brand loved <br class="mobile:hidden tablet:hidden">across the globe</h2>
+            <h2 class="text-h-2 mobile:leading-custom mb-2 tablet:mb-4 desktop:mb-0">Building a brand <span>loved <br class="mobile:hidden tablet:hidden">across the globe</span></h2>
+
+            <p class="text-regular block desktop:absolute desktop:top-[9.9rem] desktop:left-[44.4375rem]">
+                Our tech allows ultimate personalization<br class="mobile:hidden tablet:hidden"> and highest responsiveness to<br class="mobile:hidden tablet:hidden"> feedback. We blend the warmth of a<br class="mobile:hidden tablet:hidden"> small business with the impact of a<br class="mobile:hidden tablet:hidden"> brand loved by millions.
+            </p>
         </div>
     </div>
 
-    <Reels client:load />
+    <Reels client:only />
 
-    <div class="flex mobile:flex-col gap-5 tablet:gap-6 desktop:gap-[13rem] mt-20">
+    <div class="container flex mobile:flex-col gap-5 tablet:gap-6 desktop:gap-[13rem] mt-20">
         <div class="flex-1">
             <p class="text-regular tablet:text-3xl tablet:leading-custom">It takes more than a famous name or secret recipe to create a beloved brand. You have to understand your customers' needs and meet them consistently.
             </p>

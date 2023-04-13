@@ -25,10 +25,10 @@
 
 .swiper.custom {
   .swiper-slide {
-    //@apply desktop:brightness-50 desktop:transition-all
+    @apply desktop:brightness-50 desktop:transition-all
   }
 
   .swiper-slide-active {
-    //@apply desktop:scale-110 desktop:brightness-100 desktop:transition-all desktop:z-10
+    @apply desktop:scale-125 desktop:brightness-100 desktop:transition-all desktop:z-10
   }
 }
