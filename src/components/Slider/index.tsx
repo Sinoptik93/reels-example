@@ -155,7 +155,7 @@ const Slider: FC = () => {
             </Swiper>
 
             <Swiper
-                className="h-[70vh] tablet:h-[32.5rem] desktop:h-[40rem] pb-10 overflow-hidden w-full swiper-backface-hidden block desktop:hidden tablet:hidden"
+                className="h-[82vh] tablet:h-[32.5rem] desktop:h-[40rem] pb-10 overflow-hidden w-full swiper-backface-hidden block desktop:hidden tablet:hidden"
                 spaceBetween={10}
                 slidesPerView={1}
                 autoplay={{
