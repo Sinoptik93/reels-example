@@ -20,7 +20,7 @@ import {
 function Reels() {
     return (
         <Swiper
-            className={`custom-card--darken px-5 custom h-[82vh] tablet:h-[32.5rem] desktop:h-[70rem] tablet:pt-30 desktop:pt-28 pb-8 desktop:pb-[10rem] desktop:min-h-[63rem] mb-20 overflow-hidden w-full swiper-backface-hidden`}
+            className={`custom-card--darken px-5 custom h-[87vh] tablet:h-[32.5rem] desktop:h-[70rem] tablet:pt-30 desktop:pt-28 pb-8 desktop:pb-[10rem] desktop:min-h-[63rem] mb-20 overflow-hidden w-full swiper-backface-hidden`}
             centeredSlides
             loop
             breakpoints={{
