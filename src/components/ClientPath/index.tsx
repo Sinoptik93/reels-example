@@ -25,7 +25,6 @@ function ClientPath() {
 
     return (
         <>
-
             <Swiper
                 className="h-[48rem] mb-20 overflow-hidden w-full swiper-backface-hidden hidden mobile:block pb-10"
                 spaceBetween={0}
@@ -161,22 +160,25 @@ function ClientPath() {
                     <div className="flex justify-between absolute bottom-0 w-full">
                         <div className="">
                             <div>
-                                <p className="text-slide-heading  mb-4">Digital sales <br/>channels</p>
-                                <p className="text-[1.25rem] font-regular">Our app, website and POS with <br/>automated marketing personalization <br/>sends orders directly to kitchen. <br/>Full customer experience control.</p>
+                                <p className="text-slide-heading mb-2">Digital sales <br/>channels</p>
+                                <p className="text-[1.25rem] font-bold mb-4">Full customer experience control.</p>
+                                <p className="text-[1.25rem] font-regular">Our app, website and POS with <br/>automated marketing personalization <br/>sends orders directly to kitchen.</p>
                             </div>
                         </div>
 
                         <div className="">
                             <div>
-                                <p className="text-slide-heading  mb-4">Smart pizzeria <br/>and delivery</p>
-                                <p className="text-[1.25rem] font-regular">Digitalizes every process, including order <br/>tracking, supply forecasts, delivery, HR <br/>and P&L management. Consistent quality <br/>and total manageability.</p>
+                                <p className="text-slide-heading mb-2">Smart pizzeria <br/>and delivery</p>
+                                <p className="text-[1.25rem] font-bold mb-4">Consistent quality and total manageability.</p>
+                                <p className="text-[1.25rem] font-regular">Digitalizes every process, including order <br/>tracking, supply forecasts, delivery, HR <br/>and P&L management.</p>
                             </div>
                         </div>
 
                         <div className="">
                             <div>
-                                <p className="text-slide-heading  mb-4">Central multiple-store <br/>management</p>
-                                <p className="text-[1.25rem] font-regular">Real-time data analytics help managers <br/>make fact-based decisions from <br/>one center. Full transparenncy and <br/>fast scaling.</p>
+                                <p className="text-slide-heading mb-2">Central multiple-store <br/>management</p>
+                                <p className="text-[1.25rem] font-bold mb-4"> Full transparency and fast scaling.</p>
+                                <p className="text-[1.25rem] font-regular">Real-time data analytics help managers <br/>make fact-based decisions from <br/>one center.</p>
                             </div>
                         </div>
                     </div>

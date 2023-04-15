@@ -1,5 +1,4 @@
-import {useState, useEffect} from 'react'
-import { Pagination, EffectCards } from 'swiper';
+import { Pagination } from 'swiper';
 
 import videomp4 from "@assets/videos/short-1.mp4"
 import videowebm from "@assets/videos/short-1.webm"
@@ -36,15 +35,6 @@ function Reels() {
             modules={[Pagination]}
             loopedSlides={2}
             pagination={{ clickable: true }}
-            onSlideChange={(swiper) => {
-                const currentIndex = swiper.activeIndex;
-                const prevIndex = swiper.previousIndex;
-                const currentSlide = swiper.slides[currentIndex].querySelector("video");
-                const prevSlide = swiper.slides[prevIndex].querySelector("video");
-
-                // prevSlide?.pause();
-                // currentSlide?.play();
-            }}
         >
             <SwiperSlide className="rounded-2xl overflow-hidden tablet:w-[95vw] desktop:w-[35rem]">
                 <video className="top-0 left-0 min-h-full min-w-full object-cover" loop autoPlay muted playsInline >

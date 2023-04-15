@@ -6,12 +6,9 @@ import {
 } from 'swiper/react';
 
 
-import slide1 from "@assets/images/slide-1-crop.png"
 import slide1Tablet from "@assets/images/slide-1-crop2.png"
 import slide2Tablet from "@assets/images/slide-2-tablet.png"
 import slide3Tablet from "@assets/images/slide-3-tablet.png"
-import slide2 from "@assets/images/slide-2-crop.png"
-import slide3 from "@assets/images/slide-3-crop.png"
 
 import slideFirst from "@assets/images/slide-1.png"
 import slideSecond from "@assets/images/slide-2.png"
@@ -22,12 +19,11 @@ import ellipseOrange from "@assets/images/ellipse-orange.svg"
 
 
 const Slider: FC = () => {
-    const isMobile = document.body;
-    console.log(isMobile)
+
     return (
         <>
             <Swiper
-                className="container desktop:h-[50rem] mb-20 overflow-hidden w-full swiper-backface-hidden hidden desktop:block"
+                className="container desktop:h-[35rem] mb-20 overflow-hidden w-full swiper-backface-hidden hidden desktop:block"
                 spaceBetween={10}
                 slidesPerView={3}
             >

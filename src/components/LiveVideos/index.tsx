@@ -1,28 +1,18 @@
-import {useState, useEffect} from 'react'
-import { Pagination } from 'swiper';
-
-import previewImage from "@assets/images/live-video-preview.png"
-
 import {
     Swiper,
     SwiperSlide
 } from 'swiper/react';
+import { Pagination, EffectCards} from 'swiper';
+import previewImage from "@assets/images/live-video-preview.png"
 
-import { EffectCards } from "swiper";
 
 function LiveVideos() {
-    const [count, setCount] = useState(0)
-    const [isMobile, setIsMobile] = useState(false);
-
-    useEffect(() => {
-      setIsMobile(document.body.offsetWidth < 640)
-    }, []);
 
     return (
         <Swiper
-            className={`custom-card overflow-hidden w-full mobile:pt-2  mobile:mb-6 h-[16rem] tablet:h-[19rem] desktop:h-[19rem] swiper-backface-hidden mobile:py-9 mobile:px-12 tablet:px-7  tablet:py-12 desktop:px-7 desktop:py-12 `}
-            spaceBetween={isMobile ? 20 : 10}
-            slidesPerView={isMobile ? 1 : "auto"}
+            className="custom-card overflow-hidden w-full mobile:pt-2  mobile:mb-6 h-[16rem] tablet:h-[19rem] desktop:h-[19rem] swiper-backface-hidden mobile:py-9 mobile:px-12 tablet:px-7  tablet:py-12 desktop:px-7 desktop:py-12"
+            spaceBetween={document.body.offsetWidth < 640 ? 20 : 10}
+            slidesPerView={document.body.offsetWidth < 640 ? 1 : "auto"}
             centeredSlides
             loop
             pagination={{ clickable: true }}
