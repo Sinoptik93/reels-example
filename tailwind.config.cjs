@@ -1,4 +1,17 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require('tailwindcss/defaultTheme');
+const plugin = require('tailwindcss/plugin');
+
+const customPlugin = plugin(({ matchUtilities, theme }) => {
+    matchUtilities(
+          {
+              'translate-z': (value) => ({
+                  '--tw-translate-z': value,
+                  transform: ` translate3d(var(--tw-translate-x), var(--tw-translate-y), var(--tw-translate-z)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))`,
+              }),
+          },
+          { values: theme('translate'), supportsNegativeValues: true }
+    )
+})
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -71,5 +84,5 @@ module.exports = {
             }
         },
     },
-    plugins: [],
+    plugins: [customPlugin],
 }
