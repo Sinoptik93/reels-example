@@ -66,8 +66,8 @@ function ClientPath() {
                     </video>
 
                     <div className="container absolute left-1/2 -translate-x-2/4 bottom-8 flex flex-col gap-2 w-full">
-                        <p className="text-[1rem] font-bold grow">Full customer experience control.</p>
-                        <p className="text-[1rem] font-regular grow">Our app, website and POS with automated marketing personalization sends orders directly to kitchen.</p>
+                        <p className="text-[1.25rem] font-bold grow">Full customer experience control.</p>
+                        <p className="text-[1.25rem] font-regular grow">Our app, website and POS with automated marketing personalization sends orders directly to kitchen.</p>
                     </div>
                 </SwiperSlide>
 
@@ -83,8 +83,8 @@ function ClientPath() {
                     </video>
 
                     <div className="container absolute left-1/2 -translate-x-2/4 bottom-8 flex flex-col gap-2 w-full">
-                        <p className="text-[1rem] font-bold grow">Consistent quality and total manageability.</p>
-                        <p className="text-[1rem] font-regular grow">Digitalizes every process, including order tracking, supply forecasts, delivery, HR and P&L management.</p>
+                        <p className="text-[1.25rem] font-bold grow">Consistent quality and total manageability.</p>
+                        <p className="text-[1.25rem] font-regular grow">Digitalizes every process, including order tracking, supply forecasts, delivery, HR and P&L management.</p>
                     </div>
                 </SwiperSlide>
 
@@ -100,8 +100,8 @@ function ClientPath() {
                     </video>
 
                     <div className="container absolute left-1/2 -translate-x-2/4 bottom-8 flex flex-col gap-2 w-full">
-                        <p className="text-[1rem] font-bold grow">Full transparency and fast scaling.</p>
-                        <p className="text-[1rem] font-regular grow">Real-time data analytics help managers make fact-based decisions from one center.</p>
+                        <p className="text-[1.25rem] font-bold grow">Full transparency and fast scaling.</p>
+                        <p className="text-[1.25rem] font-regular grow">Real-time data analytics help managers make fact-based decisions from one center.</p>
                     </div>
                 </SwiperSlide>
             </Swiper>
