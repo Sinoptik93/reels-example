@@ -1,13 +1,20 @@
+import {useState} from "react";
 import type {FC} from 'react';
+// import PhoneInput from 'react-phone-number-input'
+import Select from 'react-select'
+import 'react-phone-number-input/style.css'
+import checkmark from "@assets/icons/checkmark.svg"
 
 interface InputProps {
     label: string;
     name: string;
+    error?: string | null;
 }
 
 const Input: FC<InputProps> = ({
                                    label,
-                                   name
+                                   name,
+                                   error = null
                                }) => {
 
     return (
@@ -40,6 +47,13 @@ const ContactForm: FC = () => {
                         <Input label="phone" name="email"/>
                         <Input label="country" name="country"/>
                         <Input label="experience" name="experience"/>
+
+                        <div className="flex items-center">
+                            <div className="relative h-[1.5rem] w-[1.5rem] mr-2">
+                                <img src={checkmark.src} alt="" className="absolute object-cover w-full h-full"/>
+                            </div>
+                            <p className="text-dark-gray text-[1.5rem] font-regular">our <a href="#" className="decoration-1 underline underline-offset-4">privacy policy</a></p>
+                        </div>
                     </div>
                 </div>
 
