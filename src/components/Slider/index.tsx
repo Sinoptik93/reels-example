@@ -5,7 +5,6 @@ import {
     SwiperSlide
 } from 'swiper/react';
 
-
 import slide1Tablet from "@assets/images/slide-1-crop2.png"
 import slide2Tablet from "@assets/images/slide-2-tablet.png"
 import slide3Tablet from "@assets/images/slide-3-tablet.png"
@@ -23,7 +22,7 @@ const Slider: FC = () => {
     return (
         <>
             <Swiper
-                className="container desktop:h-[35rem] mb-20 overflow-hidden w-full swiper-backface-hidden hidden desktop:block"
+                className="container desktop:h-[45rem] mb-20 overflow-hidden w-full swiper-backface-hidden hidden desktop:block"
                 spaceBetween={10}
                 slidesPerView={3}
             >
