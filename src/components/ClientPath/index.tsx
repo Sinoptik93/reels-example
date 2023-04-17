@@ -1,4 +1,3 @@
-import {useState} from 'react'
 import {Pagination} from 'swiper';
 
 import pathLeft from "@assets/videos/path-1-left.webm"
@@ -19,10 +18,6 @@ import ellipseOrange from "@assets/images/ellipse-orange.svg";
 
 
 function ClientPath() {
-    const [count, setCount] = useState(0)
-    // const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-    // const refsList = Array.from(Array(5).keys()).map((item) => createRef<HTMLVideoElement>());
-
     return (
         <>
             <Swiper
@@ -129,13 +124,13 @@ function ClientPath() {
                 </SwiperSlide>
             </Swiper>
 
-            <div className="relative mobile:hidden tablet:hidden w-full">
+            <div className="container relative mobile:hidden tablet:hidden w-full overflow-hidden rounded-2xl">
                 <div
                     className="absolute z-10 w-[300rem] -left-[135rem] -top-[66rem] rotate-90">
                     <img src={ellipseViolet.src} alt="violet"/>
                 </div>
 
-                <video className="top-0 left-0 desktop:h-[54.8125rem] tablet:h-[26.875rem] w-[100vw] max-w-[130rem] mx-auto absolute mobile:hidden object-video-frame" loop autoPlay muted playsInline>
+                <video className="top-24 left-0 desktop:h-[54.8125rem] tablet:h-[26.875rem] mx-auto absolute mobile:hidden object-video-frame" loop autoPlay muted playsInline>
                     <source src={pathFull} type="video/webm"/>
                     <source src={pathFullExtra} type="video/mp4"/>
                 </video>
