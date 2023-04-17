@@ -10,7 +10,7 @@ function LiveVideos() {
 
     return (
         <Swiper
-            className="custom-card overflow-hidden w-full mobile:pt-2  mobile:mb-6 h-[16rem] tablet:h-[19rem] desktop:h-[19rem] swiper-backface-hidden mobile:py-9 mobile:px-12 tablet:px-7  tablet:py-12 desktop:px-7 desktop:py-12"
+            className="custom-card overflow-hidden w-full mobile:pt-2 mobile:mb-6 h-[16rem] tablet:h-[19rem] desktop:h-[19rem] swiper-backface-hidden mobile:py-9 mobile:px-8 tablet:px-7 tablet:py-12 desktop:px-7 desktop:py-12"
             spaceBetween={document.body.offsetWidth < 640 ? 20 : 10}
             slidesPerView={document.body.offsetWidth < 640 ? 1 : "auto"}
             centeredSlides

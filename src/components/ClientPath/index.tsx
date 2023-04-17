@@ -3,11 +3,11 @@ import {Pagination} from 'swiper';
 import pathLeft from "@assets/videos/path-1-left.webm"
 import pathCenter from "@assets/videos/path-2-center.webm"
 import pathRight from "@assets/videos/path-3-right.webm"
-import pathFull from "@assets/videos/path.webm"
+import pathFull from "@assets/videos/dodo-path.webm"
 import pathLeftExtra from "@assets/videos/path-1-left.mp4"
 import pathCenterExtra from "@assets/videos/path-2-center.mp4"
 import pathRightExtra from "@assets/videos/path-3-right.mp4"
-import pathFullExtra from "@assets/videos/path.mp4"
+import pathFullExtra from "@assets/videos/dodo-path.mp4"
 
 import {
     Swiper,
@@ -65,15 +65,9 @@ function ClientPath() {
                         <source src={pathLeftExtra} type="video/mp4"/>
                     </video>
 
-                    <div className="container absolute left-1/2 -translate-x-2/4 bottom-8 flex gap-6">
-                        {/* <p className="text-regular text-[1rem]">Website, <br/>App, <br/>POS</p>
-                        <div className="w-20">
-                            <svg viewBox="0 0 63 34" fill="none" xmlns="http://www.w3.org/2000/svg" className="object-cover w-full h-full">
-                                <path d="M41.0977 1L62.1267 17.3327L41.0977 33.6653" stroke="black" strokeMiterlimit="10"/>
-                                <path d="M62 17L-1.84774e-06 17" stroke="black"/>
-                            </svg>
-                        </div> */}
-                        <p className="text-regular text-[1rem] w-[11rem] grow">Our app, website and POS with automated marketing personalization sends orders directly to kitchen. Full customer experience control.</p>
+                    <div className="container absolute left-1/2 -translate-x-2/4 bottom-8 flex flex-col gap-2 w-[22rem]">
+                        <p className="text-[1rem] font-bold grow">Full customer experience control.</p>
+                        <p className="text-[1rem] font-regular grow">Our app, website and POS with automated marketing personalization sends orders directly to kitchen.</p>
                     </div>
                 </SwiperSlide>
 
@@ -88,15 +82,9 @@ function ClientPath() {
                         <source src={pathCenterExtra} type="video/mp4"/>
                     </video>
 
-                    <div className="container absolute left-1/2  -translate-x-2/4 bottom-8 flex gap-6">
-                        {/* <p className="text-regular text-[1rem]">Website, <br/>App, <br/>POS</p>
-                        <div className="w-20">
-                            <svg viewBox="0 0 63 34" fill="none" xmlns="http://www.w3.org/2000/svg" className="object-cover w-full h-full">
-                                <path d="M41.0977 1L62.1267 17.3327L41.0977 33.6653" stroke="black" strokeMiterlimit="10"/>
-                                <path d="M62 17L-1.84774e-06 17" stroke="black"/>
-                            </svg>
-                        </div> */}
-                        <p className="text-regular text-[1rem] w-[11rem] grow">Digitalizes every process, including order tracking, supply forecasts, delivery, HR and P&L management. Consistent quality and total manageability.</p>
+                    <div className="container absolute left-1/2 -translate-x-2/4 bottom-8 flex flex-col gap-2 w-[22rem]">
+                        <p className="text-[1rem] font-bold grow">Consistent quality and total manageability.</p>
+                        <p className="text-[1rem] font-regular grow">Digitalizes every process, including order tracking, supply forecasts, delivery, HR and P&L management.</p>
                     </div>
                 </SwiperSlide>
 
@@ -111,15 +99,9 @@ function ClientPath() {
                         <source src={pathRightExtra} type="video/mp4"/>
                     </video>
 
-                    <div className="container absolute left-1/2 -translate-x-2/4 bottom-8 flex gap-6">
-                        {/* <p className="text-regular text-[1rem]">Website, <br/>App, <br/>POS</p>
-                        <div className="w-20">
-                            <svg viewBox="0 0 63 34" fill="none" xmlns="http://www.w3.org/2000/svg" className="object-cover w-full h-full">
-                                <path d="M41.0977 1L62.1267 17.3327L41.0977 33.6653" stroke="black" strokeMiterlimit="10"/>
-                                <path d="M62 17L-1.84774e-06 17" stroke="black"/>
-                            </svg>
-                        </div> */}
-                        <p className="text-regular text-[1rem] w-[11rem] grow">Real-time data analytics help managers make fact-based decisions from one center. Full transparenncy and fast scaling.</p>
+                    <div className="container absolute left-1/2 -translate-x-2/4 bottom-8 flex flex-col gap-2 w-[22rem]">
+                        <p className="text-[1rem] font-bold grow">Full transparency and fast scaling.</p>
+                        <p className="text-[1rem] font-regular grow">Real-time data analytics help managers make fact-based decisions from one center.</p>
                     </div>
                 </SwiperSlide>
             </Swiper>
@@ -130,7 +112,7 @@ function ClientPath() {
                     <img src={ellipseViolet.src} alt="violet"/>
                 </div>
 
-                <video className="absolute-x-center w-[100vw] max-w-[130rem] desktop:h-[54.8125rem] tablet:h-[26.875rem] mx-auto absolute mobile:hidden object-video-frame" loop autoPlay muted playsInline>
+                <video className="absolute absolute-x-center -top-[4rem] w-[100vw] max-w-[130rem] desktop:h-[54.8125rem] tablet:h-[26.875rem] mx-auto mobile:hidden scale-[1.2]" loop autoPlay muted playsInline>
                     <source src={pathFull} type="video/webm"/>
                     <source src={pathFullExtra} type="video/mp4"/>
                 </video>
@@ -152,7 +134,7 @@ function ClientPath() {
                         </svg>
                     </div>
 
-                    <div className="flex justify-between absolute bottom-0 w-full">
+                    <div className="flex justify-between absolute bottom-0 pb-8 w-full">
                         <div className="">
                             <div>
                                 <p className="text-slide-heading mb-2">Digital sales <br/>channels</p>

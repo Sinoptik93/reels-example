@@ -4,6 +4,7 @@ import { Image } from '@astrojs/image/components';
 import dodoLogo from "@assets/icons/logo-dodo-black.svg";
 import map from "@assets/videos/dodo-planet.gif";
 import mapVideo from "@assets/videos/dodo-planet.webm";
+import mapVideoExtra from "@assets/videos/dodo-planet.mp4";
 import ellipseViolet from "@assets/images/ellipse-violet.svg";
 import ellipseOrange from "@assets/images/ellipse-orange.svg";
 ---
@@ -48,7 +49,8 @@ import ellipseOrange from "@assets/images/ellipse-orange.svg";
 
                 <div class="shrink-0 w-[10.125rem] tablet:w-[13.1875rem] desktop:w-[19.5625rem] overflow-hidden rounded-full">
                     <video class="min-h-full min-w-full object-cover scale-[1.15]" loop autoplay muted playsinline >
-                        <source src={mapVideo} type="video/mp4"/>
+                        <source src={mapVideo} type="video/webm"/>
+                        <source src={mapVideoExtra} type="video/mp4"/>
                     </video>
                 </div>
             </div>

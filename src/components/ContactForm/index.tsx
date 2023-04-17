@@ -1,7 +1,7 @@
 import {useState} from "react";
 import type {FC} from 'react';
 // import PhoneInput from 'react-phone-number-input'
-import Select from 'react-select'
+// import Select from 'react-select'
 import 'react-phone-number-input/style.css'
 import checkmark from "@assets/icons/checkmark.svg"
 
@@ -36,15 +36,28 @@ const Input: FC<InputProps> = ({
 }
 
 const ContactForm: FC = () => {
+    const [value, setValue] = useState<any>();
+    const options = [
+        { value: 'chocolate', label: 'Chocolate' },
+        { value: 'strawberry', label: 'Strawberry' },
+        { value: 'vanilla', label: 'Vanilla' }
+    ]
+
     return (
         <div className="bg-gray rounded-xl tablet:w-1/3">
             <form >
                 <div className="px-5 pt-10">
-                    <p className="text-h-1 tablet:text-4xl mb-6">Contact <span>us</span></p>
+                    <p className="text-h-1 tablet:text-4xl mb-6 mobile:hidden">Contact <span>us</span></p>
 
                     <div className="flex flex-col gap-12 mb-6">
                         <Input label="name" name="name"/>
-                        <Input label="phone" name="email"/>
+                        <Input label="phone" name="phone"/>
+                        {/*<PhoneInput*/}
+                        {/*    placeholder="Enter phone number"*/}
+                        {/*    value={value}*/}
+                        {/*    onChange={setValue}*/}
+                        {/*/>*/}
+                        {/*<Select options={options} />*/}
                         <Input label="country" name="country"/>
                         <Input label="experience" name="experience"/>
 
