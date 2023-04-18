@@ -67,7 +67,7 @@ function ClientPath() {
 
                     <div className="container absolute left-1/2 -translate-x-2/4 bottom-8 flex flex-col gap-2 w-full">
                         <p className="text-[1.25rem] font-bold grow">Full customer experience control.</p>
-                        <p className="text-[1.25rem] font-regular grow">Our app, website and POS with automated marketing personalization sends orders directly to kitchen.</p>
+                        <p className="text-[1.25rem] font-regular grow">Our app, website, kiosk and POS with automated marketing personalization sends orders directly to kitchen.</p>
                     </div>
                 </SwiperSlide>
 
@@ -101,7 +101,7 @@ function ClientPath() {
 
                     <div className="container absolute left-1/2 -translate-x-2/4 bottom-8 flex flex-col gap-2 w-full">
                         <p className="text-[1.25rem] font-bold grow">Full transparency and fast scaling.</p>
-                        <p className="text-[1.25rem] font-regular grow">Real-time data analytics help managers make fact-based decisions from one center.</p>
+                        <p className="text-[1.25rem] font-regular grow">Platform connects all the processes in all stores together, allowing to manage everything from one center with total reliance on data.</p>
                     </div>
                 </SwiperSlide>
             </Swiper>
@@ -139,7 +139,7 @@ function ClientPath() {
                             <div>
                                 <p className="text-slide-heading mb-2">Digital sales <br/>channels</p>
                                 <p className="text-[1.25rem] font-bold mb-4">Full customer experience control.</p>
-                                <p className="text-[1.25rem] font-regular">Our app, website and POS with <br/>automated marketing personalization <br/>sends orders directly to kitchen.</p>
+                                <p className="text-[1.25rem] font-regular">Our app, website, kiosk and POS with <br/>automated marketing personalization <br/>sends orders directly to kitchen.</p>
                             </div>
                         </div>
 
@@ -155,11 +155,10 @@ function ClientPath() {
                             <div>
                                 <p className="text-slide-heading mb-2">Central multiple-store <br/>management</p>
                                 <p className="text-[1.25rem] font-bold mb-4"> Full transparency and fast scaling.</p>
-                                <p className="text-[1.25rem] font-regular">Real-time data analytics help managers <br/>make fact-based decisions from <br/>one center.</p>
+                                <p className="text-[1.25rem] font-regular">Platform connects all the processes in all <br/>stores together, allowing to manage everything <br/>from one center with total reliance on data.</p>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </>
