@@ -5,13 +5,19 @@ import {
     SwiperSlide
 } from 'swiper/react';
 
-import slide1Tablet from "@assets/images/slide-1-crop2.png"
-import slide2Tablet from "@assets/images/slide-2-tablet.png"
-import slide3Tablet from "@assets/images/slide-3-tablet.png"
+// import slide1Tablet from "@assets/images/slide-1-crop2.png"
+import slide1TabletWebp from "@assets/images/slide-1-crop2.webp"
+// import slide2Tablet from "@assets/images/slide-2-tablet.png"
+import slide2TabletWebp from "@assets/images/slide-2-tablet.webp"
+// import slide3Tablet from "@assets/images/slide-3-tablet.png"
+import slide3TabletWebp from "@assets/images/slide-3-tablet.webp"
 
-import slideFirst from "@assets/images/slide-1.png"
-import slideSecond from "@assets/images/slide-2.png"
-import slideThird from "@assets/images/slide-3.png"
+// import slideFirst from "@assets/images/slide-1.png"
+import slideFirstWebp from "@assets/images/slide-1.webp"
+// import slideSecond from "@assets/images/slide-2.png"
+import slideSecondWebp from "@assets/images/slide-2.webp"
+// import slideThird from "@assets/images/slide-3.png"
+import slideThirdWebp from "@assets/images/slide-3.webp"
 
 import ellipseViolet from "@assets/images/ellipse-violet.svg"
 import ellipseOrange from "@assets/images/ellipse-orange.svg"
@@ -37,7 +43,7 @@ const Slider: FC = () => {
                         <img src={ellipseOrange.src} alt="orange"/>
                     </div>
 
-                    <img src={slideFirst.src} alt="" className="absolute object-cover w-full h-full"/>
+                    <img src={slideFirstWebp.src} alt="" className="absolute object-cover w-full h-full"  loading="lazy"/>
 
                     <div className="absolute bottom-10 left-4 z-20">
                         <p className="text-stories-title">900+</p>
@@ -56,7 +62,7 @@ const Slider: FC = () => {
                         <img src={ellipseOrange.src} alt="orange" />
                     </div>
 
-                    <img src={slideSecond.src} alt="" className="absolute object-cover w-full h-full"/>
+                    <img src={slideSecondWebp.src} alt="" className="absolute object-cover w-full h-full"  loading="lazy"/>
 
                     <div className="absolute bottom-10 left-4 z-20">
                         <p className="text-stories-title">17</p>
@@ -75,7 +81,7 @@ const Slider: FC = () => {
                         <img src={ellipseOrange.src} alt="orange"/>
                     </div>
 
-                    <img src={slideThird.src} alt="" className="absolute object-cover w-full h-full"/>
+                    <img src={slideThirdWebp.src} alt="" className="absolute object-cover w-full h-full"  loading="lazy"/>
 
                     <div className="absolute bottom-10 left-4 z-20">
                         <p className="text-stories-title">$831 <span>mln</span></p>
@@ -102,7 +108,7 @@ const Slider: FC = () => {
                         <img src={ellipseOrange.src} alt="orange"/>
                     </div>
 
-                    <img src={slide1Tablet.src} alt="" className="absolute object-cover w-full h-full"/>
+                    <img src={slide1TabletWebp.src} alt="" className="absolute object-cover w-full h-full"  loading="lazy"/>
 
                     <div className="absolute bottom-10 left-4 z-20">
                         <p className="text-stories-title">900+</p>
@@ -121,7 +127,7 @@ const Slider: FC = () => {
                         <img src={ellipseOrange.src} alt="orange" />
                     </div>
 
-                    <img src={slide2Tablet.src} alt="" className="absolute object-cover w-full h-full"/>
+                    <img src={slide2TabletWebp.src} alt="" className="absolute object-cover w-full h-full"  loading="lazy"/>
 
                     <div className="absolute bottom-10 left-4 z-20">
                         <p className="text-stories-title">17</p>
@@ -140,7 +146,7 @@ const Slider: FC = () => {
                         <img src={ellipseOrange.src} alt="orange"/>
                     </div>
 
-                    <img src={slide3Tablet.src} alt="" className="absolute object-cover w-full h-full"/>
+                    <img src={slide3TabletWebp.src} alt="" className="absolute object-cover w-full h-full"  loading="lazy"/>
 
                     <div className="absolute bottom-10 left-4 z-20">
                         <p className="text-stories-title">$831 <span>mln</span></p>
@@ -171,7 +177,7 @@ const Slider: FC = () => {
                         <img src={ellipseOrange.src} alt="orange"/>
                     </div>
 
-                    <img src={slideFirst.src} alt="" className="absolute object-cover w-full h-full"/>
+                    <img src={slideFirstWebp.src} alt="" className="absolute object-cover w-full h-full"  loading="lazy"/>
 
                     <div className="absolute bottom-10 left-4 z-20">
                         <p className="text-stories-title">900+</p>
@@ -190,7 +196,7 @@ const Slider: FC = () => {
                         <img src={ellipseOrange.src} alt="orange" />
                     </div>
 
-                    <img src={slideSecond.src} alt="" className="absolute object-cover w-full h-full"/>
+                    <img src={slideSecondWebp.src} alt="" className="absolute object-cover w-full h-full"  loading="lazy"/>
 
                     <div className="absolute bottom-10 left-4 z-20">
                         <p className="text-stories-title">17</p>
@@ -209,7 +215,7 @@ const Slider: FC = () => {
                         <img src={ellipseOrange.src} alt="orange"/>
                     </div>
 
-                    <img src={slideThird.src} alt="" className="absolute object-cover w-full h-full"/>
+                    <img src={slideThirdWebp.src} alt="" className="absolute object-cover w-full h-full" loading="lazy"/>
 
                     <div className="absolute bottom-10 left-4 z-20">
                         <p className="text-stories-title mobile:text-[6rem] mb-4">$831 <span>mln</span></p>
