@@ -4,6 +4,7 @@ import {
 } from 'swiper/react';
 import { Pagination, EffectCards} from 'swiper';
 import previewImage from "@assets/images/live-video-preview.png"
+import previewImageWebp from "@assets/images/live-video-preview.webp"
 
 
 function LiveVideos() {
@@ -31,7 +32,11 @@ function LiveVideos() {
                     <div className="bg-white rounded-full w-3 h-3"></div>
                 </div>
 
-                <img src={previewImage.src} alt="" className="relative min-h-full min-w-full object-cover"/>
+                <picture>
+                    <source src={previewImageWebp.src} className="relative min-h-full min-w-full object-cover" type="image/webp"/>
+                    <source src={previewImage.src} className="relative min-h-full min-w-full object-cover" type="image/png"/>
+                    <img src={previewImage.src} alt="" className="relative min-h-full min-w-full object-cover"/>
+                </picture>
             </SwiperSlide>
 
             <SwiperSlide className="relative rounded-xl overflow-hidden">
@@ -40,7 +45,11 @@ function LiveVideos() {
                     <div className="bg-white rounded-full w-3 h-3"></div>
                 </div>
 
-                <img src={previewImage.src} alt="" className="relative min-h-full min-w-full object-cover"/>
+                <picture>
+                    <source src={previewImageWebp.src} className="relative min-h-full min-w-full object-cover" type="image/webp"/>
+                    <source src={previewImage.src} className="relative min-h-full min-w-full object-cover" type="image/png"/>
+                    <img src={previewImage.src} alt="" className="relative min-h-full min-w-full object-cover"/>
+                </picture>
             </SwiperSlide>
 
             <SwiperSlide className="relative rounded-xl overflow-hidden">
@@ -49,7 +58,11 @@ function LiveVideos() {
                     <div className="bg-white rounded-full w-3 h-3"></div>
                 </div>
 
-                <img src={previewImage.src} alt="" className="relative min-h-full min-w-full object-cover"/>
+                <picture>
+                    <source src={previewImageWebp.src} className="relative min-h-full min-w-full object-cover" type="image/webp"/>
+                    <source src={previewImage.src} className="relative min-h-full min-w-full object-cover" type="image/png"/>
+                    <img src={previewImage.src} alt="" className="relative min-h-full min-w-full object-cover"/>
+                </picture>
             </SwiperSlide>
 
             <SwiperSlide className="relative rounded-xl overflow-hidden">
@@ -58,7 +71,11 @@ function LiveVideos() {
                     <div className="bg-white rounded-full w-3 h-3"></div>
                 </div>
 
-                <img src={previewImage.src} alt="" className="relative min-h-full min-w-full object-cover"/>
+                <picture>
+                    <source src={previewImageWebp.src} className="relative min-h-full min-w-full object-cover" type="image/webp"/>
+                    <source src={previewImage.src} className="relative min-h-full min-w-full object-cover" type="image/png"/>
+                    <img src={previewImage.src} alt="" className="relative min-h-full min-w-full object-cover"/>
+                </picture>
             </SwiperSlide>
 
             <SwiperSlide className="relative rounded-xl overflow-hidden">
@@ -67,7 +84,11 @@ function LiveVideos() {
                     <div className="bg-white rounded-full w-3 h-3"></div>
                 </div>
 
-                <img src={previewImage.src} alt="" className="relative min-h-full min-w-full object-cover"/>
+                <picture>
+                    <source src={previewImageWebp.src} className="relative min-h-full min-w-full object-cover" type="image/webp"/>
+                    <source src={previewImage.src} className="relative min-h-full min-w-full object-cover" type="image/png"/>
+                    <img src={previewImage.src} alt="" className="relative min-h-full min-w-full object-cover"/>
+                </picture>
             </SwiperSlide>
         </Swiper>
     )
