@@ -132,7 +132,7 @@ function ClientPath() {
                         <div className="">
                             <div>
                                 <p className="text-slide-heading mb-2">Digital sales <br/>channels</p>
-                                <p className="text-[1.25rem] font-bold mb-4">Full customer experience control.</p>
+                                <p className="text-[1.25rem] font-bold mb-4 text-accent-orange">Full customer experience control.</p>
                                 <p className="text-[1.25rem] font-regular">Our app, website, kiosk and POS with <br/>automated marketing personalization <br/>sends orders directly to kitchen.</p>
                             </div>
                         </div>
@@ -140,7 +140,7 @@ function ClientPath() {
                         <div className="">
                             <div>
                                 <p className="text-slide-heading mb-2">Smart pizzeria <br/>and delivery</p>
-                                <p className="text-[1.25rem] font-bold mb-4">Consistent quality and total manageability.</p>
+                                <p className="text-[1.25rem] font-bold mb-4 text-accent-orange">Consistent quality and total manageability.</p>
                                 <p className="text-[1.25rem] font-regular">Digitalizes every process, including order <br/>tracking, supply forecasts, delivery, HR <br/>and P&L management.</p>
                             </div>
                         </div>
@@ -148,7 +148,7 @@ function ClientPath() {
                         <div className="">
                             <div>
                                 <p className="text-slide-heading mb-2">Central multiple-store <br/>management</p>
-                                <p className="text-[1.25rem] font-bold mb-4"> Full transparency and fast scaling.</p>
+                                <p className="text-[1.25rem] font-bold mb-4 text-accent-orange"> Full transparency and fast scaling.</p>
                                 <p className="text-[1.25rem] font-regular">Platform connects all the processes in all <br/>stores together, allowing to manage everything <br/>from one center with total reliance on data.</p>
                             </div>
                         </div>

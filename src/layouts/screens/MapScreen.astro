@@ -4,6 +4,7 @@ import LiveVideos from "@components/LiveVideos"
 
 import logoPmq from "@assets/icons/logopmq.svg";
 import logoDodo from "@assets/icons/logo-dodo-black.svg";
+import logoDodInline from "@assets/icons/dodo-inline-black.svg";
 import clock from "@assets/icons/clock.svg";
 import employee from "@assets/icons/employee.svg";
 import geo from "@assets/icons/geo.svg";
@@ -32,7 +33,7 @@ import ellipseOrange from "@assets/images/ellipse-orange.svg";
     </div>
 
     <div
-        class="tablet:container desktop:container relative flex mobile:mb-10 mobile:min-h-[40rem] tablet:min-h-[31.875rem] desktop:min-h-[47.375rem] mobile:flex-col tablet:mb-[4.3125rem] desktop:mb-[6.25rem] desktop:-mt-[1.125rem]">
+        class="mobile:hidden tablet:container desktop:container relative flex mobile:mb-10 mobile:min-h-[40rem] tablet:min-h-[31.875rem] desktop:min-h-[47.375rem] mobile:flex-col tablet:mb-[4.3125rem] desktop:mb-[6.25rem] desktop:-mt-[1.125rem]">
         <div class="relative overflow-hidden rounded-3xl bg-gray desktop:w-2/3 tablet:w-2/3 mobile:w-full mobile:grow">
             <div
                 class="absolute z-10 w-[100rem] -left-[87rem] -top-[10rem] desktop:-left-[86rem] desktop:-top-[23rem]">
@@ -85,7 +86,7 @@ import ellipseOrange from "@assets/images/ellipse-orange.svg";
                     <div class="flex gap-0.5">
                         <p class="text-unit">738</p>
 
-                        <div class="w-4 tablet:w-6 desktop:w-9">
+                        <div class="hidden w-4 tablet:w-6 desktop:w-9">
                             <Image src={geo} alt="Geo icon" class="object-contain w-full h-full"/>
                         </div>
                     </div>
@@ -97,7 +98,7 @@ import ellipseOrange from "@assets/images/ellipse-orange.svg";
                     <div class="flex gap-0.5">
                         <p class="text-unit">23 525</p>
 
-                        <div class="w-5 tablet:w-8 desktop:w-11">
+                        <div class="hidden w-5 tablet:w-8 desktop:w-11">
                             <Image alt="Employee icon" src={employee} class="object-contain w-full h-full"/>
                         </div>
                     </div>
@@ -109,7 +110,7 @@ import ellipseOrange from "@assets/images/ellipse-orange.svg";
                     <div class="flex gap-0.5 items-center">
                         <p class="text-unit">15</p>
 
-                        <div class="w-5 tablet:w-8 desktop:w-11">
+                        <div class="hidden w-5 tablet:w-8 desktop:w-11">
                             <Image alt="Earth icon" src={global} class="object-contain w-full h-full"/>
                         </div>
                     </div>
@@ -125,6 +126,62 @@ import ellipseOrange from "@assets/images/ellipse-orange.svg";
                 <LiveVideos client:only/>
             </div>
         </div>
+    </div>
+
+
+    <div class="hidden relative desktop:hidden tablet:hidden rounded-3xl w-full h-[65vh] overflow-hidden mb-10">
+        <Image alt="Earth icon" src={map} class="absolute object-cover w-full h-full"/>
+
+        <div
+            class="absolute  w-[56.25rem] -bottom-[26rem] -right-[36.75rem]">
+            <Image src={ellipseOrange} alt="orange"/>
+        </div>
+
+            <div class="relative p-8 w-full h-full flex flex-col justify-between">
+                <div class="flex flex-col gap-6">
+
+                    <div class="flex justify-between items-center">
+                        <div class="w-[8.83rem]">
+                            <Image src={logoDodInline} alt="Dodo logo" class="object-contain w-full h-full"/>
+                        </div>
+
+                        <p class="text-[0.75rem] text-dark-gray font-regular">15 Mar. 2023, 12:22</p>
+                    </div>
+
+                    <p class="text-4xl">$ 350,654,120</p>
+                </div>
+
+                <div>
+                    <div class="flex">
+                        <div class="relative rounded-3xl desktop:rounded-4xl overflow-hidden p-7 mobile:py-5 tablet:p-8 desktop:p-10 bg-white">
+                            <div class="relative z-10">
+                                <p class="text-strong-title">738</p>
+                                <p class="text-strong-subtitle">units</p>
+                            </div>
+                        </div>
+
+                        <div class="relative rounded-3xl desktop:rounded-4xl overflow-hidden p-7 mobile:py-5 tablet:p-8 desktop:p-10 bg-white">
+                            <div class="relative z-10">
+                                <p class="text-strong-title">17</p>
+                                <p class="text-strong-subtitle">countries</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative rounded-3xl desktop:rounded-4xl overflow-hidden p-7 mobile:py-5 tablet:p-8 desktop:p-10 bg-white w-full">
+                        <div class="relative">
+                            <p class="text-strong-title">23 525</p>
+                            <p class="text-strong-subtitle">dodo people</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
     </div>
 
     <div class="container block tablet:hidden desktop:hidden">
