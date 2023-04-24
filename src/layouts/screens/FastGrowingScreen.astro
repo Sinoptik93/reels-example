@@ -1,5 +1,12 @@
 ---
 import Slider from "@components/Slider";
+import videomp4 from "@assets/videos/short-pizza.mp4";
+import videowebm from "@assets/videos/short-pizza.webm";
+import ellipseViolet from "@assets/images/ellipse-violet-extra.svg";
+import ellipseOrange from "@assets/images/ellipse-orange-extra.svg";
+import {Image} from "@astrojs/image/components";
+// <Slider client:only/>
+
 ---
 
 <div class="mobile:mb-[6rem] tablet:mb-[7.8125rem] desktop:mb-[7.8125rem]">
@@ -12,8 +19,68 @@ import Slider from "@components/Slider";
         </div>
     </div>
 
-    <div class="tablet:container desktop:container">
+    <div class="tablet:container desktop:container  mobile:flex-col tablet:flex-col tablet:gap-[5.125rem] flex desktop:gap-[5.125rem]">
+        <div class="relative grow-[2] translate-z-0 h-[31.5rem] mobile:mb-10 mobile:h-[85vh] tablet:max-h-[30rem] tablet:min-w-[20.125rem] desktop:h-[44.5rem] desktop:max-w-[30rem] rounded-4xl overflow-hidden">
+            <video class="absolute translate-z-0 object-cover w-full h-full scale-[1.01]" preload="auto" loop autoplay muted playsinline>
+                <source src={videowebm} type="video/webm"/>
+                <source src={videomp4} type="video/mp4"/>
+            </video>
+        </div>
 
+        <div class="mobile:container grow">
+
+            <div class="flex">
+                <div class="relative rounded-3xl desktop:rounded-4xl overflow-hidden p-7 mobile:py-5 tablet:p-8 desktop:p-10 bg-gray">
+                    <div
+                        class="absolute tablet:hidden w-[22.563rem] tablet:w-[56.25rem] desktop:w-[56.25rem] mobile:-top-[190px] bottom-auto tablet:bottom-[0] desktop:bottom-[0] -left-[140px] tablet:-left-[1rem] desktop:-left-[280px]">
+                        <Image src={ellipseViolet} alt="violet"/>
+                    </div>
+
+                    <div
+                        class="absolute tablet:hidden w-[22.563rem] tablet:w-[56.25rem] desktop:w-[56.25rem] -bottom-[180px] tablet:-bottom-[1.75rem] desktop:-bottom-[300px] left-[10px] tablet:left-[1rem] desktop:left-[11px]">
+                        <Image src={ellipseOrange} alt="orange"/>
+                    </div>
+
+                    <div class="relative z-10">
+                        <p class="text-strong-title">900+</p>
+                        <p class="text-strong-subtitle">stores</p>
+                    </div>
+                </div>
+
+                <div class="relative rounded-3xl desktop:rounded-4xl overflow-hidden p-7 mobile:py-5 tablet:p-8 desktop:p-10 bg-gray">
+                    <div
+                        class="absolute tablet:hidden w-[22.563rem] tablet:w-[56.25rem] desktop:w-[56.25rem] -bottom-[44px] tablet:bottom-[0] desktop:bottom-[0] -left-[337px] tablet:-left-[1rem] desktop:-left-[513px]">
+                        <Image src={ellipseViolet} alt="violet"/>
+                    </div>
+
+                    <div
+                        class="absolute tablet:hidden w-[22.563rem] tablet:w-[56.25rem] desktop:w-[56.25rem] -bottom-[180px] tablet:-bottom-[1.75rem] desktop:-bottom-[300px] -left-[186px] tablet:-right-[1rem] desktop:-left-[270px]">
+                        <Image src={ellipseOrange} alt="orange"/>
+                    </div>
+
+                    <div class="relative z-10">
+                        <p class="text-strong-title">17</p>
+                        <p class="text-strong-subtitle">countries</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative rounded-3xl desktop:rounded-4xl overflow-hidden p-7 mobile:py-5 tablet:p-8 desktop:p-10 bg-gray w-full">
+                <div
+                    class="absolute tablet:hidden desktop:hidden w-[22.563em] tablet:w-[20rem] desktop:w-[20rem] -top-[317px] tablet:-top-[1.75rem] desktop:-left-[450px] -left-[140px] tablet:-left-[1rem] desktop:top-[450px]">
+                    <Image src={ellipseViolet} alt="violet"/>
+                </div>
+
+                <div
+                    class="absolute tablet:hidden w-[22.563rem] tablet:w-[56.25rem] desktop:w-[56.25rem] -bottom-[53px] tablet:-bottom-[1.75rem] desktop:-bottom-[105px] right-auto left-[12px] tablet:-right-[1rem] desktop:left-[11px]">
+                    <Image src={ellipseOrange} alt="orange"/>
+                </div>
+
+                <div class="relative">
+                    <p class="text-strong-title">$ 831 mln</p>
+                    <p class="text-strong-subtitle">2022 sales</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <Slider client:only/>
 </div>

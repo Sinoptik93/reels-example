@@ -83,4 +83,39 @@ import ellipseOrange from "@assets/images/ellipse-orange.svg";
         <p class="text-regular-3 hidden mobile:block mobile:text-xl">We have no other fees. Tech is part of our franchise package along with full operational support. <a href="#">More details here.</a></p>
     </div>
 
+    <div class="mt-10 tablet:container desktop:container bg-gray rounded-3xl px-10 py-10 tablet:px-14 tablet:py-10 desktop:px-14 desktop:py-10 flex">
+        <div class="flex flex-col gap-6 desktop:mt-[2.0625rem] desktop:ml-[0.625rem] tablet:mt-[1.375rem] tablet:ml-[0.8125rem]">
+            <p class="text-[6.25rem] font-regular leading-custom">Franchise<br>terms</p>
+
+            <div class="translate-z-0 w-[10.125rem] tablet:w-[13.1875rem] desktop:w-[19.5625rem] overflow-hidden rounded-full absolute ">
+                <video class="translate-z-0min-h-full min-w-full object-cover scale-[1.15]" loop autoplay muted playsinline >
+                    <source src={mapVideo} type="video/webm"/>
+                    <source src={mapVideoExtra} type="video/mp4"/>
+                </video>
+            </div>
+        </div>
+
+        <div class="flex flex-col grow gap-2.5 ">
+            <div class="flex justify-between gap-[3rem] flex-col">
+                <div>
+                    <p class="text-3xl tracking-tightest desktop:text-[3.75rem] tablet:text-4xl">$150 000</p>
+                    <p class="text-unit-title">country fee</p>
+                </div>
+
+                <div>
+                    <p class="text-3xl tracking-tightest desktop:text-[3.75rem] tablet:text-4xl">5%</p>
+                    <p class="text-unit-title">country fee</p>
+                </div>
+
+                <div>
+                    <p class="tracking-tightest text-3xl desktop:text-[3.75rem] tablet:text-4xl">$5000</p>
+                    <p class="text-unit-title">per store fee</p>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="text-regular-3 mobile:hidden">We have no other fees. Tech is part of our franchise package along with full operational support. <a href="#">More details here.</a></p>
+    </div>
+
 </section>

@@ -37,6 +37,11 @@ module.exports = {
                 '2xl': '4rem',
             },
         },
+        borderRadius: {
+            ...defaultTheme.borderRadius,
+            "4xl": "1.625rem",
+            "5xl": "2.5rem",
+        },
         extend: {
             fontFamily: {
                 regular: ["Factor A Light", ...defaultTheme.fontFamily.sans],
@@ -45,7 +50,7 @@ module.exports = {
             },
             objectPosition: {
                 'video-frame': '0 30px',
-                'video-frame-mobile': '0 136px',
+                'video-frame-mobile': '0 -50px',
             },
             lineHeight: {
                 'custom': '1.1',
@@ -71,7 +76,8 @@ module.exports = {
                 mobile: {'min': '320px', 'max': '654px'},
                 tablet: {'min': '655px', 'max': '1255px'},
                 desktop: {'min': '1256px'},
-                tall: {'min': '1256px', 'max': '1440px'}
+                tall: {'min': '1256px', 'max': '1440px'},
+                "extra-mobile": {'min': '420px', 'max': '480px'}
             },
             colors: {
                 "white": "hsl(0,0%,100%)",

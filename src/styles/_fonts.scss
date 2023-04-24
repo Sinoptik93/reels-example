@@ -11,118 +11,128 @@
   font-weight: 400;
 }
 
-.text-main {
-  @apply font-regular text-4xl tablet:text-7xl desktop:text-[9.375rem] text-white;
-}
-
-.text-sub-main {
-  @apply font-regular text-3xl tablet:text-3xl desktop:text-5xl;
-
-  span {
-    @apply text-accent-orange;
-  }
-}
-
-.text-extra {
-  @apply font-regular text-[3.75rem] tablet:text-[3.75rem] desktop:text-[3.75rem] dark:text-white;
-
-  span {
-    @apply text-accent-orange;
-  }
-}
-
-.text-h-1 {
-  @apply font-regular text-5xl tablet:text-7xl desktop:text-7xl dark:text-white;
-
-  span {
-    @apply text-accent-orange;
-  }
-}
-
-.text-h-2 {
-  @apply font-regular text-5xl tablet:text-7xl desktop:text-8xl tablet:leading-custom tracking-tightest dark:text-white;
-
-  span {
-    @apply text-accent-orange;
-  }
-}
-
-.text-subtitle {
-  @apply font-regular text-accent-orange text-xs tablet:text-[0.75rem] desktop:text-base tracking-widest uppercase dark:text-white;
-}
-
-.text-stories-title {
-  @apply leading-none font-light text-white text-[7.5rem];
-
-  span {
-    @apply leading-none font-light text-white text-[5rem];
-  }
-}
-
-.text-stories-subtitle {
-  @apply leading-none font-light text-white text-[2.875rem];
-}
-
-.text-legend {
-  @apply font-regular text-xs tablet:text-base desktop:text-base tracking-widest;
-}
-
-.text-regular {
-  @apply font-regular text-xl tablet:text-[1.6875rem] desktop:text-4xl tracking-tightest dark:text-white;
-
-  span {
-    @apply text-accent-orange;
-  }
-}
-
-.text-regular-2 {
-  @apply font-regular text-3xl tablet:text-3xl tablet:leading-custom desktop:text-[3.75rem] tracking-tightest dark:text-white;
-
-  span {
-    @apply text-accent-orange;
-  }
-}
-
-.text-regular-3 {
-  @apply font-regular text-2xl tablet:text-3xl desktop:text-4xl tracking-tightest dark:text-white;
-
-  span {
-    @apply text-accent-orange;
+@layer components {
+  .text-main {
+    @apply font-regular text-4xl tablet:text-7xl desktop:text-[9.375rem] text-white;
   }
 
-  a {
-    @apply text-accent-orange decoration-1 underline underline-offset-4;
+  .text-sub-main {
+    @apply font-regular text-3xl tablet:text-3xl desktop:text-5xl;
+
+    span {
+      @apply text-accent-orange;
+    }
   }
-}
 
-.text-unit {
-  @apply font-regular leading-none text-2xl tablet:text-4xl desktop:text-[3.75rem] tracking-tightest;
-}
+  .text-extra {
+    @apply font-regular text-[3.75rem] tablet:text-[3.75rem] desktop:text-[3.75rem] dark:text-white;
 
-.text-unit-title {
-  @apply font-regular leading-none text-xs tablet:text-sm desktop:text-[1rem] tracking-widest uppercase;
-}
-
-.text-accent {
-  @apply font-regular text-2xl tablet:text-6xl desktop:text-6xl tracking-tightest;
-}
-
-.text-button {
-  @apply font-regular text-3xl tablet:text-3xl desktop:text-4xl tracking-tightest;
-}
-
-.text-input-label {
-  @apply font-regular text-base tablet:text-[0.875rem] desktop:text-base tracking-widest uppercase;
-}
-
-.text-contact-info {
-  @apply font-regular text-[1rem] tablet:text-[1rem] desktop:text-[1.25rem] tracking-tightest;
-
-  span {
-    @apply text-accent-orange;
+    span {
+      @apply text-accent-orange;
+    }
   }
-}
 
-.text-slide-heading {
-  @apply font-regular text-accent-orange text-[2.5rem] desktop:text-[1.875rem] leading-custom;
+  .text-h-1 {
+    @apply font-regular text-5xl tablet:text-7xl desktop:text-7xl dark:text-white;
+
+    span {
+      @apply text-accent-orange;
+    }
+  }
+
+  .text-h-2 {
+    @apply font-regular text-5xl tablet:text-7xl desktop:text-8xl tablet:leading-custom tracking-tightest dark:text-white;
+
+    span {
+      @apply text-accent-orange;
+    }
+  }
+
+  .text-subtitle {
+    @apply font-regular text-accent-orange text-xs tablet:text-[0.75rem] desktop:text-base tracking-widest uppercase dark:text-white;
+  }
+
+  .text-stories-title {
+    @apply leading-none font-light text-white text-[7.5rem];
+
+    span {
+      @apply leading-none font-light text-white text-[5rem];
+    }
+  }
+
+  .text-stories-subtitle {
+    @apply leading-none font-light text-white text-[2.875rem];
+  }
+
+  .text-legend {
+    @apply font-regular text-xs tablet:text-base desktop:text-base tracking-widest;
+  }
+
+  .text-regular {
+    @apply font-regular text-xl tablet:text-[1.6875rem] desktop:text-4xl tracking-tightest dark:text-white;
+
+    span {
+      @apply text-accent-orange;
+    }
+  }
+
+  .text-regular-2 {
+    @apply font-regular text-3xl tablet:text-3xl tablet:leading-custom desktop:text-[3.75rem] tracking-tightest dark:text-white;
+
+    span {
+      @apply text-accent-orange;
+    }
+  }
+
+  .text-regular-3 {
+    @apply font-regular text-2xl tablet:text-3xl desktop:text-4xl tracking-tightest dark:text-white;
+
+    span {
+      @apply text-accent-orange;
+    }
+
+    a {
+      @apply text-accent-orange decoration-1 underline underline-offset-4;
+    }
+  }
+
+  .text-unit {
+    @apply font-regular leading-none text-2xl tablet:text-4xl desktop:text-[5rem] tracking-tightest;
+  }
+
+  .text-unit-title {
+    @apply font-regular leading-none text-xs tablet:text-sm desktop:text-[2rem] tracking-widest uppercase;
+  }
+
+  .text-accent {
+    @apply font-regular text-2xl tablet:text-6xl desktop:text-6xl tracking-tightest;
+  }
+
+  .text-button {
+    @apply font-regular text-3xl tablet:text-3xl desktop:text-4xl tracking-tightest;
+  }
+
+  .text-input-label {
+    @apply font-regular text-base tablet:text-[0.875rem] desktop:text-base tracking-widest uppercase;
+  }
+
+  .text-contact-info {
+    @apply font-regular text-[1rem] tablet:text-[1rem] desktop:text-[1.25rem] tracking-tightest;
+
+    span {
+      @apply text-accent-orange;
+    }
+  }
+
+  .text-slide-heading {
+    @apply font-regular text-[2.5rem] desktop:text-[1.875rem] leading-custom;
+  }
+
+  .text-strong-title {
+    @apply font-light text-[3.75rem] tablet:text-[5.5rem] desktop:text-[7.875rem] tracking-tightest leading-none;
+  }
+
+  .text-strong-subtitle {
+    @apply font-light text-[1.125rem] tablet:text-[1.75rem] desktop:text-[2.25rem] tracking-tightest;
+  }
 }
