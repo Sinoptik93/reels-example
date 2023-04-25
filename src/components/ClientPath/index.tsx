@@ -50,7 +50,7 @@ function ClientPath() {
                         <source src={pathLeftExtra} type="video/mp4"/>
                     </video>
 
-                    <div className="container absolute left-1/2 -translate-x-2/4 bottom-8 flex flex-col gap-2 w-full">
+                    <div className="z-10 container absolute left-1/2 -translate-x-2/4 bottom-8 flex flex-col gap-2 w-full">
                         <p className="text-[1.25rem] font-bold grow text-accent-orange">Full customer experience control</p>
                         <p className="text-[1.25rem] font-regular grow">Our app, website, kiosk and POS with automated marketing personalization sends orders directly to kitchen.</p>
                     </div>
