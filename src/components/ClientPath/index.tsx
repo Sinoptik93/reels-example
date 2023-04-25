@@ -5,6 +5,7 @@ import pathCenter from "@assets/videos/path-2-center.webm"
 import pathRight from "@assets/videos/path-3-right.webm"
 import pathFull from "@assets/videos/path-full.webm"
 import pathFullWide from "@assets/videos/path-full-extra.webm"
+
 import pathLeftExtra from "@assets/videos/path-1-left.mp4"
 import pathCenterExtra from "@assets/videos/path-2-center.mp4"
 import pathRightExtra from "@assets/videos/path-3-right.mp4"
@@ -31,7 +32,7 @@ function ClientPath() {
                 pagination={{clickable: true}}
             >
                 <SwiperSlide
-                    className="relative rounded-tl-3xl rounded-bl-3xl overflow-hidden w-[100vw] bg-[#E9E3E5]">
+                    className="relative rounded-tl-3xl rounded-bl-3xl overflow-hidden w-[100vw] bg-[#F5EFF1]">
                     <div
                         className="absolute z-10 w-[100rem] -left-[82rem] -top-[15rem] rotate-45">
                         <img src={ellipseViolet.src} alt="violet" className="object-contain"/>
@@ -44,7 +45,7 @@ function ClientPath() {
 
                     <p className="text-slide-heading absolute top-[1.5rem] left-5 z-10">Own digital sales <br/>channels</p>
 
-                    <video className="brightness-95 top-0 left-0 min-h-full min-w-full object-contain object-video-frame-mobile" loop autoPlay muted
+                    <video className="top-0 left-0 min-h-full min-w-full object-contain object-video-frame-mobile" loop autoPlay muted
                            playsInline>
                         <source src={pathLeft} type="video/webm"/>
                         <source src={pathLeftExtra} type="video/mp4"/>
@@ -57,11 +58,11 @@ function ClientPath() {
                 </SwiperSlide>
 
                 <SwiperSlide
-                    className="overflow-hidden w-[100vw] bg-[#E9E3E5]">
+                    className="overflow-hidden w-[100vw] bg-[#F5EFF1]">
 
-                    <p className="text-slide-heading absolute top-[1.5rem] left-5 z-10 ">Smart pizzeria <br/>and delivery</p>
+                    <p className="text-slide-heading absolute top-[1.5rem] left-5 z-10">Smart pizzeria <br/>and delivery</p>
 
-                    <video className="brightness-95 top-0 left-0 min-h-full min-w-full object-contain object-video-frame-mobile" loop autoPlay muted
+                    <video className="top-0 left-0 min-h-full min-w-full object-contain object-video-frame-mobile" loop autoPlay muted
                            playsInline>
                         <source src={pathCenter} type="video/webm"/>
                         <source src={pathCenterExtra} type="video/mp4"/>
@@ -74,11 +75,11 @@ function ClientPath() {
                 </SwiperSlide>
 
                 <SwiperSlide
-                    className="rounded-tr-3xl rounded-br-3xl overflow-hidden w-[100vw] bg-[#E9E3E5]">
+                    className="rounded-tr-3xl rounded-br-3xl overflow-hidden w-[100vw] bg-[#F5EFF1]">
 
                     <p className="text-slide-heading absolute top-[1.5rem] left-5 z-10">Central multiple-store <br/>management</p>
 
-                    <video className="brightness-95 top-0 left-0 min-h-full min-w-full object-contain object-video-frame-mobile" loop autoPlay muted
+                    <video className="top-0 left-0 min-h-full min-w-full object-contain object-video-frame-mobile" loop autoPlay muted
                            playsInline>
                         <source src={pathRight} type="video/webm"/>
                         <source src={pathRightExtra} type="video/mp4"/>
