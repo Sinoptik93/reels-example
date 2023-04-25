@@ -29,7 +29,7 @@ function ClientPath() {
                 pagination={{clickable: true}}
             >
                 <SwiperSlide
-                    className="relative rounded-tl-3xl rounded-bl-3xl overflow-hidden w-[100vw] bg-[#F2F2F2]">
+                    className="relative rounded-tl-3xl rounded-bl-3xl overflow-hidden w-[100vw] bg-[#E9E3E5]">
                     <div
                         className="absolute z-10 w-[100rem] -left-[82rem] -top-[1rem] rotate-45">
                         <img src={ellipseViolet.src} alt="violet" className="object-contain"/>
@@ -71,7 +71,7 @@ function ClientPath() {
                 </SwiperSlide>
 
                 <SwiperSlide
-                    className="overflow-hidden w-[100vw] bg-[#F2F2F2]">
+                    className="overflow-hidden w-[100vw] bg-[#E9E3E5]">
 
                     <p className="text-slide-heading absolute top-[4.5rem] left-5 z-10 ">Smart pizzeria <br/>and delivery</p>
 
@@ -88,7 +88,7 @@ function ClientPath() {
                 </SwiperSlide>
 
                 <SwiperSlide
-                    className="rounded-tr-3xl rounded-br-3xl overflow-hidden w-[100vw] bg-[#F2F0F2]">
+                    className="rounded-tr-3xl rounded-br-3xl overflow-hidden w-[100vw] bg-[#E9E3E5]">
 
                     <p className="text-slide-heading absolute top-[4.5rem] left-5 z-10">Central multiple-store <br/>management</p>
 
