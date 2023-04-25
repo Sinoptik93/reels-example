@@ -41,7 +41,8 @@ const {title, frontmatter,} = Astro.props as MDXLayoutProps<Props>;
         window.addEventListener("DOMContentLoaded", () => {
             const videosList = document.querySelectorAll('video');
             videosList.forEach((video) => {
-                video.style.position = "fixed";
+                video.s
+                video.play();
             })
         })
     </script>
