@@ -51,7 +51,7 @@ module.exports = {
             },
             objectPosition: {
                 'video-frame': '0 30px',
-                'video-frame-mobile': '0 135px',
+                'video-frame-mobile': '0 62px',
             },
             lineHeight: {
                 'custom': '1.1',
