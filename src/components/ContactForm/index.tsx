@@ -44,7 +44,7 @@ const ContactForm: FC = () => {
     ]
 
     return (
-        <div className="bg-gray rounded-xl tablet:w-1/3">
+        <div className="bg-gray rounded-3xl tablet:w-1/3">
             <form >
                 <div className="px-5 pt-10">
                     <p className="text-h-1 tablet:text-4xl mb-6 mobile:hidden">Contact <span>us</span></p>
@@ -72,9 +72,9 @@ const ContactForm: FC = () => {
 
                 <button
                     type="submit"
-                    className="w-full p-2 rounded-xl flex items-center justify-center bg-accent-orange text-accent-orange transition-all tablet:p-2 desktop:p-2 hover:bg-accent-violet hover:text-accent-violet"
+                    className="w-full p-2 rounded-3xl flex items-center justify-center bg-accent-orange text-accent-orange transition-all tablet:p-2 desktop:p-2 hover:bg-accent-violet hover:text-accent-violet"
                 >
-                    <p className="text-button text-white px-2 py-3 rounded-xl">apply</p>
+                    <p className="text-button text-white px-2 py-3 rounded-3xl">apply</p>
                 </button>
             </form>
         </div>

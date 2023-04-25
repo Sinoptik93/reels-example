@@ -32,7 +32,7 @@ const Slider: FC = () => {
                 spaceBetween={10}
                 slidesPerView={3}
             >
-                <SwiperSlide className="rounded-2xl overflow-hidden w-[90vw] tablet:w-full desktop:w-1/3 relative">
+                <SwiperSlide className="rounded-3xl overflow-hidden w-[90vw] tablet:w-full desktop:w-1/3 relative">
                     <div
                         className="absolute z-10 w-[40rem] -left-[25rem] -bottom-[8.125rem]">
                         <img src={ellipseViolet.src} alt="violet"/>
@@ -51,7 +51,7 @@ const Slider: FC = () => {
                     </div>
                 </SwiperSlide>
 
-                <SwiperSlide className="rounded-2xl overflow-hidden w-[90vw] tablet:w-full desktop:w-1/3 relative">
+                <SwiperSlide className="rounded-3xl overflow-hidden w-[90vw] tablet:w-full desktop:w-1/3 relative">
                     <div
                         className="absolute z-10 w-[40rem] -left-[20rem] -bottom-[8.125rem]">
                         <img src={ellipseViolet.src} alt="violet"/>
@@ -70,7 +70,7 @@ const Slider: FC = () => {
                     </div>
                 </SwiperSlide>
 
-                <SwiperSlide className="rounded-2xl overflow-hidden w-[90vw] tablet:w-full desktop:w-1/3 relative">
+                <SwiperSlide className="rounded-3xl overflow-hidden w-[90vw] tablet:w-full desktop:w-1/3 relative">
                     <div
                         className="absolute z-10 w-[40rem] -left-[20rem] -bottom-[8.125rem]">
                         <img src={ellipseViolet.src} alt="violet"/>
@@ -97,7 +97,7 @@ const Slider: FC = () => {
                 modules={[Pagination]}
                 pagination={{ clickable: true }}
             >
-                <SwiperSlide className="rounded-2xl overflow-hidden tablet:w-full relative">
+                <SwiperSlide className="rounded-3xl overflow-hidden tablet:w-full relative">
                     <div
                         className="absolute z-10 w-[40rem] -left-[25rem] -bottom-[8.125rem]">
                         <img src={ellipseViolet.src} alt="violet"/>
@@ -116,7 +116,7 @@ const Slider: FC = () => {
                     </div>
                 </SwiperSlide>
 
-                <SwiperSlide className="rounded-2xl overflow-hidden tablet:w-full relative">
+                <SwiperSlide className="rounded-3xl overflow-hidden tablet:w-full relative">
                     <div
                         className="absolute z-10 w-[40rem] -left-[20rem] -bottom-[8.125rem]">
                         <img src={ellipseViolet.src} alt="violet"/>
@@ -135,7 +135,7 @@ const Slider: FC = () => {
                     </div>
                 </SwiperSlide>
 
-                <SwiperSlide className="rounded-2xl overflow-hidden tablet:w-full relative">
+                <SwiperSlide className="rounded-3xl overflow-hidden tablet:w-full relative">
                     <div
                         className="absolute z-10 w-[40rem] -left-[20rem] -bottom-[8.125rem]">
                         <img src={ellipseViolet.src} alt="violet"/>
@@ -166,7 +166,7 @@ const Slider: FC = () => {
                 modules={[Pagination, Autoplay]}
                 pagination={{ clickable: true }}
             >
-                <SwiperSlide className="rounded-2xl overflow-hidden w-[90vw] tablet:w-full desktop:w-1/3 tablet:h-[32.5rem] desktop:h-[40rem] relative">
+                <SwiperSlide className="rounded-3xl overflow-hidden w-[90vw] tablet:w-full desktop:w-1/3 tablet:h-[32.5rem] desktop:h-[40rem] relative">
                     <div
                         className="absolute z-10 w-[40rem] -left-[25rem] -bottom-[8.125rem]">
                         <img src={ellipseViolet.src} alt="violet"/>
@@ -185,7 +185,7 @@ const Slider: FC = () => {
                     </div>
                 </SwiperSlide>
 
-                <SwiperSlide className="rounded-2xl overflow-hidden w-[90vw] tablet:w-full desktop:w-1/3 tablet:h-[32.5rem] desktop:h-[40rem] relative">
+                <SwiperSlide className="rounded-3xl overflow-hidden w-[90vw] tablet:w-full desktop:w-1/3 tablet:h-[32.5rem] desktop:h-[40rem] relative">
                     <div
                         className="absolute z-10 w-[40rem] -left-[20rem] -bottom-[8.125rem]">
                         <img src={ellipseViolet.src} alt="violet"/>
@@ -204,7 +204,7 @@ const Slider: FC = () => {
                     </div>
                 </SwiperSlide>
 
-                <SwiperSlide className="rounded-2xl overflow-hidden w-[90vw] tablet:w-full desktop:w-1/3 tablet:h-[32.5rem] desktop:h-[40rem] relative">
+                <SwiperSlide className="rounded-3xl overflow-hidden w-[90vw] tablet:w-full desktop:w-1/3 tablet:h-[32.5rem] desktop:h-[40rem] relative">
                     <div
                         className="absolute z-10 w-[40rem] -left-[20rem] -bottom-[8.125rem]">
                         <img src={ellipseViolet.src} alt="violet"/>

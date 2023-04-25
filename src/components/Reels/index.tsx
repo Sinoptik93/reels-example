@@ -36,35 +36,35 @@ function Reels() {
             loopedSlides={2}
             pagination={{ clickable: true }}
         >
-            <SwiperSlide className="rounded-2xl overflow-hidden tablet:w-[95vw] desktop:w-[40rem]">
+            <SwiperSlide className="rounded-3xl overflow-hidden tablet:w-[95vw] desktop:w-[40rem]">
                 <video className="top-0 left-0 min-h-full min-w-full object-cover" loop autoPlay muted playsInline >
                     <source src={videowebm} type="video/webm"/>
                     <source src={videomp4} type="video/mp4"/>
                 </video>
             </SwiperSlide>
 
-            <SwiperSlide className="rounded-2xl overflow-hidden tablet:w-[95vw] desktop:w-[40rem]">
+            <SwiperSlide className="rounded-3xl overflow-hidden tablet:w-[95vw] desktop:w-[40rem]">
                 <video className="top-0 left-0 min-h-full min-w-full object-cover" loop autoPlay muted playsInline>
                     <source src={videowebm2} type="video/webm"/>
                     <source src={videomp42} type="video/mp4"/>
                 </video>
             </SwiperSlide>
 
-            <SwiperSlide className="rounded-2xl overflow-hidden tablet:w-[95vw] desktop:w-[40rem]">
+            <SwiperSlide className="rounded-3xl overflow-hidden tablet:w-[95vw] desktop:w-[40rem]">
                 <video className="top-0 left-0 min-h-full min-w-full object-cover" loop autoPlay muted playsInline>
                     <source src={videowebm3} type="video/webm"/>
                     <source src={videomp43} type="video/mp4"/>
                 </video>
             </SwiperSlide>
 
-            <SwiperSlide className="rounded-2xl overflow-hidden tablet:w-[95vw] desktop:w-[40rem]">
+            <SwiperSlide className="rounded-3xl overflow-hidden tablet:w-[95vw] desktop:w-[40rem]">
                 <video className="top-0 left-0 min-h-full min-w-full object-cover" loop autoPlay muted playsInline>
                     <source src={videowebm4} type="video/webm"/>
                     <source src={videomp44} type="video/mp4"/>
                 </video>
             </SwiperSlide>
 
-            <SwiperSlide className="rounded-2xl overflow-hidden tablet:w-[95vw] desktop:w-[40rem]">
+            <SwiperSlide className="rounded-3xl overflow-hidden tablet:w-[95vw] desktop:w-[40rem]">
                 <video className="top-0 left-0 min-h-full min-w-full object-cover" loop autoPlay muted playsInline >
                     <source src={videowebm5} type="video/webm"/>
                     <source src={videomp45} type="video/mp4"/>
