@@ -47,7 +47,7 @@ const ContactForm: FC = () => {
         <div className="bg-gray rounded-3xl tablet:w-1/3">
             <form >
                 <div className="px-5 pt-10">
-                    <p className="text-h-1 tablet:text-4xl mb-6 mobile:hidden">Contact <span>us</span></p>
+                    <p className="hidden text-h-1 tablet:text-4xl mb-6 mobile:hidden">Contact <span>us</span></p>
 
                     <div className="flex flex-col gap-12 mb-6">
                         <Input label="name" name="name"/>
