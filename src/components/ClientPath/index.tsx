@@ -29,7 +29,7 @@ function ClientPath() {
                 pagination={{clickable: true}}
             >
                 <SwiperSlide
-                    className="relative rounded-2xl overflow-hidden w-[100vw]">
+                    className="relative rounded-2xl overflow-hidden w-[100vw] bg-[#F2F2F2]">
                     <div
                         className="absolute z-10 w-[100rem] -left-[82rem] -top-[1rem] rotate-45">
                         <img src={ellipseViolet.src} alt="violet" className="object-contain"/>
@@ -58,7 +58,7 @@ function ClientPath() {
 
                     <p className="text-slide-heading absolute top-[6.5rem] left-5 z-10">Own digital sales <br/>channels</p>
 
-                    <video className="top-0 left-0 min-h-full min-w-full object-contain object-video-frame-mobile" loop autoPlay muted
+                    <video className="brightness-95 top-0 left-0 min-h-full min-w-full object-contain object-video-frame-mobile" loop autoPlay muted
                            playsInline>
                         <source src={pathLeft} type="video/webm"/>
                         <source src={pathLeftExtra} type="video/mp4"/>
@@ -71,11 +71,11 @@ function ClientPath() {
                 </SwiperSlide>
 
                 <SwiperSlide
-                    className="rounded-3xl overflow-hidden w-[100vw]">
+                    className="rounded-3xl overflow-hidden w-[100vw] bg-[#F2F2F2]">
 
                     <p className="text-slide-heading absolute top-[4.5rem] left-5 z-10 ">Smart pizzeria <br/>and delivery</p>
 
-                    <video className="top-0 left-0 min-h-full min-w-full object-contain object-video-frame-mobile" loop autoPlay muted
+                    <video className="brightness-95 top-0 left-0 min-h-full min-w-full object-contain object-video-frame-mobile" loop autoPlay muted
                            playsInline>
                         <source src={pathCenter} type="video/webm"/>
                         <source src={pathCenterExtra} type="video/mp4"/>
@@ -88,11 +88,11 @@ function ClientPath() {
                 </SwiperSlide>
 
                 <SwiperSlide
-                    className="rounded-3xl overflow-hidden w-[100vw]">
+                    className="rounded-3xl overflow-hidden w-[100vw] bg-[#F2F0F2]">
 
                     <p className="text-slide-heading absolute top-[4.5rem] left-5 z-10">Central multiple-store <br/>management</p>
 
-                    <video className="top-0 left-0 min-h-full min-w-full object-contain object-video-frame-mobile" loop autoPlay muted
+                    <video className="brightness-95 top-0 left-0 min-h-full min-w-full object-contain object-video-frame-mobile" loop autoPlay muted
                            playsInline>
                         <source src={pathRight} type="video/webm"/>
                         <source src={pathRightExtra} type="video/mp4"/>
