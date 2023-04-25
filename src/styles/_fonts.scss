@@ -101,7 +101,7 @@
   }
 
   .text-unit-title {
-    @apply font-regular leading-none text-xs tablet:text-sm desktop:text-[2rem] tracking-widest uppercase;
+    @apply font-regular leading-none text-[1.5rem] tablet:text-sm desktop:text-[1.5rem] tracking-tightest;
   }
 
   .text-accent {

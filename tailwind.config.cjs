@@ -46,11 +46,12 @@ module.exports = {
             fontFamily: {
                 regular: ["Factor A Light", ...defaultTheme.fontFamily.sans],
                 bold: ["Factor A Regular", ...defaultTheme.fontFamily.sans],
+                "regular-2": ["Factor A Regular", ...defaultTheme.fontFamily.sans],
                 light: ["Factor A Light", ...defaultTheme.fontFamily.sans],
             },
             objectPosition: {
                 'video-frame': '0 30px',
-                'video-frame-mobile': '0 -50px',
+                'video-frame-mobile': '0 136px',
             },
             lineHeight: {
                 'custom': '1.1',
