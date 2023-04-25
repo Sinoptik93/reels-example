@@ -33,12 +33,12 @@ function ClientPath() {
                 <SwiperSlide
                     className="relative rounded-tl-3xl rounded-bl-3xl overflow-hidden w-[100vw] bg-[#E9E3E5]">
                     <div
-                        className="absolute z-10 w-[100rem] -left-[82rem] -top-[1rem] rotate-45">
+                        className="absolute z-10 w-[100rem] -left-[82rem] -top-[15rem] rotate-45">
                         <img src={ellipseViolet.src} alt="violet" className="object-contain"/>
                     </div>
 
                     <div
-                        className="absolute z-10 w-[100rem] -left-[84rem] -top-[32rem] rotate-45">
+                        className="absolute z-10 w-[100rem] -left-[84rem] -top-[43rem] rotate-45">
                         <img src={ellipseOrange.src} alt="orange" className="object-contain"/>
                     </div>
 
