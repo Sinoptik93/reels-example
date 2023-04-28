@@ -4,8 +4,10 @@ import videomp4 from "@assets/videos/short-pizza.mp4";
 import videowebm from "@assets/videos/short-pizza.webm";
 import ellipseViolet from "@assets/images/ellipse-violet-extra.svg";
 import ellipseOrange from "@assets/images/ellipse-orange-extra.svg";
+import metricNew from "@assets/images/metric-new.svg";
+import metricNewMobile from "@assets/images/metric-new-mobile.svg";
 import {Image} from "@astrojs/image/components";
-// <Slider client:only/>
+import logoBloomberg from "../../assets/icons/logo-bloomberg.svg";
 
 ---
 
@@ -16,10 +18,11 @@ import {Image} from "@astrojs/image/components";
         <div class="relative mb-[1.875rem] tablet:mb-[5rem] desktop:mb-[6.75rem]">
             <h2 class="text-h-2 mobile:mb-4">World’s fastest growing <br class="mobile:hidden">pizza chain</h2>
             <p class="text-regular mobile:leading-[1.2] tablet:absolute desktop:absolute desktop:top-[9.8rem] desktop:left-[31.25rem] tablet:top-[7.1875rem] tablet:max-w-[30.625rem] tablet:left-[23.75rem]">We are Dodo Pizza, est 2011 – innovative <br class="mobile:hidden tablet:hidden">pizza delivery franchise. We are digital <br class="mobile:hidden tablet:hidden">at our core and that makes us different <br class="mobile:hidden tablet:hidden">from legacy pizza chains.</p>
+            <p class="text-[1.5rem] font-regular text-dark-gray pt-4 mobile:hidden">Technomic,  2021</p>
         </div>
     </div>
 
-    <div class="tablet:container desktop:container  mobile:flex-col tablet:flex-col tablet:gap-[5.125rem] flex desktop:gap-[5.125rem]">
+    <div class="hidden tablet:container desktop:container  mobile:flex-col tablet:flex-col tablet:gap-[5.125rem] desktop:gap-[5.125rem]">
         <div class="relative grow-[2] translate-z-0 h-[31.5rem] mobile:mb-10 mobile:h-[85vh] tablet:max-h-[30rem] tablet:min-w-[20.125rem] desktop:h-[44.5rem] desktop:max-w-[30rem] rounded-4xl overflow-hidden">
             <video class="absolute translate-z-0 object-cover w-full h-full scale-[1.01]" preload="auto" loop autoplay muted playsinline>
                 <source src={videowebm} type="video/webm"/>
@@ -28,7 +31,6 @@ import {Image} from "@astrojs/image/components";
         </div>
 
         <div class="mobile:container grow">
-
             <div class="flex">
                 <div class="relative translate-z-0 rounded-3xl desktop:rounded-4xl overflow-hidden p-7 mobile:py-5 tablet:p-8 desktop:p-10 bg-gray">
                     <div
@@ -80,6 +82,88 @@ import {Image} from "@astrojs/image/components";
                     <p class="text-strong-title">$ 831 mln</p>
                     <p class="text-strong-subtitle">2022 sales</p>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container flex mobile:flex-col">
+        <div class="grid mobile:grid-rows-2 mobile:grid-cols-3 tablet:grid-rows-3 desktop:grid-rows-3 shrink-0">
+            <div class="relative translate-z-0 mobile:col-span-3 mobile:row-span-1 rounded-3xl desktop:rounded-5xl overflow-hidden p-7 mobile:py-5 tablet:p-8 desktop:pt-10 desktop:pb-5 desktop:px-20 bg-gray">
+                <div
+                    class="hidden absolute tablet:hidden w-[22.563rem] tablet:w-[56.25rem] desktop:w-[56.25rem] mobile:-top-[190px] bottom-auto tablet:bottom-[0] desktop:bottom-[0] -left-[140px] tablet:-left-[1rem] desktop:-left-[280px]">
+                    <Image src={ellipseViolet} alt="violet"/>
+                </div>
+
+                <div
+                    class="hidden absolute tablet:hidden w-[22.563rem] tablet:w-[56.25rem] desktop:w-[56.25rem] -bottom-[180px] tablet:-bottom-[1.75rem] desktop:-bottom-[300px] left-[10px] tablet:left-[1rem] desktop:left-[11px]">
+                    <Image src={ellipseOrange} alt="orange"/>
+                </div>
+
+                <div class="relative z-10">
+                    <div class="flex">
+                        <p class="text-strong-title">$831</p>
+                        <p class="text-[1rem] tablet:text-[2rem] desktop:text-[2rem] text-accent-orange font-regular ml-2 tablet:ml-4 desktop:ml-4">↑ 56%</p>
+                    </div>
+                    <p class="text-strong-subtitle">mln usd</p>
+                </div>
+            </div>
+
+            <div class="relative translate-z-0 mobile:row-span-1 mobile:col-span-2 rounded-3xl desktop:rounded-5xl overflow-hidden p-7 mobile:py-5 tablet:p-8 desktop:pt-10 desktop:pb-5 desktop:px-20 bg-gray">
+                <div
+                    class="hidden absolute tablet:hidden w-[22.563rem] tablet:w-[56.25rem] desktop:w-[56.25rem] mobile:-top-[190px] bottom-auto tablet:bottom-[0] desktop:bottom-[0] -left-[140px] tablet:-left-[1rem] desktop:-left-[280px]">
+                    <Image src={ellipseViolet} alt="violet"/>
+                </div>
+
+                <div
+                    class="hidden absolute tablet:hidden w-[22.563rem] tablet:w-[56.25rem] desktop:w-[56.25rem] -bottom-[180px] tablet:-bottom-[1.75rem] desktop:-bottom-[300px] left-[10px] tablet:left-[1rem] desktop:left-[11px]">
+                    <Image src={ellipseOrange} alt="orange"/>
+                </div>
+
+                <div class="relative z-10">
+                    <p class="text-strong-title">900+</p>
+                    <p class="text-strong-subtitle">stores</p>
+                </div>
+            </div>
+
+            <div class="relative translate-z-0 mobile:row-span-2 mobile:col-span-1 rounded-3xl desktop:rounded-5xl overflow-hidden p-7 mobile:py-5 tablet:p-8 desktop:pt-10 desktop:pb-5 desktop:px-20 bg-gray">
+                <div
+                    class="hidden absolute tablet:hidden w-[22.563rem] tablet:w-[56.25rem] desktop:w-[56.25rem] mobile:-top-[190px] bottom-auto tablet:bottom-[0] desktop:bottom-[0] -left-[140px] tablet:-left-[1rem] desktop:-left-[280px]">
+                    <Image src={ellipseViolet} alt="violet"/>
+                </div>
+
+                <div
+                    class="hidden absolute tablet:hidden w-[22.563rem] tablet:w-[56.25rem] desktop:w-[56.25rem] -bottom-[180px] tablet:-bottom-[1.75rem] desktop:-bottom-[300px] left-[10px] tablet:left-[1rem] desktop:left-[11px]">
+                    <Image src={ellipseOrange} alt="orange"/>
+                </div>
+
+                <div class="relative z-10">
+                    <p class="text-strong-title">17</p>
+                    <p class="text-strong-subtitle">countries</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="relative flex items-end overflow-hidden translate-z-0 rounded-3xl pt-[3rem] desktop:rounded-5xl p-7 mobile:py-5 tablet:p-8 tablet:pt-[5rem] desktop:pb-[3.125rem] desktop:pt-[5rem] desktop:px-[3.125rem]  bg-gray grow">
+            <div>
+                <div
+                    class="absolute top-[1.5rem] tablet:top-[3rem] desktop:top-[3rem] flex gap-[0.75rem] mb-10 flex-col-reverse border-l pl-4 tablet:pl-8 desktop:pl-8">
+                    <div class="w-[6rem] tablet:w-[10.72rem] desktop:w-[10.72rem]">
+                        <Image src={logoBloomberg} alt="Logog bloomberg" class="object-contain w-full desktop:mt-3"/>
+                    </div>
+
+                    <p class="text-regular-2 text-[1.125rem] desktop:text-4xl tracking-tightest leading-[1.15]">Dodo
+                        Pizza has<br class="tablet:hidden desktop:hidden"> turned into <br class="mobile:hidden tablet:hidden">one of <br class="tablet:hidden desktop:hidden">the fastest-growing  <br class="tablet:hidden">restaurant chains</p>
+                </div>
+
+                <div class="relative mobile:hidden">
+                    <Image src={metricNew} alt="metric" />
+                </div>
+
+                <div class="relative tablet:hidden desktop:hidden">
+                    <Image src={metricNewMobile} alt="metric" />
+                </div>
+
+                <p class="text-[0.625rem] tablet:text-[1rem] desktop:text-[1rem] tracking-widest uppercase text-center pt-2 tablet:pt-4 desktop:pt-4">system sales in mln usd</p>
             </div>
         </div>
     </div>

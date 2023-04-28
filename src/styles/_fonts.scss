@@ -129,10 +129,10 @@
   }
 
   .text-strong-title {
-    @apply font-light text-[3.75rem] tablet:text-[5.5rem] desktop:text-[7.875rem] tracking-tightest leading-none;
+    @apply font-light text-[3.1rem] tablet:text-[5.5rem] desktop:text-[7.875rem] tracking-tightest leading-none;
   }
 
   .text-strong-subtitle {
-    @apply font-light text-[1.125rem] tablet:text-[1.75rem] desktop:text-[2.25rem] tracking-tightest;
+    @apply font-light text-[0.9rem] tablet:text-[1.75rem] desktop:text-[2.25rem] tracking-tightest;
   }
 }
