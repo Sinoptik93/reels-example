@@ -33,7 +33,7 @@ import ellipseOrange from "@assets/images/ellipse-orange.svg";
     </div>
 
     <div
-        class="tablet:container desktop:container relative flex mobile:mb-10 mobile:min-h-[40rem] tablet:min-h-[31.875rem] desktop:min-h-[47.375rem] mobile:flex-col tablet:mb-[4.3125rem] desktop:mb-[6.25rem] desktop:-mt-[1.125rem]">
+        class="tablet:container desktop:container relative flex mobile:mb-10 mobile:min-h-[40rem] tablet:min-h-[31.875rem] desktop:min-h-[47.375rem] mobile:flex-col tablet:mb-[4.3125rem] desktop:mb-[6.25rem] desktop:-mt-[1.125rem] hidden">
         <div class="relative overflow-hidden rounded-3xl bg-gray desktop:w-2/3 tablet:w-2/3 mobile:w-full mobile:grow">
             <div
                 class="absolute z-10 w-[100rem] -left-[87rem] -top-[10rem] desktop:-left-[86rem] desktop:-top-[23rem]">
@@ -129,54 +129,74 @@ import ellipseOrange from "@assets/images/ellipse-orange.svg";
     </div>
 
 
-    <div class="hidden relative desktop:hidden tablet:hidden rounded-3xl w-full h-[65vh] overflow-hidden mb-10">
-        <Image alt="Earth icon" src={map} class="absolute object-cover w-full h-full"/>
+    <div class="container">
+        <div class="relative rounded-3xl w-full h-[65vh] overflow-hidden mb-10">
+            <Image alt="World map" src={map} class="absolute object-cover w-full h-full"/>
 
-        <div
-            class="absolute  w-[56.25rem] -bottom-[26rem] -right-[36.75rem]">
-            <Image src={ellipseOrange} alt="orange"/>
-        </div>
-
-        <div class="relative p-8 w-full h-full flex flex-col justify-between">
-            <div class="flex flex-col gap-6">
-
-                <div class="flex justify-between items-center">
-                    <div class="w-[8.83rem]">
-                        <Image src={logoDodInline} alt="Dodo logo" class="object-contain w-full h-full"/>
-                    </div>
-
-                    <p class="text-[0.75rem] text-dark-gray font-regular">15 Mar. 2023, 12:22</p>
-                </div>
-
-                <p class="text-4xl">$ 350,654,120</p>
+            <div
+                class="absolute  w-[56.25rem] -bottom-[26rem] -right-[36.75rem]">
+                <Image src={ellipseOrange} alt="orange"/>
             </div>
 
-            <div>
-                <div class="flex">
-                    <div class="relative rounded-3xl desktop:rounded-4xl overflow-hidden p-7 mobile:py-5 tablet:p-8 desktop:p-10 bg-white">
-                        <div class="relative z-10">
-                            <p class="text-strong-title">738</p>
-                            <p class="text-strong-subtitle">units</p>
+            <div class="relative p-8 w-full h-full flex flex-col justify-between desktop:flex-row desktop:gap-[8.75rem]">
+                <div class="flex flex-col gap-6 desktop:justify-between desktop:grow">
+
+                    <div class="flex justify-between items-center">
+                        <div class="w-[8.83rem] desktop:w-[18.75rem]">
+                            <Image src={logoDodInline} alt="Dodo logo" class="object-contain w-full h-full"/>
                         </div>
+
+                        <p class="text-[0.75rem] desktop:text-[1.5rem] text-dark-gray font-regular">15 Mar. 2023, 12:22</p>
                     </div>
 
-                    <div class="relative rounded-3xl desktop:rounded-4xl overflow-hidden p-7 mobile:py-5 tablet:p-8 desktop:p-10 bg-white">
-                        <div class="relative z-10">
-                            <p class="text-strong-title">17</p>
-                            <p class="text-strong-subtitle">countries</p>
-                        </div>
+                    <div>
+                        <p class="text-4xl desktop:text-[5.125rem]">$ 350,654,120</p>
+                        <p class="hidden tablet:block desktop:block text-[1.5rem]">sales over the year</p>
                     </div>
                 </div>
 
-                <div class="relative rounded-3xl desktop:rounded-4xl overflow-hidden p-7 mobile:py-5 tablet:p-8 desktop:p-10 bg-white w-full">
-                    <div class="relative">
-                        <p class="text-strong-title">23 525</p>
-                        <p class="text-strong-subtitle">dodo people</p>
+                <div>
+                    <div class="translate-z-0 desktop:rounded-4xl desktop:bg-white desktop:overflow-hidden desktop:px-6 desktop:pt-4">
+                        <div class="flex desktop:flex-row-reverse">
+                            <div class="relative rounded-4xl overflow-hidden p-7 mobile:py-5 tablet:p-8 desktop:p-6 mobile:bg-white">
+                                <div class="relative z-10">
+                                    <p class="text-strong-title">738</p>
+                                    <p class="text-strong-subtitle">units</p>
+                                </div>
+                            </div>
+
+                            <div class="relative rounded-4xl overflow-hidden p-7 mobile:py-5 tablet:p-8 desktop:p-6 mobile:bg-white">
+                                <div class="relative z-10">
+                                    <p class="text-strong-title">17</p>
+                                    <p class="text-strong-subtitle">countries</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative rounded-4xl overflow-hidden p-7 mobile:py-5 tablet:p-8 desktop:p-6 mobile:bg-white w-full">
+                            <div class="relative">
+                                <p class="text-strong-title">23 525</p>
+                                <p class="text-strong-subtitle">dodo people</p>
+                            </div>
+                        </div>
                     </div>
+
+                    <div class="mobile:hidden translate-z-0 rounded-4xl bg-white px-6 pt-4 justify-center">
+                        <div class="mt-10 mobile:hidden">
+                            <p class="text-subtitle">Real-time pizzeria</p>
+                        </div>
+
+                        <div class="max-w-[25rem]">
+                            <LiveVideos client:only/>
+                        </div>
+                    </div>
+
                 </div>
+
             </div>
         </div>
     </div>
+
 
     <div class="container block tablet:hidden desktop:hidden">
         <div class="mb-4">
