@@ -40,4 +40,4 @@ function useIntersectionObserver(
   return entry;
 }
 
-export default useIntersectionObserver;
+export { useIntersectionObserver };

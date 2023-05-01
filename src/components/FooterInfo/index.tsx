@@ -36,29 +36,29 @@ const FooterInfo: FC<FooterInfoProps> = ({
 
     return (
         <div
-            className="overflow-hidden relative flex flex-col bg-black rounded-[28.9375rem]">
+            className="overflow-hidden relative flex flex-col bg-gray rounded-[28.9375rem]">
             <div
-                className="absolute z-10 w-[60rem] -left-[47rem] -bottom-[19rem] desktop:left-auto desktop:bottom-auto desktop:-right-[39rem] desktop:-top-[11rem]">
+                className="absolute z-10 w-[60rem] tablet:w-[83rem] desktop:w-[83rem] -left-[42rem] -bottom-[13rem] desktop:bottom-auto desktop:-left-[50rem] desktop:-top-[24rem]">
                 <img src={ellipseViolet.src} alt="violet"/>
             </div>
 
             <div
-                className="absolute z-10 w-[60rem] -right-[47rem] -bottom-[24rem] desktop:-right-[39rem] desktop:-bottom-[21rem]">
+                className="absolute z-10 w-[60rem] desktop:w-[83rem] -right-[44rem] -bottom-[9rem] desktop:right-auto desktop:bottom-auto desktop:-left-[10rem] desktop:top-[5rem]">
                 <img src={ellipseOrange.src} alt="orange"/>
             </div>
 
             <div
                 className="w-[20rem] h-[30rem] tablet:w-[30rem] tablet:h-[20.25rem] desktop:w-[50rem] desktop:h-[31.25rem]">
-                <p className="z-10 absolute absolute-x-center top-[19rem] w-3/4 tablet:top-[3rem] tablet:w-[60%] desktop:top-[3rem] desktop:w-1/2  text-white font-regular leading-none tracking-tighter pb-4 text-[1.4rem] tablet:text-[1.25rem] desktop:text-[1.875rem]">
+                <p className="z-10 absolute absolute-x-center top-[19rem] w-3/4 tablet:top-[3rem] tablet:w-[60%] desktop:top-[3rem] desktop:w-1/2  font-regular leading-none tracking-tighter pb-4 text-[1.2rem] tablet:text-[1.25rem] desktop:text-[1.875rem]">
                     Number of orders placed while you’ve been scrolling this page
                 </p>
 
-                <p className={`z-10 absolute absolute-x-center tablet:absolute-center desktop:absolute-center text-white font-light leading-custom ${count < 1000 ? "text-[10rem] top-[8rem] tablet:text-[8.625rem] desktop:text-[14.1875rem]" : count > 1000 && count < 10000 ? "text-[6rem] top-[10.3rem] tablet:text-[8.625rem] desktop:text-[10.1875rem]" : "top-[10rem] text-[4rem] tablet:text-[4rem] desktop:text-[6rem]"}`}>
+                <p className={`z-10 absolute absolute-x-center tablet:absolute-center desktop:absolute-centetext-white font-light leading-custom ${count < 1000 ? "text-[10rem] top-[8rem] tablet:text-[8.625rem] desktop:text-[14.1875rem]" : count > 1000 && count < 10000 ? "text-[6rem] top-[10.3rem] tablet:text-[8.625rem] desktop:text-[10.1875rem]" : "top-[10rem] text-[4rem] tablet:text-[4rem] desktop:text-[6rem]"}`}>
                     {count.toLocaleString('ru-RU')}
                 </p>
 
                 <div className="z-10 absolute absolute-x-center top-[7rem] w-3/4 tablet:top-[14rem] tablet:w-3/4 desktop:top-[23rem] desktop:w-1/2 flex items-center gap-2">
-                    <div className="w-6 tablet:w-6 desktop:w-6 text-white">
+                    <div className="w-6 tablet:w-6 desktop:w-6">
                         <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg"
                              className="object-contain w-full h-full">
                             <path
@@ -67,7 +67,7 @@ const FooterInfo: FC<FooterInfoProps> = ({
                         </svg>
                     </div>
 
-                    <p className="text-legend text-white uppercase">{time}</p>
+                    <p className="text-legend uppercase">{time}</p>
                 </div>
             </div>
         </div>

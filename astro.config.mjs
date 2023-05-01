@@ -14,4 +14,9 @@ export default defineConfig({
             serviceEntryPoint: "@astrojs/image/sharp"
         }),
     ],
+    vite: {
+        optimizeDeps: {
+            exclude: ['gsap']
+        }
+    }
 });
