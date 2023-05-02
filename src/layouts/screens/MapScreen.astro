@@ -24,7 +24,6 @@ import mapDots from "@assets/images/map-dots.svg";
 ---
 
 <script>
-    const test = document.querySelector("#test")
     const plugTotalSales = document.querySelector("#plug-total-sales");
     const plugSales = document.querySelector("#plug-sales-today");
     const plugOrders = document.querySelector("#plug-orders");
@@ -36,17 +35,10 @@ import mapDots from "@assets/images/map-dots.svg";
         const currentTotalSales = parseFormattedNumber(plugTotalSales.innerHTML)
         const currentSales = parseFormattedNumber(plugSales.innerHTML);
         const currentOrders = parseFormattedNumber(plugOrders.innerHTML);
-        const newCode = document.createElement("code");
-        newCode.innerHTML = JSON.stringify({
-            currentTotalSales: currentTotalSales.toString(),
-            "Number.MAX_SAFE_INTEGER": Number.MAX_SAFE_INTEGER,
-        })
-
-        test.appendChild(newCode);
 
         const updatedValue = getRandomValue(2000);
 
-        plugTotalSales.innerHTML = String(currency.format(currentTotalSales + 150000));
+        plugTotalSales.innerHTML = String(currency.format(currentTotalSales + 1500000));
         plugSales.innerHTML = String(currency.format(currentSales + updatedValue));
         plugOrders.innerHTML = String(currency.format(currentOrders + getRandomValue(10)));
     }, 2000);
@@ -184,7 +176,7 @@ import mapDots from "@assets/images/map-dots.svg";
                     </div>
 
                     <div>
-                        <p class="text-4xl desktop:text-[5.125rem]">$ <span id="plug-total-sales">9 343 143</span></p>
+                        <p class="text-4xl desktop:text-[5.125rem]">$ <span id="plug-total-sales">39 343 143</span></p>
                         <p class="hidden tablet:block desktop:block text-[1.5rem]">sales over the year</p>
                     </div>
                 </div>
