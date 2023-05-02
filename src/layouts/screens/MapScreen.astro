@@ -24,24 +24,25 @@ import mapDots from "@assets/images/map-dots.svg";
 ---
 
 <script>
-    const timer = setInterval(() => {
-        const test = document.querySelector("#test")
-        const plugTotalSales = document.querySelector("#plug-total-sales");
-        const plugSales = document.querySelector("#plug-sales-today");
-        const plugOrders = document.querySelector("#plug-orders");
-        const getRandomValue = (stepCount: number) => Math.floor(Math.random() * stepCount);
-        const parseFormattedNumber = (rawNumber: string) => parseInt(rawNumber.replaceAll(/[&nbsp; ]/g, ''))
-        const currency = Intl.NumberFormat("ru-RU" )
+    const test = document.querySelector("#test")
+    const plugTotalSales = document.querySelector("#plug-total-sales");
+    const plugSales = document.querySelector("#plug-sales-today");
+    const plugOrders = document.querySelector("#plug-orders");
+    const getRandomValue = (stepCount: number) => Math.floor(Math.random() * stepCount);
+    const parseFormattedNumber = (rawNumber: string) => parseInt(rawNumber.replaceAll(/[&nbsp; ]/g, ''))
+    const currency = Intl.NumberFormat("ru-RU" )
 
+    const timer = setInterval(() => {
         const currentTotalSales = parseFormattedNumber(plugTotalSales.innerHTML)
         const currentSales = parseFormattedNumber(plugSales.innerHTML);
         const currentOrders = parseFormattedNumber(plugOrders.innerHTML);
         const newCode = document.createElement("code");
         newCode.innerHTML = `${JSON.stringify({
-            "plugTotalSales.innerHTML": plugTotalSales.innerHTML, 
+            "plugTotalSales.innerHTML": plugTotalSales.innerHTML,
+            "plugTotalSales.innerHTML.replaceAll(/[&nbsp; ]/g, '')": plugTotalSales.innerHTML.replaceAll(/[&nbsp; ]/g, ''),
             "plugSales.innerHTML": plugSales.innerHTML, 
             currentSales,
-            currentTotalSales
+            currentTotalSales,
         }, null, "\t")}`
 
         test.appendChild(newCode);
