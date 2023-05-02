@@ -35,8 +35,10 @@ import mapDots from "@assets/images/map-dots.svg";
         const currentTotalSales = parseFormattedNumber(plugTotalSales.innerHTML)
         const currentSales = parseFormattedNumber(plugSales.innerHTML);
         const currentOrders = parseFormattedNumber(plugOrders.innerHTML);
+        const newd = `<code>${JSON.stringify({"plugTotalSales.innerHTML": plugTotalSales.innerHTML, currentTotalSales})}</code>`;
 
-        console.log({"plugTotalSales.innerHTML": plugTotalSales.innerHTML, currentTotalSales})
+
+        console.log({newd})
 
         const updatedValue = getRandomValue(2000);
 
@@ -165,7 +167,7 @@ import mapDots from "@assets/images/map-dots.svg";
                 <Image src={ellipseOrange} alt="orange"/>
             </div>
 
-            <div class="relative p-8 mobile:h-full w-full flex flex-col justify-between desktop:flex-row desktop:gap-[8.75rem] mobile:justify-between">
+            <div class="relative p-[1.25rem] tablet:p-8 desktop:p-8 mobile:h-full w-full flex flex-col justify-between desktop:flex-row desktop:gap-[8.75rem] mobile:justify-between">
                 <div class="flex flex-col gap-2 tablet:gap-6 desktop:gap-6 desktop:grow">
 
                     <div class="flex items-center mobile:justify-between tablet:gap-[4.65rem] desktop:gap-[4.65rem]">
@@ -188,20 +190,20 @@ import mapDots from "@assets/images/map-dots.svg";
                         <p class="text-[0.75rem] tablet:text-[1.5rem] desktop:text-[1.5rem] text-dark-gray">Updated minute ago</p>
 
                         <div class="">
-                            <p class="text-[2.5rem] tablet:text-[3.375rem] desktop:text-[3.375rem] leading-custom" >$<span id="plug-sales-today">2 091 798</span></p>
+                            <p class="text-[2.2rem] tablet:text-[3.375rem] desktop:text-[3.375rem] leading-custom" >$<span id="plug-sales-today">2 091 798</span></p>
                             <p class="text-[1.25rem] leading-none">sales today</p>
                         </div>
 
                         <div class="flex">
-                            <div class="flex gap-2 tablet:gap-6 desktop:gap-6 justify-between grow">
+                            <div class="flex gap-4 tablet:gap-6 desktop:gap-6 justify-between grow">
                                 <div class="w-1/2">
-                                    <p class="text-[2.5rem] tablet:text-[3.375rem] desktop:text-[3.375rem] leading-custom" id="plug-orders">56678</p>
+                                    <p class="text-[2.2rem] tablet:text-[3.375rem] desktop:text-[3.375rem] leading-custom" id="plug-orders">56678</p>
                                     <p class="text-[1.25rem] leading-none">orders</p>
                                 </div>
 
                                 <div class="w-1/2">
                                     <div class="flex items-center">
-                                        <p class="text-[2.5rem] tablet:text-[3.375rem] desktop:text-[3.375rem] leading-custom pr-2">4,8</p>
+                                        <p class="text-[2.2rem] tablet:text-[3.375rem] desktop:text-[3.375rem] leading-custom pr-2">4,8</p>
 
                                         <div class="desktop:w-[2.75rem]">
                                             <Image src={star} alt="star icon" class="object-contain w-full h-full"/>
@@ -214,14 +216,14 @@ import mapDots from "@assets/images/map-dots.svg";
                         </div>
 
                         <div class="flex grow">
-                            <div class="flex gap-2 tablet:gap-6 desktop:gap-6justify-between grow">
+                            <div class="flex gap-4 tablet:gap-6 desktop:gap-6justify-between grow">
                                 <div class="w-1/2">
-                                    <p class="text-[2.5rem] tablet:text-[3.375rem] desktop:text-[3.375rem] leading-custom">30:12</p>
+                                    <p class="text-[2.2rem] tablet:text-[3.375rem] desktop:text-[3.375rem] leading-custom">30:12</p>
                                     <p class="text-[1.25rem] leading-none">kitchen speed</p>
                                 </div>
 
                                 <div class="w-1/2">
-                                    <p class="text-[2.5rem] tablet:text-[3.375rem] desktop:text-[3.375rem] leading-custom">30:11</p>
+                                    <p class="text-[2.2rem] tablet:text-[3.375rem] desktop:text-[3.375rem] leading-custom">30:11</p>
                                     <p class="text-[1.25rem] leading-none">avg delivery</p>
                                 </div>
                             </div>
