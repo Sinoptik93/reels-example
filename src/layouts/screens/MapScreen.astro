@@ -24,6 +24,7 @@ import mapDots from "@assets/images/map-dots.svg";
 ---
 
 <script>
+    const test = document.querySelector("#test")
     const plugTotalSales = document.querySelector("#plug-total-sales");
     const plugSales = document.querySelector("#plug-sales-today");
     const plugOrders = document.querySelector("#plug-orders");
@@ -35,6 +36,12 @@ import mapDots from "@assets/images/map-dots.svg";
         const currentTotalSales = parseFormattedNumber(plugTotalSales.innerHTML)
         const currentSales = parseFormattedNumber(plugSales.innerHTML);
         const currentOrders = parseFormattedNumber(plugOrders.innerHTML);
+        const newCode = document.createElement("code");
+        newCode.innerHTML = JSON.stringify({
+            currentTotalSales: currentTotalSales.toString(10),
+        })
+
+        test.appendChild(newCode);
 
         const updatedValue = getRandomValue(2000);
 
