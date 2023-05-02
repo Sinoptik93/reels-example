@@ -29,7 +29,7 @@ import mapDots from "@assets/images/map-dots.svg";
     const plugSales = document.querySelector("#plug-sales-today");
     const plugOrders = document.querySelector("#plug-orders");
     const getRandomValue = (stepCount: number) => Math.floor(Math.random() * stepCount);
-    const parseFormattedNumber = (rawNumber: string) => parseInt(rawNumber.replaceAll(/[&nbsp; ]/g, ''))
+    const parseFormattedNumber = (rawNumber: string) => Number(rawNumber.replaceAll(/[&nbsp; ]/g, ''))
     const currency = Intl.NumberFormat("ru-RU" )
 
     const timer = setInterval(() => {
