@@ -38,14 +38,15 @@ import mapDots from "@assets/images/map-dots.svg";
         const currentOrders = parseFormattedNumber(plugOrders.innerHTML);
         const newCode = document.createElement("code");
         newCode.innerHTML = JSON.stringify({
-            currentTotalSales: currentTotalSales.toString(10),
+            currentTotalSales: currentTotalSales.toString(),
+            "Number.MAX_SAFE_INTEGER": Number.MAX_SAFE_INTEGER,
         })
 
         test.appendChild(newCode);
 
         const updatedValue = getRandomValue(2000);
 
-        plugTotalSales.innerHTML = String(currency.format(currentTotalSales + updatedValue));
+        plugTotalSales.innerHTML = String(currency.format(currentTotalSales + getRandomValue(100000)));
         plugSales.innerHTML = String(currency.format(currentSales + updatedValue));
         plugOrders.innerHTML = String(currency.format(currentOrders + getRandomValue(10)));
     }, 2000);
