@@ -9,8 +9,6 @@ interface FooterInfoProps {
     timeout: number;
 }
 
-dayJs().format()
-
 const FooterInfo: FC<FooterInfoProps> = ({
                                              step = 5,
                                              timeout = 1000,

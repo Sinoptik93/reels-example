@@ -1,11 +1,15 @@
 ---
+import dayJs from 'dayjs'
 import {Image} from '@astrojs/image/components';
+
 import LiveVideos from "@components/LiveVideos"
+import LiveDate from "@components/LiveDate"
 
 import logoPmq from "@assets/icons/logopmq.svg";
 import logoDodo from "@assets/icons/logo-dodo-black.svg";
 import logoDodInline from "@assets/icons/dodo-inline-black.svg";
 import clock from "@assets/icons/clock.svg";
+import star from "@assets/icons/star.svg";
 import employee from "@assets/icons/employee.svg";
 import geo from "@assets/icons/geo.svg";
 import global from "@assets/icons/global.svg";
@@ -14,8 +18,10 @@ import map from "@assets/images/map-vector.svg";
 import mapVideo from "@assets/videos/dodo-map.mp4";
 import ellipseViolet from "@assets/images/ellipse-violet.svg";
 import ellipseOrange from "@assets/images/ellipse-orange.svg";
+import mapDots from "@assets/images/map-dots.svg";
 
 // <Image src={map} alt="map" class="absolute object-cover w-full h-full"/>
+
 
 ---
 
@@ -130,24 +136,24 @@ import ellipseOrange from "@assets/images/ellipse-orange.svg";
 
 
     <div class="tablet:container desktop:container mb-10">
-        <div class="relative rounded-3xl w-full mobile:h-[80vh] tablet:h-[65vh] desktop:h-[65vh] overflow-hidden">
-            <Image alt="World map" src={map} class="absolute object-cover w-full h-full"/>
+        <div class="relative rounded-3xl w-full mobile:h-[80vh] overflow-hidden bg-gray">
+            <Image alt="World map" src={mapDots} class="absolute object-cover w-full h-full mobile:object-[-34rem] tablet:scale-[1.6] desktop:scale-[1.6] tablet:-left-[27rem] tablet:top-[17rem] desktop:-left-[38rem] desktop:top-[17rem]"/>
 
             <div
-                class="absolute  w-[56.25rem] -bottom-[26rem] -right-[36.75rem]">
+                class="absolute hidden w-[56.25rem] -bottom-[26rem] -right-[36.75rem]">
                 <Image src={ellipseOrange} alt="orange"/>
             </div>
 
-            <div class="relative p-8 w-full h-full flex flex-col justify-between desktop:flex-row desktop:gap-[8.75rem]">
-                <div class="flex flex-col gap-6 desktop:grow">
+            <div class="relative p-8 mobile:h-full w-full flex flex-col justify-between desktop:flex-row desktop:gap-[8.75rem] mobile:justify-between">
+                <div class="flex flex-col gap-2 tablet:gap-6 desktop:gap-6 desktop:grow">
 
-                    <div class="flex items-center gap-[4.65rem]">
-                        <div class="flex items-center gap-2">
-                            <div class="bg-[#F24100] w-[0.875rem] h-[0.875rem] rounded-full animate-pulse"></div>
-                            <p class="uppercase text-[1.5rem] leading-none">Live</p>
+                    <div class="flex items-center mobile:justify-between tablet:gap-[4.65rem] desktop:gap-[4.65rem]">
+                        <div class="flex items-center gap-1 tablet:gap-2 desktop:gap-2">
+                            <div class="bg-[#F24100] w-[0.4rem] h-[0.4rem] tablet:w-[0.875rem] tablet:h-[0.875rem] desktop:w-[0.875rem] desktop:h-[0.875rem] rounded-full animate-pulse"></div>
+                            <p class="uppercase text-[0.75rem] tablet:text-[1.5rem] desktop:text-[1.5rem] leading-none">Live</p>
                         </div>
 
-                        <p class="text-[0.75rem] desktop:text-[1.5rem] text-dark-gray font-regular">15 Mar. 2023, 12:22</p>
+                        <LiveDate client:load />
                     </div>
 
                     <div>
@@ -156,34 +162,53 @@ import ellipseOrange from "@assets/images/ellipse-orange.svg";
                     </div>
                 </div>
 
-                <div>
-                    <div class="translate-z-0 desktop:rounded-4xl desktop:bg-white desktop:overflow-hidden desktop:px-6 desktop:pt-4">
-                        <div class="flex desktop:flex-row-reverse">
-                            <div class="relative rounded-4xl overflow-hidden p-7 mobile:py-5 tablet:p-8 desktop:p-6 mobile:bg-white">
-                                <div class="relative z-10">
-                                    <p class="text-strong-title">738</p>
-                                    <p class="text-strong-subtitle">units</p>
-                                </div>
-                            </div>
+                <div class="mobile:h-fit tablet:basis-[26rem] desktop:basis-[26rem]">
+                    <div class="translate-z-0  mobile:gap-4 desktop:rounded-4xl desktop:px-6 desktop:pt-4 desktop:pb-8 flex flex-col desktop:gap-7">
+                        <p class="text-[0.75rem] tablet:text-[1.5rem] desktop:text-[1.5rem] text-dark-gray">Updated minute ago</p>
 
-                            <div class="relative rounded-4xl overflow-hidden p-7 mobile:py-5 tablet:p-8 desktop:p-6 mobile:bg-white">
-                                <div class="relative z-10">
-                                    <p class="text-strong-title">17</p>
-                                    <p class="text-strong-subtitle">countries</p>
+                        <div class="">
+                            <p class="text-[2.5rem] tablet:text-[3.375rem] desktop:text-[3.375rem] leading-custom">$ 2 091 798</p>
+                            <p class="text-[1.25rem] leading-none">sales today</p>
+                        </div>
+
+                        <div class="flex">
+                            <div class="flex gap-2 tablet:gap-6 desktop:gap-6 justify-between grow">
+                                <div class="w-1/2">
+                                    <p class="text-[2.5rem] tablet:text-[3.375rem] desktop:text-[3.375rem] leading-custom">56 678</p>
+                                    <p class="text-[1.25rem] leading-none">orders</p>
+                                </div>
+
+                                <div class="w-1/2">
+                                    <div class="flex items-center">
+                                        <p class="text-[2.5rem] tablet:text-[3.375rem] desktop:text-[3.375rem] leading-custom pr-2">4,8</p>
+
+                                        <div class="desktop:w-[2.75rem]">
+                                            <Image src={star} alt="star icon" class="object-contain w-full h-full"/>
+                                        </div>
+
+                                    </div>
+                                    <p class="text-[1.25rem] leading-none">client rating</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="relative rounded-4xl overflow-hidden p-7 mobile:py-5 tablet:p-8 desktop:p-6 mobile:bg-white w-full">
-                            <div class="relative">
-                                <p class="text-strong-title">23 525</p>
-                                <p class="text-strong-subtitle">dodo people</p>
+                        <div class="flex grow">
+                            <div class="flex gap-2 tablet:gap-6 desktop:gap-6justify-between grow">
+                                <div class="w-1/2">
+                                    <p class="text-[2.5rem] tablet:text-[3.375rem] desktop:text-[3.375rem] leading-custom">30:12</p>
+                                    <p class="text-[1.25rem] leading-none">kitchen speed</p>
+                                </div>
+
+                                <div class="w-1/2">
+                                    <p class="text-[2.5rem] tablet:text-[3.375rem] desktop:text-[3.375rem] leading-custom">30:11</p>
+                                    <p class="text-[1.25rem] leading-none">avg delivery</p>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="mobile:hidden translate-z-0 rounded-4xl bg-white px-6 pt-4 justify-center">
-                        <div class="mt-10 mobile:hidden">
+                    <div class="mobile:hidden translate-z-0 rounded-4xl justify-center">
+                        <div class="mt-10 hidden">
                             <p class="text-subtitle">Real-time pizzeria</p>
                         </div>
 
