@@ -63,6 +63,7 @@ module.exports = {
             fontSize: {
                 "xs": ["0.625rem", {lineHeight: "normal"}], // 10px
                 "sm": ["0.75rem", {lineHeight: "normal"}], // 12px
+                "md": ["1rem", {lineHeight: "normal"}], // 12px
                 "2xl": ["1.625rem", {lineHeight: "normal"}], // 26px
                 "3xl": ["1.688rem", {lineHeight: "normal"}], // 27px
                 "4xl": ["2.5rem", {lineHeight: "normal"}], // 40px

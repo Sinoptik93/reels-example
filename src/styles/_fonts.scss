@@ -73,7 +73,7 @@ html {
   }
 
   .text-regular {
-    @apply font-regular text-xl tablet:text-[1.6875rem] desktop:text-4xl tracking-tightest dark:text-white;
+    @apply font-regular text-md tablet:text-[1.6875rem] desktop:text-4xl tracking-tightest dark:text-white;
 
     span {
       @apply text-accent-orange;
