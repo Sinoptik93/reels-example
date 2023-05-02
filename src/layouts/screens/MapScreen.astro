@@ -29,7 +29,7 @@ import mapDots from "@assets/images/map-dots.svg";
     const plugSales = document.querySelector("#plug-sales-today");
     const plugOrders = document.querySelector("#plug-orders");
     const getRandomValue = (stepCount: number) => Math.floor(Math.random() * stepCount);
-    const parseFormattedNumber = (rawNumber: string) => BigInt(rawNumber.replaceAll(/[&nbsp; ]/g, ''))
+    const parseFormattedNumber = (rawNumber: string) => parseInt(rawNumber.replaceAll(/[&nbsp; ]/g, ''))
     const currency = Intl.NumberFormat("ru-RU" )
 
     const timer = setInterval(() => {
@@ -45,9 +45,9 @@ import mapDots from "@assets/images/map-dots.svg";
 
         const updatedValue = getRandomValue(2000);
 
-        plugTotalSales.innerHTML = String(currency.format(currentTotalSales + BigInt(updatedValue)));
-        plugSales.innerHTML = String(currency.format(currentSales + BigInt(updatedValue)));
-        plugOrders.innerHTML = String(currency.format(currentOrders + BigInt(getRandomValue(10))));
+        plugTotalSales.innerHTML = String(currency.format(currentTotalSales + updatedValue));
+        plugSales.innerHTML = String(currency.format(currentSales + updatedValue));
+        plugOrders.innerHTML = String(currency.format(currentOrders + getRandomValue(10)));
     }, 2000);
 </script>
 
@@ -183,7 +183,7 @@ import mapDots from "@assets/images/map-dots.svg";
                     </div>
 
                     <div>
-                        <p class="text-4xl desktop:text-[5.125rem]">$ <span id="plug-total-sales">350 624 150</span></p>
+                        <p class="text-4xl desktop:text-[5.125rem]">$ <span id="plug-total-sales">35 624 150</span></p>
                         <p class="hidden tablet:block desktop:block text-[1.5rem]">sales over the year</p>
                     </div>
                 </div>
