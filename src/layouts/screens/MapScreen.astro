@@ -29,8 +29,10 @@ import mapDots from "@assets/images/map-dots.svg";
     const plugSales = document.querySelector("#plug-sales-today");
     const plugOrders = document.querySelector("#plug-orders");
     const getRandomValue = (stepCount: number) => Math.floor(Math.random() * stepCount);
-    const parseFormattedNumber = (rawNumber: string) => Number(rawNumber.replaceAll(/[&nbsp; ]/g, ''))
-    const currency = Intl.NumberFormat("ru-RU" )
+    const parseFormattedNumber = (rawNumber: string) => parseInt(rawNumber.replaceAll(/[&nbsp; ]/g, ''))
+    const currency = {
+        format: (number) => number
+    }
 
     const timer = setInterval(() => {
         const currentTotalSales = parseFormattedNumber(plugTotalSales.innerHTML)
@@ -212,7 +214,7 @@ import mapDots from "@assets/images/map-dots.svg";
                                     <div class="flex items-center">
                                         <p class="text-[2.2rem] tablet:text-[3.375rem] desktop:text-[3.375rem] leading-custom pr-2">4,8</p>
 
-                                        <div class="desktop:w-[2.75rem]">
+                                        <div class="w-[1.8rem] tablet:w-[2.75rem] desktop:w-[2.75rem]">
                                             <Image src={star} alt="star icon" class="object-contain w-full h-full"/>
                                         </div>
 
