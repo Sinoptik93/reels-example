@@ -21,9 +21,28 @@ import ellipseOrange from "@assets/images/ellipse-orange.svg";
 import mapDots from "@assets/images/map-dots.svg";
 
 // <Image src={map} alt="map" class="absolute object-cover w-full h-full"/>
-
-
 ---
+
+<script>
+    const plugTotalSales = document.querySelector("#plug-total-sales");
+    const plugSales = document.querySelector("#plug-sales-today");
+    const plugOrders = document.querySelector("#plug-orders");
+    const getRandomValue = (stepCount: number) => Math.floor(Math.random() * stepCount);
+    const parseFormattedNumber = (rawNumber: string) => parseInt(rawNumber.replaceAll(/['&nbsp;', ' ']/g, ''))
+    const currency = Intl.NumberFormat("ru-RU" )
+
+    const timer = setInterval(() => {
+        const currentTotalSales = parseFormattedNumber(plugTotalSales.innerHTML)
+        const currentSales = parseFormattedNumber(plugSales.innerHTML);
+        const currentOrders = parseFormattedNumber(plugOrders.innerHTML);
+
+        const updatedValue = getRandomValue(2000);
+
+        plugTotalSales.innerHTML = String(currency.format(currentTotalSales + updatedValue));
+        plugSales.innerHTML = String(currency.format(currentSales + updatedValue));
+        plugOrders.innerHTML = String(currency.format(currentOrders + getRandomValue(10)));
+    }, 2000);
+</script>
 
 
 <section class="mobile:mb-[6.625rem] tablet:mb-[8.125rem] desktop:mb-[12.375rem]">
@@ -157,7 +176,7 @@ import mapDots from "@assets/images/map-dots.svg";
                     </div>
 
                     <div>
-                        <p class="text-4xl desktop:text-[5.125rem]">$ 350,654,120</p>
+                        <p class="text-4xl desktop:text-[5.125rem]">$ <span id="plug-total-sales">350 654 120</span></p>
                         <p class="hidden tablet:block desktop:block text-[1.5rem]">sales over the year</p>
                     </div>
                 </div>
@@ -167,14 +186,14 @@ import mapDots from "@assets/images/map-dots.svg";
                         <p class="text-[0.75rem] tablet:text-[1.5rem] desktop:text-[1.5rem] text-dark-gray">Updated minute ago</p>
 
                         <div class="">
-                            <p class="text-[2.5rem] tablet:text-[3.375rem] desktop:text-[3.375rem] leading-custom">$ 2 091 798</p>
+                            <p class="text-[2.5rem] tablet:text-[3.375rem] desktop:text-[3.375rem] leading-custom" >$<span id="plug-sales-today">2 091 798</span></p>
                             <p class="text-[1.25rem] leading-none">sales today</p>
                         </div>
 
                         <div class="flex">
                             <div class="flex gap-2 tablet:gap-6 desktop:gap-6 justify-between grow">
                                 <div class="w-1/2">
-                                    <p class="text-[2.5rem] tablet:text-[3.375rem] desktop:text-[3.375rem] leading-custom">56 678</p>
+                                    <p class="text-[2.5rem] tablet:text-[3.375rem] desktop:text-[3.375rem] leading-custom" id="plug-orders">56678</p>
                                     <p class="text-[1.25rem] leading-none">orders</p>
                                 </div>
 
