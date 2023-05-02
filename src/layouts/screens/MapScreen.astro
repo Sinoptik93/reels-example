@@ -42,7 +42,8 @@ import mapDots from "@assets/images/map-dots.svg";
         newCode.innerHTML = `${JSON.stringify({
             "plugTotalSales.innerHTML": plugTotalSales.innerHTML,
             "plugTotalSales.innerHTML.replaceAll(/[&nbsp; ]/g, '')": plugTotalSales.innerHTML.replaceAll(/[&nbsp; ]/g, ''),
-            "plugSales.innerHTML": plugSales.innerHTML, 
+            "plugSales.innerHTML": plugSales.innerHTML,
+            "parseFormattedNumber(plugTotalSales.innerHTML)": parseFormattedNumber(plugTotalSales.innerHTML),
             currentSales,
             currentTotalSales,
         }, null, "\t")}`
