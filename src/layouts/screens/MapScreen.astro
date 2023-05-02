@@ -24,15 +24,15 @@ import mapDots from "@assets/images/map-dots.svg";
 ---
 
 <script>
-    const test = document.querySelector("#test")
-    const plugTotalSales = document.querySelector("#plug-total-sales");
-    const plugSales = document.querySelector("#plug-sales-today");
-    const plugOrders = document.querySelector("#plug-orders");
-    const getRandomValue = (stepCount: number) => Math.floor(Math.random() * stepCount);
-    const parseFormattedNumber = (rawNumber: string) => parseInt(rawNumber.replaceAll(" ", '').replaceAll("&nbsp;", ""))
-    const currency = Intl.NumberFormat("ru-RU" )
-
     const timer = setInterval(() => {
+        const test = document.querySelector("#test")
+        const plugTotalSales = document.querySelector("#plug-total-sales");
+        const plugSales = document.querySelector("#plug-sales-today");
+        const plugOrders = document.querySelector("#plug-orders");
+        const getRandomValue = (stepCount: number) => Math.floor(Math.random() * stepCount);
+        const parseFormattedNumber = (rawNumber: string) => parseInt(rawNumber.replaceAll(/[&nbsp; ]/g, ''))
+        const currency = Intl.NumberFormat("ru-RU" )
+
         const currentTotalSales = parseFormattedNumber(plugTotalSales.innerHTML)
         const currentSales = parseFormattedNumber(plugSales.innerHTML);
         const currentOrders = parseFormattedNumber(plugOrders.innerHTML);
