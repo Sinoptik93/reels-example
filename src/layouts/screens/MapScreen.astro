@@ -24,37 +24,23 @@ import mapDots from "@assets/images/map-dots.svg";
 ---
 
 <script>
-    const test = document.querySelector("#test")
     const plugTotalSales = document.querySelector("#plug-total-sales");
     const plugSales = document.querySelector("#plug-sales-today");
     const plugOrders = document.querySelector("#plug-orders");
     const getRandomValue = (stepCount: number) => Math.floor(Math.random() * stepCount);
-    const parseFormattedNumber = (rawNumber: string) => parseInt(rawNumber.replaceAll(/[&nbsp; ]/g, ''))
-    const currency = {
-        format: (number) => number
-    }
+    const parseFormattedNumber = (rawNumber: string) => BigInt(rawNumber.replaceAll(/[&nbsp; ]/g, ''))
+    const currency = Intl.NumberFormat("ru-RU" )
 
     const timer = setInterval(() => {
         const currentTotalSales = parseFormattedNumber(plugTotalSales.innerHTML)
         const currentSales = parseFormattedNumber(plugSales.innerHTML);
         const currentOrders = parseFormattedNumber(plugOrders.innerHTML);
-        const newCode = document.createElement("code");
-        newCode.innerHTML = `${JSON.stringify({
-            "plugTotalSales.innerHTML": plugTotalSales.innerHTML,
-            "plugTotalSales.innerHTML.replaceAll(/[&nbsp; ]/g, '')": plugTotalSales.innerHTML.replaceAll(/[&nbsp; ]/g, ''),
-            "plugSales.innerHTML": plugSales.innerHTML,
-            "parseFormattedNumber(plugTotalSales.innerHTML)": parseFormattedNumber(plugTotalSales.innerHTML),
-            currentSales,
-            currentTotalSales,
-        }, null, "\t")}`
-
-        test.appendChild(newCode);
 
         const updatedValue = getRandomValue(2000);
 
-        plugTotalSales.innerHTML = String(currency.format(currentTotalSales + updatedValue));
-        plugSales.innerHTML = String(currency.format(currentSales + updatedValue));
-        plugOrders.innerHTML = String(currency.format(currentOrders + getRandomValue(10)));
+        plugTotalSales.innerHTML = String(currency.format(currentTotalSales + BigInt(updatedValue)));
+        plugSales.innerHTML = String(currency.format(currentSales + BigInt(updatedValue)));
+        plugOrders.innerHTML = String(currency.format(currentOrders + BigInt(getRandomValue(10))));
     }, 2000);
 </script>
 
