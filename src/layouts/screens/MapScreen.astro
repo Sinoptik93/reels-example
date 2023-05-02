@@ -36,6 +36,8 @@ import mapDots from "@assets/images/map-dots.svg";
         const currentSales = parseFormattedNumber(plugSales.innerHTML);
         const currentOrders = parseFormattedNumber(plugOrders.innerHTML);
 
+        console.log({"plugTotalSales.innerHTML": plugTotalSales.innerHTML, currentTotalSales})
+
         const updatedValue = getRandomValue(2000);
 
         plugTotalSales.innerHTML = String(currency.format(currentTotalSales + updatedValue));
