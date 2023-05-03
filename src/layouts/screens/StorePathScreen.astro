@@ -1,0 +1,24 @@
+---
+import { Image } from '@astrojs/image/components';
+
+import clientPath from "@assets/images/store-path.png";
+import ClientPath from "@components/ClientPath";
+---
+
+<div class="container">
+    <div class="tablet:min-h-[28.75rem] desktop:min-h-[24.9375rem]">
+        <p class="text-subtitle mobile:mb-[1.3125rem] desktop:mb-[0.5625rem]">Tech</p>
+
+        <div class="relative mb-[1.875rem] tablet:mb-[1.875rem] desktop:mb-[4.625rem]">
+            <h2 class="text-h-2 desktop:block tablet:mb-2 mobile:mb-5">Every process <br>digitalised</h2>
+
+            <p class="text-regular hidden desktop:block desktop:absolute desktop:top-[9.75rem] desktop:left-[29.8125rem] desktop:max-w-[53.35rem]">Dodo IS, our own cloud-based tech platform covers everything from ordering to delivery, production and data-driven multiple-store management.</p>
+            <p class="text-regular mobile:hidden desktop:hidden tablet:absolute tablet:top-[12.875rem] tablet:left-[20.25rem] tablet:max-w-[31.875rem]">Dodo IS, our own cloud-based tech platform covers everything from ordering to delivery, production and data-driven multiple-store management.</p>
+            <p class="text-regular text-[1.2rem] tablet:hidden desktop:hidden">Dodo IS, our own cloud-based tech platform covers everything from ordering to delivery, production and data-driven multiple-store management.</p>
+        </div>
+    </div>
+</div>
+
+<div class="mb-9 tablet: tablet:hidden tablet:mb-[12.1875rem] desktop:mb-[7rem] mobile:min-h-[34.375rem] desktop:bg-[#F5EFF1] tablet:rounded-3xl desktop:rounded-3xl overflow-hidden">
+    <ClientPath client:only/>
+</div>

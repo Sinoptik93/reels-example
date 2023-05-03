@@ -1,0 +1,61 @@
+---
+import { Image } from '@astrojs/image/components';
+
+import pizza from "@assets/images/pizza.png";
+import logoDodo from "@assets/icons/logo-dodo-outlined.svg";
+import FooterInfo from "@components/FooterInfo";
+
+---
+
+<section class="container mb-20 tablet:mb-40 desktop:mb-40">
+    <div class="tablet:min-h-[17.5rem] desktop:min-h-[25rem] mb-40 tablet:mb-60 desktop:mb-80">
+        <div class="tablet:relative desktop:relative mobile:pt-[0.75rem] tablet:mb-[5rem] desktop:mb-[6.75rem]">
+            <h2 class="text-h-2 tablet:mb-6 mobile:mb-5"><span>Learn more</span> about Dodo <br class="mobile:hidden tablet:hidden">franchise</h2>
+
+            <div
+                class="desktop:absolute flex flex-col gap-4 tablet:gap-[1.75rem] desktop:gap-9 w-full desktop:max-w-[60.125rem] desktop:top-[9.75rem] desktop:left-[27.3125rem] tablet:max-w-[37.5625rem] tablet:top-[8.625rem] tablet:left-[21.4375rem]">
+                <div class="flex gap-4 tablet:gap-[1.875rem] desktop:gap-[3.5rem] mobile:flex-col">
+                    <a
+                        class="border-accent-orange px-4 py-4 desktop:py-[1.625rem] text-button text-accent-orange border-[0.125rem] rounded-3xl  tablet:w-1/2 desktop:w-1/2 text-center"
+                        href="#"
+                    >Investor Relations</a>
+                    <a
+                        class="border-accent-orange px-4 py-4 desktop:py-[1.625rem] text-button text-accent-orange border-[0.125rem] rounded-3xl tablet:w-1/2 desktop:w-1/2 text-center"
+                        href="#"
+                    >Open Sales</a>
+
+                </div>
+                <div class="flex gap-4 tablet:gap-[1.875rem] desktop:gap-[3.5rem] mobile:flex-col">
+                    <a
+                        class="border-accent-orange px-4 py-4 desktop:py-[1.625rem] text-button text-accent-orange border-[0.125rem] rounded-3xl tablet:w-1/2 desktop:w-1/2 text-center"
+                        href="#"
+                    >About our tech</a>
+                    <a
+                        class="border-accent-orange px-4 py-4 desktop:py-[1.625rem] text-button text-accent-orange border-[0.125rem] rounded-3xl tablet:w-1/2 desktop:w-1/2 text-center"
+                        href="#"
+                    >Dodo Brands</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="relative flex items-center justify-center mobile:flex-col mobile:h-[57.5rem] mb-5 tablet:mb-8 desktop:mb-16">
+        <div class="absolute left-0 mobile:left-auto mobile:top-0 w-[20rem] h-[20rem] tablet:w-[20.8125rem] tablet:h-[20.8125rem] desktop:w-[30rem] desktop:h-[30rem] ">
+            <Image src={pizza} format="webp" alt="Pizza" class="absolute object-cover w-full h-full"/>
+        </div>
+
+        <FooterInfo step={5} client:only/>
+
+        <div class="z-10 absolute right-0 mobile:right-auto mobile:bottom-0 w-[20rem] h-[20rem] tablet:w-[20.8125rem] tablet:h-[20.8125rem] desktop:w-[30rem] desktop:h-[30rem] rounded-full bg-accent-orange flex items-center justify-center">
+            <div class="w-[15.1875rem] tablet:w-[15.8125rem] desktop:w-[23.4375rem]">
+                <Image src={logoDodo} alt="Dodo logo" class="object-cover w-full h-full"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex justify-between">
+        <a href="#" class="text-dark-gray font-regular mobile:text-[1rem] tablet:text-[1.25rem] desktop:text-[1.25rem]">Privacy Policy</a>
+        <a href="#" class="text-dark-gray font-regular mobile:text-[1rem] tablet:text-[1.25rem] desktop:text-[1.25rem]">User Agreement</a>
+    </div>
+
+</section>

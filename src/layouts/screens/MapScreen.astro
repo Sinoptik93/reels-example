@@ -1,0 +1,267 @@
+---
+import dayJs from 'dayjs'
+import {Image} from '@astrojs/image/components';
+
+import LiveVideos from "@components/LiveVideos"
+import LiveDate from "@components/LiveDate"
+
+import logoPmq from "@assets/icons/logopmq.svg";
+import logoDodo from "@assets/icons/logo-dodo-black.svg";
+import logoDodInline from "@assets/icons/dodo-inline-black.svg";
+import clock from "@assets/icons/clock.svg";
+import star from "@assets/icons/star.svg";
+import employee from "@assets/icons/employee.svg";
+import geo from "@assets/icons/geo.svg";
+import global from "@assets/icons/global.svg";
+import arrowUp from "@assets/icons/arrow-up.svg";
+import map from "@assets/images/map-vector.svg";
+import mapVideo from "@assets/videos/dodo-map.mp4";
+import ellipseViolet from "@assets/images/ellipse-violet.svg";
+import ellipseOrange from "@assets/images/ellipse-orange.svg";
+import mapDots from "@assets/images/map-dots.svg";
+
+// <Image src={map} alt="map" class="absolute object-cover w-full h-full"/>
+---
+
+<script>
+    const plugTotalSales = document.querySelector("#plug-total-sales");
+    const plugSales = document.querySelector("#plug-sales-today");
+    const plugOrders = document.querySelector("#plug-orders");
+    const getRandomValue = (stepCount: number) => Math.floor(Math.random() * stepCount);
+    const parseFormattedNumber = (rawNumber: string) => parseInt(rawNumber.replaceAll(/[&nbsp; ]/g, ''))
+    const currency = Intl.NumberFormat("ru-RU" )
+
+    const timer = setInterval(() => {
+        const currentTotalSales = parseFormattedNumber(plugTotalSales.innerHTML)
+        const currentSales = parseFormattedNumber(plugSales.innerHTML);
+        const currentOrders = parseFormattedNumber(plugOrders.innerHTML);
+
+        const updatedValue = getRandomValue(2000);
+
+        plugTotalSales.innerHTML = String(currency.format(currentTotalSales + 1500000));
+        plugSales.innerHTML = String(currency.format(currentSales + updatedValue));
+        plugOrders.innerHTML = String(currency.format(currentOrders + getRandomValue(10)));
+    }, 2000);
+</script>
+
+
+<section class="mobile:mb-[6.625rem] tablet:mb-[8.125rem] desktop:mb-[12.375rem]" id="test">
+    <div class="container tablet:min-h-[11rem] desktop:min-h-[25rem] tablet:mb-[5rem]">
+        <div class="relative mobile:pt-3 mb-7 ">
+            <h2 class="text-h-2 mobile:mb-5 desktop:leading-custom">Data makes every move transparent
+            </h2>
+
+            <p class="text-regular block tablet:absolute desktop:absolute tablet:top-[7.3rem] tablet:left-[26.5625rem] desktop:top-[8.9rem] desktop:left-[33.4375rem] desktop:max-w-[50rem]">
+                Dodo IS collects the data from the whole system, processes it and shows realtime reports to take data-based timely decisions.
+            </p>
+        </div>
+    </div>
+
+    <div
+        class="tablet:container desktop:container relative flex mobile:mb-10 mobile:min-h-[40rem] tablet:min-h-[31.875rem] desktop:min-h-[47.375rem] mobile:flex-col tablet:mb-[4.3125rem] desktop:mb-[6.25rem] desktop:-mt-[1.125rem] hidden">
+        <div class="relative overflow-hidden rounded-3xl bg-gray desktop:w-2/3 tablet:w-2/3 mobile:w-full mobile:grow">
+            <div
+                class="absolute z-10 w-[100rem] -left-[87rem] -top-[10rem] desktop:-left-[86rem] desktop:-top-[23rem]">
+                <img src={ellipseViolet.src} alt="violet"/>
+            </div>
+
+            <div
+                class="absolute z-10 w-[100rem] -left-[87rem] -top-[45rem] desktop:-left-[85rem] desktop:-top-[5rem]">
+                <img src={ellipseOrange.src} alt="orange" />
+            </div>
+
+            <video class="absolute min-h-full min-w-full object-cover scale-[1.1]" loop autoplay muted playsinline >
+                <source src={mapVideo} type="video/mp4"/>
+            </video>
+
+            <div
+                class="relative z-10 flex flex-col h-full tablet:px-[1.625rem] tablet:pt-[1.625rem] tablet:pb-10 desktop:px-10 desktop:pt-10 pb-[3.875rem] justify-between mobile:gap-4 mobile:px-5 mobile:py-5">
+                <div class="w-[7.3125rem] tablet:w-[10.6875rem] desktop:w-[15.8125rem]">
+                    <Image src={logoDodo} alt="Dodo logo" class="object-contain w-full h-full"/>
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <div class="flex items-center gap-3">
+                        <div class="w-5 tablet:w-[1.6875rem] desktop:w-10 ">
+                            <Image src={clock} alt="Clock icon" class="object-contain w-full h-full"/>
+                        </div>
+
+                        <p class="text-xs tablet:tracking-widest desktop:text-legend uppercase">22 Dec 2022, 14:57:42</p>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <p class="text-2xl desktop:text-[3.75rem] tablet:text-4xl tracking-tightest">$350 654 120</p>
+
+                        <div class="flex items-center gap-2 mobile:gap-1">
+                            <div class="desktop:w-6 tablet:w-4 mobile:w-4">
+                                <Image src={arrowUp} alt="Arrow up icon" class="object-contain w-full h-full"/>
+                            </div>
+
+                            <p class="text-legend text-accent-orange tracking-tightest">+17%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="mobile:absolute z-10 mobile:bg-[#F4F2F2AA] mobile:bottom-0 mobile:left-0 mobile:right-0 mobile:flex-row rounded-3xl bg-gray desktop:w-1/3 tablet:w-1/3 mobile:w-full overflow-hidden tablet:px-[1.1875rem] tablet:py-[0.875rem] desktop:px-[1.6875rem] desktop:py-[2.1875rem] mobile:px-5 py-5">
+            <div class="flex flex-col mobile:flex-row mobile:justify-between tablet:gap-[1rem] desktop:gap-[2.0625rem] mobile:gap-1">
+                <div class="flex flex-col gap-1">
+                    <div class="flex gap-0.5">
+                        <p class="text-unit">738</p>
+
+                        <div class="w-4 tablet:w-6 desktop:w-9">
+                            <Image src={geo} alt="Geo icon" class="object-contain w-full h-full"/>
+                        </div>
+                    </div>
+
+                    <p class="text-unit-title">units</p>
+                </div>
+
+                <div class="flex flex-col gap-1">
+                    <div class="flex gap-0.5">
+                        <p class="text-unit">23 525</p>
+
+                        <div class="w-5 tablet:w-8 desktop:w-11">
+                            <Image alt="Employee icon" src={employee} class="object-contain w-full h-full"/>
+                        </div>
+                    </div>
+
+                    <p class="text-unit-title">people</p>
+                </div>
+
+                <div class="flex flex-col gap-1">
+                    <div class="flex gap-0.5 items-center">
+                        <p class="text-unit">15</p>
+
+                        <div class="w-5 tablet:w-8 desktop:w-11">
+                            <Image alt="Earth icon" src={global} class="object-contain w-full h-full"/>
+                        </div>
+                    </div>
+
+                    <p class="text-unit-title">countries</p>
+                </div>
+            </div>
+
+            <div class="mt-10 mobile:hidden">
+                <p class="text-subtitle">Real-time pizzeria</p>
+            </div>
+            <div class="mobile:hidden">
+                <LiveVideos client:only/>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="tablet:container desktop:container mb-10">
+        <div class="relative rounded-3xl w-full mobile:h-[80vh] overflow-hidden bg-gray">
+            <Image alt="World map" src={mapDots} class="absolute object-cover w-full h-full mobile:object-[-34rem] tablet:scale-[1.6] desktop:scale-[1.6] tablet:-left-[27rem] tablet:top-[17rem] desktop:-left-[38rem] desktop:top-[17rem]"/>
+
+            <div
+                class="absolute hidden w-[56.25rem] -bottom-[26rem] -right-[36.75rem]">
+                <Image src={ellipseOrange} alt="orange"/>
+            </div>
+
+            <div class="relative p-[1.25rem] tablet:p-8 desktop:p-8 mobile:h-full w-full flex flex-col justify-between desktop:flex-row desktop:gap-[8.75rem] mobile:justify-between">
+                <div class="flex flex-col gap-2 tablet:gap-6 desktop:gap-6 desktop:grow">
+
+                    <div class="flex items-center mobile:justify-between tablet:gap-[4.65rem] desktop:gap-[4.65rem]">
+                        <div class="flex items-center gap-1 tablet:gap-2 desktop:gap-2">
+                            <div class="bg-[#F24100] w-[0.4rem] h-[0.4rem] tablet:w-[0.875rem] tablet:h-[0.875rem] desktop:w-[0.875rem] desktop:h-[0.875rem] rounded-full animate-pulse"></div>
+                            <p class="uppercase text-[0.75rem] tablet:text-[1.5rem] desktop:text-[1.5rem] leading-none">Live</p>
+                        </div>
+
+                        <LiveDate client:load />
+                    </div>
+
+                    <div>
+                        <p class="text-4xl desktop:text-[5.125rem]">$ <span id="plug-total-sales">39 343 143</span></p>
+                        <p class="hidden tablet:block desktop:block text-[1.5rem]">sales over the year</p>
+                    </div>
+                </div>
+
+                <div class="mobile:h-fit tablet:basis-[26rem] desktop:basis-[26rem]">
+                    <div class="translate-z-0  mobile:gap-4 desktop:rounded-4xl desktop:px-6 desktop:pt-4 desktop:pb-8 flex flex-col desktop:gap-7">
+                        <p class="hidden text-[0.75rem] tablet:text-[1.5rem] desktop:text-[1.5rem] text-dark-gray">Updated minute ago</p>
+
+                        <div class="">
+                            <p class="text-[2.2rem] tablet:text-[3.375rem] desktop:text-[3.375rem] leading-custom" >$ <span id="plug-sales-today">2 091 798</span></p>
+                            <p class="text-[1.25rem] leading-none">sales today</p>
+                        </div>
+
+                        <div class="flex">
+                            <div class="flex gap-4 tablet:gap-6 desktop:gap-6 justify-between grow">
+                                <div class="w-1/2">
+                                    <p class="text-[2.2rem] tablet:text-[3.375rem] desktop:text-[3.375rem] leading-custom" id="plug-orders">56678</p>
+                                    <p class="text-[1.25rem] leading-none">orders</p>
+                                </div>
+
+                                <div class="w-1/2">
+                                    <div class="flex items-center">
+                                        <p class="text-[2.2rem] tablet:text-[3.375rem] desktop:text-[3.375rem] leading-custom pr-2">4,8</p>
+
+                                        <div class="w-[1.8rem] tablet:w-[2.75rem] desktop:w-[2.75rem]">
+                                            <Image src={star} alt="star icon" class="object-contain w-full h-full"/>
+                                        </div>
+
+                                    </div>
+                                    <p class="text-[1.25rem] leading-none">client rating</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex grow">
+                            <div class="flex gap-4 tablet:gap-6 desktop:gap-6justify-between grow">
+                                <div class="w-1/2">
+                                    <p class="text-[2.2rem] tablet:text-[3.375rem] desktop:text-[3.375rem] leading-custom">30:12</p>
+                                    <p class="text-[1.25rem] leading-none">kitchen speed</p>
+                                </div>
+
+                                <div class="w-1/2">
+                                    <p class="text-[2.2rem] tablet:text-[3.375rem] desktop:text-[3.375rem] leading-custom">30:11</p>
+                                    <p class="text-[1.25rem] leading-none">avg delivery</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mobile:hidden translate-z-0 rounded-4xl justify-center">
+                        <div class="mt-10 hidden">
+                            <p class="text-subtitle">Real-time pizzeria</p>
+                        </div>
+
+                        <div class="max-w-[25rem]">
+                            <LiveVideos client:only/>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container block tablet:hidden desktop:hidden">
+        <div class="mb-4">
+            <p class="text-subtitle">Real-time pizzeria</p>
+        </div>
+    </div>
+
+    <div class="tablet:hidden desktop:hidden">
+        <LiveVideos client:only/>
+    </div>
+
+    <div class="container">
+        <div
+            class="flex mobile:gap-3 tablet:gap-9 desktop:gap-6 mobile:flex-col-reverse mobile:border-l mobile:pl-4">
+            <div class="w-[3.875rem] tablet:w-[5.1875rem] desktop:w-[9.5625rem] shrink-0">
+                <Image src={logoPmq} alt="Logo PMQ" class="object-contain w-full"/>
+            </div>
+            <div class="mobile:hidden tablet:w-[0.0625rem] tablet:max-w-[14.375rem] desktop:w-[0.0625rem] desktop:mt-2.5 bg-black"></div>
+            <p class="text-regular-2 tablet:text-4xl tracking-tightest desktop:ml-[1.75rem] desktop:leading-custom">Fedor Ovchinnikov <br class="">[CEO and Founder] <br class="desktop:hidden">of  Dodo Pizza <br class="mobile:hidden">
+                may be <br class="desktop:hidden">the Steve Jobs of pizza</p>
+        </div>
+    </div>
+</section>

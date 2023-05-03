@@ -1,0 +1,54 @@
+@import 'swiper/swiper-bundle.css';
+
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-pagination-bullet {
+  transition: width 0.3s ease-in, max-width 0.3s ease-in, opacity 0.3s ease-out;
+  border-radius: 0.25rem;
+  background-color: #FF6900;
+  opacity: 0.8;
+  width: 0.5rem;
+  height: 0.5rem;
+  max-width: 0.5rem;
+}
+
+.swiper-pagination-bullet-active {
+  width: 100%;
+  max-width: 5rem;
+  border-radius: 0.25rem;
+  background-color: #FF6900;
+  opacity: 1;
+}
+
+.swiper.custom {
+  .swiper-slide {
+    @apply desktop:brightness-50 desktop:transition-all
+  }
+
+  .swiper-slide-active {
+    @apply desktop:scale-125 desktop:brightness-100 desktop:transition-all desktop:z-10
+  }
+}
+
+.swiper.custom-card {
+  .swiper-slide {
+    @apply opacity-50 transition-all
+  }
+
+  .swiper-slide-active {
+    @apply opacity-100 transition-all z-10
+  }
+
+  &--darken {
+    .swiper-slide {
+      @apply brightness-50 transition-all
+    }
+
+    .swiper-slide-active {
+      @apply brightness-100 transition-all z-10
+    }
+  }
+}

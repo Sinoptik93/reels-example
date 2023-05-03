@@ -1,0 +1,19 @@
+html {
+    @apply mobile:text-[19px] desktop:text-[12px] tablet:text-[9px]
+}
+
+.violet-gradient {
+  background: radial-gradient(
+                  circle,
+                  rgba(142, 79, 238, 1) 0%,
+                  rgba(142, 79, 238, 0) 100%
+  );
+}
+
+body {
+  @apply dark:bg-black;
+}
+
+.border-translate {
+  transform: translateZ(0);
+}

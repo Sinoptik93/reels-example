@@ -1,0 +1,134 @@
+---
+import { Image } from '@astrojs/image/components';
+
+import dodoLogo from "@assets/icons/logo-dodo-black.svg";
+import map from "@assets/videos/dodo-planet.gif";
+import mapVideo from "@assets/videos/dodo-planet.webm";
+import mapVideoExtra from "@assets/videos/dodo-planet.mp4";
+import ellipseViolet from "@assets/images/ellipse-violet.svg";
+import ellipseOrange from "@assets/images/ellipse-orange.svg";
+---
+
+
+<section class="tablet:container desktop:container mb-[7rem] tablet:mb-[11.375rem] desktop:mb-[19.5rem]">
+    <div class="mobile:container tablet:min-h-[13.75rem] desktop:min-h-[23.8125rem] mobile:mb-8 tablet:mb-20">
+        <p class="text-subtitle mobile:mb-4">Franchise</p>
+
+        <div class="relative">
+            <h2 class="text-h-2 mb-8 mobile:mb-6 leading-none">We look for strategic <br class="mobile:hidden tablet:hidden">partners</h2>
+
+            <p class="text-regular block desktop:absolute tablet:top-[8.5rem] tablet:left-[20.1875rem] desktop:top-[7.8rem] desktop:left-[24.3125rem]">Master franchise target regions: Middle East, <br class="mobile:hidden tablet:hidden">Africa, Asia, and South America.</p>
+        </div>
+    </div>
+
+
+    <div class="relative overflow-hidden flex bg-gray rounded-3xl  pb-5 pt-[6.875rem] desktop:px-8 desktop:pt-[9.25rem] desktop:pb-[5.875rem] tablet:pl-4 tablet:pr-8 tablet:pt-[5.9375rem] tablet:pb-[5.375rem] mobile:flex-col mobile:px-5 mobile:gap-4">
+        <div
+            class="absolute z-10 w-[60rem] -left-[53rem] -top-[6rem] desktop:w-[120rem] desktop:-left-[97rem] desktop:-top-[20rem]">
+            <img src={ellipseViolet.src} alt="violet"/>
+        </div>
+
+        <div
+            class="absolute z-10 w-[60rem] -left-[52rem] -top-[20rem] desktop:w-[120rem] desktop:-left-[97rem] desktop:-top-[60rem]">
+            <img src={ellipseOrange.src} alt="orange" />
+        </div>
+
+        <div class="absolute z-10 top-5 left-5 w-[7.3125rem] tablet:w-[10.625rem] desktop:w-[15.875rem] tablet:top-6 tablet:left-6 desktop:top-10 desktop:left-10">
+            <Image src={dodoLogo} alt="Dodo logo"/>
+        </div>
+
+        <div class="flex relative z-10 w-full mobile:mb-6 mobile:gap-[1.625rem] tablet:gap-[5.25rem] desktop:gap-[7.8125rem]">
+
+            <div class="flex flex-col gap-6 desktop:mt-[2.0625rem] desktop:ml-[0.625rem] tablet:mt-[1.375rem] tablet:ml-[0.8125rem]">
+                <p class="text-regular-3 hidden mobile:block">Franchise<br>terms</p>
+                {/*
+                    <div class="shrink-0 w-[8.125rem] tablet:w-[13.1875rem] desktop:w-[19.5625rem]">
+                        <Image src={map} alt="map"/>
+                    </div>
+                */}
+
+                <div class="shrink-0 translate-z-0 w-[10.125rem] tablet:w-[13.1875rem] desktop:w-[19.5625rem] overflow-hidden rounded-full">
+                    <video class="translate-z-0min-h-full min-w-full object-cover scale-[1.15]" loop autoplay muted playsinline >
+                        <source src={mapVideo} type="video/webm"/>
+                        <source src={mapVideoExtra} type="video/mp4"/>
+                    </video>
+                </div>
+            </div>
+
+
+            <div class="flex flex-col grow gap-2.5 mobile:shrink-0">
+                <p class="text-regular-3 mobile:hidden">Franchise terms</p>
+
+                <div class="flex justify-between gap-[3rem] mobile:flex-col desktop:mb-[2.375rem] desktop:border-b-[0.0625rem] desktop:pb-[2.375rem] tablet:mb-[1.4375rem] tablet:border-b-[0.0625rem] tablet:pb-[1.4375rem]">
+                    <div>
+                        <p class="text-3xl tracking-tightest desktop:text-[3.75rem] tablet:text-4xl ">$150 000</p>
+                        <p class="text-unit-title">country fee</p>
+                    </div>
+
+                    <div>
+                        <p class="text-3xl tracking-tightest desktop:text-[3.75rem] tablet:text-4xl">5%</p>
+                        <p class="text-unit-title">royalty fee</p>
+                    </div>
+
+                    <div>
+                        <p class="tracking-tightest text-3xl desktop:text-[3.75rem] tablet:text-4xl">$5000</p>
+                        <p class="text-unit-title">per store fee</p>
+                    </div>
+                </div>
+
+                <p class="text-regular-3 mobile:hidden">We have no other fees. Tech is part of our franchise package along with full operational support. <a href="#">More details here.</a></p>
+            </div>
+        </div>
+
+        <p class="text-regular-3 hidden mobile:block mobile:text-xl">We have no other fees. Tech is part of our franchise package along with full operational support. <a href="#">More details here.</a></p>
+    </div>
+
+    <div class="relative hidden tablet:flex-row mobile:flex-col overflow-hidden mt-10 tablet:container desktop:container bg-gray rounded-3xl px-10 py-10 tablet:px-14 tablet:py-10 desktop:px-14 desktop:py-10 flex gap-14">
+        <div
+            class="absolute z-0 w-[60rem] -left-[43rem] -top-[20rem] desktop:w-[120rem] desktop:-left-[88rem] desktop:-top-[42rem]">
+            <img src={ellipseViolet.src} alt="violet"/>
+        </div>
+
+        <div
+            class="absolute z-0 w-[60rem] left-[7rem] -top-[1rem] desktop:w-[120rem] desktop:-left-[88rem] desktop:-top-[6rem] ">
+            <img src={ellipseOrange.src} alt="orange" />
+        </div>
+
+        <div class="relative z-10 flex flex-col gap-10 desktop:mt-[2.0625rem] desktop:pl-[0.625rem] tablet:mt-[1.375rem] tablet:ml-[0.8125rem] min-h-[22rem] tablet:min-h-[33rem] desktop:min-h-[33rem]">
+            <p class="mobile:text-[3.75rem] mobile:font-regular desktop:text-[6.25rem] font-regular-2 leading-custom mobile:text-[2.625rem]">Franchise<br>terms</p>
+
+            <div class="absolute  mobile:top-[7rem] tablet:top-[11rem] desktop:top-[11rem] left-[2rem] translate-z-0 w-[16rem] tablet:w-[13.1875rem] desktop:w-[19.5625rem] overflow-hidden rounded-full absolute ">
+                <video class="translate-z-0 min-h-full min-w-full object-cover scale-[1.15]" loop autoplay muted playsinline >
+                    <source src={mapVideo} type="video/webm"/>
+                    <source src={mapVideoExtra} type="video/mp4"/>
+                </video>
+            </div>
+        </div>
+
+        <div class="flex relative z-10 justify-between grow flex-col desktop:flex-row mobile:gap-[3rem]">
+            <div class="flex justify-between gap-2 tablet:gap-[2rem] desktop:gap-[3rem] flex-col desktop:mt-[3rem]">
+                <div>
+                    <p class="tracking-tightest mobile:font-regular text-[3.75rem] desktop:text-[5rem] tablet:text-4xl">$150 000</p>
+                    <p class="text-unit-title">country fee</p>
+                </div>
+
+                <div>
+                    <p class="text-[3.75rem] mobile:font-regular tracking-tightest desktop:text-[5rem] tablet:text-4xl">5%</p>
+                    <p class="text-unit-title">country fee</p>
+                </div>
+
+                <div>
+                    <p class="tracking-tightest mobile:font-regular text-[3.75rem] desktop:text-[5rem] tablet:text-4xl">$5000</p>
+                    <p class="text-unit-title">per store fee</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col content-end desktop:max-w-[17.5rem] justify-end">
+                <p class="text-regular-3 text-[1.5rem]">We have no other fees. <br class="">Tech is part of our franchise package along with full operational support.</p>
+                <a class="text-regular-3 text-[1.5rem] text-accent-orange" href="#">More details here →</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
