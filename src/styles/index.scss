@@ -20,13 +20,3 @@
     @apply left-1/2 -translate-x-2/4;
   }
 }
-
-.container {
-  -webkit-overflow-scrolling: touch;
-}
-
-.container::-webkit-scrollbar  {
-  display: none;
-  height: 0;
-  width: 0;
-}
