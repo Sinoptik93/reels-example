@@ -11,6 +11,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
             controlArrows: false,
             navigation: false,
+            lazyLoading: false,
             autoScrolling: true,
             scrollBar: false,
             fitToSection: false,
