@@ -18,34 +18,35 @@ import map from "@assets/images/map-vector.svg";
 import mapVideo from "@assets/videos/dodo-map.mp4";
 import ellipseViolet from "@assets/images/ellipse-violet.svg";
 import ellipseOrange from "@assets/images/ellipse-orange.svg";
-import mapDots from "@assets/images/map-dots.svg";
+import mapDots from "@assets/images/map-dots.png";
+import mapDotsOptimised from "@assets/images/map-dots-optimised.svg";
 
 // <Image src={map} alt="map" class="absolute object-cover w-full h-full"/>
 ---
 
 <script>
-    const plugTotalSales = document.querySelector("#plug-total-sales");
-    const plugSales = document.querySelector("#plug-sales-today");
-    const plugOrders = document.querySelector("#plug-orders");
-    const getRandomValue = (stepCount: number) => Math.floor(Math.random() * stepCount);
-    const parseFormattedNumber = (rawNumber: string) => parseInt(rawNumber.replaceAll(/[&nbsp; ]/g, ''))
-    const currency = Intl.NumberFormat("ru-RU" )
-
-    const timer = setInterval(() => {
-        const currentTotalSales = parseFormattedNumber(plugTotalSales.innerHTML)
-        const currentSales = parseFormattedNumber(plugSales.innerHTML);
-        const currentOrders = parseFormattedNumber(plugOrders.innerHTML);
-
-        const updatedValue = getRandomValue(2000);
-
-        plugTotalSales.innerHTML = String(currency.format(currentTotalSales + 1500000));
-        plugSales.innerHTML = String(currency.format(currentSales + updatedValue));
-        plugOrders.innerHTML = String(currency.format(currentOrders + getRandomValue(10)));
-    }, 2000);
+    // const plugTotalSales = document.querySelector("#plug-total-sales");
+    // const plugSales = document.querySelector("#plug-sales-today");
+    // const plugOrders = document.querySelector("#plug-orders");
+    // const getRandomValue = (stepCount: number) => Math.floor(Math.random() * stepCount);
+    // const parseFormattedNumber = (rawNumber: string) => parseInt(rawNumber.replaceAll(/[&nbsp; ]/g, ''))
+    // const currency = Intl.NumberFormat("ru-RU" )
+    //
+    // const timer = setInterval(() => {
+    //     const currentTotalSales = parseFormattedNumber(plugTotalSales.innerHTML)
+    //     const currentSales = parseFormattedNumber(plugSales.innerHTML);
+    //     const currentOrders = parseFormattedNumber(plugOrders.innerHTML);
+    //
+    //     const updatedValue = getRandomValue(2000);
+    //
+    //     plugTotalSales.innerHTML = String(currency.format(currentTotalSales + 1500000));
+    //     plugSales.innerHTML = String(currency.format(currentSales + updatedValue));
+    //     plugOrders.innerHTML = String(currency.format(currentOrders + getRandomValue(10)));
+    // }, 2000);
 </script>
 
 
-<section class="mobile:mb-[6.625rem] tablet:mb-[8.125rem] desktop:mb-[12.375rem]" id="test">
+<section class="section fp-auto-height mobile:mb-[6.625rem] tablet:mb-[8.125rem] desktop:mb-[12.375rem]" id="test">
     <div class="container tablet:min-h-[11rem] desktop:min-h-[25rem] tablet:mb-[5rem]">
         <div class="relative mobile:pt-3 mb-7 ">
             <h2 class="text-h-2 mobile:mb-5 desktop:leading-custom">Data makes every move transparent
@@ -172,7 +173,7 @@ import mapDots from "@assets/images/map-dots.svg";
                             <p class="uppercase text-[0.75rem] tablet:text-[1.5rem] desktop:text-[1.5rem] leading-none">Live</p>
                         </div>
 
-                        <LiveDate client:load />
+                        <LiveDate />
                     </div>
 
                     <div>

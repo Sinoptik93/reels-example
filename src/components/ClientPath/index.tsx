@@ -24,7 +24,7 @@ function ClientPath() {
     return (
         <>
             <Swiper
-                className="h-[40rem] mb-20 overflow-hidden w-full swiper-backface-hidden hidden mobile:block pb-10"
+                className="h-[40rem] mb-20 overflow-hidden w-full swiper-backface-hidden hidden pb-10"
                 spaceBetween={0}
                 slidesPerView={"auto"}
                 centeredSlides
