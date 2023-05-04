@@ -13,7 +13,7 @@ import pathFullWide from "../../assets/videos/path-full-extra.webm";
 import pathFullWideExtra from "../../assets/videos/path-full-extra.mp4";
 ---
 
-<section class="tablet:section desktop:section tablet:container desktop:container">
+<section class="tablet:section desktop:section container">
   <div
     class="hidden tablet:block desktop:block tablet:min-h-[28.75rem] desktop:min-h-[24.9375rem]"
   >
@@ -51,7 +51,7 @@ import pathFullWideExtra from "../../assets/videos/path-full-extra.mp4";
   </div>
 </section>
 
-<section class="section mb-9 tablet: tablet:hidden tablet:mb-[12.1875rem] desktop:mb-[7rem] mobile:min-h-[34.375rem] desktop:bg-[#F5EFF1] tablet:rounded-3xl desktop:rounded-3xl overflow-hidden">
+<section class="section mb-9 tablet: tablet:hidden tablet:mb-[12.1875rem] desktop:mb-[7rem] mobile:min-h-[34.375rem] desktop:bg-[#F5EFF1] tablet:rounded-3xl desktop:rounded-3xl overflow-hidden" data-anchor="slider">
     <div class="relative mobile:hidden tablet:hidden w-full overflow-hidden">
         <div class="absolute z-10 w-[300rem] -left-[135rem] -top-[66rem] rotate-90">
             <img src={ellipseViolet} alt="violet" />
@@ -189,6 +189,7 @@ import pathFullWideExtra from "../../assets/videos/path-full-extra.mp4";
 
     <div
             class="relative slide rounded-tr-3xl rounded-br-3xl overflow-hidden w-[100vw] bg-[#F5EFF1]"
+            data-anchor="last-slide"
     >
         <p class="text-slide-heading absolute top-[1.5rem] left-5 z-10">
             Central multiple-store <br />management
@@ -215,15 +216,6 @@ import pathFullWideExtra from "../../assets/videos/path-full-extra.mp4";
                 Platform connects all the processes in all stores together, allowing to
                 manage everything from one center with total reliance on data.
             </p>
-        </div>
-    </div>
-
-    <div
-            class="hidden mb-9 tablet: tablet:hidden tablet:mb-[12.1875rem] desktop:mb-[7rem] mobile:min-h-[34.375rem] desktop:bg-[#F5EFF1] tablet:rounded-3xl desktop:rounded-3xl overflow-hidden"
-    >
-        <div
-                class="h-[40rem] mb-20 overflow-hidden w-full swiper-backface-hidden pb-10 flex"
-        >
         </div>
     </div>
 </section>
