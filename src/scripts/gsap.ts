@@ -2,15 +2,26 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import {TextPlugin} from "gsap/TextPlugin"
 gsap.registerPlugin(ScrollTrigger, TextPlugin);
-
+//
 // gsap.to(".box", {
 //     scrollTrigger: ".box",
 //     y: -100,
 //     duration: 2,
 // });
-//
-//
-//
+
+// add animation to the timeline
+gsap.fromTo(".box", {
+    opacity: 0,
+    y: 50,
+    duration: 1
+}, {
+    opacity: 1,
+    y: 0,
+    duration: 1
+});
+
+
+
 // gsap.to("#loading-text", {
 //     duration: 1,
 //     delay: 1,

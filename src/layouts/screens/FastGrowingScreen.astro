@@ -12,7 +12,7 @@ import logoBloomberg from "../../assets/icons/logo-bloomberg.svg";
 ---
 
 <section  class="section fp-auto-height mobile:mb-[6rem] tablet:mb-[7.8125rem] desktop:mb-[7.8125rem]">
-    <div class="box container tablet:min-h-[22.875rem] mobile:mb-10 desktop:min-h-[27rem] desktop:mb-15">
+    <div class="box container tablet:min-h-[22.875rem] mobile:mb-10 desktop:min-h-[27rem] desktop:mb-15 mobile:pt-10">
         <p class="text-subtitle tablet:mb-1 desktop:mb-2 mobile:mb-5">Who we are</p>
 
         <div class="relative mb-[1.875rem] tablet:mb-[5rem] desktop:mb-[6.75rem]">
@@ -24,7 +24,7 @@ import logoBloomberg from "../../assets/icons/logo-bloomberg.svg";
 
     <div  class="hidden tablet:container desktop:container  mobile:flex-col tablet:flex-col tablet:gap-[5.125rem] desktop:gap-[5.125rem]">
         <div class="relative grow-[2] translate-z-0 h-[31.5rem] mobile:mb-10 mobile:h-[85vh] tablet:max-h-[30rem] tablet:min-w-[20.125rem] desktop:h-[44.5rem] desktop:max-w-[30rem] rounded-4xl overflow-hidden">
-            <video class="absolute translate-z-0 object-cover w-full h-full scale-[1.01]" preload="auto" loop autoplay muted playsinline>
+            <video data-keepplaying class="absolute translate-z-0 object-cover w-full h-full scale-[1.01]" preload="auto" loop autoplay muted playsinline>
                 <source src={videowebm} type="video/webm"/>
                 <source src={videomp4} type="video/mp4"/>
             </video>
@@ -86,7 +86,7 @@ import logoBloomberg from "../../assets/icons/logo-bloomberg.svg";
         </div>
     </div>
 
-    <div class="tablet:container desktop:container flex mobile:flex-col-reverse">
+    <div class="tablet:container desktop:container flex mobile:flex-col-reverse mobile:mb-10">
         <div class="relative flex mobile:shrink-0 flex-col grow ">
             <div class="overflow-hidden grow flex items-center translate-z-0 rounded-3xl desktop:rounded-5xl p-7 mobile:py-5 tablet:p-8 desktop:pt-10 desktop:pb-5 desktop:px-20 bg-gray">
                 <div
