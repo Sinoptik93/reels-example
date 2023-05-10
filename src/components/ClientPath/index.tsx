@@ -1,4 +1,7 @@
-import {Pagination} from 'swiper';
+import {
+    Swiper,
+    SwiperSlide, SwiperRef
+} from 'swiper/react';
 
 import pathLeft from "@assets/videos/path-1-left.webm"
 import pathCenter from "@assets/videos/path-2-center.webm"
@@ -12,24 +15,97 @@ import pathRightExtra from "@assets/videos/path-3-right.mp4"
 import pathFullExtra from "@assets/videos/path-full.mp4"
 import pathFullWideExtra from "@assets/videos/path-full-extra.mp4"
 
-import {
-    Swiper,
-    SwiperSlide
-} from 'swiper/react';
 import ellipseViolet from "@assets/images/ellipse-violet.svg";
 import ellipseOrange from "@assets/images/ellipse-orange.svg";
+import {useRef, useEffect, useState} from "react";
+import {useIntersectionObserver} from "../../hooks/intersectionObserver";
+import {useLockedBody} from "../../hooks/useLockedBody";
+import {useTouch} from "../../hooks/useTouch";
+import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
 
 function ClientPath() {
+    const triggerTop = useRef<HTMLDivElement | null>(null);
+    const triggerBottom = useRef<HTMLDivElement | null>(null);
+    const swiperRef = useRef<SwiperRef | null>(null);
+    const modalRef = useRef<HTMLDivElement | null>(null);
+
+    const entryTop = useIntersectionObserver(triggerTop, {});
+    const entryBottom = useIntersectionObserver(triggerBottom, {});
+
+    const isVisible = !!entryBottom?.isIntersecting;
+    const [locked, setLocked] = useLockedBody(false, 'root');
+    const [isHiddenOverlay, setIsHiddenOverlay] = useState(true);
+
+    useEffect(() => {
+        document.addEventListener('touchstart', (e) => {
+            const isActive = document.querySelector("body").classList.contains('active')
+
+            if (!isActive) return;
+
+            e.preventDefault()
+        }, {passive: false});
+
+        document.addEventListener('touchmove', (e) => {
+            const isActive = document.querySelector("body").classList.contains('active')
+
+            if (!isActive) return;
+
+            e.preventDefault()
+        }, {passive: false});
+    }, []);
+
+    useEffect(() => {
+
+    }, []);
+
+    useTouch(swiperRef, (direction) => {
+        console.log(direction)
+        switch (direction) {
+            case "up": {
+                swiperRef.current?.swiper.slideNext();
+                break;
+            }
+            case "down": {
+                swiperRef.current?.swiper.slidePrev();
+                break;
+            }
+            default: {
+                break;
+            }
+        }
+    })
+
+    useEffect(() => {
+        if (entryBottom?.isIntersecting) {
+            document.querySelector("body").classList.add("active");
+        }
+        // enableBodyScroll(document.querySelector('body'));
+        if (entryBottom?.isIntersecting) {
+            const storedRequestAnimationFrame = window.requestAnimationFrame;
+
+            window.requestAnimationFrame = () => 42;
+            disableBodyScroll(modalRef?.current);
+            window.requestAnimationFrame = storedRequestAnimationFrame;
+
+            // enableBodyScroll(element);
+            // disableBodyScroll(document.querySelector('html'))
+            disableBodyScroll(modalRef?.current)
+            setIsHiddenOverlay(false)
+        }
+    }, [entryBottom?.isIntersecting]);
+
+    console.log(`trigger is ${ isVisible }`)
+
     return (
-        <>
+        <div>
+            <div ref={triggerTop}/>
             <Swiper
-                className="h-[40rem] mb-20 overflow-hidden w-full swiper-backface-hidden hidden pb-10"
+                className="h-screen overflow-hidden w-full swiper-backface-hidden"
                 spaceBetween={0}
+                ref={swiperRef}
                 slidesPerView={"auto"}
                 centeredSlides
-                modules={[Pagination]}
-                pagination={{clickable: true}}
             >
                 <SwiperSlide
                     className="relative rounded-tl-3xl rounded-bl-3xl overflow-hidden w-[100vw] bg-[#F5EFF1]">
@@ -91,48 +167,12 @@ function ClientPath() {
                     </div>
                 </SwiperSlide>
             </Swiper>
+            <div className="w-screen h-screen bg-red-400 fixed top-0 left-0 z-40 opacity-20" ref={modalRef} hidden={isHiddenOverlay}>
 
-            <div className="relative mobile:hidden tablet:hidden w-full overflow-hidden">
-                <div
-                    className="absolute z-10 w-[300rem] -left-[135rem] -top-[66rem] rotate-90">
-                    <img src={ellipseViolet.src} alt="violet"/>
-                </div>
-
-                <video className="absolute absolute-x-center -top-[10rem] w-[100vw] max-w-[130rem] desktop:h-[54.8125rem] tablet:h-[26.875rem] mx-auto mobile:hidden scale-[1.35]" loop autoPlay muted playsInline>
-                    <source src={pathFullWide} type="video/webm"/>
-                    <source src={pathFullWideExtra} type="video/mp4"/>
-                </video>
-
-                <div className="relative container desktop:h-[50.8125rem] tablet:h-[22.875rem] z-10">
-
-                    <div className="flex justify-between absolute bottom-0 pb-8 w-full">
-                        <div className="">
-                            <div>
-                                <p className="text-slide-heading mb-2">Digital sales <br/>channels</p>
-                                <p className="text-[1.25rem] font-bold mb-4 text-accent-orange">Full customer experience control</p>
-                                <p className="text-[1.25rem] font-regular">Our app, website, kiosk and POS with <br/>automated marketing personalization <br/>sends orders directly to kitchen.</p>
-                            </div>
-                        </div>
-
-                        <div className="">
-                            <div>
-                                <p className="text-slide-heading mb-2">Smart pizzeria <br/>and delivery</p>
-                                <p className="text-[1.25rem] font-bold mb-4 text-accent-orange">Consistent quality and total manageability</p>
-                                <p className="text-[1.25rem] font-regular">Digitalizes every process, including order <br/>tracking, supply forecasts, delivery, HR <br/>and P&L management.</p>
-                            </div>
-                        </div>
-
-                        <div className="">
-                            <div>
-                                <p className="text-slide-heading mb-2">Central multiple-store <br/>management</p>
-                                <p className="text-[1.25rem] font-bold mb-4 text-accent-orange"> Full transparency and fast scaling</p>
-                                <p className="text-[1.25rem] font-regular">Platform connects all the processes in all <br/>stores together, allowing to manage everything <br/>from one center with total reliance on data.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </>
+
+            <div ref={triggerBottom}/>
+        </div>
     )
 }
 
