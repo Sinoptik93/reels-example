@@ -75,7 +75,8 @@ module.exports = {
                 "20xl": ["10.625rem", {lineHeight: "normal"}], // 170px
             },
             screens: {
-                mobile: {'min': '320px', 'max': '654px'},
+                mobile: {'min': '360px', 'max': '654px'},
+                "mobile-sm": {'min': '360px', 'max': '405px'},
                 tablet: {'min': '655px', 'max': '1255px'},
                 desktop: {'min': '1256px'},
                 tall: {'min': '1256px', 'max': '1440px'},

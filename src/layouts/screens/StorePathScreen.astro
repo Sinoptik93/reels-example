@@ -1,7 +1,7 @@
 ---
 import { Image } from "@astrojs/image/components";
 
-import ellipseViolet from "../../assets/images/ellipse-violet.svg";
+import ellipseViolet from "../../assets/images/ellipse-violet-extra.svg";
 import ellipseOrange from "../../assets/images/ellipse-orange.svg";
 import pathLeft from "../../assets/videos/path-1-left.webm";
 import pathLeftExtra from "../../assets/videos/path-1-left.mp4";
@@ -13,9 +13,9 @@ import pathFullWide from "../../assets/videos/path-full-extra.webm";
 import pathFullWideExtra from "../../assets/videos/path-full-extra.mp4";
 ---
 
-<section class="tablet:section desktop:section container">
+<section class="container">
   <div
-    class="hidden tablet:block desktop:block tablet:min-h-[28.75rem] desktop:min-h-[24.9375rem]"
+    class="tablet:block desktop:block tablet:min-h-[28.75rem] desktop:min-h-[26.9375rem]"
   >
     <p class="text-subtitle mobile:mb-[1.3125rem] desktop:mb-[0.5625rem]">
       Tech
@@ -25,202 +25,90 @@ import pathFullWideExtra from "../../assets/videos/path-full-extra.mp4";
       class="relative mb-[1.875rem] tablet:mb-[1.875rem] desktop:mb-[4.625rem]"
     >
       <h2 class="text-h-2 desktop:block tablet:mb-2 mobile:mb-5">
-        Every process <br />digitalised
+        Every process <br />digitalized
       </h2>
 
       <p
         class="text-regular hidden desktop:block desktop:absolute desktop:top-[9.75rem] desktop:left-[29.8125rem] desktop:max-w-[53.35rem]"
       >
-        Dodo IS, our own cloud-based tech platform covers everything from
-        ordering to delivery, production and data-driven multiple-store
-        management.
+      Dodo IS, our own cloud-based tech platform, covers everything from ordering to delivery, from supply and production to data-driven multiple-store management.
       </p>
       <p
         class="text-regular mobile:hidden desktop:hidden tablet:absolute tablet:top-[12.875rem] tablet:left-[20.25rem] tablet:max-w-[31.875rem]"
       >
-        Dodo IS, our own cloud-based tech platform covers everything from
-        ordering to delivery, production and data-driven multiple-store
-        management.
+      Dodo IS, our own cloud-based tech platform, covers everything from ordering to delivery, from supply and production to data-driven multiple-store management.
       </p>
       <p class="text-regular text-[1.2rem] tablet:hidden desktop:hidden">
-        Dodo IS, our own cloud-based tech platform covers everything from
-        ordering to delivery, production and data-driven multiple-store
-        management.
+        Dodo IS, our own cloud-based tech platform, covers everything from ordering to delivery, from supply and production to data-driven multiple-store management.
       </p>
     </div>
   </div>
 </section>
 
-<section class="section mb-9 tablet: tablet:hidden tablet:mb-[12.1875rem] desktop:mb-[7rem] mobile:min-h-[34.375rem] desktop:bg-[#F5EFF1] tablet:rounded-3xl desktop:rounded-3xl overflow-hidden" data-anchor="slider">
-    <div class="relative mobile:hidden tablet:hidden w-full overflow-hidden">
-        <div class="absolute z-10 w-[300rem] -left-[135rem] -top-[66rem] rotate-90">
-            <img src={ellipseViolet} alt="violet" />
-        </div>
+<div class="relative mobile:hidden tablet:hidden w-full tablet:mb-[12.1875rem] desktop:mb-[12rem] mobile:min-h-[34.375rem] desktop:bg-[#F5EFF1] tablet:rounded-3xl desktop:rounded-3xl overflow-hidden max-w-[124rem] m-auto">
+  <div class="absolute z-10 w-[300rem] -left-[135rem] -top-[66rem] rotate-90">
+      <Image src={ellipseViolet} alt="violet" />
+  </div>
 
-        <video
-                data-keepplaying
-                class="absolute absolute-x-center -top-[10rem] w-[100vw] max-w-[130rem] desktop:h-[54.8125rem] tablet:h-[26.875rem] mx-auto mobile:hidden scale-[1.35]"
-                loop
-                autoPlay
-                muted
-                playsInline
-        >
-            <source src={pathFullWide} type="video/webm" />
-            <source src={pathFullWideExtra} type="video/mp4" />
-        </video>
+  <video
+      class="absolute absolute-x-center -top-[10rem] w-[100vw] max-w-[130rem] desktop:h-[54.8125rem] tablet:h-[26.875rem] mx-auto mobile:hidden scale-[1.35]"
+      data-keepplaying
+      loop
+      autoPlay
+      muted
+      playsInline
+  >
+      <source src={pathFullWide} type="video/webm" />
+      <source src={pathFullWideExtra} type="video/mp4" />
+  </video>
 
-        <div
-                class="relative container desktop:h-[50.8125rem] tablet:h-[22.875rem] z-10"
-        >
-            <div class="flex justify-between absolute bottom-0 pb-8 w-full">
-                <div class="">
-                    <div>
-                        <p class="text-slide-heading mb-2">Digital sales <br />channels</p>
-                        <p class="text-[1.25rem] font-bold mb-4 text-accent-orange">
-                            Full customer experience control
-                        </p>
-                        <p class="text-[1.25rem] font-regular">
-                            Our app, website, kiosk and POS with <br />automated marketing
-                            personalization <br />sends orders directly to kitchen.
-                        </p>
-                    </div>
-                </div>
+  <div
+          class="relative container desktop:h-[50.8125rem] tablet:h-[22.875rem] z-10"
+  >
+      <div class="flex justify-between absolute bottom-0 pb-8 w-full">
+          <div class="">
+              <div>
+                  <p class="text-slide-heading mb-2">Online sales <br />channels</p>
+                  <p class="text-[1.25rem] font-bold mb-4 text-accent-orange">
+                      Full customer experience control
+                  </p>
+                  <p class="text-[1.25rem] font-regular">
+                      Our app, website, self-service kiosk and POS with <br />automated marketing
+                      personalization <br />sends orders directly to kitchen.
+                  </p>
+              </div>
+          </div>
 
-                <div class="">
-                    <div>
-                        <p class="text-slide-heading mb-2">
-                            Smart pizzeria <br />and delivery
-                        </p>
-                        <p class="text-[1.25rem] font-bold mb-4 text-accent-orange">
-                            Consistent quality and total manageability
-                        </p>
-                        <p class="text-[1.25rem] font-regular">
-                            Digitalizes every process, including order <br />tracking, supply
-                            forecasts, delivery, HR <br />and P&L management.
-                        </p>
-                    </div>
-                </div>
+          <div class="">
+              <div>
+                  <p class="text-slide-heading mb-2">
+                      Smart pizzeria <br />and delivery
+                  </p>
+                  <p class="text-[1.25rem] font-bold mb-4 text-accent-orange">
+                      Consistent quality and total manageability
+                  </p>
+                  <p class="text-[1.25rem] font-regular">
+                      Virtualizes every process, including order <br />tracking, supply
+                      forecasts, delivery, HR <br />and P&L management.
+                  </p>
+              </div>
+          </div>
 
-                <div class="">
-                    <div>
-                        <p class="text-slide-heading mb-2">
-                            Central multiple-store <br />management
-                        </p>
-                        <p class="text-[1.25rem] font-bold mb-4 text-accent-orange">
-                            Full transparency and fast scaling
-                        </p>
-                        <p class="text-[1.25rem] font-regular">
-                            Platform connects all the processes in all <br />stores together,
-                            allowing to manage everything <br />from one center with total
-                            reliance on data.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div
-            class="slide relative rounded-tl-3xl rounded-bl-3xl overflow-hidden w-[100vw] bg-[#F5EFF1]"
-            data-anchor="first-slide"
-    >
-        <div class="absolute z-10 w-[100rem] -left-[82rem] -top-[15rem] rotate-45">
-            <img src={ellipseViolet} alt="violet" class="object-contain" />
-        </div>
-
-        <div class="absolute z-10 w-[100rem] -left-[84rem] -top-[43rem] rotate-45">
-            <img src={ellipseOrange} alt="orange" class="object-contain" />
-        </div>
-
-        <p class="text-slide-heading absolute top-[1.5rem] left-5 z-10">
-            Own digital sales <br />channels
-        </p>
-
-        <video
-                data-keepplaying
-                class="top-0 left-0 min-h-full min-w-full object-contain object-video-frame-mobile"
-                loop
-                autoPlay
-                muted
-                playsInline
-        >
-            <source src={pathLeft} type="video/webm" />
-            <source src={pathLeftExtra} type="video/mp4" />
-        </video>
-
-        <div
-                class="z-10 container absolute left-1/2 -translate-x-2/4 bottom-8 flex flex-col gap-2 w-full"
-        >
-            <p class="text-[1.25rem] font-bold grow text-accent-orange">
-                Full customer experience control
-            </p>
-            <p class="text-[1.25rem] font-regular grow">
-                Our app, website, kiosk and POS with automated marketing personalization
-                sends orders directly to kitchen.
-            </p>
-        </div>
-    </div>
-
-    <div class="relative slide overflow-hidden w-[100vw] bg-[#F5EFF1]">
-        <p class="text-slide-heading absolute top-[1.5rem] left-5 z-10">
-            Smart pizzeria <br />and delivery
-        </p>
-
-        <video
-                data-keepplaying
-                class="top-0 left-0 min-h-full min-w-full object-contain object-video-frame-mobile"
-                loop
-                autoPlay
-                muted
-                playsInline
-        >
-            <source src={pathCenter} type="video/webm" />
-            <source src={pathCenterExtra} type="video/mp4" />
-        </video>
-
-        <div
-                class="container absolute left-1/2 -translate-x-2/4 bottom-8 flex flex-col gap-2 w-full"
-        >
-            <p class="text-[1.25rem] font-bold grow text-accent-orange">
-                Consistent quality and total manageability
-            </p>
-            <p class="text-[1.25rem] font-regular grow">
-                Digitalizes every process, including order tracking, supply forecasts,
-                delivery, HR and P&L management.
-            </p>
-        </div>
-    </div>
-
-    <div
-            class="relative slide rounded-tr-3xl rounded-br-3xl overflow-hidden w-[100vw] bg-[#F5EFF1]"
-            data-anchor="last-slide"
-    >
-        <p class="text-slide-heading absolute top-[1.5rem] left-5 z-10">
-            Central multiple-store <br />management
-        </p>
-
-        <video
-                data-keepplaying
-                class="top-0 left-0 min-h-full min-w-full object-contain object-video-frame-mobile"
-                loop
-                autoPlay
-                muted
-                playsInline
-        >
-            <source src={pathRight} type="video/webm" />
-            <source src={pathRightExtra} type="video/mp4" />
-        </video>
-
-        <div
-                class="container absolute left-1/2 -translate-x-2/4 bottom-8 flex flex-col gap-2 w-full"
-        >
-            <p class="text-[1.25rem] font-bold grow text-accent-orange">
-                Full transparency and fast scaling
-            </p>
-            <p class="text-[1.25rem] font-regular grow">
-                Platform connects all the processes in all stores together, allowing to
-                manage everything from one center with total reliance on data.
-            </p>
-        </div>
-    </div>
-</section>
+          <div class="">
+              <div>
+                  <p class="text-slide-heading mb-2">
+                      Central multiple-store <br />management
+                  </p>
+                  <p class="text-[1.25rem] font-bold mb-4 text-accent-orange">
+                      Full transparency and fast scaling
+                  </p>
+                  <p class="text-[1.25rem] font-regular">
+                      Platform connects all the processes in all <br />stores together,
+                      allowing to manage everything <br />from one center with total
+                      reliance on data.
+                  </p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

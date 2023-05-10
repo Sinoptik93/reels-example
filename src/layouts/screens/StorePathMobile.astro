@@ -1,0 +1,132 @@
+---
+import { Image } from "@astrojs/image/components";
+
+import ellipseViolet from "../../assets/images/ellipse-violet.svg";
+import ellipseOrange from "../../assets/images/ellipse-orange.svg";
+import pathLeft from "../../assets/videos/path-1-left.webm";
+import pathLeftExtra from "../../assets/videos/path-1-left.mp4";
+import pathCenter from "../../assets/videos/path-2-center.webm";
+import pathCenterExtra from "../../assets/videos/path-2-center.mp4";
+import pathRight from "../../assets/videos/path-3-right.webm";
+import pathRightExtra from "../../assets/videos/path-3-right.mp4";
+import pathFullWide from "../../assets/videos/path-full-extra.webm";
+import pathFullWideExtra from "../../assets/videos/path-full-extra.mp4";
+---
+
+<section class="mb-9 tablet:hidden desktop:hidden tablet:mb-[12.1875rem] desktop:mb-[7rem] mobile:min-h-[34.375rem] desktop:bg-[#F5EFF1] tablet:rounded-3xl desktop:rounded-3xl h-full" data-anchor="slider">
+
+    <div
+        class="slide relative rounded-tl-3xl rounded-bl-3xl overflow-hidden w-[100vw] bg-[#F5EFF1]"
+        data-anchor="first-slide"
+    >
+        <div class="absolute z-10 w-[100rem] -left-[82rem] -top-[15rem] rotate-45">
+            <img src={ellipseViolet} alt="violet" class="object-contain" />
+        </div>
+
+        <div class="absolute z-10 w-[100rem] -left-[84rem] -top-[43rem] rotate-45">
+            <img src={ellipseOrange} alt="orange" class="object-contain" />
+        </div>
+
+        <p class="text-slide-heading absolute top-[1.5rem] left-5 z-10">
+            Online sales <br />channels
+        </p>
+
+        <div class="oveflow-hidden absolute absolute-center w-full">
+            <video
+                class="top-0 left-0 min-h-full min-w-full object-contain object-video-frame-mobile"
+                data-keepplaying
+                data-autoplay
+                loop
+                autoPlay
+                muted
+                playsInline
+            >
+                <source src={pathLeft} type="video/webm" />
+                <source src={pathLeftExtra} type="video/mp4" />
+            </video>
+        </div>
+
+        <div
+                class="z-10 container absolute left-1/2 -translate-x-2/4 bottom-8 flex flex-col gap-2 w-full"
+        >
+            <p class="text-[1.125rem] font-regular grow text-accent-orange leading-custom">
+                Full customer experience control
+            </p>
+            <p class="text-[1.125rem] font-regular grow leading-custom">
+                Our app, website, self-service kiosk and POS with automated marketing personalization
+                sends orders directly to kitchen.
+            </p>
+        </div>
+    </div>
+
+    <div class="relative slide overflow-hidden w-[100vw] bg-[#F5EFF1]">
+        <p class="text-slide-heading absolute top-[1.5rem] left-5 z-10">
+            Smart pizzeria <br />and delivery
+        </p>
+
+        <div class="oveflow-hidden absolute absolute-center w-full">
+            <video
+                class="top-0 left-0 min-h-full min-w-full object-contain object-video-frame-mobile"
+                data-keepplaying
+                data-autoplay
+                loop
+                autoPlay
+                muted
+                playsInline
+            >
+                <source src={pathCenter} type="video/webm" />
+                <source src={pathCenterExtra} type="video/mp4" />
+            </video>
+        </div>
+
+
+        <div
+                class="container absolute left-1/2 -translate-x-2/4 bottom-8 flex flex-col gap-2 w-full"
+        >
+            <p class="text-[1.125rem] font-regular grow text-accent-orange leading-custom">
+                Consistent quality and total manageability
+            </p>
+            <p class="text-[1.125rem] font-regular grow leading-custom">
+                Virtualizes every process, including order tracking, supply forecasts,
+                delivery, HR and P&L management.
+            </p>
+        </div>
+    </div>
+
+    <div
+            class="relative slide rounded-tr-3xl rounded-br-3xl overflow-hidden w-[100vw] bg-[#F5EFF1]"
+            data-anchor="last-slide"
+    >
+        <p class="text-slide-heading absolute top-[1.5rem] left-5 z-10">
+            Central multiple-store <br />management
+        </p>
+
+        <div class="oveflow-hidden absolute absolute-center w-full">
+            <video
+            class="top-0 left-0 min-h-full min-w-full object-contain object-video-frame-mobile z-0"
+            data-keepplaying
+            data-autoplay
+            loop
+            autoPlay
+            muted
+            playsInline
+        >
+            <source src={pathRight} type="video/webm" />
+            <source src={pathRightExtra} type="video/mp4" />
+        </video>
+        </div>
+
+
+        <div
+                class="container absolute left-1/2 -translate-x-2/4 bottom-8 flex flex-col gap-2 w-full"
+        >
+            <p class="text-[1.125rem] font-regular grow text-accent-orange leading-custom">
+                Full transparency and fast scaling
+            </p>
+            <p class="text-[1.125rem] font-regular leading-custom grow">
+                Platform connects all the processes in all stores together, allowing to
+                manage everything from one center with total reliance on data.
+            </p>
+        </div>
+    </div>
+</section>
