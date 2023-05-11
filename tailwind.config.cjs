@@ -51,7 +51,7 @@ module.exports = {
             },
             objectPosition: {
                 'video-frame': '0 30px',
-                'video-frame-mobile': '0 -50px',
+                'video-frame-mobile': '0 62px',
             },
             lineHeight: {
                 'custom': '1.1',
@@ -63,7 +63,7 @@ module.exports = {
             fontSize: {
                 "xs": ["0.625rem", {lineHeight: "normal"}], // 10px
                 "sm": ["0.75rem", {lineHeight: "normal"}], // 12px
-                "md": ["1rem", {lineHeight: "normal"}], // 14px
+                "md": ["1.25rem", {lineHeight: "normal"}], // 20px
                 "2xl": ["1.625rem", {lineHeight: "normal"}], // 26px
                 "3xl": ["1.688rem", {lineHeight: "normal"}], // 27px
                 "4xl": ["2.5rem", {lineHeight: "normal"}], // 40px

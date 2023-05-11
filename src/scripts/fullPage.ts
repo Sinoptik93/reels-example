@@ -4,22 +4,22 @@ import FullPage from 'fullpage.js/dist/fullpage.extensions.min';
 window.addEventListener("DOMContentLoaded", () => {
     if (window.innerWidth > 500)  return;
 
-    const fullpageInstance = new FullPage('#fullpage', {
-        licenseKey: "gplv3-license",
-        scrollHorizontallyKey: '6A7AE941-5C404F92-B32196A3-B8F57BF4',
-        scrollHorizontally: true,
-
-        controlArrows: false,
-        navigation: false,
-        lazyLoading: false,
-        autoScrolling: true,
-        scrollBar: false,
-        fitToSection: false,
-        credits: {
-            enabled: false
-        },
-        scrollingSpeed: 800,
-        touchSensitivity: 5,
+    // const fullpageInstance = new FullPage('#fullpage', {
+    //     licenseKey: "gplv3-license",
+    //     scrollHorizontallyKey: '6A7AE941-5C404F92-B32196A3-B8F57BF4',
+    //     scrollHorizontally: true,
+    //
+    //     controlArrows: false,
+    //     navigation: false,
+    //     lazyLoading: false,
+    //     autoScrolling: true,
+    //     scrollBar: false,
+    //     fitToSection: false,
+    //     credits: {
+    //         enabled: false
+    //     },
+    //     scrollingSpeed: 800,
+    //     touchSensitivity: 5,
 
         // onSlideLeave: (section, origin, destination, direction) => {
         //     if (destination.anchor === "first-slide") {
@@ -58,5 +58,5 @@ window.addEventListener("DOMContentLoaded", () => {
         //         }, 2500)
         //     }
         // }
-    });
+    // });
 })
