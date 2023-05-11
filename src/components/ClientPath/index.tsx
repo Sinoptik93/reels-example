@@ -45,7 +45,7 @@ function ClientPath() {
 
                     <p className="text-slide-heading absolute top-[1.5rem] left-5 z-10">Own digital sales <br/>channels</p>
 
-                    <div className="oveflow-hidden absolute absolute-center w-full object-video-frame-mobile max-h-[23rem] overflow-hidden top-[44%]">
+                    <div className="oveflow-hidden absolute absolute-center w-full object-video-frame-mobile max-h-[25rem] overflow-hidden top-[47%]">
                         <video className="top-0 left-0 min-h-full min-w-full object-contain" loop autoPlay muted
                                playsInline>
                             <source src={pathLeft} type="video/webm"/>
@@ -53,9 +53,9 @@ function ClientPath() {
                         </video>
                     </div>
 
-                    <div className="z-10 container absolute left-1/2 -translate-x-2/4 bottom-8 flex flex-col gap-2 w-full">
-                        <p className="text-[1rem] font-bold grow text-accent-orange leading-custom">Full customer experience control</p>
-                        <p className="text-[1rem] font-regular grow leading-custom">Our app, website, kiosk and POS with automated marketing personalization sends orders directly to kitchen.</p>
+                    <div className="z-10 container absolute left-1/2 -translate-x-2/4 bottom-8 flex flex-col gap-4 w-full">
+                        <p className="text-[1.2rem] font-regular grow text-accent-orange leading-custom">Full customer experience control</p>
+                        <p className="text-[1.2rem] font-regular grow leading-custom">Our app, website, kiosk and POS with automated marketing personalization sends orders directly to kitchen.</p>
                     </div>
                 </SwiperSlide>
 
@@ -64,8 +64,7 @@ function ClientPath() {
 
                     <p className="text-slide-heading absolute top-[1.5rem] left-5 z-10">Smart pizzeria <br/>and delivery</p>
 
-
-                    <div className="oveflow-hidden absolute absolute-center w-full object-video-frame-mobile max-h-[23rem] overflow-hidden top-[44%]">
+                    <div className="oveflow-hidden absolute absolute-center w-full object-video-frame-mobile max-h-[25rem] overflow-hidden top-[47%]">
                         <video className="top-0 left-0 min-h-full min-w-full object-contain " loop autoPlay muted
                                playsInline>
                             <source src={pathCenter} type="video/webm"/>
@@ -74,9 +73,9 @@ function ClientPath() {
                     </div>
 
 
-                    <div className="container absolute left-1/2 -translate-x-2/4 bottom-8 flex flex-col gap-2 w-full">
-                        <p className="text-[1rem] font-bold grow text-accent-orange leading-custom">Consistent quality and total manageability</p>
-                        <p className="text-[1rem] font-regular grow leading-custom">Digitalizes every process, including order tracking, supply forecasts, delivery, HR and P&L management.</p>
+                    <div className="container absolute left-1/2 -translate-x-2/4 bottom-8 flex flex-col gap-4 w-full">
+                        <p className="text-[1.2rem] font-regular grow text-accent-orange leading-custom">Consistent quality and total manageability</p>
+                        <p className="text-[1.2rem] font-regular grow leading-custom">Digitalizes every process, including order tracking, supply forecasts, delivery, HR and P&L management.</p>
                     </div>
                 </SwiperSlide>
 
@@ -85,7 +84,7 @@ function ClientPath() {
 
                     <p className="text-slide-heading absolute top-[1.5rem] left-5 z-10">Central multiple-store <br/>management</p>
 
-                    <div className="oveflow-hidden absolute absolute-center w-full object-video-frame-mobile max-h-[23rem] overflow-hidden top-[44%]">
+                    <div className="oveflow-hidden absolute absolute-center w-full object-video-frame-mobile max-h-[25rem] overflow-hidden top-[47%]">
                         <video className="top-0 left-0 min-h-full min-w-full object-contain" loop autoPlay muted
                                playsInline>
                             <source src={pathRight} type="video/webm"/>
@@ -94,9 +93,9 @@ function ClientPath() {
                     </div>
 
 
-                    <div className="container absolute left-1/2 -translate-x-2/4 bottom-8 flex flex-col gap-2 w-full">
-                        <p className="text-[1rem] font-bold grow text-accent-orange leading-custom">Full transparency and fast scaling</p>
-                        <p className="text-[1rem] font-regular grow leading-custom">Platform connects all the processes in all stores together, allowing to manage everything from one center with total reliance on data.</p>
+                    <div className="container absolute left-1/2 -translate-x-2/4 bottom-8 flex flex-col gap-4 w-full">
+                        <p className="text-[1.2rem] font-regular grow text-accent-orange leading-custom">Full transparency and fast scaling</p>
+                        <p className="text-[1.2rem] font-regular grow leading-custom">Platform connects all the processes in all stores together, allowing to manage everything from one center with total reliance on data.</p>
                     </div>
                 </SwiperSlide>
             </Swiper>
