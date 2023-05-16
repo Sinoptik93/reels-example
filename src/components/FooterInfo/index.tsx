@@ -34,7 +34,7 @@ const FooterInfo: FC<FooterInfoProps> = ({
 
     return (
         <div
-            className="overflow-hidden relative flex flex-col bg-gray rounded-[28.9375rem]">
+            className="translate-z-0 overflow-hidden relative flex flex-col bg-gray rounded-[28.9375rem]">
             <div
                 className="absolute z-10 w-[60rem] tablet:w-[83rem] desktop:w-[83rem] -left-[42rem] -bottom-[13rem] desktop:bottom-auto desktop:-left-[50rem] desktop:-top-[24rem]">
                 <img src={ellipseViolet.src} alt="violet"/>
