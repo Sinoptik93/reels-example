@@ -21,6 +21,9 @@ const {title, frontmatter,} = Astro.props as MDXLayoutProps<Props>;
     <title>{title}</title>
     <script src="../scripts/gsap.ts"></script>
     <script>
+        window.onbeforeunload = () => {
+            window.scrollTo(0, 0);
+        }
 
         const millisToMinutesAndSeconds = (millis) => {
             const minutes = Math.floor(millis / 60000);
@@ -50,17 +53,15 @@ const {title, frontmatter,} = Astro.props as MDXLayoutProps<Props>;
         })
     </script>
 </head>
-<body fp-responsive>
+<body style="overflow: hidden">
 <div class="relative">
-    <div id="loading-screen" class="hidden absolute w-screen h-screen bottom-0 bg-gray z-10 top-0 left-0 flex justify-center items-center">
-        <p id="loading-text" class="test text-accent-orange text-5xl font-bold" >We prepare page =)</p>
+    <div id="loading-screen" class="absolute w-screen h-screen bottom-0 bg-gray z-10 top-0 left-0 flex justify-center items-center">
+        <p id="loading-text" class="container loading-text text-accent-orange text-2xl  tablet:text-5xl  desktop:text-5xl font-bold">We prepare page =)</p>
     </div>
 
     <div id="fullpage">
         <slot/>
     </div>
 </div>
-<script src="../scripts/fullPage.ts" ></script>
-<script src="../scripts/gsap.ts" ></script>
 </body>
 </html>

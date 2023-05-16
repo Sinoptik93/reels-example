@@ -17,7 +17,7 @@ import ClientPath from "@components/ClientPath";
 
 <section class="container">
   <div
-    class="tablet:block desktop:block tablet:min-h-[28.75rem] desktop:min-h-[26.9375rem]"
+    class="box tablet:block desktop:block tablet:min-h-[28.75rem] desktop:min-h-[26.9375rem]"
   >
     <p class="text-subtitle mobile:mb-[0.875rem] desktop:mb-[0.5625rem]">
       Tech
@@ -47,7 +47,7 @@ import ClientPath from "@components/ClientPath";
   </div>
 </section>
 
-<div class="relative mobile:hidden tablet:hidden w-full tablet:mb-[12.1875rem] desktop:mb-[12rem] mobile:min-h-[34.375rem] desktop:bg-[#F5EFF1] tablet:rounded-3xl desktop:rounded-3xl overflow-hidden max-w-[124rem] m-auto">
+<div class="box relative mobile:hidden tablet:hidden w-full tablet:mb-[12.1875rem] desktop:mb-[12rem] mobile:min-h-[34.375rem] desktop:bg-[#F5EFF1] tablet:rounded-3xl desktop:rounded-3xl overflow-hidden max-w-[124rem] m-auto">
   <div class="absolute z-10 w-[120rem] -left-[55rem] -top-[96rem] rotate-[123deg]">
       <Image src={ellipseViolet} alt="violet" class="object-contain w-full" />
   </div>
@@ -115,7 +115,7 @@ import ClientPath from "@components/ClientPath";
           <div class="">
               <div>
                   <p class="text-slide-heading mb-2">
-                      Central multiple-store <br />management
+                      Central multiple-store management
                   </p>
                   <p class="text-[1.25rem] font-bold mb-4 text-accent-orange">
                       Full transparency and fast scaling
@@ -131,6 +131,6 @@ import ClientPath from "@components/ClientPath";
   </div>
 </div>
 
-<div class="desktop:hidden mb-9 tablet: tablet:hidden tablet:mb-[12.1875rem] desktop:mb-[7rem] mobile:min-h-[34.375rem] desktop:bg-[#F5EFF1] tablet:rounded-3xl desktop:rounded-3xl overflow-hidden">
-    <ClientPath client:only/>
+<div class="box desktop:hidden mb-9 tablet: tablet:hidden tablet:mb-[12.1875rem] desktop:mb-[7rem] mobile:min-h-[34.375rem] desktop:bg-[#F5EFF1] tablet:rounded-3xl desktop:rounded-3xl overflow-hidden">
+    <ClientPath client:only="react"/>
 </div>

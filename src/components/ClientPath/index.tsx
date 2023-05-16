@@ -82,7 +82,7 @@ function ClientPath() {
                 <SwiperSlide
                     className="rounded-tr-3xl rounded-br-3xl overflow-hidden w-[100vw] bg-[#F5EFF1]">
 
-                    <p className="text-slide-heading absolute top-[1.5rem] left-5 z-10">Central multiple-store <br/>management</p>
+                    <p className="text-slide-heading absolute top-[1.5rem] left-5 z-10">Central multiple-store management</p>
 
                     <div className="oveflow-hidden absolute absolute-center w-full object-video-frame-mobile max-h-[25rem] overflow-hidden top-[47%]">
                         <video className="top-0 left-0 min-h-full min-w-full object-contain" loop autoPlay muted

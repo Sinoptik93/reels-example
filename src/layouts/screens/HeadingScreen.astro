@@ -16,12 +16,17 @@ import ellipseOrange from "@assets/images/ellipse-orange-extra.svg";
 import metricNew from "@assets/images/metric-new.svg";
 import metricNewMobile from "@assets/images/metric-new-mobile.svg";
 import {Image} from "@astrojs/image/components";
-import logoBloomberg from "../../assets/icons/logo-bloomberg.svg";
+import logoBloomberg from "@assets/icons/logo-bloomberg.svg";
+import chartArrow from "@assets/icons/arrow-chart.svg";
+import chartArrowMobile from "@assets/icons/arrow-chart-mobile.svg";
+
+import Chart from "@components/Chart"
 ---
 
 <section class="mobile:relative overflow-hidden">
     <div
-            class="desktop:relative tablet:relative max-w-[100vw] mb-[3rem] tablet:mb-[8.75rem] tablet:px-[2rem] desktop:px-[3rem] tablet:pb-[8rem] desktop:pb-[6rem]">
+            style="opacity: 0"
+        class="heading-gsap desktop:relative tablet:relative max-w-[100vw] mb-[3rem] tablet:mb-[8.75rem] tablet:px-[2rem] desktop:px-[3rem] tablet:pb-[8rem] desktop:pb-[6rem]">
 
         <div
             class="absolute desktop:block desktop:w-[112.5rem] tablet:w-[62.5rem] w-[50rem] mobile:top-[13rem] -left-[21.625rem] tablet:-top-[18.75rem] tablet:-left-[29.375rem] desktop:top-[8.75rem] desktop:-left-[45rem]">
@@ -50,9 +55,9 @@ import logoBloomberg from "../../assets/icons/logo-bloomberg.svg";
             </video>
 
             <button
-                    class="absolute translate-z-0 top-1/2 -translate-y-2/4 left-1/2 -translate-x-2/4 p-3 rounded-[7.5rem] flex items-center bg-white text-accent-orange transition-all tablet:p-4 desktop:p-4 hover:scale-[1.1]">
+                class="absolute translate-z-0 top-1/2 -translate-y-2/4 left-1/2 -translate-x-2/4 p-3 rounded-[7.5rem] flex items-center bg-white text-accent-orange transition-all tablet:p-4 desktop:p-4 hover:scale-[1.1]">
                 <div
-                        class="bg-accent-orange text-white rounded-full flex items-center justify-center w-[4rem] h-[4rem] mr-[0.9375rem] desktop:w-[4.75rem] desktop:h-[4.75rem] desktop:ml-[0.4375rem]">
+                    class="bg-accent-orange text-white rounded-full flex items-center justify-center w-[4rem] h-[4rem] mr-[0.9375rem] desktop:w-[4.75rem] desktop:h-[4.75rem] desktop:ml-[0.4375rem]">
 
                     <svg width="29" height="34" viewBox="0 0 29 34" fill="none" xmlns="http://www.w3.org/2000/svg"
                          class="ml-2">
@@ -67,7 +72,7 @@ import logoBloomberg from "../../assets/icons/logo-bloomberg.svg";
         </div>
     </div>
 
-    <div class="box container tablet:min-h-[22.875rem] mobile:mb-10 desktop:min-h-[27rem] desktop:mb-15 mobile:pt-4">
+    <div class="box container tablet:min-h-[22.875rem] mobile:mb-10 desktop:min-h-[27rem] desktop:mb-15 mobile:pt-4 opacity-0">
         <p class="text-subtitle tablet:mb-1 desktop:mb-2 mobile:mb-5">Who we are</p>
 
         <div class="relative mb-[1.875rem] tablet:mb-[5rem] desktop:mb-[6.75rem]">
@@ -141,8 +146,8 @@ import logoBloomberg from "../../assets/icons/logo-bloomberg.svg";
         </div>
     </div>
 
-    <div class="tablet:container desktop:container flex mobile:flex-col-reverse mobile:mb-6 tablet:mb-[12rem] desktop:mb-[12rem] ">
-        <div class="relative flex mobile:shrink-0 flex-col grow ">
+    <div class="box-2 tablet:container desktop:container flex mobile:flex-col-reverse mobile:mb-6 tablet:mb-[12rem] desktop:mb-[12rem] ">
+        <div class="relative flex mobile:shrink-0 flex-col grow desktop:max-w-[30rem]">
             <div class="overflow-hidden grow flex items-center translate-z-0 rounded-3xl desktop:rounded-5xl p-7 mobile:py-5 tablet:p-8 desktop:pt-10 desktop:pb-5 desktop:px-20 bg-gray">
                 <div
                     class="absolute border-accent-violett border-2t tablet:hidden border-accent-violett w-[22.563rem] tablet:w-[56.25rem] desktop:w-[56.25rem] -top-[1rem] tablet:top-[0] desktop:-top-[4rem] -left-[6rem] tablet:-left-[1rem] desktop:-left-[25rem] bottom-auto">
@@ -166,12 +171,12 @@ import logoBloomberg from "../../assets/icons/logo-bloomberg.svg";
             <div class="flex mobile:flex-row tablet:flex-col desktop:flex-col">
                 <div class="overflow-hidden grow flex items-center translate-z-0 rounded-3xl desktop:rounded-5xl  p-7 mobile:py-5 tablet:p-8 desktop:pt-10 desktop:pb-5 desktop:px-20 bg-gray">
                     <div
-                            class="absolute tablet:hidden border-accent-violett border-2t w-[22.563rem] tablet:w-[56.25rem] desktop:w-[56.25rem] -top-[8rem] tablet:top-[0rem] desktop:-top-[17.6rem] -left-[6rem] tablet:-left-[1rem] desktop:-left-[25rem]">
+                        class="absolute tablet:hidden border-accent-violett border-2t w-[22.563rem] tablet:w-[56.25rem] desktop:w-[56.25rem] -top-[8rem] tablet:top-[0rem] desktop:-top-[17.6rem] -left-[6rem] tablet:-left-[1rem] desktop:-left-[25rem]">
                         <Image src={ellipseViolet} alt="violet"/>
                     </div>
 
                     <div
-                            class="absolute tablet:hidden border-2t border-accent-oranget w-[22.563rem] tablet:w-[56.25rem] desktop:w-[56.25rem] -top-[6rem] tablet:top-[1.75rem] desktop:-top-[7.6rem] -right-[16.6rem] tablet:-right-[1rem] desktop:-right-[18rem]">
+                        class="absolute tablet:hidden border-2t border-accent-oranget w-[22.563rem] tablet:w-[56.25rem] desktop:w-[56.25rem] -top-[6rem] tablet:top-[1.75rem] desktop:-top-[7.6rem] -right-[16.6rem] tablet:-right-[1rem] desktop:-right-[18rem]">
                         <Image src={ellipseOrange} alt="orange"/>
                     </div>
 
@@ -183,12 +188,12 @@ import logoBloomberg from "../../assets/icons/logo-bloomberg.svg";
 
                 <div class="overflow-hidden grow flex items-center translate-z-0 rounded-3xl desktop:rounded-5xl p-7 mobile:py-5 tablet:p-8 desktop:pt-10 desktop:pb-5 desktop:px-20 bg-gray mobile:max-w-[6.9rem]">
                     <div
-                            class="absolute  tablet:hidden border-2t border-accent-violett w-[22.563rem] tablet:w-[56.25rem] desktop:w-[56.25rem] -top-[8rem] tablet:top-[0rem] desktop:-top-[31.2rem] -left-[24.6rem] tablet:-left-[1rem] desktop:-left-[25rem]">
+                        class="absolute  tablet:hidden border-2t border-accent-violett w-[22.563rem] tablet:w-[56.25rem] desktop:w-[56.25rem] -top-[8rem] tablet:top-[0rem] desktop:-top-[31.2rem] -left-[24.6rem] tablet:-left-[1rem] desktop:-left-[25rem]">
                         <Image src={ellipseViolet} alt="violet"/>
                     </div>
 
                     <div
-                            class=" absolute tablet:hidden border-2t border-accent-oranget w-[22.563rem] tablet:w-[56.25rem] desktop:w-[56.25rem] -top-[6rem] tablet:-top-[1.75rem] desktop:-top-[21.2rem] -right-[9.6rem] tablet:-right-[1rem] desktop:-right-[18rem]">
+                        class=" absolute tablet:hidden border-2t border-accent-oranget w-[22.563rem] tablet:w-[56.25rem] desktop:w-[56.25rem] -top-[6rem] tablet:-top-[1.75rem] desktop:-top-[21.2rem] -right-[9.6rem] tablet:-right-[1rem] desktop:-right-[18rem]">
                         <Image src={ellipseOrange} alt="orange"/>
                     </div>
 
@@ -200,7 +205,7 @@ import logoBloomberg from "../../assets/icons/logo-bloomberg.svg";
             </div>
         </div>
 
-        <div class="relative flex items-end overflow-hidden translate-z-0 rounded-3xl pt-[3rem] desktop:rounded-5xl p-7 mobile:py-5 tablet:p-8 tablet:pt-[5rem] desktop:pb-[3.125rem] desktop:pt-[1rem] desktop:px-[3.125rem]  bg-gray grow">
+        <div class="relative flex items-end overflow-hidden translate-z-0 rounded-3xl pt-[3rem] desktop:rounded-5xl p-7 mobile:py-5 tablet:p-8 tablet:pt-[5rem] desktop:pb-[3.125rem] desktop:pt-[1rem] desktop:px-[3.125rem]  bg-gray grow desktop:max-w-[920px]">
             <div class="grow flex flex-col">
                 <div
                     class="absolute top-[1.5rem] tablet:top-[3rem] desktop:top-[3rem] flex gap-[0.75rem] mb-10 flex-col-reverse border-l pl-4 tablet:pl-8 desktop:pl-8">
@@ -212,11 +217,17 @@ import logoBloomberg from "../../assets/icons/logo-bloomberg.svg";
                         Pizza has<br class="tablet:hidden desktop:hidden"> turned into <br class="mobile:hidden tablet:hidden">one of <br class="tablet:hidden desktop:hidden">the fastest-growing  <br class="tablet:hidden">restaurant chains</p>
                 </div>
 
-                <div class="relative mobile:hidden">
-                    <Image src={metricNew} alt="metric" />
+                <div class="absolute mobile:top-[2rem] mobile:left-[2rem] mobile:w-full mobile:max-w-[70%] tablet:top-[4rem] tablet:left-[4rem] tablet:w-[43rem] desktop:top-[4rem] desktop:left-[4rem] desktop:w-[43rem]">
+                    <Image src={chartArrow} alt="chart-arrow" class="mobile:hidden object-contain w-full"/>
+                    <Image src={chartArrowMobile} alt="chart-arrow" class="object-contain tablet:hidden desktop:hidden w-full"/>
                 </div>
 
-                <div class="relative tablet:hidden desktop:hidden  grow">
+                <div class="relative">
+                    <!--<Image src={metricNew} alt="metric" />-->
+                    <Chart client:only="react" />
+                </div>
+
+                <div class="hidden relative tablet:hidden desktop:hidden grow">
                     <Image src={metricNewMobile} alt="metric" class="object-contain w-full h-full" />
                 </div>
 
@@ -225,5 +236,5 @@ import logoBloomberg from "../../assets/icons/logo-bloomberg.svg";
         </div>
     </div>
 
-    <p data-scroll data-scroll-speed="2" class="container text-[0.8rem] font-regular text-dark-gray pt-4 tablet:hidden desktop:hidden mobile:hidden">Technomic,  2021</p>
+    <p class="container text-[0.8rem] font-regular text-dark-gray pt-4 tablet:hidden desktop:hidden mobile:hidden">Technomic, 2021</p>
 </section>
