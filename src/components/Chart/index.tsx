@@ -16,6 +16,12 @@ import {Bar} from 'react-chartjs-2';
 import ChartDataLabels, {Context} from 'chartjs-plugin-datalabels';
 import {useMobileDetect} from "../../hooks/useMobileDetect";
 
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import {useEffect, useRef, useState} from "react";
+
+gsap.registerPlugin(ScrollTrigger);
+
 ChartJS.register(
     CategoryScale,
     LinearScale,
@@ -39,10 +45,43 @@ const getList = (from: number, to: number) => {
     return result;
 }
 
+const labels = getList(2011, 2022);
+
+const mockData: ChartData = {
+    labels,
+    datasets: [
+        {
+            label: 'Year to year',
+            data: [0.25, 1.5, 2.6, 11, 17, 44, 108, 215, 313, 356, 544, 831],
+            backgroundColor: '#E5E5E5',
+            fill: 1,
+            borderRadius: 5,
+            borderSkipped: "bottom",
+            hoverBackgroundColor: "#cacaca"
+        },
+    ],
+};
+
 const Chart: FC = () => {
+    const chartRef = useRef(null);
+    const [currentData, setCurrentData] = useState(mockData);
+
+    useEffect(() => {
+        const triggerElement = document.getElementById("myTriggerElement");
+
+        ScrollTrigger.create({
+            trigger: triggerElement,
+            onEnter: () => {
+                if (!chartRef.current) return;
+                setCurrentData({...mockData});
+
+                chartRef?.current?.update();
+            }
+        });
+    }, []);
+
     const mobileDetect = useMobileDetect();
 
-    const labels = getList(2011, 2022);
 
     const options: ChartOptions = {
         responsive: true,
@@ -88,26 +127,11 @@ const Chart: FC = () => {
         }
     };
 
-    const data: ChartData = {
-        labels,
-        datasets: [
-            {
-                label: 'Year to year',
-                data: [0.25, 1.5, 2.6, 11, 17, 44, 108, 215, 313, 356, 544, 831],
-                backgroundColor: '#E5E5E5',
-                fill: 1,
-                borderRadius: 5,
-                borderSkipped: "bottom",
-                hoverBackgroundColor: "#cacaca"
-            },
-        ],
-    };
-
 
     return (
-        <div className="h-[21.25rem] mobile:max-w-[24rem] mobile:w-auto tablet:h-[23.25rem] desktop:h-[32.25rem]">
+        <div className="h-[21.25rem] mobile:max-w-[24rem] mobile:w-auto tablet:h-[23.25rem] desktop:h-[32.25rem]" id="myTriggerElement">
             {/* @ts-ignore */}
-            <Bar options={options} data={data}/>
+            <Bar options={options} data={currentData} ref={chartRef}/>
         </div>
     );
 };
