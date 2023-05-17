@@ -44,7 +44,7 @@ const ContactForm: FC = () => {
     ]
 
     return (
-        <div className="bg-gray rounded-3xl tablet:w-1/3">
+        <div className="bg-gray rounded-3xl tablet:w-1/3 h-full">
             <form className="flex flex-col justify-between h-full">
                 <div className="px-5 pt-10 desktop:min-w-[26rem]">
                     <p className="hidden text-h-1 tablet:text-4xl mb-6 mobile:hidden">Contact <span>us</span></p>
@@ -68,7 +68,7 @@ const ContactForm: FC = () => {
                 <div className="relative h-[1.5rem] w-[1.5rem] mr-2">
                     <img src={checkmark.src} alt="" className="absolute object-cover w-full h-full"/>
                 </div>
-                <p className="text-dark-gray text-[1.5rem] font-regular">our <a href="#" className="decoration-1 underline underline-offset-4">privacy policy</a></p>
+                <p className="text-dark-gray text-[1rem] tablet:text-[1.5rem] desktop:text-[1.5rem] font-regular">our <a href="#" className="decoration-1 underline underline-offset-4">privacy policy</a></p>
             </div>
 
             <button

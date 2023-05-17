@@ -33,29 +33,29 @@ const phrases = [
 
 const textElement = document.querySelector('.loading-text');
 
-const tl = gsap.timeline({repeat: -1, repeatDelay: 1});
-shuffleArray(phrases).forEach((phrase) => {
-    tl.to(textElement, {duration: 1, opacity: 0})
-        .call(() => { textElement.textContent = phrase })
-        .to(textElement, {duration: 1, opacity: 1})
-        .to(textElement, {duration: 3});
-});
-
-window.scrollTo({
-    top: 0
-})
+// const tl = gsap.timeline({repeat: -1, repeatDelay: 1});
+// shuffleArray(phrases).forEach((phrase) => {
+//     tl.to(textElement, {duration: 1, opacity: 0})
+//         .call(() => { textElement.textContent = phrase })
+//         .to(textElement, {duration: 1, opacity: 1})
+//         .to(textElement, {duration: 3});
+// });
+//
+// window.scrollTo({
+//     top: 0
+// })
 
 window.addEventListener("load", () => {
-    setTimeout(() => {
-        gsap.to(loadingScreen, {
-            duration: 1,
-            opacity: 0,
-            onComplete: () => {
-                lockBody(false);
-                loadingScreen.parentNode.removeChild(loadingScreen);
-            }
-        });
-    }, 2000)
+    // setTimeout(() => {
+    //     gsap.to(loadingScreen, {
+    //         duration: 1,
+    //         opacity: 0,
+    //         onComplete: () => {
+    //             lockBody(false);
+    //             loadingScreen.parentNode.removeChild(loadingScreen);
+    //         }
+    //     });
+    // }, 2000)
 
     setTimeout(() => {
         gsap.set(".heading-gsap", { opacity: 0, y: -50 });
@@ -90,8 +90,7 @@ window.addEventListener("load", () => {
             })
         })
 
-
-        blocks.forEach((block, index) => {
+        blocks.forEach((block) => {
             gsap.set(block, { opacity: 0, y: -25 });
 
             gsap.to(block, {

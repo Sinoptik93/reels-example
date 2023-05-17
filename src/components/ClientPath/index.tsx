@@ -24,7 +24,7 @@ function ClientPath() {
     return (
         <>
             <Swiper
-                className="h-[40rem] mb-20 overflow-hidden w-full swiper-backface-hidden pb-10 desktop:hidden tablet:hidden"
+                className="h-[46rem] overflow-hidden w-full swiper-backface-hidden pb-10 desktop:hidden tablet:hidden"
                 spaceBetween={0}
                 slidesPerView={"auto"}
                 centeredSlides
@@ -43,7 +43,7 @@ function ClientPath() {
                         <img src={ellipseOrange.src} alt="orange" className="object-contain"/>
                     </div>
 
-                    <p className="text-slide-heading absolute top-[1.5rem] left-5 z-10">Own digital sales <br/>channels</p>
+                    <p className="text-slide-heading absolute top-[2.5rem] left-[3.25rem] z-10">Own digital sales <br/>channels</p>
 
                     <div className="oveflow-hidden absolute absolute-center w-full object-video-frame-mobile max-h-[25rem] overflow-hidden top-[47%]">
                         <video className="top-0 left-0 min-h-full min-w-full object-contain" loop autoPlay muted
@@ -53,7 +53,7 @@ function ClientPath() {
                         </video>
                     </div>
 
-                    <div className="z-10 container absolute left-1/2 -translate-x-2/4 bottom-8 flex flex-col gap-4 w-full">
+                    <div className="z-10 container absolute left-1/2 -translate-x-2/4 bottom-8 flex flex-col gap-4 w-full max-w-[82%]">
                         <p className="text-[1.2rem] font-regular grow text-accent-orange leading-custom">Full customer experience control</p>
                         <p className="text-[1.2rem] font-regular grow leading-custom">Our app, website, kiosk and POS with automated marketing personalization sends orders directly to kitchen.</p>
                     </div>
@@ -62,7 +62,7 @@ function ClientPath() {
                 <SwiperSlide
                     className="overflow-hidden w-[100vw] bg-[#F5EFF1]">
 
-                    <p className="text-slide-heading absolute top-[1.5rem] left-5 z-10">Smart pizzeria <br/>and delivery</p>
+                    <p className="text-slide-heading absolute top-[2.5rem] left-[3.25rem] z-10">Smart pizzeria <br/>and delivery</p>
 
                     <div className="oveflow-hidden absolute absolute-center w-full object-video-frame-mobile max-h-[25rem] overflow-hidden top-[47%]">
                         <video className="top-0 left-0 min-h-full min-w-full object-contain " loop autoPlay muted
@@ -73,7 +73,7 @@ function ClientPath() {
                     </div>
 
 
-                    <div className="container absolute left-1/2 -translate-x-2/4 bottom-8 flex flex-col gap-4 w-full">
+                    <div className="container absolute left-1/2 -translate-x-2/4 bottom-8 flex flex-col gap-4 w-full max-w-[82%]">
                         <p className="text-[1.2rem] font-regular grow text-accent-orange leading-custom">Consistent quality and total manageability</p>
                         <p className="text-[1.2rem] font-regular grow leading-custom">Digitalizes every process, including order tracking, supply forecasts, delivery, HR and P&L management.</p>
                     </div>
@@ -82,7 +82,7 @@ function ClientPath() {
                 <SwiperSlide
                     className="rounded-tr-3xl rounded-br-3xl overflow-hidden w-[100vw] bg-[#F5EFF1]">
 
-                    <p className="text-slide-heading absolute top-[1.5rem] left-5 z-10">Central multiple-store management</p>
+                    <p className="text-slide-heading mobile-md:text-[2.1rem] absolute top-[2.5rem] left-[3.25rem] z-10">Central multiple-store management</p>
 
                     <div className="oveflow-hidden absolute absolute-center w-full object-video-frame-mobile max-h-[25rem] overflow-hidden top-[47%]">
                         <video className="top-0 left-0 min-h-full min-w-full object-contain" loop autoPlay muted
@@ -93,7 +93,7 @@ function ClientPath() {
                     </div>
 
 
-                    <div className="container absolute left-1/2 -translate-x-2/4 bottom-8 flex flex-col gap-4 w-full">
+                    <div className="container absolute left-1/2 -translate-x-2/4 bottom-8 flex flex-col gap-4 w-full max-w-[82%]">
                         <p className="text-[1.2rem] font-regular grow text-accent-orange leading-custom">Full transparency and fast scaling</p>
                         <p className="text-[1.2rem] font-regular grow leading-custom">Platform connects all the processes in all stores together, allowing to manage everything from one center with total reliance on data.</p>
                     </div>

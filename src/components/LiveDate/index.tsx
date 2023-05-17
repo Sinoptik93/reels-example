@@ -16,7 +16,7 @@ const LiveDate= () => {
     }, []);
 
      return (
-         <p className="text-[0.75rem] desktop:text-[1.5rem] text-dark-gray font-regular">{time}</p>
+         <p className="text-[0.9rem] desktop:text-[1.5rem] text-dark-gray font-regular">{time}</p>
      );
 };
 

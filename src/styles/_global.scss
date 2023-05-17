@@ -1,5 +1,5 @@
 html {
-    @apply mobile-sm:text-[16px] mobile:text-[19px] desktop:text-[12px] tablet:text-[9px]
+    @apply mobile-sm:text-[16px] mobile:text-[19px] tablet-extra:text-[9px] desktop-tall:text-[12px] full-screen:text-[12px];
 }
 
 .violet-gradient {

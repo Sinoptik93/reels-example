@@ -53,11 +53,11 @@ const {title, frontmatter,} = Astro.props as MDXLayoutProps<Props>;
         })
     </script>
 </head>
-<body style="overflow: hidden">
+<body style="overflow: scroll">
 <div class="relative">
-    <div id="loading-screen" class="absolute w-screen h-screen bottom-0 bg-gray z-10 top-0 left-0 flex justify-center items-center">
-        <p id="loading-text" class="container loading-text text-accent-orange text-2xl  tablet:text-5xl  desktop:text-5xl font-bold">We prepare page =)</p>
-    </div>
+    <!--<div id="loading-screen" class="absolute w-screen h-screen bottom-0 bg-gray z-10 top-0 left-0 flex justify-center items-center">-->
+    <!--    <p id="loading-text" class="container loading-text text-accent-orange text-2xl  tablet:text-5xl  desktop:text-5xl font-bold">We prepare page =)</p>-->
+    <!--</div>-->
 
     <div id="fullpage">
         <slot/>

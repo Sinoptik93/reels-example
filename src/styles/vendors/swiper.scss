@@ -7,20 +7,12 @@
 
 .swiper-pagination-bullet {
   transition: width 0.3s ease-in, max-width 0.3s ease-in, opacity 0.3s ease-out;
-  border-radius: 0.25rem;
-  background-color: #FF6900;
-  opacity: 0.8;
-  width: 0.5rem;
-  height: 0.5rem;
-  max-width: 0.5rem;
+
+  @apply mobile:max-w-[0.3rem] max-w-[0.5rem] mobile:w-[0.3rem] w-[0.5rem]  mobile:h-[0.3rem] h-[0.5rem] opacity-80 bg-accent-orange rounded-[0.25rem]
 }
 
 .swiper-pagination-bullet-active {
-  width: 100%;
-  max-width: 5rem;
-  border-radius: 0.25rem;
-  background-color: #FF6900;
-  opacity: 1;
+  @apply w-full max-w-[5rem] mobile:max-w-[3.5rem] rounded-[0.25rem] bg-accent-orange opacity-100
 }
 
 .swiper.custom {

@@ -61,11 +61,11 @@ module.exports = {
                 widest: "0.2em",
             },
             fontSize: {
-                "xs": ["0.625rem", {lineHeight: "normal"}], // 10px
+                "xs": ["1.1rem", {lineHeight: "normal"}], // 10px
                 "sm": ["0.75rem", {lineHeight: "normal"}], // 12px
                 "md": ["1.25rem", {lineHeight: "normal"}], // 20px
                 "2xl": ["1.625rem", {lineHeight: "normal"}], // 26px
-                "3xl": ["1.688rem", {lineHeight: "normal"}], // 27px
+                "3xl": ["1.4rem", {lineHeight: "normal"}], // 27px
                 "4xl": ["2.5rem", {lineHeight: "normal"}], // 40px
                 "5xl": ["2.875rem", {lineHeight: "normal"}], // 46px
                 "6xl": ["4.375rem", {lineHeight: "normal"}], // 70px
@@ -77,10 +77,14 @@ module.exports = {
             screens: {
                 mobile: {'min': '360px', 'max': '654px'},
                 "mobile-sm": {'min': '360px', 'max': '405px'},
-                tablet: {'min': '655px', 'max': '1255px'},
-                desktop: {'min': '1256px'},
+                "mobile-md": {'min': '406px', 'max': '450px'},
+                tablet: {'min': '655px', 'max': '655px'},
+                "tablet-extra": {'min': '655px', 'max': '1255px'},
+                desktop: {'min': '655px'},
+                "desktop-tall": {'min': '1024px', 'max': '1440px'},
                 tall: {'min': '1256px', 'max': '1440px'},
-                "extra-mobile": {'min': '420px', 'max': '480px'}
+                "extra-mobile": {'min': '420px', 'max': '480px'},
+                "full-screen": {'min': '1440px'}
             },
             colors: {
                 "white": "hsl(0,0%,100%)",
