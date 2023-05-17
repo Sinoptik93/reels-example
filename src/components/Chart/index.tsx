@@ -7,13 +7,11 @@ import {
     LineElement,
     LineController,
     PointElement,
-    Title,
-    Tooltip,
-    Legend, ChartOptions, ChartData,
+    ChartOptions, ChartData,
     Filler,
 } from 'chart.js';
 import {Bar} from 'react-chartjs-2';
-import ChartDataLabels, {Context} from 'chartjs-plugin-datalabels';
+import ChartDataLabels from 'chartjs-plugin-datalabels';
 import {useMobileDetect} from "../../hooks/useMobileDetect";
 
 import { gsap } from 'gsap';

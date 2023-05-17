@@ -19,8 +19,8 @@ import slideSecondWebp from "@assets/images/slide-2.webp"
 // import slideThird from "@assets/images/slide-3.png"
 import slideThirdWebp from "@assets/images/slide-3.webp"
 
-import ellipseViolet from "@assets/images/ellipse-violet.svg"
-import ellipseOrange from "@assets/images/ellipse-orange.svg"
+import ellipseViolet from "@assets/images/ellipse-violet.webp"
+import ellipseOrange from "@assets/images/ellipse-orange.webp"
 
 
 const Slider: FC = () => {

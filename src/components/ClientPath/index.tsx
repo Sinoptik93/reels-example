@@ -16,8 +16,8 @@ import {
     Swiper,
     SwiperSlide
 } from 'swiper/react';
-import ellipseViolet from "@assets/images/ellipse-violet.png";
-import ellipseOrange from "@assets/images/ellipse-orange.png";
+import ellipseViolet from "@assets/images/ellipse-violet.webp";
+import ellipseOrange from "@assets/images/ellipse-orange.webp";
 
 
 function ClientPath() {

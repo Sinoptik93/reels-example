@@ -1,8 +1,8 @@
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import {TextPlugin} from "gsap/TextPlugin"
-
-gsap.registerPlugin(ScrollTrigger, TextPlugin);
+// import { gsap } from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import {TextPlugin} from "gsap/TextPlugin"
+//
+// gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
 const containers = document.querySelectorAll('.box');
 const blocks = document.querySelectorAll('.box-2');
