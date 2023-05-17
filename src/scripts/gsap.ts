@@ -45,67 +45,67 @@ const textElement = document.querySelector('.loading-text');
 //     top: 0
 // })
 
-window.addEventListener("load", () => {
-    // setTimeout(() => {
-    //     gsap.to(loadingScreen, {
-    //         duration: 1,
-    //         opacity: 0,
-    //         onComplete: () => {
-    //             lockBody(false);
-    //             loadingScreen.parentNode.removeChild(loadingScreen);
-    //         }
-    //     });
-    // }, 2000)
-
-    setTimeout(() => {
-        gsap.set(".heading-gsap", { opacity: 0, y: -50 });
-
-        gsap.to(".heading-gsap", {
-            duration: 2,
-            opacity: 1,
-            y: 0,
-            scrollTrigger: {
-                trigger: ".heading-gsap",
-                start: "top top",
-                end: "top top",
-                // scrub: 1,
-                // markers: true
-            }
-        })
-
-        containers.forEach((container) => {
-            gsap.set(container, { opacity: 0, y: -25 });
-
-            gsap.to(container, {
-                duration: 0.7,
-                opacity: 1,
-                y: 0,
-                scrollTrigger: {
-                    trigger: container,
-                    start: "70% 90%",
-                    end: "70% 90%",
-                    // scrub: 1,
-                    // markers: true
-                }
-            })
-        })
-
-        blocks.forEach((block) => {
-            gsap.set(block, { opacity: 0, y: -25 });
-
-            gsap.to(block, {
-                duration: 0.7,
-                opacity: 1,
-                y: 0,
-                scrollTrigger: {
-                    trigger: block,
-                    start: "10% 90%",
-                    end: "10% 90%",
-                    // markers: true
-                }
-            })
-        })
-    }, 1000)
-})
+// window.addEventListener("load", () => {
+//     // setTimeout(() => {
+//     //     gsap.to(loadingScreen, {
+//     //         duration: 1,
+//     //         opacity: 0,
+//     //         onComplete: () => {
+//     //             lockBody(false);
+//     //             loadingScreen.parentNode.removeChild(loadingScreen);
+//     //         }
+//     //     });
+//     // }, 2000)
+//
+//     setTimeout(() => {
+//         gsap.set(".heading-gsap", { opacity: 0, y: -50 });
+//
+//         gsap.to(".heading-gsap", {
+//             duration: 2,
+//             opacity: 1,
+//             y: 0,
+//             scrollTrigger: {
+//                 trigger: ".heading-gsap",
+//                 start: "top top",
+//                 end: "top top",
+//                 // scrub: 1,
+//                 // markers: true
+//             }
+//         })
+//
+//         containers.forEach((container) => {
+//             gsap.set(container, { opacity: 0, y: -25 });
+//
+//             gsap.to(container, {
+//                 duration: 0.7,
+//                 opacity: 1,
+//                 y: 0,
+//                 scrollTrigger: {
+//                     trigger: container,
+//                     start: "70% 90%",
+//                     end: "70% 90%",
+//                     // scrub: 1,
+//                     // markers: true
+//                 }
+//             })
+//         })
+//
+//         blocks.forEach((block) => {
+//             gsap.set(block, { opacity: 0, y: -25 });
+//
+//             gsap.to(block, {
+//                 duration: 0.7,
+//                 opacity: 1,
+//                 y: 0,
+//                 scrollTrigger: {
+//                     trigger: block,
+//                     start: "10% 90%",
+//                     end: "10% 90%",
+//                     // markers: true
+//                 }
+//             })
+//         })
+//     }, 1000)
+// })
 
 
