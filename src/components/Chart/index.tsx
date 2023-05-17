@@ -1,4 +1,6 @@
-import type {FC} from 'react';
+import { useRef } from "react";
+
+import type { FC } from 'react';
 import {
     Chart as ChartJS,
     CategoryScale,
@@ -7,18 +9,14 @@ import {
     LineElement,
     LineController,
     PointElement,
-    ChartOptions, ChartData,
+    ChartOptions,
+    ChartData,
     Filler,
 } from 'chart.js';
 import {Bar} from 'react-chartjs-2';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
-import {useMobileDetect} from "../../hooks/useMobileDetect";
+import { useMobileDetect } from "../../hooks/useMobileDetect";
 
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import {useEffect, useRef, useState} from "react";
-
-gsap.registerPlugin(ScrollTrigger);
 
 ChartJS.register(
     CategoryScale,
@@ -62,21 +60,6 @@ const mockData: ChartData = {
 
 const Chart: FC = () => {
     const chartRef = useRef(null);
-    const [currentData, setCurrentData] = useState(mockData);
-
-    useEffect(() => {
-        const triggerElement = document.getElementById("myTriggerElement");
-
-        ScrollTrigger.create({
-            trigger: triggerElement,
-            onEnter: () => {
-                if (!chartRef.current) return;
-                setCurrentData({...mockData});
-
-                chartRef?.current?.update();
-            }
-        });
-    }, []);
 
     const mobileDetect = useMobileDetect();
 
@@ -129,7 +112,7 @@ const Chart: FC = () => {
     return (
         <div className="h-[21.25rem] mobile:max-w-[24rem] mobile:w-auto tablet:h-[23.25rem] desktop:h-[32.25rem]" id="myTriggerElement">
             {/* @ts-ignore */}
-            <Bar options={options} data={currentData} ref={chartRef}/>
+            <Bar options={options} data={mockData} ref={chartRef}/>
         </div>
     );
 };

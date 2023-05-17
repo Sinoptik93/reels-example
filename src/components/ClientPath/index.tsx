@@ -1,21 +1,21 @@
 import {Pagination} from 'swiper';
+import {
+    Swiper,
+    SwiperSlide
+} from 'swiper/react';
 
 import pathLeft from "@assets/videos/path-1-left.webm"
 import pathCenter from "@assets/videos/path-2-center.webm"
 import pathRight from "@assets/videos/path-3-right.webm"
-import pathFull from "@assets/videos/path-full.webm"
+// import pathFull from "@assets/videos/path-full.webm"
 import pathFullWide from "@assets/videos/path-full-extra.webm"
 
 import pathLeftExtra from "@assets/videos/path-1-left.mp4"
 import pathCenterExtra from "@assets/videos/path-2-center.mp4"
 import pathRightExtra from "@assets/videos/path-3-right.mp4"
-import pathFullExtra from "@assets/videos/path-full.mp4"
+// import pathFullExtra from "@assets/videos/path-full.mp4"
 import pathFullWideExtra from "@assets/videos/path-full-extra.mp4"
 
-import {
-    Swiper,
-    SwiperSlide
-} from 'swiper/react';
 import ellipseViolet from "@assets/images/ellipse-violet.webp";
 import ellipseOrange from "@assets/images/ellipse-orange.webp";
 
