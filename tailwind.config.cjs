@@ -39,8 +39,10 @@ module.exports = {
         },
         borderRadius: {
             ...defaultTheme.borderRadius,
-            "4xl": "1.625rem",
-            "5xl": "2.5rem",
+            "2xl": "0rem",
+            "3xl": "0rem",
+            "4xl": "0rem",
+            "5xl": "0rem",
         },
         extend: {
             fontFamily: {
