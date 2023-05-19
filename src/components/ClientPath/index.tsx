@@ -75,7 +75,7 @@ function ClientPath() {
 
                     <div className="container absolute left-1/2 -translate-x-2/4 bottom-8 flex flex-col gap-4 w-full max-w-[100%]">
                         <p className="text-[1.2rem] font-regular grow text-accent-orange leading-custom">Consistent quality and total manageability</p>
-                        <p className="text-[1.2rem] font-regular grow leading-custom">Digitalizes every process, including order tracking, supply forecasts, delivery, HR and P&L management.</p>
+                        <p className="text-[1.2rem] font-regular grow leading-custom">Virtualizes every process, including order tracking, supply forecasts, delivery, HR and P&L management.</p>
                     </div>
                 </SwiperSlide>
 
@@ -141,7 +141,7 @@ function ClientPath() {
                             <div>
                                 <p className="text-slide-heading mb-2">Smart pizzeria <br/>and delivery</p>
                                 <p className="text-[1.25rem] font-bold mb-4 text-accent-orange">Consistent quality and total manageability</p>
-                                <p className="text-[1.25rem] font-regular">Digitalizes every process, including order <br/>tracking, supply forecasts, delivery, HR <br/>and P&L management.</p>
+                                <p className="text-[1.25rem] font-regular">Virtualizes every process, including order <br/>tracking, supply forecasts, delivery, HR <br/>and P&L management.</p>
                             </div>
                         </div>
 
