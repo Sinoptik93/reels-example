@@ -55,7 +55,7 @@ function ClientPath() {
 
                     <div className="z-10 container absolute left-1/2 -translate-x-2/4 bottom-8 flex flex-col gap-4 w-full max-w-[100%]">
                         <p className="text-[1.2rem] font-regular grow text-accent-orange leading-custom">Full customer experience control</p>
-                        <p className="text-[1.2rem] font-regular grow leading-custom">Our app, website, kiosk and POS with automated marketing personalization sends orders directly to kitchen.</p>
+                        <p className="text-[1.2rem] font-regular grow leading-custom">Our app, website, self-service kiosk and POS with automated marketing personalization sends orders directly to kitchen.</p>
                     </div>
                 </SwiperSlide>
 
@@ -95,7 +95,7 @@ function ClientPath() {
 
                     <div className="container absolute left-1/2 -translate-x-2/4 bottom-8 flex flex-col gap-4 w-full max-w-[100%]">
                         <p className="text-[1.2rem] font-regular grow text-accent-orange leading-custom">Full transparency and fast scaling</p>
-                        <p className="text-[1.2rem] font-regular grow leading-custom">Platform connects all the processes in all stores together, allowing to manage everything from one center with total reliance on data.</p>
+                        <p className="text-[1.2rem] font-regular grow leading-custom">Our platform unites all the processes in all stores, allowing them to be managed centrally with complete reliance on data.</p>
                     </div>
                 </SwiperSlide>
             </Swiper>
@@ -131,9 +131,9 @@ function ClientPath() {
                     <div className="flex justify-between absolute bottom-0 pb-8 w-full">
                         <div className="">
                             <div>
-                                <p className="text-slide-heading mb-2">Digital sales <br/>channels</p>
+                                <p className="text-slide-heading mb-2">Online sales <br/>channels</p>
                                 <p className="text-[1.25rem] font-bold mb-4 text-accent-orange">Full customer experience control</p>
-                                <p className="text-[1.25rem] font-regular">Our app, website, kiosk and POS with <br/>automated marketing personalization <br/>sends orders directly to kitchen.</p>
+                                <p className="text-[1.25rem] font-regular">Our app, website, self-service kiosk and POS with <br/>automated marketing personalization <br/>sends orders directly to kitchen.</p>
                             </div>
                         </div>
 
@@ -149,7 +149,7 @@ function ClientPath() {
                             <div>
                                 <p className="text-slide-heading mb-2">Central multiple-store <br/>management</p>
                                 <p className="text-[1.25rem] font-bold mb-4 text-accent-orange"> Full transparency and fast scaling</p>
-                                <p className="text-[1.25rem] font-regular">Platform connects all the processes in all <br/>stores together, allowing to manage everything <br/>from one center with total reliance on data.</p>
+                                <p className="text-[1.25rem] font-regular">Our platform unites all the processes in all stores, allowing them to be managed centrally with complete reliance on data.</p>
                             </div>
                         </div>
                     </div>
