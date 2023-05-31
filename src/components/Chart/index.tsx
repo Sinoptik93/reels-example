@@ -30,6 +30,7 @@ ChartJS.register(
 );
 
 const getList = (from: number, to: number) => {
+
     const result = [];
     let step = from;
 

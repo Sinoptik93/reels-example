@@ -3,6 +3,8 @@ import react from '@astrojs/react';
 import tailwind from "@astrojs/tailwind";
 import mdx from "@astrojs/mdx";
 import image from "@astrojs/image";
+// import basicSsl , {getCertificate} from '@vitejs/plugin-basic-ssl'
+
 
 // https://astro.build/config
 export default defineConfig({
@@ -14,7 +16,16 @@ export default defineConfig({
             serviceEntryPoint: "@astrojs/image/sharp"
         }),
     ],
+    server: {
+        port: 2511,
+    },
     vite: {
+        plugins: [
+            // basicSsl(),
+        ],
+        server: {
+          // https: true,
+        },
         optimizeDeps: {
             exclude: ['gsap']
         }
