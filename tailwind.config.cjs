@@ -44,10 +44,10 @@ module.exports = {
         },
         extend: {
             fontFamily: {
-                regular: ["Factor A Light", ...defaultTheme.fontFamily.sans],
-                bold: ["Factor A Regular", ...defaultTheme.fontFamily.sans],
-                "regular-2": ["Factor A Regular", ...defaultTheme.fontFamily.sans],
-                light: ["Factor A Light", ...defaultTheme.fontFamily.sans],
+                regular: ["ObjectSans Regular", ...defaultTheme.fontFamily.sans],
+                bold: ["ObjectSans Regular", ...defaultTheme.fontFamily.sans],
+                "regular-2": ["ObjectSans Regular", ...defaultTheme.fontFamily.sans],
+                light: ["ObjectSans Regular", ...defaultTheme.fontFamily.sans],
             },
             objectPosition: {
                 'video-frame': '0 30px',

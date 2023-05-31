@@ -1,13 +1,15 @@
 @font-face {
-  font-family: "Factor A Light";
-  src: url("../assets/fonts/factor-a/Factor A-Light-Web.woff2") format('woff2');
+  font-family: "ObjectSans Regular";
+  //src: url("factor-a/Factor A-Light-Web.woff2") format('woff2');
+  src: url("../assets/fonts/object-sans/ObjectSans-Regular.woff") format('woff');
   font-weight: 300;
   font-size: 0.125rem;
 }
 
 @font-face {
   font-family: "Factor A Regular";
-  src: url("../assets/fonts/factor-a/Factor A-Regular-Web.woff2") format('woff2');
+  //src: url("../assets/fonts/factor-a/Factor A-Regular-Web.woff2") format('woff2');
+  src: url("../assets/fonts/object-sans/ObjectSans-Regular.woff") format('woff');
   font-weight: 400;
 }
 
