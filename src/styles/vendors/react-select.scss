@@ -1,0 +1,68 @@
+$customClass: "custom-select";
+$selectCountry: "select-country";
+
+.#{$customClass} {
+  .#{$selectCountry} {
+
+
+    &__control {
+      @apply bg-transparent border-0 rounded-none min-h-0 pb-2 border-b-[0.0625rem] border-black transition-all duration-300 hover:border-black;
+
+      &--is-focused {
+        @apply border-accent-orange shadow-none;
+
+        .#{$selectCountry}__placeholder {
+          @apply text-accent-orange opacity-100;
+        }
+      }
+
+      &--menu-is-open {
+        .#{$selectCountry}__indicator {
+          @apply rotate-180;
+        }
+      }
+    }
+
+    &__value-container {
+      @apply p-0;
+    }
+
+    &__input-container {
+      @apply m-0 p-0 text-md text-black;
+    }
+
+    &__single-value {
+      @apply text-black text-md m-0;
+    }
+
+    &__placeholder {
+      @apply m-0 text-input-label text-xs text-black opacity-30;
+    }
+
+
+    &__indicator-separator {
+      @apply hidden;
+    }
+
+    &__indicator {
+      @apply p-0 text-black transition-all duration-300;
+    }
+
+    &__menu-list {
+      @apply max-h-60 px-2;
+    }
+
+    &__option {
+      @apply p-2 text-black border-b-[0.0625rem] border-dark-gray transition-all;
+
+      &--is-selected {
+        @apply bg-gray text-black;
+      }
+
+      &--is-focused {
+        @apply bg-accent-orange text-white;
+      }
+    }
+  }
+}
+
