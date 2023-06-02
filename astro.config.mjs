@@ -16,18 +16,4 @@ export default defineConfig({
             serviceEntryPoint: "@astrojs/image/sharp"
         }),
     ],
-    server: {
-        port: 2511,
-    },
-    vite: {
-        plugins: [
-            // basicSsl(),
-        ],
-        server: {
-          // https: true,
-        },
-        optimizeDeps: {
-            exclude: ['gsap']
-        }
-    }
 });

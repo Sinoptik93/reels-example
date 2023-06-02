@@ -10,8 +10,6 @@ interface MapMetricsProps {
 }
 
 const MapMetrics = ({}: MapMetricsProps) => {
-    console.log('e')
-
     useLayoutEffect(() => {
         const plugTotalSales = document.querySelector("#plug-total-sales");
         const plugSales = document.querySelector("#plug-sales-today");

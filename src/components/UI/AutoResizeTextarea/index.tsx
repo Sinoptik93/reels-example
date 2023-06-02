@@ -1,7 +1,7 @@
-import {TextareaHTMLAttributes, useEffect, useState} from "react";
+import {forwardRef, TextareaHTMLAttributes, useEffect, useState} from "react";
 import type {ControllerRenderProps} from "react-hook-form";
 
-export const AutoResizeTextarea = (props: TextareaHTMLAttributes<HTMLTextAreaElement> | ControllerRenderProps<{name: string, phone: string, email: string, country: string, experience: string}, "experience">) => {
+export const AutoResizeTextarea = forwardRef((props: TextareaHTMLAttributes<HTMLTextAreaElement> | ControllerRenderProps<{name: string, phone: string, email: string, country: string, experience: string}, "experience">, ref) => {
     const [isFocused, setIsFocused] = useState(false);
     useEffect(() => {
         console.log({isFocused})
@@ -11,8 +11,10 @@ export const AutoResizeTextarea = (props: TextareaHTMLAttributes<HTMLTextAreaEle
         <div className={`pb-2 border-b-[0.0625rem] border-b-black w-full transition-all duration-300`} style={{borderBottomColor: isFocused ? "#FF6A00FF" : "black"}}>
             <textarea
                 {...props}
+                // @ts-ignore
+                ref={ref}
                 value={props.value}
-                className="resize-none w-full text-md max-h-60 bg-transparent outline-0 placeholder:text-input-label"
+                className="resize-none w-full text-input-label tracking-normal normal-case max-h-[10.5rem] bg-transparent outline-0 placeholder:text-input-label"
                 onFocus={() => {
                     setIsFocused(true)
                 }}
@@ -25,4 +27,4 @@ export const AutoResizeTextarea = (props: TextareaHTMLAttributes<HTMLTextAreaEle
             />
         </div>
     );
-}
+})

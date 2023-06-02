@@ -21,7 +21,7 @@ export const Input = forwardRef((props: InputProps, ref) => {
             </label>
 
             <input
-                className={`text-md bg-transparent pb-2 border-b-[0.0625rem] transition-all duration-300 placeholder:text-input-label placeholder:transition-all focus:outline-0 focus:border-b-accent-orange focus:text-black focus:placeholder:text-accent-orange ${state?.invalid ? "text-accent-red" : ""}`}
+                className={`text-md bg-transparent pb-2 border-b-[0.0625rem] rounded-none transition-all duration-300 placeholder:text-input-label placeholder:transition-all focus:outline-0 focus:border-b-accent-orange focus:text-black focus:placeholder:text-accent-orange ${state?.invalid ? "text-accent-red" : ""}`}
                 aria-invalid={state?.invalid}
                 // @ts-ignore
                 ref={ref}

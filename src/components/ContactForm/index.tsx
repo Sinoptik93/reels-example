@@ -1,9 +1,9 @@
 import Select, {components, GroupBase, OptionProps} from 'react-select'
 import {Controller, useForm} from "react-hook-form";
 import {useState} from "react";
-import {parsePhoneNumber} from 'react-phone-number-input'
+import {formatPhoneNumberIntl, formatPhoneNumber, parsePhoneNumber} from 'react-phone-number-input'
 import * as yup from "yup";
-import InputPhone from 'react-phone-number-input/input'
+// import InputPhone from 'react-phone-number-input/input'
 
 import countriesList from "../../utils/countries"
 import checkmark from "@assets/icons/checkmark.svg"
@@ -23,10 +23,10 @@ const Option = (props: OptionProps<CountryOption, false, GroupBase<CountryOption
     return (
         <components.Option {...props} >
             <div className="flex items-center">
-                <div className="w-5 h-4 rounded-[0.2rem] border-gray flex items-center overflow-hidden border-1 mr-2">
-                    <span className={`fi fi-${props.data.value.toLowerCase()}`}></span>
+                <div className="w-5 h-4 rounded-[0.2rem] border-dark-gray border-[0.1rem] flex items-center overflow-hidden border-1 mr-2">
+                    <span className={`fi fi-${props.data.value.toLowerCase()} bg-cover`}></span>
                 </div>
-                <p className="text-md">{data.label}</p>
+                <p className="text-input-label normal-case tracking-normal">{data.label}</p>
             </div>
         </components.Option>
     )
@@ -61,7 +61,7 @@ const countriesOptions: CountryOption[] = countriesList.map((country) => ({
 
 const ContactForm = () => {
     const [defaultCountry, setDefaultCountry] = useState<CountryOption | null>(null);
-    const {control, handleSubmit, formState, watch, register} = useForm({
+    const {control, handleSubmit, formState, watch, register, setValue, trigger} = useForm({
         mode: "onBlur",
         defaultValues: {
             name: "",
@@ -110,6 +110,7 @@ const ContactForm = () => {
                             render={({field, fieldState}) => {
                                 return (
                                     <Input
+                                        autoComplete="given-name"
                                         label={field.name}
                                         type="text"
                                         placeholder="name"
@@ -137,55 +138,76 @@ const ContactForm = () => {
                                 // },
 
                             }}
-                            render={({field}) => (
-                                // <Input
-                                //     label={field.name}
-                                //     type="tel"
-                                //     placeholder="phone"
-                                //     {...field}
-                                //     ref={null}
-                                //     state={fieldState}
-                                //     onChange={({target: {value}}) => {
-                                //         const isFirstChar = value.length === 1;
-                                //         const isValidFirstChar = value[0] === "+"
-                                //
-                                //         setValue("phone", `${isFirstChar && !isValidFirstChar ? "+" : ""}${value}`)
-                                //     }}
-                                //     onFocus={() => {
-                                //         setValue("phone", field.value.replaceAll(" ", ""))
-                                //     }}
-                                //     onBlur={() => {
-                                //         field.onBlur();
-                                //         if (fieldState.invalid) return;
-                                //
-                                //         const phoneNumber = parsePhoneNumber(field.value);
-                                //         const formattedNumber = formatPhoneNumberIntl(field.value) ?? field.value;
-                                //
-                                //         if (formattedNumber) {
-                                //             setValue("phone",  formattedNumber)
-                                //         }
-                                //
-                                //         if (phoneNumber?.country) {
-                                //             const targetCountry = countriesOptions.find((country) => country.value === phoneNumber.country) ?? null
-                                //             setDefaultCountry(targetCountry)
-                                //         }
-                                //     }}
-                                // />
-
-                                <InputPhone
-                                    value={field.value}
-                                    international
+                            render={({field, fieldState}) => (
+                                <Input
+                                    label={field.name}
+                                    type="tel"
+                                    autoComplete="tel"
                                     placeholder="phone"
-                                    onChange={(e) => {
-                                        field.onChange(e);
+                                    {...field}
+                                    ref={null}
+                                    state={fieldState}
+                                    // onKeyDown={(event) => {
+                                    //     const validKeys = ['Backspace', 'Delete', 'ArrowLeft', 'ArrowRight', "Tab"];
+                                    //     if (!/[0-9]/.test(event.key) && !validKeys.includes(event.key)) {
+                                    //         event.preventDefault();
+                                    //     }
+                                    // }}
+                                    // onInput={(e) => {
+                                    //     const unformattedNumber = e.target.value;
+                                    //     const isIntl = unformattedNumber[0] === "+"
+                                    //     const formattedNumber = formatPhoneNumber( isIntl ? unformattedNumber : "+" + unformattedNumber ) ?? e.target.value;
+                                    //     console.log({"e.target.value": e.target.value, formattedNumber})
+                                    //
+                                    //     if (formattedNumber) {
+                                    //         setValue("phone",  formattedNumber)
+                                    //     }
+                                    // }}
+                                    onChange={({target: {value}}) => {
+                                        console.log({value})
+                                        const isFirstChar = value.length === 1;
+                                        const isValidFirstChar = value[0] === "+"
+
+                                        setValue("phone", `${isFirstChar && !isValidFirstChar ? "+" : ""}${value}`)
+                                    }}
+                                    onFocus={() => {
+                                        setValue("phone", field.value.replaceAll(" ", ""))
+                                    }}
+                                    onBlur={() => {
+                                        field.onBlur();
+                                        trigger("phone")
+                                        if (fieldState.invalid) return;
 
                                         const phoneNumber = parsePhoneNumber(field.value);
+                                        const formattedNumber = formatPhoneNumberIntl(field.value) ?? field.value;
+
+                                        if (formattedNumber) {
+                                            setValue("phone",  formattedNumber)
+                                        }
 
                                         if (phoneNumber?.country) {
                                             const targetCountry = countriesOptions.find((country) => country.value === phoneNumber.country) ?? null
                                             setDefaultCountry(targetCountry)
                                         }
                                     }}
+                                />
+
+                                // <InputPhone
+                                    // value={field.value}
+                                    // international
+                                    // placeholder="phone"
+                                    // onChange={(e) => {
+                                    //     field.onChange(e);
+                                    //     trigger("phone")
+                                    //
+                                    //     const phoneNumber = parsePhoneNumber(field.value);
+                                    //
+                                    //     if (phoneNumber?.country) {
+                                    //         const targetCountry = countriesOptions.find((country) => country.value === phoneNumber.country) ?? null
+                                    //         setDefaultCountry(targetCountry)
+                                    //     }
+                                    // }}
+
                                     // inputComponent={(props) => {
                                     // console.log({props})
                                     // return (<Input
@@ -205,8 +227,8 @@ const ContactForm = () => {
                                     // }}
 
                                     //@ts-ignore
-                                    inputComponent={Input}
-                                />
+                                    // inputComponent={Input}
+                                // />
                             )}
                         />
 
@@ -219,6 +241,7 @@ const ContactForm = () => {
                             render={({field, fieldState}) => {
                                 return (
                                     <Input
+                                        autoComplete="email"
                                         label={field.name}
                                         type="text"
                                         placeholder="email"
@@ -267,13 +290,13 @@ const ContactForm = () => {
                 <div>
                     <div className="px-5 pb-4">
                         <div className="relative flex items-center">
-                            <div className="relative h-[1.5rem] w-[1.5rem] mr-2">
+                            <div className="relative h-[1rem] w-[1rem] desktop:h-[1.5rem] desktop:w-[1.5rem] mr-1 desktop:mr-2">
                                 <img src={checkmark.src} alt="" className="absolute object-cover w-full h-full" style={{opacity: privacy ? "100%" : "20%"}}/>
                             </div>
                             <label htmlFor="privacy" className="hidden">Privacy policy</label>
-                            <input type="checkbox" {...register("privacy", {required: true})} className="absolute top-0 left-0 w-8 h-8 opacity-0"/>
+                            <input type="checkbox" {...register("privacy", {required: true})} className="absolute top-0 left-0 w-4 h-4 desktop:w-8 desktop:h-8 opacity-0"/>
                             <p
-                                className="text-dark-gray text-[1rem] tablet:text-[1.5rem] desktop:text-[1.5rem] font-regular"
+                                className="text-dark-gray text-[1rem] tablet:text-[1.5rem] desktop:text-[1.5rem] font-regular mobile:pb-[0.1rem]"
                             >our <a
                                 href="#" className="decoration-1 underline underline-offset-4">
                                 privacy policy
