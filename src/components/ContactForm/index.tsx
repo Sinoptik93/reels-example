@@ -1,7 +1,7 @@
 import Select, {components, GroupBase, OptionProps} from 'react-select'
 import {Controller, useForm} from "react-hook-form";
 import {useState} from "react";
-import {formatPhoneNumberIntl, formatPhoneNumber, parsePhoneNumber} from 'react-phone-number-input'
+import {formatPhoneNumberIntl, parsePhoneNumber} from 'react-phone-number-input'
 import * as yup from "yup";
 // import InputPhone from 'react-phone-number-input/input'
 
