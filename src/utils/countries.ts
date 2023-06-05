@@ -16,7 +16,8 @@ export interface Name {
     nativeName: NativeName;
 }
 export interface NativeName {
-    ara: Ara;
+    [key: string]: Ara;
+
 }
 export interface Ara {
     official: string;
